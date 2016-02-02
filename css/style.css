@@ -1,0 +1,121 @@
+body {
+	background-color: rgba(46,204,103,0.8);
+	transparancy: 0.5;
+}
+
+/* Inset, by Dan Eden */
+hr {
+    border: 0;
+    height: 0;
+    margin-top: 3em;
+    border-top: 1px solid rgba(44, 62, 80, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header {
+	text-align: center;
+	color: rgba(44, 62, 80,1.0);
+	margin: 2em auto 0 auto;
+	padding: 0.5em 0;
+	max-width: 48em;
+	background-color: rgb(250,250,250);
+	box-shadow: 0.3em 0.3em 0em 0em rgba(44, 62, 80,0.2);
+	border-radius: 0% 20%/10%;
+}
+
+header h1 {
+	margin: 0.5em 0 0 0;
+}
+
+header code {
+	font-size: 2em;
+
+}
+
+article {
+	color: rgba(44, 62, 80,1.0);
+	width: 100%;
+	max-width: 60em;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+section {
+	margin: 1em;
+	padding: 1em 2em;
+	display: block;
+	text-align: center;
+	background-color: rgb(250,250,250);
+	border-radius: 0% 10%;
+	box-shadow: 0.3em 0.3em 0em 0em rgba(44, 62, 80,0.2);
+}
+
+ul { 
+	text-align: left;
+	list-style-type: circle;
+}
+
+li {
+	margin: 0em 0em 01em 0em;
+}
+
+a {
+	color: black;
+}
+
+a:first-of-type {
+	text-decoration: none;
+}
+
+a:hover {
+	color: green;
+}
+
+section p {
+	text-align: left;
+	max-width: 30em;
+	font-size: 1.1em;
+}
+
+footer {
+	text-align: center;
+	color: rgba(236, 240, 241,1.0);
+}
+
+
+/*.horizontal-list {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	box-shadow: none;
+}*/
+
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.horizontal-list li {
+	display: block;
+	margin: 0.4em;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
