@@ -21,6 +21,10 @@ header li {
 	margin: 0 1em 0 0;
 }
 
+section ul {
+	display: block;
+}
+
 section {
 	width: 100vw;
 	height: 100vh;
