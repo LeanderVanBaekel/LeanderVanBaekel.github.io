@@ -136,28 +136,30 @@ legend {
 input {
 	display: block;
 	width: 100%;
+	margin-bottom: 0.8em;
 	height: 1.7em;
 	border: none;
-	background-color: rgba(189, 195, 199,0.3);
+	background-color: rgba(198, 200, 210,1);
 }
 
-form span {
+form label {
 	display: block;
 	margin: 0.5em 0;
 }
 
 button {
+	margin-top: 0.4em;
 	padding: 0.6em;
 	width: 100%;
 	background-color: rgba(52, 152, 219,1.0);
 	border: none;
 	color: white;
-	border-bottom: 0.5em solid rgba(41, 128, 185,1.0);
+	border-bottom: 0.6em solid rgba(41, 128, 185,1.0);
 }
 
 button:hover {
 	margin-top: 0.3em;
-	border-bottom: 0.2em solid rgba(41, 128, 185,1.0);
+	border-bottom: 0.3em solid rgba(41, 128, 185,1.0);
 }
 
 article figure img {

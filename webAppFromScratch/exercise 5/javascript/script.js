@@ -19,7 +19,7 @@
 	// functions for helping the user change pages
 	var routes = {
 
-		// the eventlistner for whatching the hash change
+		// the eventlistner for watching the hash change
 		init: function () {
 			window.addEventListener('hashchange', function (event) {
 
@@ -35,7 +35,7 @@
 					sections.disablePage(_oldHash);
 				}
 
-			}, false);
+			});
 		},
 
 		// function (method) for splitting the hash from the url
