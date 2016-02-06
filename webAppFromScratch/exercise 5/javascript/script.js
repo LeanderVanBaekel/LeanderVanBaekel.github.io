@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-
+    
     // making some variables
     var hidden  = "hidden",
     	urlHash = "",

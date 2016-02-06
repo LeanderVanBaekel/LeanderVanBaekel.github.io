@@ -45,10 +45,17 @@
 			<p>Hoe verdien je hier geld mee zul je je afvragen? Door het maken van een "3d-model naar Lego-bouwtekening" web-app dus! Een javascript applictaie die van jouw 3d tekening berekend hoeveel Legoblokjes je nodig hebt, en waar ze moeten komen (en niet te vergeten.. de prijs).</p>
 
 			<p>Dit allemaal doet hij door gebruik te maken van GPU berekeningen te maken op de videokaart. Op deze manier kan je gemakkelijk zware scripts draaien zonder de browser of de DOM te belasten.</p>
+
+			<p>Om dit voor elkaar te krijgen gebruikt hij <a href="http://www.html5rocks.com/en/tutorials/workers/basics/" title="uitleg Webworkers">Webworkers</a>. Webworkers zijn bedoeld om meerdere javascripts naast elkaar te laten draaien. Zonder Webworker kan javascript maar een ding teglijk uitvoeren, dit kan nadelig zijn voor de preformance van een website als je bijvoorbeeld UI elementen wilt animeren en een zware berekening wilt uitvoeren. Er ontstaat dan een vertraging in het UI gedeelte omdat dat moet wachten tot de berekening is uitgevoerd. De Webworker kan de zware berekening buiten de DOM van de gebruiker uitvoeren zodat de website zelf niet traag aanvoelt.</p>
+
+			<p>Zoals veel mensen weten is de snelheid van een website <a href="http://www.businessinsider.com/page-load-time-the-online-business-killer-2011-5?IR=T" title="Waarom snelheid belangrijk is.">een van de belangrijkste punten voor de gebruiker.</a> Een interesante truck die Drububu vertelde ging over het verkleinen van de data die je over het web moet versturen. Zo verteld hij dat tijdens het maken van de legoblokjes renders hij bestanden van ongeveer 12mb naar de gebruiker moest sturen. Nu is dit nog wel te overzien, maar als je bedenkt dan 6mb van dat bestand alleen maar bestaat uit de nobjes van de legosteentjes is dat wel zonde natuurlijk!</p>
+
+			<p>Hij bedacht een Webworker script die een 3D-render zonder nobjes om kan zetten in een render mét nobjes. Op deze manier scheelt het de gebruiker en de server de helft van de data en omdat de Webworker naast de DOM werkt merk je er niets van in site-preformance.</p>
 			
 				<ul class="horizontal-list">
 					<li>Weekly Nerd</li>
 					<li>Javascript</li>
+					<li>Webworker</li>
 					<li>Vormgeving</li>
 				</ul>
 		</section>
