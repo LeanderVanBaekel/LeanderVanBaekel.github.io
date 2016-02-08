@@ -30,7 +30,7 @@ img {
 }
 
 body > header {
-		max-width: 12em;
+		max-width: calc(100% - 2em);
 		margin: 1em auto;
 }
 
@@ -218,6 +218,7 @@ pre {
 	body > header {
 		max-height: 25em;
 		margin: 0;
+		max-width: 12em;
 	}
 
 	main {
