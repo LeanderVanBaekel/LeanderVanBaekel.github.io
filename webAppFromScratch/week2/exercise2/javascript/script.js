@@ -34,10 +34,16 @@
 
 				'apiData': function () {
 
-					nanoajax.ajax({url:'https://www.colourlovers.com/api/palettes/random'}, function (code, responseText) {
-						var codeVar = code;
-						var responseTextVar = responseText;
-						console.log(codeVar + " em " + responseTextVar);
+					// nanoajax.ajax({url:'https://www.colourlovers.com/api/palettes/random'}, function (code, responseText) {
+					// 	var codeVar = code;
+					// 	var responseTextVar = responseText;
+					// 	console.log(codeVar + " em " + responseTextVar);
+					// });
+
+					nanoajax.ajax({url: 'http://www.colourlovers.com/api/palettes/random', method: 'POST', body: ''}, function (code, responseText, request) {
+					    //code is response code
+					    // responseText is response body as a string
+					    // request is the xmlhttprequest, which has `getResponseHeader(header)` function
 					});
 
 					var data = {
