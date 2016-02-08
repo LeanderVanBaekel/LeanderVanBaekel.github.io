@@ -34,7 +34,7 @@
 
 				'apiData': function () {
 
-					nanoajax.ajax({url:'http://www.colourlovers.com/api/palettes/random'}, function (code, responseText) {
+					nanoajax.ajax({url:'https://www.colourlovers.com/api/palettes/random'}, function (code, responseText) {
 						var codeVar = code;
 						var responseTextVar = responseText;
 						console.log(codeVar+" "+responseTextVar);
