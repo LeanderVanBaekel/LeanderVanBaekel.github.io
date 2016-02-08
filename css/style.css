@@ -29,7 +29,16 @@ header h1 {
 
 header code {
 	font-size: 2em;
+}
 
+header h2 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1em;
+	text-align: left;
 }
 
 article {
