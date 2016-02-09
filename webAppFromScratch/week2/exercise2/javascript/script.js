@@ -34,28 +34,43 @@
 
 				'apiData': function () {
 
-					// nanoajax.ajax({url:'https://www.colourlovers.com/api/palettes/random'}, function (code, responseText) {
-					// 	var codeVar = code;
-					// 	var responseTextVar = responseText;
-					// 	console.log(codeVar + " em " + responseTextVar);
-					// });
-
-					// nanoajax.ajax({url: 'https://www.colourlovers.com/api/palettes/random', method: 'POST', body: ''}, function (code, responseText, request) {
-					    //code is response code
-					    // responseText is response body as a string
-					    // request is the xmlhttprequest, which has `getResponseHeader(header)` function
-					// });
-
-					aja()
-					    .url('https://www.colourlovers.com/api/palettes/random')
-					    .into('#apiData')
-					    .go();
 
 					var data = {
+						baseUrl : 'http://www.colourlovers.com/api/',
+						request : function(base, options){
+							return pegasus(base + options);
+						}
+					};
+
+					var colourloversData = {
+						raw : []
+					};
+
+					var colourloversRequest = data.request(data.baseUrl, 'colors/random');
+
+					colourloversRequest.then(
+					    // success handler
+					    function(data, xhr) {
+					      // load the list of pokemon into the pokedex, since it contains all the pokemon its the national pokedex.
+					      // its not a string, so no need to parse the JSON
+					      colourloversData.raw = data;
+
+					      //log to check
+					      console.log(colourloversData.raw);
+					    },
+					    // error handler (optional)
+					    function(data, xhr) {
+					      console.error(data, xhr.status);
+					    }
+					);
+
+
+
+					var data1 = {
 						pageTitle: "API Data inladen"
 					}
 
-					Transparency.render(document.getElementById('apiData'), data);
+					Transparency.render(document.getElementById('apiData'), data1);
 					sections.enablePage();
 				},
 
