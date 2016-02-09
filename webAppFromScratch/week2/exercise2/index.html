@@ -12,8 +12,6 @@
 
 	<script src="javascript/routie.js" type="text/javascript"></script>
 	<script src="javascript/transparency.js" type="text/javascript"></script>
-	<script src="javascript/nanoajax.js" type="text/javascript"></script>
-	<script src="javascript/ajax.js" type="text/javascript"></script>
 	<script src="javascript/pegasus.js" type="text/javascript"></script>
 
     <link rel="stylesheet" href="css/style.css">
@@ -28,7 +26,7 @@
 		<ul>
 			<li><a href="#home">Home</a></li>
 			<li><a href="#bestPractices">Best Practices</a></li>
-			<li><a href="#apiData">API Data</a></li>
+			<li><a href="#movieFinder">Movie Finder</a></li>
 		</ul>
 	</header>
 
@@ -51,27 +49,31 @@
 		</ul>
 	</section>
 
-	<section class="page" id="apiData">
+	<section class="page" id="movieFinder">
 		<h1 data-bind="pageTitle"></h1>
 		<form>
-			<label for="title">title</label>
-			<input type="text" id="searchField"/>
-			<input type="submit" value="click" id="searchGo"/>
+			<label class="hidden" for="title">title</label>
+			<input type="text" placeholder="title" id="searchField"/>
+			<button type="submit" id="searchGo">Search</button>
 		</form>
-		<section id="dataSection">
-			<h1 data-bind="Title">no movie</h1>
-			<h2 data-bind="Year">year</h2>
-			<h2 data-bind="Genre"></h2>
-			<a href=""></a><p>IMDB Rating: <span data-bind="imdbRating"></span></p>
-			<p data-bind="Plot"></p>
-			<img src="" data-bind="Poster" id="img" alt="">
 
+		<section id="dataSection">
+			<img src="" data-bind="Poster" id="img" alt="">
+			<article>
+					
+				<h1 data-bind="Title">no movie</h1>
+				<h2 data-bind="Year">year</h2>
+				<h2 data-bind="Genre"></h2>
+				<a href=""></a><p>IMDB Rating: <span data-bind="imdbRating"></span></p>
+				<h3>plot:</h3>
+				<p data-bind="Plot"></p>
+	</article>
+			
 		</section>
 	</section>
 
 	<section class="page" id="notFound">
 		<h1>404</h1>
-
 	</section>
 	
 	<script src="javascript/script.js" type="text/javascript"></script>

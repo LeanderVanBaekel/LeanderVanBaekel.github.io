@@ -32,13 +32,7 @@
 					sections.enablePage();
 				},
 
-				'apiData': function () {
-
-
-					var movieData = {
-						Title: "Je moet eerst zoeken!",
-						Year: ""
-					};
+				'movieFinder': function () {
 
 					var requestData = function(searchQuery) {
 						var urlData = {
@@ -96,7 +90,18 @@
 						Transparency.render(document.getElementById('dataSection'), movieData,derectives);
 					};
 
-					Transparency.render(document.getElementById('apiData'), movieData);
+
+
+					var movieData = {
+						Title: "Title",
+						Year: "Year",
+						pageTitle: "Movie Finder",
+						Genre: "N/A",
+						Plot: "Plot"
+					};
+
+
+					Transparency.render(document.getElementById('movieFinder'), movieData);
 					sections.enablePage();
 
 					searchEngine();
