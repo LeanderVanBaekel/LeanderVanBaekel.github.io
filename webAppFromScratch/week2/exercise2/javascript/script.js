@@ -40,11 +40,16 @@
 					// 	console.log(codeVar + " em " + responseTextVar);
 					// });
 
-					nanoajax.ajax({url: 'https://www.colourlovers.com/api/palettes/random', method: 'POST', body: ''}, function (code, responseText, request) {
+					// nanoajax.ajax({url: 'https://www.colourlovers.com/api/palettes/random', method: 'POST', body: ''}, function (code, responseText, request) {
 					    //code is response code
 					    // responseText is response body as a string
 					    // request is the xmlhttprequest, which has `getResponseHeader(header)` function
-					});
+					// });
+
+					aja()
+					    .url('https://www.colourlovers.com/api/palettes/random')
+					    .into('#apiData')
+					    .go();
 
 					var data = {
 						pageTitle: "API Data inladen"
