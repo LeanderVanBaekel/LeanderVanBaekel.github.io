@@ -54,3 +54,7 @@ a:hover {
 .hidden {
 	display: none;
 }
+
+#apiData {
+	text-align: center;
+}

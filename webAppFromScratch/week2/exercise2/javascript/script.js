@@ -35,43 +35,71 @@
 				'apiData': function () {
 
 
-					var data = {
-						baseUrl : '//www.colourlovers.com:80/api/',
-						request : function(base, options){
-							return pegasus(base + options);
-						}
+					var movieData = {
+						Title: "Je moet eerst zoeken!",
+						Year: ""
 					};
 
-					var colourloversData = {
-						raw : []
-					};
+					var requestData = function(searchQuery) {
+						var urlData = {
+							baseUrl : 'http://www.omdbapi.com/?t=',
+							searchQuery: searchQuery.split(' ').join('+'), // http://stackoverflow.com/questions/441018/replacing-spaces-with-underscores-in-javascript
+							urlOptions: '&y=&plot=full&r=json',
+							request : function(base, searchQuery, urlOptions){
+								return pegasus(base + searchQuery + urlOptions);
+							}
+						};
 
-					var colourloversRequest = data.request(data.baseUrl, 'colors/random');
+						var movieRequest = urlData.request(urlData.baseUrl, urlData.searchQuery, urlData.urlOptions);
 
-					colourloversRequest.then(
-					    // success handler
-					    function(data, xhr) {
-					      // load the list of pokemon into the pokedex, since it contains all the pokemon its the national pokedex.
-					      // its not a string, so no need to parse the JSON
-					      colourloversData.raw = data;
+						movieRequest.then(
+						    // success handler
+						    function(data, xhr) {
+						      // load the list of pokemon into the pokedex, since it contains all the pokemon its the national pokedex.
+						      // its not a string, so no need to parse the JSON
+						      movieData = data;
+						      console.log(movieData);
+						      //log to check
+						      enterData();
 
-					      //log to check
-					      console.log(colourloversData.raw);
-					    },
-					    // error handler (optional)
-					    function(data, xhr) {
-					      console.error(data, xhr.status);
-					    }
-					);
-
-
-
-					var data1 = {
-						pageTitle: "API Data inladen"
+						    },
+						    // error handler (optional)
+						    function(data, xhr) {
+						      console.error(data, xhr.status);
+						    }
+						);
 					}
 
-					Transparency.render(document.getElementById('apiData'), data1);
+
+					var searchEngine = function () {
+						var _searchForm = document.querySelector('form');
+						var _searchField = document.getElementById('searchField');
+						var _searchQuery = "";
+
+						_searchForm.onsubmit = function (event) {
+							event.preventDefault();
+							_searchQuery = _searchField.value;
+							requestData(_searchQuery);
+						};
+					}
+
+					var enterData = function () {
+
+						var derectives = {
+					    	Poster: {
+					    		src: function (params) {
+					    			return this.Poster;
+					   			}
+					   		}
+					   	};
+
+						Transparency.render(document.getElementById('dataSection'), movieData,derectives);
+					};
+
+					Transparency.render(document.getElementById('apiData'), movieData);
 					sections.enablePage();
+
+					searchEngine();
 				},
 
 				'*': function () {
@@ -87,7 +115,6 @@
 		// function called in the app.innit to hide al pages
 		// this is not done in the html because we want the page to be visible if there is no javascript in the browser
 		hideAll: function () {
-
 			
 			var allPages = document.querySelectorAll(".page"); // saving al the pages from the HTML
 
@@ -96,7 +123,7 @@
 			};
 
 			if (!window.location.hash) {
-
+				window.location.hash = '#home';
 			}
 		},
 
@@ -105,14 +132,11 @@
 			var _pageId;
 
 			thisPage = window.location.hash;
-			_pageId = document.querySelector(thisPage);
 
-			
-			if (_pageId) {
+			if (thisPage) {
+				_pageId = document.querySelector(thisPage);
 				_pageId.classList.remove(hidden);
-
-			} 
-			else {
+			} else {
 				this.notFound();
 			}
 
@@ -126,7 +150,10 @@
 		// disabeling page by adding hidden class
 		disablePage: function () {
 
-			var _pageId = document.querySelector(oldPage);
+			var _pageId;
+			if (oldPage && oldPage !== thisPage) {
+				_pageId = document.querySelector(oldPage);
+			}
 
 			if (_pageId) {
 				_pageId.classList.add(hidden);
@@ -136,9 +163,11 @@
 		// if hash doesn't exist
 		notFound: function () {
 			window.location.hash = 'notFound';
-			this.enablePage();
+			//this.enablePage();
 		}
 	};
+
+
 
 
 	app.init();

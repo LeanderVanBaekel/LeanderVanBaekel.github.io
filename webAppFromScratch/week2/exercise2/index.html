@@ -53,7 +53,20 @@
 
 	<section class="page" id="apiData">
 		<h1 data-bind="pageTitle"></h1>
-		<section id="dataSection"></section>
+		<form>
+			<label for="title">title</label>
+			<input type="text" id="searchField"/>
+			<input type="submit" value="click" id="searchGo"/>
+		</form>
+		<section id="dataSection">
+			<h1 data-bind="Title">no movie</h1>
+			<h2 data-bind="Year">year</h2>
+			<h2 data-bind="Genre"></h2>
+			<a href=""></a><p>IMDB Rating: <span data-bind="imdbRating"></span></p>
+			<p data-bind="Plot"></p>
+			<img src="" data-bind="Poster" id="img" alt="">
+
+		</section>
 	</section>
 
 	<section class="page" id="notFound">
