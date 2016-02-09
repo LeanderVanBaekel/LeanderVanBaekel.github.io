@@ -36,7 +36,7 @@
 
 
 					var data = {
-						baseUrl : 'http://www.colourlovers.com/api/',
+						baseUrl : '//www.colourlovers.com:80/api/',
 						request : function(base, options){
 							return pegasus(base + options);
 						}
