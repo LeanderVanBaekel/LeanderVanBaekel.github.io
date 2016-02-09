@@ -42,7 +42,7 @@
 
 					var requestData = function(searchQuery) {
 						var urlData = {
-							baseUrl : 'https://www.omdbapi.com/?t=',
+							baseUrl : '//www.omdbapi.com/?t=',
 							searchQuery: searchQuery.split(' ').join('+'), // http://stackoverflow.com/questions/441018/replacing-spaces-with-underscores-in-javascript
 							urlOptions: '&y=&plot=full&r=json',
 							request : function(base, searchQuery, urlOptions){
