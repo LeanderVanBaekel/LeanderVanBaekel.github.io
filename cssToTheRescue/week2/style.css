@@ -300,16 +300,18 @@ img[alt*=effect] {
 	-webkit-display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-justify-content: space-around;
-	-webkit-flex: 1 1 auto;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
+
 
 /*CSS Intrinsic & Extrinsic Sizing*/
 figure[class*=effect] {
 	display: inline-block;
-	width: 20%;
-	width: -webkit-min-content;
-	width: -moz-min-content;
-	width: min-content;
+	max-width: -webkit-min-content;
+	max-width: -moz-min-content;
+	max-width: min-content;
 	min-width: 5em;
 	margin: 0;
 	padding: 0.2em;
