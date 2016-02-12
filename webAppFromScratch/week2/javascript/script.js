@@ -31,18 +31,18 @@
 		},
 		
 		routie: function () {
+			var self = this;
 			routie ({
 				'home': function () {
 					var data = { welcome: "hallooo!"};
-					Transparency.render(document.getElementById('home'), data);
+					self.templateRender('home', data);
 					sections.enablePage();
 				},
 				'bestPractices': function () {
 					sections.enablePage();
 				},
 				'movieFinder': function () {
-
-					Transparency.render(document.getElementById('movieFinder'), movieData);
+					self.templateRender('movieFinder', movieData);
 					sections.enablePage();
 					getMovie.searchEngine();
 				},
@@ -50,31 +50,37 @@
 					getMovie.getLocalStorage();
 
 					var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
-
 					var _above = _.where(searchedMovies, {Rated: "PG-13"});
 
-					Transparency.render(document.getElementById('searchedMovies'), _underscoreMovieData);
-					Transparency.render(document.getElementById('above'), _above);
+					self.templateRender('searchedMovies', _underscoreMovieData);
+					self.templateRender('above', _above);
 
 					sections.enablePage();
 				},
 				'info': function () {
 
-					var derectives = {
+					var directives = {
 				    	Poster: {
 				    		src: function (params) {
 				    			return this.Poster;
 				   			}
 				   		},
 				   	};
-
-					Transparency.render(document.getElementById('info'), movieData, derectives);
+				   	self.templateRender('info', movieData, directives);
 					sections.enablePage();
 				},
 				'*': function () {
 					sections.enablePage();
 				}
 			});
+		},
+		templateRender: function (id, data, directives) {
+			var el = document.getElementById(id);
+			if (directives) {
+				Transparency.render(el, data, directives);
+			} else {
+				Transparency.render(el, data);
+			}
 		}
 	};
 
@@ -170,7 +176,7 @@
 		},
 		enterData: function () {
 
-			var derectives = {
+			var directives = {
 		    	Poster: {
 		    		src: function (params) {
 		    			return this.Poster;
@@ -182,7 +188,7 @@
 		   			}
 		   		}
 		   	};
-			Transparency.render(document.getElementById('dataSection'), movieData, derectives);
+			routes.templateRender('dataSection', movieData, directives);
 		},
 		saveToLocalStorage : function () {
 

@@ -209,13 +209,15 @@ pre {
 	body {
 		margin-top: 1em;
 		display: -webkit-flex;
+		display: flex;
 		flex-direction: row;
 		-webkit-flex-direction:row;
 		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
 		-webkit-box-pack: center;
 		-webkit-justify-content: center;
 		    -ms-flex-pack: center;
-		        justify-content: center;	
+		  justify-content: center;	
 	}
 
 	body > header {
