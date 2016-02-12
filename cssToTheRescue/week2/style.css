@@ -302,11 +302,13 @@ figure[class*=effect] {
 	box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
 	width: 18em;
 	padding: 1em 1.5em;
-	margin: 50vh auto 0;
+	margin: 50vh 0;
+	left: calc(50% - 9em);
 	transform: translateY(-50%);
 	box-sizing: border-box;
 	color: white;
 	position: fixed;
+	top: 0;
 	text-align: center;
 	z-index: 3;
 }

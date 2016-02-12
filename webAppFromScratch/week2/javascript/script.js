@@ -24,14 +24,10 @@
 
     // routie routes
 	var routes = {
-		routieDirectives: {
-	    	Poster: {
-	    		src: function (params) {
-	    			return this.Poster;
-	   			}
-	   		}
-	   	},
+		routieDirectives: function () {
 
+		},
+		
 		routie: function () {
 			routie ({
 				'home': function () {
@@ -126,6 +122,7 @@
 			    	movieData = data;
 			    	console.log(movieData);
 			    	self.enterData();
+			    	self.saveToLocalStorage();
 			    },
 			    // error handler (optional)
 			    function(data, xhr) {
@@ -147,8 +144,28 @@
 		},
 		enterData: function () {
 
-			var derectives = 
-			Transparency.render(document.getElementById('dataSection'), movieData, routie.routieDerectives);
+			var derectives = {
+		    	Poster: {
+		    		src: function (params) {
+		    			return this.Poster;
+		   			}
+		   		}
+		   	};
+			Transparency.render(document.getElementById('dataSection'), movieData, derectives);
+		},
+		saveToLocalStorage : function () {
+
+			var _searchedMovies = [];
+
+			if (localStorage.searchedMovies) {
+				_searchedMovies = JSON.parse(localStorage.searchedMovies);
+				console.log(_searchedMovies);
+			};
+
+			_searchedMovies.push(movieData);
+
+			localStorage.setItem("searchedMovies", JSON.stringify(_searchedMovies));
+			// console.log(localStorage.searchedMovies);
 		}
 
 	}
