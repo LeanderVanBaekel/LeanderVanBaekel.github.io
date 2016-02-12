@@ -1,4 +1,4 @@
 # CSS-to-the-Rescue
 HTML voor de CSS to the Rescue opdracht
 
-[Link naar de wegpagina](http://leandervanbaekel.github.io/cssToTheRescue/week1/)
+[Link naar de wegpagina](https://leandervanbaekel.github.io/cssToTheRescue/week2/index.html)
