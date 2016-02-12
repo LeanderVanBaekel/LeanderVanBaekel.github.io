@@ -32,12 +32,15 @@ img {
 }
 
 body > header {
-		max-width: calc(100% - 2em);
-		margin: 1em auto;
+	max-width: calc(100% - 2em);
+	margin: 1em auto;
+	background-color: #0B486B;
+	color: white;
+	text-align: center;
 }
 
 
-header {
+main header {
 	width: 100%;
 	background-color: #0B486B;
 	color: white;
@@ -205,21 +208,14 @@ pre {
 
 	body {
 		margin-top: 1em;
-		display: -webkit-box;
 		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
+		flex-direction: row;
+		-webkit-flex-direction:row;
 		-webkit-flex-wrap: wrap;
-		    -ms-flex-wrap: wrap;
-		        flex-wrap: wrap;
-		-webkit-box-align: top;
-		-webkit-align-items: top;
-		    -ms-flex-align: top;
-		        align-items: top;
 		-webkit-box-pack: center;
 		-webkit-justify-content: center;
 		    -ms-flex-pack: center;
-		        justify-content: center;
+		        justify-content: center;	
 	}
 
 	body > header {
