@@ -83,7 +83,7 @@ a:first-of-type {
 }
 
 a:hover {
-	color: green;
+	color: rgba(240,240,240,1);
 }
 
 section p {
