@@ -85,10 +85,20 @@ button:active {
      -moz-column-width: 200px;
           column-width: 200px;*/
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+img {
+	width: 45%;
+	height: auto;
+	margin-bottom: 1em;
 }
 
 #dataSection article {
 	margin-left: 1em;
+	margin-bottom: 1em;
+	max-width: 20em;
 }
 
 

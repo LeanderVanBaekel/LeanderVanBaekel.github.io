@@ -86,6 +86,43 @@ pipo.laugh()
 
 
 
+/*********************
+ Aantekeningen week 3
+ Web App From Scratch
+  Leander van Baekel
+*********************/
+
+// ECMAScript 2015 / ES6
+// Promises
+// BABEL kan ecma omzetten naar JS
+
+// Let / cosnt
+// Let is alleen in zijn scope bruikbaar
+// Const mag je maar een keer veranderen
+
+// arrow functions
+
+// promise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

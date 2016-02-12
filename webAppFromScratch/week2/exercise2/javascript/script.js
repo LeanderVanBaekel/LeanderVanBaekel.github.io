@@ -5,8 +5,16 @@
     var hidden  = "hidden",
     	thisPage = window.location.hash,
     	oldPage = "",
-    	url		= window.location.hash;
+    	url		= window.location.hash,
+		movieData = {
+			Title: "Title",
+			Year: "Year",
+			pageTitle: "Movie Finder",
+			Genre: "N/A",
+			Plot: "Plot"
+		};
 
+	// start the web app
     var app = {
     	init: function () {
     		sections.hideAll();
@@ -14,105 +22,40 @@
     	}
     };
 
+    // routie routes
 	var routes = {
+		routieDirectives: {
+	    	Poster: {
+	    		src: function (params) {
+	    			return this.Poster;
+	   			}
+	   		}
+	   	},
 
 		routie: function () {
 			routie ({
 				'home': function () {
-
-					var data = {
-						welcome: "hallooo!"
-					}
-
+					var data = { welcome: "hallooo!"};
 					Transparency.render(document.getElementById('home'), data);
 					sections.enablePage();
 				},
-
 				'bestPractices': function () {
 					sections.enablePage();
 				},
-
 				'movieFinder': function () {
-
-					var requestData = function(searchQuery) {
-						var urlData = {
-							baseUrl : '//www.omdbapi.com/?t=',
-							searchQuery: searchQuery.split(' ').join('+'), // http://stackoverflow.com/questions/441018/replacing-spaces-with-underscores-in-javascript
-							urlOptions: '&y=&plot=full&r=json',
-							request : function(base, searchQuery, urlOptions){
-								return pegasus(base + searchQuery + urlOptions);
-							}
-						};
-
-						var movieRequest = urlData.request(urlData.baseUrl, urlData.searchQuery, urlData.urlOptions);
-
-						movieRequest.then(
-						    // success handler
-						    function(data, xhr) {
-						      // load the list of pokemon into the pokedex, since it contains all the pokemon its the national pokedex.
-						      // its not a string, so no need to parse the JSON
-						      movieData = data;
-						      console.log(movieData);
-						      //log to check
-						      enterData();
-
-						    },
-						    // error handler (optional)
-						    function(data, xhr) {
-						      console.error(data, xhr.status);
-						    }
-						);
-					}
-
-
-					var searchEngine = function () {
-						var _searchForm = document.querySelector('form');
-						var _searchField = document.getElementById('searchField');
-						var _searchQuery = "";
-
-						_searchForm.onsubmit = function (event) {
-							event.preventDefault();
-							_searchQuery = _searchField.value;
-							requestData(_searchQuery);
-						};
-					}
-
-					var enterData = function () {
-
-						var derectives = {
-					    	Poster: {
-					    		src: function (params) {
-					    			return this.Poster;
-					   			}
-					   		}
-					   	};
-
-						Transparency.render(document.getElementById('dataSection'), movieData,derectives);
-					};
-
-
-
-					var movieData = {
-						Title: "Title",
-						Year: "Year",
-						pageTitle: "Movie Finder",
-						Genre: "N/A",
-						Plot: "Plot"
-					};
-
 
 					Transparency.render(document.getElementById('movieFinder'), movieData);
 					sections.enablePage();
-
-					searchEngine();
+					getMovie.searchEngine();
 				},
-
+				'moreInfo': function () {
+					Transparency.render(document.getElementById('moreInfo'), movieData);
+				},
 				'*': function () {
 					sections.enablePage();
 				}
 			});
 		}
-
 	};
 
 	var sections = {
@@ -122,7 +65,7 @@
 		hideAll: function () {
 			
 			var allPages = document.querySelectorAll(".page"); // saving al the pages from the HTML
-
+			
 			for (var i = 0; i < allPages.length; i++) { // loop through the pages
 				allPages[i].classList.add(hidden);
 			};
@@ -133,18 +76,14 @@
 		},
 
 		enablePage: function () {
-
 			var _pageId;
-
 			thisPage = window.location.hash;
 
 			if (thisPage) {
 				_pageId = document.querySelector(thisPage);
 				_pageId.classList.remove(hidden);
-			} else {
-				this.notFound();
 			}
-
+			
 			if (oldPage) {
 				this.disablePage();
 			}
@@ -163,17 +102,56 @@
 			if (_pageId) {
 				_pageId.classList.add(hidden);
 			}
-		},
-
-		// if hash doesn't exist
-		notFound: function () {
-			window.location.hash = 'notFound';
-			//this.enablePage();
 		}
 	};
 
+	var getMovie = {
+		dataRequest: function (searchQuery) {
 
+			var self = this;
+			var urlData = {
+				baseUrl : '//www.omdbapi.com/?t=',
+				searchQuery: searchQuery.split(' ').join('+'), // http://stackoverflow.com/questions/441018/replacing-spaces-with-underscores-in-javascript
+				urlOptions: '&y=&plot=full&r=json',
+				request : function(base, searchQuery, urlOptions){
+					return pegasus(base + searchQuery + urlOptions);
+				}
+			};
 
+			var movieRequest = urlData.request(urlData.baseUrl, urlData.searchQuery, urlData.urlOptions);
+
+			movieRequest.then(
+			    // success handler
+			    function(data, xhr) {
+			    	movieData = data;
+			    	console.log(movieData);
+			    	self.enterData();
+			    },
+			    // error handler (optional)
+			    function(data, xhr) {
+			      console.error(data, xhr.status);
+			    }
+			);
+		},
+		searchEngine: function () {
+			var _searchForm = document.querySelector('form');
+			var _searchField = document.getElementById('searchField');
+			var _searchQuery = "";
+			var self = this;
+			_searchForm.onsubmit = function (event) {
+				event.preventDefault();
+
+				_searchQuery = _searchField.value;
+				self.dataRequest(_searchQuery);
+			};
+		},
+		enterData: function () {
+
+			var derectives = 
+			Transparency.render(document.getElementById('dataSection'), movieData, routie.routieDerectives);
+		}
+
+	}
 
 	app.init();
 

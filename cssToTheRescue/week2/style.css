@@ -1,0 +1,344 @@
+@font-face {
+  font-family: 'Ampersand';
+  src: local('Times New Roman');
+  unicode-range: U+26;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-family: Ampersand, lato, sans-serif;
+	box-sizing: border-box;
+}
+
+/*Credits to: Lea Verou*/
+/*http://lea.verou.me/css3patterns/#starry-night*/
+body {
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+img {
+	width: 100%;
+}
+
+body > header {
+		max-width: calc(100% - 2em);
+		margin: 1em auto;
+}
+
+
+header {
+	width: 100%;
+	background-color: #0B486B;
+	color: white;
+	text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  padding: 0.5em 0;
+  font-weight: 100;
+}
+
+header p {
+	margin: 1em 0 1em 0;
+}
+
+header img {
+	margin: 0 1em;
+	width: calc(100% - 2em);
+	max-width: 15em;
+	border-radius: 15%;
+}
+
+svg {
+	width: 1em;
+	height: 1em;
+	fill:white;
+
+}
+
+
+header ul {
+	box-shadow: 0px 0.5em 1.5em .5em rgba(0,0,0,0.4);
+	background-color: #3B8686;
+}
+
+li {
+	padding: 0.5em 0;
+	list-style-type: none;
+
+}
+
+a {
+	color: white;
+	font-weight: 100;
+	text-decoration: none;
+}
+
+main {
+	margin: 0 1em;
+}
+
+main article {
+	background-color: rgba(46,204,113,1);
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+article header {
+	padding: 1em 0;
+	background-color: transparent;
+	color: black;
+}
+
+article header h1 {
+	font-size: 1.5em
+}
+
+article header h2 {
+	text-align: center;
+}
+
+
+article header span {
+	font-size: 0.5em;
+	font-weight: 100;
+}
+
+article p {
+	margin: 0.6em 0em;
+	/*max-width: 20em;*/
+}
+
+article p:last-of-type, article figure:last-of-type {
+	padding-bottom: 1em;
+}
+
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-weight: 600;
+	margin: 0 0 0.5em 0;
+}
+
+input {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.8em;
+	height: 1.7em;
+	border: none;
+	background-color: rgba(198, 200, 210,1);
+}
+
+form label {
+	display: block;
+	margin: 0.5em 0;
+}
+
+button {
+	margin-top: 0.4em;
+	padding: 0.6em;
+	width: 100%;
+	background-color: rgba(52, 152, 219,1.0);
+	border: none;
+	color: white;
+	border-bottom: 0.6em solid rgba(41, 128, 185,1.0);
+}
+
+button:hover {
+	margin-top: 0.3em;
+	border-bottom: 0.3em solid rgba(41, 128, 185,1.0);
+}
+
+article figure img {
+	width: 100%;
+}
+
+figure svg {
+	fill: black;
+	position: relative;
+	margin-left: 50%;
+	top:0;
+}
+
+figcaption {
+	text-align: center;
+}
+
+
+
+footer {
+	width: calc(100% - 2em);
+	margin: 1em;
+	text-align: center;
+	background-color: rgba(39, 174, 96, .5);
+}
+
+footer  * {
+	background-color: transparent;
+}
+
+footer > * {
+	padding: 0.5em 0;
+}
+
+pre {
+	color: white;
+}
+
+
+@media (min-width: 30em) {
+
+	body {
+		margin-top: 1em;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: top;
+		justify-content: center;
+	}
+
+	body > header {
+		max-height: 25em;
+		margin: 0;
+		max-width: 12em;
+	}
+
+	main {
+		width: calc(100vw - 14em);
+		max-width: 30em;
+	}
+
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	footer > * {
+		width: calc(100% / 3);
+		height: 100%;
+		min-width: 10em;
+		max-width: 12em;
+	}
+
+}
+
+
+article:target {
+  animation: highlight 2s ease;  
+}
+
+@keyframes highlight {
+	0% { background-color: rgba(46,204,113,1); }
+	20% { background-color: white; }
+	100% { background-color: rgba(46,204,113,1) }
+}
+
+
+img[alt*=effect] {
+	margin: 0;
+	width: 100%;
+}
+
+.filter-effects {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/*CSS Intrinsic & Extrinsic Sizing*/
+figure[class*=effect] {
+	display: inline-block;
+	width: calc(100%/5);
+	width: min-content;
+	min-width: 5em;
+	margin: 0;
+	padding: 0.2em;
+}
+
+.effect-01 img {
+	-webkit-filter: brightness(1.2);
+			filter: brightness(1.2);
+}
+
+.effect-02 img {
+	-webkit-filter: sepia(1);
+			filter: sepia(1);
+}
+
+.effect-03 img {
+	-webkit-filter: contrast(4);
+			filter: contrast(4);
+}
+
+.effect-04 img {
+	-webkit-filter: invert(.8);
+			filter: invert(.8);
+}
+
+.effect-05 img {
+	-webkit-filter: grayscale(1);
+			filter: grayscale(1);
+}
+
+
+#pop {
+	background-color: rgba(22, 160, 133,1.0);
+	display: none;
+	box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
+	width: 18em;
+	padding: 1em 1.5em;
+	margin: 50vh auto 0;
+	transform: translateY(-50%);
+	box-sizing: border-box;
+	color: white;
+	position: fixed;
+	text-align: center;
+	z-index: 3;
+}
+
+#pop:target {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
