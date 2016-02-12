@@ -258,6 +258,10 @@ img[alt*=effect] {
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	-webkit-display: flex;
+	-webkit-flex-direction: row;
+	-webkit-justify-content: space-around;
+	-webkit-flex-wrap: wrap;
 }
 
 /*CSS Intrinsic & Extrinsic Sizing*/
