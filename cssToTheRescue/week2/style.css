@@ -124,7 +124,7 @@ article p {
 	/*max-width: 20em;*/
 }
 
-article p:last-of-type, article figure:last-of-type {
+article p:last-of-type, article > figure:last-of-type {
 	padding-bottom: 1em;
 }
 
@@ -311,10 +311,10 @@ img[alt*=effect] {
 /*CSS Intrinsic & Extrinsic Sizing*/
 figure[class*=effect] {
 	display: inline-block;
-	max-width: -webkit-min-content;
+/*	max-width: -webkit-min-content;
 	max-width: -moz-min-content;
-	max-width: min-content;
-	min-width: 5em;
+	max-width: min-content;*/
+	width: 5em;
 	margin: 0;
 	padding: 0.2em;
 }
