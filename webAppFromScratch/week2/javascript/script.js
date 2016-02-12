@@ -12,7 +12,9 @@
 			pageTitle: "Movie Finder",
 			Genre: "N/A",
 			Plot: "Plot"
-		};
+		},
+		searchedMovies = [];
+
 
 	// start the web app
     var app = {
@@ -44,8 +46,30 @@
 					sections.enablePage();
 					getMovie.searchEngine();
 				},
-				'moreInfo': function () {
-					Transparency.render(document.getElementById('moreInfo'), movieData);
+				'searchedMovies' : function () {
+					getMovie.getLocalStorage();
+
+					var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
+
+					var _above = _.where(searchedMovies, {Rated: "PG-13"});
+
+					Transparency.render(document.getElementById('searchedMovies'), _underscoreMovieData);
+					Transparency.render(document.getElementById('above'), _above);
+
+					sections.enablePage();
+				},
+				'info': function () {
+
+					var derectives = {
+				    	Poster: {
+				    		src: function (params) {
+				    			return this.Poster;
+				   			}
+				   		},
+				   	};
+
+					Transparency.render(document.getElementById('info'), movieData, derectives);
+					sections.enablePage();
 				},
 				'*': function () {
 					sections.enablePage();
@@ -116,7 +140,7 @@
 
 			var movieRequest = urlData.request(urlData.baseUrl, urlData.searchQuery, urlData.urlOptions);
 
-			movieRequest.then(
+			movieRequest.then( // promise
 			    // success handler
 			    function(data, xhr) {
 			    	movieData = data;
@@ -149,23 +173,28 @@
 		    		src: function (params) {
 		    			return this.Poster;
 		   			}
+		   		},
+		    	link: {
+		    		src: function (params) {
+		    			return "#info/" + this.imdbID;
+		   			}
 		   		}
 		   	};
 			Transparency.render(document.getElementById('dataSection'), movieData, derectives);
 		},
 		saveToLocalStorage : function () {
 
-			var _searchedMovies = [];
+			this.getLocalStorage();
+			searchedMovies.push(movieData);
+			localStorage.setItem("searchedMovies", JSON.stringify(searchedMovies));
+		},
+		getLocalStorage : function () {
 
 			if (localStorage.searchedMovies) {
-				_searchedMovies = JSON.parse(localStorage.searchedMovies);
-				console.log(_searchedMovies);
+				searchedMovies = JSON.parse(localStorage.searchedMovies);
+				console.log(searchedMovies);
 			};
 
-			_searchedMovies.push(movieData);
-
-			localStorage.setItem("searchedMovies", JSON.stringify(_searchedMovies));
-			// console.log(localStorage.searchedMovies);
 		}
 
 	}
