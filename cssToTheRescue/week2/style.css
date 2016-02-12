@@ -17,6 +17,8 @@
 body {
 	background-color:black;
 	background-image:
+	-webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), -webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-image:
 	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
 	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
 	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
@@ -203,10 +205,21 @@ pre {
 
 	body {
 		margin-top: 1em;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
-		align-items: top;
-		justify-content: center;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		-webkit-box-align: top;
+		-webkit-align-items: top;
+		    -ms-flex-align: top;
+		        align-items: top;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	body > header {
@@ -221,14 +234,25 @@ pre {
 	}
 
 	footer {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	footer > * {
-		width: calc(100% / 3);
+		width: 33.33333%;
 		height: 100%;
 		min-width: 10em;
 		max-width: 12em;
@@ -238,7 +262,14 @@ pre {
 
 
 article:target {
-  animation: highlight 2s ease;  
+  -webkit-animation: highlight 2s ease;
+          animation: highlight 2s ease;  
+}
+
+@-webkit-keyframes highlight {
+	0% { background-color: rgba(46,204,113,1); }
+	20% { background-color: white; }
+	100% { background-color: rgba(46,204,113,1) }
 }
 
 @keyframes highlight {
@@ -254,11 +285,22 @@ img[alt*=effect] {
 }
 
 .filter-effects {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	-webkit-display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-display: -webkit-box;
+	-webkit-display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-justify-content: space-around;
 	-webkit-flex-wrap: wrap;
@@ -267,7 +309,9 @@ img[alt*=effect] {
 /*CSS Intrinsic & Extrinsic Sizing*/
 figure[class*=effect] {
 	display: inline-block;
-	width: calc(100%/5);
+	width: 20%;
+	width: -webkit-min-content;
+	width: -moz-min-content;
 	width: min-content;
 	min-width: 5em;
 	margin: 0;
@@ -276,27 +320,37 @@ figure[class*=effect] {
 
 .effect-01 img {
 	-webkit-filter: brightness(1.2);
-			filter: brightness(1.2);
+			filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.2" /><feFuncG type="linear" slope="1.2" /><feFuncB type="linear" slope="1.2" /></feComponentTransfer></filter></svg>#filter');
+			-webkit-filter: brightness(1.2);
+			        filter: brightness(1.2);
 }
 
 .effect-02 img {
 	-webkit-filter: sepia(1);
-			filter: sepia(1);
+			filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.393 0.769 0.189 0 0 0.349 0.686 0.168 0 0 0.272 0.534 0.131 0 0 0 0 0 1 0" /></filter></svg>#filter');
+			-webkit-filter: sepia(1);
+			        filter: sepia(1);
 }
 
 .effect-03 img {
 	-webkit-filter: contrast(4);
-			filter: contrast(4);
+			filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="4" intercept="-1.5" /><feFuncG type="linear" slope="4" intercept="-1.5" /><feFuncB type="linear" slope="4" intercept="-1.5" /></feComponentTransfer></filter></svg>#filter');
+			-webkit-filter: contrast(4);
+			        filter: contrast(4);
 }
 
 .effect-04 img {
 	-webkit-filter: invert(.8);
-			filter: invert(.8);
+			filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.8 0.19999999999999996" /><feFuncG type="table" tableValues="0.8 0.19999999999999996" /><feFuncB type="table" tableValues="0.8 0.19999999999999996" /></feComponentTransfer></filter></svg>#filter');
+			-webkit-filter: invert(.8);
+			        filter: invert(.8);
 }
 
 .effect-05 img {
 	-webkit-filter: grayscale(1);
-			filter: grayscale(1);
+			filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+			-webkit-filter: grayscale(1);
+			        filter: grayscale(1);
 }
 
 
@@ -308,7 +362,9 @@ figure[class*=effect] {
 	padding: 1em 1.5em;
 	margin: 50vh 0;
 	left: calc(50% - 9em);
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	box-sizing: border-box;
 	color: white;
 	position: fixed;
