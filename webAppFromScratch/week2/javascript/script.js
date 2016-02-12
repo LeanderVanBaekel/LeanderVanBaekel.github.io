@@ -140,6 +140,8 @@
 
 			var movieRequest = urlData.request(urlData.baseUrl, urlData.searchQuery, urlData.urlOptions);
 
+			// https://github.com/Wasknijper/MWD-WebAppFromScratch/blob/gh-pages/week2-opdrachten/static/app.js
+			// with help from Maaike HeK
 			movieRequest.then( // promise
 			    // success handler
 			    function(data, xhr) {
