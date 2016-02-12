@@ -282,7 +282,6 @@ img[alt*=effect] {
 
 .filter-effects {
 	width: 100%;
-	-webkit-flex: 1 1 auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -301,6 +300,7 @@ img[alt*=effect] {
 	-webkit-display: -webkit-flex;
 	-webkit-flex-direction: row;
 	-webkit-justify-content: space-around;
+	-webkit-flex: 1 1 auto;
 }
 
 /*CSS Intrinsic & Extrinsic Sizing*/
