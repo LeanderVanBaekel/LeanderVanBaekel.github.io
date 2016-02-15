@@ -78,16 +78,9 @@ var pipo = new Clown('Pipo', 80);
 pipo.laugh()
 
 
+
 /*********************
  Aantekeningen week 2
- Web App From Scratch
-  Leander van Baekel
-*********************/
-
-
-
-/*********************
- Aantekeningen week 3
  Web App From Scratch
   Leander van Baekel
 *********************/
@@ -107,12 +100,43 @@ pipo.laugh()
 
 
 
+/*********************
+ Aantekeningen week 3
+ Web App From Scratch
+  Leander van Baekel
+*********************/
+
+
+// FUNCTIONAL PROGRAMMING
+// JUSTUS
+
+// HASKEL
+
+// Unit testen
+
+// functional maakt gebruik van recursie
+
+// functies maken zo min mogelijk gebruik van variabelen
+// geen states // alleen paresen of niet parsen
+// functies zo apstract mogelijk // functie om functies te schrijven
+// functies zo klein mogelijk houden // het liefst 1 functie
+
+// pure vs inpure functies
+
+// object = wereld na bootsen // functioneel = fabrieks lopendeband
+
+// ecma 6 template strings
+
+// Map / filter / reduce(fold)
+// map: een bewerking op alle dingen uit array toepassen
+// filter: bepaalde data selecteren
+// reduce: data tot 'string' verpakken om te gebruiken
+
+console.table ()
 
 
 
-
-
-
+// Singelton
 
 
 

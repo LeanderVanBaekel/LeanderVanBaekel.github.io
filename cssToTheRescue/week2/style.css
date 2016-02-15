@@ -363,9 +363,6 @@ figure[class*=effect] {
 	padding: 1em 1.5em;
 	margin: 50vh 0;
 	left: calc(50% - 9em);
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
 	box-sizing: border-box;
 	color: white;
 	position: fixed;
