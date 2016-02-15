@@ -237,10 +237,10 @@
 			var mc = new Hammer(_homePage);
 
 			// listen to events...
-			mc.on("panleft", function(ev) {
+			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "movieFinder";
 			});
-			mc.on("panright", function(ev) {
+			mc.on("swiperight", function(ev) {
 			    window.location.hash = "searchedMovies";
 			});
 		},
@@ -253,10 +253,10 @@
 			var mc = new Hammer(_movieFinder);
 
 			// listen to events...
-			mc.on("panleft", function(ev) {
+			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "searchedMovies";
 			});
-			mc.on("panright", function(ev) {
+			mc.on("swiperight", function(ev) {
 			    window.location.hash = "home";
 			});
 		},
@@ -269,10 +269,10 @@
 			var mc = new Hammer(_searchedMovies);
 
 			// listen to events...
-			mc.on("panleft", function(ev) {
+			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "home";
 			});
-			mc.on("panright", function(ev) {
+			mc.on("swiperight", function(ev) {
 			    window.location.hash = "movieFinder";
 			});
 		}

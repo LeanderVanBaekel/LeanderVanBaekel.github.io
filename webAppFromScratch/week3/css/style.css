@@ -107,7 +107,7 @@ img {
 	max-width: 20em;
 }
 
-
+/*Bron: http://www.w3schools.com/howto/howto_css_loader.asp*/
 .loader {
     border: 0.4em solid #f3f3f3; /* Light grey */
     border-top: 0.4em solid #3498db; /* Blue */
