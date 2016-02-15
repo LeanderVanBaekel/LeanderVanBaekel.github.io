@@ -9,7 +9,6 @@
 		movieData = {
 			Title: "Title",
 			Year: "Year",
-			pageTitle: "Movie Finder",
 			Genre: "N/A",
 			Plot: "Plot"
 		},
@@ -38,11 +37,13 @@
 				'home': function () {
 					var data = { welcome: "hallooo!"};
 					self.templateRender('home', data);
+		    		mobileGesture.home();
 					sections.enablePage();
 				},
 				'movieFinder': function () {
 					self.templateRender('movieFinder', movieData);
 					sections.enablePage();
+					mobileGesture.movieFinder();
 					getMovie.searchEngine();
 				},
 				'searchedMovies' : function () {
@@ -53,6 +54,8 @@
 
 					self.templateRender('searchedMovies', _underscoreMovieData);
 					self.templateRender('above', _above);
+
+					mobileGesture.searchedMovies();
 
 					sections.enablePage();
 				},
@@ -146,17 +149,17 @@
 			var movieRequest = urlData.request(urlData.baseUrl, urlData.searchQuery, urlData.urlOptions);
 
 			// https://github.com/Wasknijper/MWD-WebAppFromScratch/blob/gh-pages/week2-opdrachten/static/app.js
-			// with help from Maaike HeK
+			// with help from Maaike Hek
 			movieRequest.then( // promise
 			    // success handler
 			    function(data, xhr) {
 			    	loader.toggleOn();
-			    	setTimeout(function(){ 
+			    	setTimeout(function(){ // Timout om Spinner te showen!!!
 				    	movieData = data;
-				    	console.log(movieData);
+				    	// console.log(movieData);
 				    	self.enterData();
 				    	self.saveToLocalStorage();
-			    	}, 3000);
+			    	}, 1000);
 			    },
 			    // error handler (optional)
 			    function(data, xhr) {
@@ -205,7 +208,7 @@
 
 			if (localStorage.searchedMovies) {
 				searchedMovies = JSON.parse(localStorage.searchedMovies);
-				console.log(searchedMovies);
+				// console.table(searchedMovies);
 			};
 
 		}
@@ -224,18 +227,57 @@
 		}
 	};
 
+	var mobileGesture = {
+		home: function () {
 
-	var myElement = document.getElementById('home');
+			var _homePage = document.getElementById('home');
 
-	// create a simple instance
-	// by default, it only adds horizontal recognizers
-	var mc = new Hammer(myElement);
+			// create a simple instance
+			// by default, it only adds horizontal recognizers
+			var mc = new Hammer(_homePage);
 
-	// listen to events...
-	mc.on("panleft", function(ev) {
-	    window.location.hash = "movieFinder";
-	    console.log("test");
-	});
+			// listen to events...
+			mc.on("panleft", function(ev) {
+			    window.location.hash = "movieFinder";
+			});
+			mc.on("panright", function(ev) {
+			    window.location.hash = "_searchedMovies";
+			});
+		},
+		movieFinder: function () {
+
+			var _movieFinder = document.getElementById('movieFinder');
+
+			// create a simple instance
+			// by default, it only adds horizontal recognizers
+			var mc = new Hammer(_movieFinder);
+
+			// listen to events...
+			mc.on("panleft", function(ev) {
+			    window.location.hash = "searchedMovies";
+			});
+			mc.on("panright", function(ev) {
+			    window.location.hash = "home";
+			});
+		},
+		searchedMovies: function () {
+
+			var _searchedMovies = document.getElementById('searchedMovies');
+
+			// create a simple instance
+			// by default, it only adds horizontal recognizers
+			var mc = new Hammer(_searchedMovies);
+
+			// listen to events...
+			mc.on("panleft", function(ev) {
+			    window.location.hash = "home";
+			});
+			mc.on("panright", function(ev) {
+			    window.location.hash = "movieFinder";
+			});
+		}
+	};
+
 
 	app.init();
 
