@@ -241,7 +241,7 @@
 			    window.location.hash = "movieFinder";
 			});
 			mc.on("panright", function(ev) {
-			    window.location.hash = "_searchedMovies";
+			    window.location.hash = "searchedMovies";
 			});
 		},
 		movieFinder: function () {
