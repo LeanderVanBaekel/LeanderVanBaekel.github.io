@@ -367,8 +367,8 @@ figcaption {
 	opacity: 0;
 	width: 0;
 	visibility: hidden;
-	   -moz-transition:all 1s ease;
-	-webkit-transition:all 1s ease;
+/*	   -moz-transition:all 1s ease;
+	-webkit-transition:all 1s ease;*/
 		 	transition:all 1s ease;
 	z-index: 0;
 	left: calc(0% - 9em);
@@ -393,6 +393,18 @@ figcaption {
 
 }
 /*Bron: http://codepen.io/andrewfaulkner/pen/tcvJz*/
+@-webkit-keyframes blur {
+	0%, 100%  { 
+		-webkit-filter: blur(0);
+		-moz-filter: blur(0);
+		filter: blur(0);
+	}
+	50% { 
+		-webkit-filter: blur(0.2em);
+		-moz-filter: blur(0.2em);
+		filter: blur(0.2em);
+	}
+}
 @keyframes blur {
 	0%, 100%  { 
 		-webkit-filter: blur(0);
