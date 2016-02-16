@@ -24,21 +24,10 @@ body {
 	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
 	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
 	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-	/*background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
-	/*transition:background-position 2s ease;*/
 	-webkit-animation: bg-animation 15s infinite cubic-bezier(0.430, 0.730, 0.755, 0.140);
         	animation: bg-animation 15s infinite cubic-bezier(0.430, 0.730, 0.755, 0.140); 
 }
-/*
-@-webkit-keyframes bg-animation {
-	0%, 100%  { 
-		background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-	}
-	50% { 
-		background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-	}
-}
-*/
+
 @keyframes bg-animation {
 	0%, 100%  { 
 		background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
@@ -165,7 +154,7 @@ legend {
 	margin: 0 0 0.5em 0;
 }
 
-input {
+input[type="password"] {
 	display: block;
 	width: 100%;
 	margin-bottom: 0.8em;
@@ -189,8 +178,8 @@ button {
 	border-bottom: 0.6em solid rgba(41, 128, 185,1.0);
 }
 
-button:hover {
-	margin-top: 0.3em;
+button:active {
+	margin-top: 0.1em;
 	border-bottom: 0.3em solid rgba(41, 128, 185,1.0);
 }
 
@@ -336,9 +325,6 @@ img[alt*=effect] {
 /*CSS Intrinsic & Extrinsic Sizing*/
 figure[class*=effect] {
 	display: inline-block;
-/*	max-width: -webkit-min-content;
-	max-width: -moz-min-content;
-	max-width: min-content;*/
 	width: 5em;
 	margin: 0;
 	padding: 0.2em;
@@ -386,11 +372,9 @@ figcaption {
 
 
 #pop {
-	/*background-color: rgba(122, 60, 133,0.0);*/
 	position: fixed;
 	text-align: center;
 	padding: 1em 1.5em;
-	margin: calc(50vh - 4em) 0;
 	opacity: 0;
 	width: 0;
 	height: 0;
@@ -398,17 +382,17 @@ figcaption {
 	visibility: hidden;
 	transition:all 0.5s ease;
 	z-index: 0;
-	left: calc(0% - 9em);
+	margin: calc(50vh - 40vh) 0;
+	left: calc(50vw - 40vw);
 }
 
 #pop:target {
 	background-color: rgba(22, 160, 133,1.0);
 	visibility: visible;
 	opacity: 1;
-	width: 18em;
-	height: 4em;
+	width: 80vw;
+	height: 80vh;
 	box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
-	left: calc(50vw - 9em);
 	color: white;
 	z-index: 3;
 }
@@ -454,24 +438,60 @@ a:not(:focus), input:not(:focus) {
 	box-shadow: none;
 	transition:all 0.5s ease;
 }
-:focus {
+
+:focus, a:hover {
 	outline: none;
-	box-shadow: inset 0em 0em 0.2em 0.2em rgba(0,0,0,0.2);
+	box-shadow: 0em 0em 0.2em 0.2em rgba(255,255,255,0.8);
+}
+
+a:focus, a:hover {
+	padding: 0.5em;
 }
 
 
 
+input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+input[type="checkbox"] + label::before {
+    content: '\a0';
+    color: white;
+    display: inline-block;
+    vertical-align: .2em;
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+    border-radius: .2em;
+    background: rgba(198, 200, 210,1) ;
+    text-indent: .25em;
+    line-height: .75;
+}
+input[type="checkbox"]:checked + label::before {
+    content: '\2713';
+    background: rgba(52, 152, 219,1.0);
+}
+input[type="checkbox"]:focus + label::before {
+	box-shadow: 0em 0em 0.2em 0.2em rgba(255,255,255,0.8);
+}
 
+input[type="checkbox"]:disabled + label::before {
+    background: gray;
+    box-shadow: none;
+    color: #555;
+    cursor: not-allowed;
+}
 
-
-
-
-
-
-
-
-
-
-
+body {
+	width: 100vw;
+	height: 100vh;
+}
+.bg {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(images/1.png),url(images/2.png), url(images/3.png); 
+	padding:0; margin:0; height: 100%; 
+	animation: none;
+}
 
 
