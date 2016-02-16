@@ -363,9 +363,10 @@ figcaption {
 	position: fixed;
 	text-align: center;
 	padding: 1em 1.5em;
-	margin: 50vh 0;
+	margin: calc(50vh - 4em) 0;
 	opacity: 0;
 	width: 0;
+	height: 0;
 	top: 0;
 	visibility: hidden;
 	transition:all 1s ease;
@@ -378,6 +379,7 @@ figcaption {
 	visibility: visible;
 	opacity: 1;
 	width: 18em;
+	height: 4em;
 	box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
 	left: calc(50vw - 9em);
 	color: white;
