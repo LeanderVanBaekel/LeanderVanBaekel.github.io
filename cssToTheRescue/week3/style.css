@@ -387,14 +387,24 @@ figcaption {
 
 .loader {
 	text-align: center;
+	-webkit-animation: blur 3s infinite;
+	-moz-animation: blur 3s infinite;
 	animation: blur 3s infinite;
+
 }
 /*Bron: http://codepen.io/andrewfaulkner/pen/tcvJz*/
 @keyframes blur {
-	0%, 100%  { filter: blur(0); }
-	50% { filter: blur(0.2em); }
+	0%, 100%  { 
+		-webkit-filter: blur(0);
+		-moz-filter: blur(0);
+		filter: blur(0);
+	}
+	50% { 
+		-webkit-filter: blur(0.2em);
+		-moz-filter: blur(0.2em);
+		filter: blur(0.2em);
+	}
 }
-
 
 li a[href="#"] {
 	cursor: no-drop;
