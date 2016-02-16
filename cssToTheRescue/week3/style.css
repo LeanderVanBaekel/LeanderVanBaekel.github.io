@@ -24,7 +24,34 @@ body {
 	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
 	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
 	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	/*background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
+	/*transition:background-position 2s ease;*/
+	-webkit-animation: bg-animation 15s infinite cubic-bezier(0.430, 0.730, 0.755, 0.140);
+        	animation: bg-animation 15s infinite cubic-bezier(0.430, 0.730, 0.755, 0.140); 
+}
+/*
+@-webkit-keyframes bg-animation {
+	0%, 100%  { 
+		background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	}
+	50% { 
+		background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	}
+}
+*/
+@keyframes bg-animation {
+	0%, 100%  { 
+		background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	}
+	25% { 
+		background-position: 0 0, 45px 50px, 120px 280px, 75px 110px;
+	}
+	50% { 
+		background-position: 0 0, 50px 60px, 120px 270px, 72px 95px;
+	}
+	75% { 
+		background-position: 0 0, 45px 70px, 130px 260px, 65px 110px;
+	}
 }
 
 img {
@@ -280,7 +307,7 @@ img[alt*=effect] {
 	width: 100%;
 }
 
-.filter-effects {
+.filter-effects, #find-friends {
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -369,7 +396,7 @@ figcaption {
 	height: 0;
 	top: 0;
 	visibility: hidden;
-	transition:all 1s ease;
+	transition:all 0.5s ease;
 	z-index: 0;
 	left: calc(0% - 9em);
 }
@@ -423,9 +450,14 @@ li a[href="#"] {
 	cursor: no-drop;
 }
 
-
-
-
+a:not(:focus), input:not(:focus) {
+	box-shadow: none;
+	transition:all 0.5s ease;
+}
+:focus {
+	outline: none;
+	box-shadow: inset 0em 0em 0.2em 0.2em rgba(0,0,0,0.2);
+}
 
 
 
