@@ -366,10 +366,9 @@ figcaption {
 	margin: 50vh 0;
 	opacity: 0;
 	width: 0;
+	top: 0;
 	visibility: hidden;
-/*	   -moz-transition:all 1s ease;
-	-webkit-transition:all 1s ease;*/
-		 	transition:all 1s ease;
+	transition:all 1s ease;
 	z-index: 0;
 	left: calc(0% - 9em);
 }
@@ -380,7 +379,7 @@ figcaption {
 	opacity: 1;
 	width: 18em;
 	box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
-	left: calc(50% - 9em);
+	left: calc(50vw - 9em);
 	color: white;
 	z-index: 3;
 }
