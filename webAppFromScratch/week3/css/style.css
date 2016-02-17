@@ -73,6 +73,11 @@ h1 {
 }
 
 a {
+	color: rgba(50,50,50,1.0);
+	text-decoration: none;
+	display: block;
+}
+nav a {
 	color: rgba(236, 240, 241,1.0);
 	text-decoration: none;
 }

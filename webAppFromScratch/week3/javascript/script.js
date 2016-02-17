@@ -47,19 +47,39 @@
 				'searchedMovies' : function () {
 					getMovie.getLocalStorage();
 
-					var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
-					_underscoreMovieData
+					//var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
+					
 					//var _above = _.where(searchedMovies, {Rated: "PG-13"});
 
-					self.templateRender('searchedMovies', _underscoreMovieData);
+					var directives = {
+				    	Title: {
+				    		href: function (params) {
+				    			console.log(this);
+				    			return "#info/" + this.Title;
+				   			}
+				   		},
+				   	};
+
+					self.templateRender('movieList', searchedMovies, directives);
 					//self.templateRender('above', _above);
 
 					mobileGesture.searchedMovies();
 
 					sections.enablePage();
 				},
-				'info': function () {
 
+				'info/?:name': function (name) {
+
+					mobileGesture.info();
+
+					getMovie.getLocalStorage();
+
+					for (var i = 0; i < searchedMovies.length; i++) {
+					 	if (searchedMovies[i].Title == name) {
+					 		movieData = searchedMovies[i];
+					 	};
+					};
+					
 					var directives = {
 				    	Poster: {
 				    		src: function (params) {
@@ -105,6 +125,7 @@
 		enablePage: function () {
 			var _pageId;
 			thisPage = window.location.hash;
+			thisPage = thisPage.split('/')[0];
 
 			if (thisPage) {
 				_pageId = document.querySelector(thisPage);
@@ -201,6 +222,7 @@
 		saveToLocalStorage : function () {
 
 			this.getLocalStorage();
+			// check if movie is already in the localstorage
 			if (!_.find(searchedMovies, movieData)) {
 				searchedMovies.push(movieData);
 				localStorage.setItem("searchedMovies", JSON.stringify(searchedMovies));
@@ -233,6 +255,7 @@
 		_homePage: document.getElementById('home'),
 		_movieFinder: document.getElementById('movieFinder'),
 		_searchedMovies: document.getElementById('searchedMovies'),
+		_info: document.getElementById('info'),
 
 		home: function () {
 
@@ -263,11 +286,11 @@
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "RTL 1s 1";
+			    mobileGesture._searchedMovies.style.animation = "RTL 0.5s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "LTR 1s 1";
+			    mobileGesture._homePage.style.animation = "LTR 0.5s 1";
 			});
 		},
 		searchedMovies: function () {
@@ -281,11 +304,29 @@
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "RTL 1s 1";
+			    mobileGesture._homePage.style.animation = "RTL 0.5s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "LTR 1s 1";
+			    mobileGesture._movieFinder.style.animation = "LTR 0.5s 1";
+			});
+		},
+		info: function () {
+
+			//mobileGesture._searchedMovies = document.getElementById('searchedMovies');
+
+			// create a simple instance
+			// by default, it only adds horizontal recognizers
+			var mc = new Hammer(mobileGesture._info);
+
+			// listen to events...
+			mc.on("swipeleft", function(ev) {
+			    window.location.hash = "searchedMovies";
+			    mobileGesture._searchedMovies.style.animation = "RTL 0.5s 1";
+			});
+			mc.on("swiperight", function(ev) {
+			    window.location.hash = "movieFinder";
+			    mobileGesture._movieFinder.style.animation = "LTR 0.5s 1";
 			});
 		}
 	};
