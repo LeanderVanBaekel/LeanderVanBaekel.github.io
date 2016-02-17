@@ -268,11 +268,11 @@
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "RTL 1s 1";
+			    mobileGesture._movieFinder.style.animation = "RTL 0.1s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "LTR 1s 1";
+			    mobileGesture._searchedMovies.style.animation = "LTR 0.1s 1";
 			});
 		},
 		movieFinder: function () {
@@ -286,11 +286,11 @@
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "RTL 0.5s 1";
+			    mobileGesture._searchedMovies.style.animation = "RTL 0.1s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "LTR 0.5s 1";
+			    mobileGesture._homePage.style.animation = "LTR 0.1s 1";
 			});
 		},
 		searchedMovies: function () {
@@ -304,11 +304,11 @@
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "RTL 0.5s 1";
+			    mobileGesture._homePage.style.animation = "RTL 0.1s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "LTR 0.5s 1";
+			    mobileGesture._movieFinder.style.animation = "LTR 0.1s 1";
 			});
 		},
 		info: function () {
@@ -322,11 +322,11 @@
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "RTL 0.5s 1";
+			    mobileGesture._searchedMovies.style.animation = "RTL 0.1s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "LTR 0.5s 1";
+			    mobileGesture._movieFinder.style.animation = "LTR 0.1s 1";
 			});
 		}
 	};
