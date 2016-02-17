@@ -226,62 +226,52 @@
 	};
 
 	var mobileGesture = {
-		_homePage: document.getElementById('home'),
-		_movieFinder: document.getElementById('movieFinder'),
-		_searchedMovies: document.getElementById('searchedMovies'),
-
 		home: function () {
 
-			//mobileGesture._homePage = document.getElementById('home');
+			var _homePage = document.getElementById('home');
 
 			// create a simple instance
 			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(mobileGesture._homePage);
+			var mc = new Hammer(_homePage);
 
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "RTL 1s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "LTR 1s 1";
 			});
 		},
 		movieFinder: function () {
 
-			//mobileGesture._movieFinder = document.getElementById('movieFinder');
+			var _movieFinder = document.getElementById('movieFinder');
 
 			// create a simple instance
 			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(mobileGesture._movieFinder);
+			var mc = new Hammer(_movieFinder);
 
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "RTL 1s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "LTR 1s 1";
 			});
 		},
 		searchedMovies: function () {
 
-			//mobileGesture._searchedMovies = document.getElementById('searchedMovies');
+			var _searchedMovies = document.getElementById('searchedMovies');
 
 			// create a simple instance
 			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(mobileGesture._searchedMovies);
+			var mc = new Hammer(_searchedMovies);
 
 			// listen to events...
 			mc.on("swipeleft", function(ev) {
 			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "RTL 1s 1";
 			});
 			mc.on("swiperight", function(ev) {
 			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "LTR 1s 1";
 			});
 		}
 	};
