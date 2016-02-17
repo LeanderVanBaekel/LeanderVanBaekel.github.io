@@ -48,7 +48,6 @@
 					getMovie.getLocalStorage();
 
 					var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
-					_underscoreMovieData
 					//var _above = _.where(searchedMovies, {Rated: "PG-13"});
 
 					self.templateRender('searchedMovies', _underscoreMovieData);
@@ -137,7 +136,7 @@
 
 			var self = this;
 			var urlData = {
-				baseUrl : 'https://www.omdbapi.com/?t=',
+				baseUrl : '//www.omdbapi.com/?t=',
 				searchQuery: searchQuery.split(' ').join('+'), // http://stackoverflow.com/questions/441018/replacing-spaces-with-underscores-in-javascript
 				urlOptions: '&y=&plot=full&r=json',
 				request : function(base, searchQuery, urlOptions){
@@ -200,10 +199,8 @@
 		saveToLocalStorage : function () {
 
 			this.getLocalStorage();
-			if (!_.find(searchedMovies, movieData)) {
-				searchedMovies.push(movieData);
-				localStorage.setItem("searchedMovies", JSON.stringify(searchedMovies));
-			}
+			searchedMovies.push(movieData);
+			localStorage.setItem("searchedMovies", JSON.stringify(searchedMovies));
 		},
 		getLocalStorage : function () {
 
