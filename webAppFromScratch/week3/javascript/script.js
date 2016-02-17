@@ -12,7 +12,10 @@
 			Genre: "N/A",
 			Plot: "Plot"
 		},
-		searchedMovies = [];
+		searchedMovies = [],
+		mc,
+		RTL = ["swipeleft", "RTL 0.3s 1"],
+		LTR = ["swiperight", "LTR 0.3s 1"];
 
 
 	// start the web app
@@ -33,8 +36,17 @@
 			var self = this;
 			routie ({
 				'home': function () {
-					var data = { welcome: "hallooo!"};
-					self.templateRender('home', data);
+					getMovie.getLocalStorage();
+					
+					var directives = {
+				    	Poster: {
+				    		src: function (params) {
+				    			return this.Poster;
+				   			}
+				   		},
+				   	};
+
+					self.templateRender('posters', searchedMovies, directives)
 		    		mobileGesture.home();
 					sections.enablePage();
 				},
@@ -47,14 +59,13 @@
 				'searchedMovies' : function () {
 					getMovie.getLocalStorage();
 
+					// use underscore
 					//var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
-					
 					//var _above = _.where(searchedMovies, {Rated: "PG-13"});
 
 					var directives = {
 				    	Title: {
 				    		href: function (params) {
-				    			console.log(this);
 				    			return "#info/" + this.Title;
 				   			}
 				   		},
@@ -174,16 +185,17 @@
 			    // success handler
 			    function(data, xhr) {
 			    	loader.toggleOn();
-			    	setTimeout(function(){ // Timout om Spinner te showen!!!
+			    	//setTimeout(function(){ // Timout om Spinner te showen!!!
 				    	movieData = data;
 				    	self.enterData();
 				    	self.saveToLocalStorage();
-			    	}, 1000);
+			    //	}, 1000);
 			    },
 			    // error handler (optional)
 			    function(data, xhr) {
-			      console.error(data, xhr.status);
-			      loader.toggleOff();
+			        console.error(data, xhr.status);
+			        loader.toggleOff();
+			        // TO DO add ERROR USER
 			    }
 			);
 		},
@@ -212,11 +224,12 @@
 		   			}
 		   		},
 		    	link: {
-		    		src: function (params) {
-		    			return "#info/" + this.imdbID;
+		    		href: function (params) {
+		    			return "#info/" + this.Title;
 		   			}
 		   		}
 		   	};
+
 			routes.templateRender('dataSection', movieData, directives);
 		},
 		saveToLocalStorage : function () {
@@ -234,11 +247,8 @@
 				searchedMovies = JSON.parse(localStorage.searchedMovies);
 				// console.table(searchedMovies);
 			};
-
 		}
-
 	}
-
 
 	var loader = {
 		toggleOn: function () {
@@ -259,75 +269,47 @@
 
 		home: function () {
 
-			//mobileGesture._homePage = document.getElementById('home');
+			this.createMc(this._homePage)
 
-			// create a simple instance
-			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(mobileGesture._homePage);
+			this.mcAddGesture(RTL, "movieFinder", this._movieFinder);
+			this.mcAddGesture(LTR, "searchedMovies", this._searchedMovies);
 
-			// listen to events...
-			mc.on("swipeleft", function(ev) {
-			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "RTL 0.1s 1";
-			});
-			mc.on("swiperight", function(ev) {
-			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "LTR 0.1s 1";
+		},
+
+		createMc: function (element) {
+			return mc = new Hammer(element);
+		},
+		mcAddGesture: function (direction, hash, element) {
+			var direction = direction,
+				hash = hash,
+				element = element;
+			mc.on(direction[0], function(ev) {
+				//console.log(hash);
+			    window.location.hash = hash;
+			    element.style.animation = direction[1];
 			});
 		},
+
 		movieFinder: function () {
 
-			//mobileGesture._movieFinder = document.getElementById('movieFinder');
+			this.createMc(this._movieFinder)
 
-			// create a simple instance
-			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(mobileGesture._movieFinder);
-
-			// listen to events...
-			mc.on("swipeleft", function(ev) {
-			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "RTL 0.1s 1";
-			});
-			mc.on("swiperight", function(ev) {
-			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "LTR 0.1s 1";
-			});
+			this.mcAddGesture(RTL, "searchedMovies", this._searchedMovies);
+			this.mcAddGesture(LTR, "home", this._homePage);
 		},
 		searchedMovies: function () {
 
-			//mobileGesture._searchedMovies = document.getElementById('searchedMovies');
+			this.createMc(this._searchedMovies)
 
-			// create a simple instance
-			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(mobileGesture._searchedMovies);
-
-			// listen to events...
-			mc.on("swipeleft", function(ev) {
-			    window.location.hash = "home";
-			    mobileGesture._homePage.style.animation = "RTL 0.1s 1";
-			});
-			mc.on("swiperight", function(ev) {
-			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "LTR 0.1s 1";
-			});
+			this.mcAddGesture(RTL, "home", this._homePage);
+			this.mcAddGesture(LTR, "movieFinder", this._movieFinder);
 		},
 		info: function () {
 
-			//mobileGesture._searchedMovies = document.getElementById('searchedMovies');
+			this.createMc(this._info)
 
-			// create a simple instance
-			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(mobileGesture._info);
-
-			// listen to events...
-			mc.on("swipeleft", function(ev) {
-			    window.location.hash = "searchedMovies";
-			    mobileGesture._searchedMovies.style.animation = "RTL 0.1s 1";
-			});
-			mc.on("swiperight", function(ev) {
-			    window.location.hash = "movieFinder";
-			    mobileGesture._movieFinder.style.animation = "LTR 0.1s 1";
-			});
+			this.mcAddGesture(RTL, "searchedMovies", this._searchedMovies);
+			this.mcAddGesture(LTR, "movieFinder", this._movieFinder);
 		}
 	};
 
