@@ -147,6 +147,7 @@
 
 			var movieRequest = urlData.request(urlData.baseUrl, urlData.searchQuery, urlData.urlOptions);
 
+			var _link;
 			// https://github.com/Wasknijper/MWD-WebAppFromScratch/blob/gh-pages/week2-opdrachten/static/app.js
 			// with help from Maaike Hek
 			movieRequest.then( // promise
@@ -154,6 +155,10 @@
 			    function(data, xhr) {
 			    	loader.toggleOn();
 			    	setTimeout(function(){ // Timout om Spinner te showen!!!
+			    		_link = data.Poster.split('http');
+			    		_link = "https" + _link[1];
+			    		console.log(_link);
+			    		data.Poster = _link;
 				    	movieData = data;
 				    	// console.log(movieData);
 				    	self.enterData();
@@ -182,6 +187,8 @@
 		enterData: function () {
 
 	    	loader.toggleOff();
+
+	    	console.log(movieData);
 
 			var directives = {
 		    	Poster: {
