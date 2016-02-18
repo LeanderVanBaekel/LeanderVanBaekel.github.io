@@ -23,6 +23,7 @@ svg {
 
 ul {
 	list-style-type: none;
+	padding-left: 0.5em;
 }
 
 nav li {
