@@ -10,23 +10,18 @@
 	font-size: 1em;
 	font-family: Ampersand, 'lato', 'helvetica', 'sans-serif';
 	box-sizing: border-box;
+	text-align: center;
 }
 
 /*Credits to: Lea Verou*/
 /*http://lea.verou.me/css3patterns/#starry-night*/
 body {
-	background-color:black;
-	background-image:
-	-webkit-radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), -webkit-radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px), -webkit-radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), -webkit-radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-	background-image:
-	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
-	-webkit-animation: bg-animation 5s infinite ;
-        	animation: bg-animation 5s infinite ; 
+	width: 100vw;
+	height: 100vh;
+	background-color:rgba(0,0,0,0.1);
 }
+
+
 
 @keyframes bg-animation {
 	0%, 100%  { 
@@ -45,110 +40,99 @@ body {
 
 img {
 	width: 100%;
+	max-width: 15em;
 }
 
-body > header {
-	max-width: calc(100% - 2em);
-	margin: 1em auto;
-	background-color: #0B486B;
-	color: white;
-	text-align: center;
-}
-
-
-main header {
-	width: 100%;
-	background-color: #0B486B;
-	color: white;
-	text-align: center;
-}
-
-header h1 {
+h1 {
   font-size: 2em;
   padding: 0.5em 0;
   font-weight: 100;
 }
 
-header p {
-	margin: 1em 0 1em 0;
+a {
+	color: black;
+	font-weight: 100;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding: 0.5em;
 }
 
-header img {
-	margin: 0 1em;
-	width: calc(100% - 2em);
-	max-width: 15em;
-	border-radius: 15%;
+li a[href="#"] {
+	cursor: no-drop;
 }
+
+ul {
+	list-style-type: none;
+}
+
+main a {
+	display: inline-block;
+	width: auto;
+	padding: 0;
+}
+
+a:not(:focus), input:not(:focus) {
+	box-shadow: none;
+	transition:all 0.5s ease;
+}
+
+:focus, a:hover {
+	outline: none;
+	box-shadow: 0em 0em 0.2em 0.2em rgba(52, 152, 219,0.5);
+}
+
+a:focus, a:hover {
+	padding: 1em;
+}
+
+
 
 svg {
 	width: 1em;
 	height: 1em;
-	fill:white;
-
 }
 
-
-header ul {
-	box-shadow: 0px 0.5em 1.5em .5em rgba(0,0,0,0.4);
-	background-color: #3B8686;
+body > header {
+	margin: 1em 0 0 0;
+	border-bottom: 0.4em solid rgba(52, 152, 219,1.0);
+	background-color: white;
+	/*box-shadow: 0 0 0.5em 0.5em rgba(0,0,0,0.2);*/
 }
 
-li {
-	padding: 0.5em 0;
-	list-style-type: none;
-
-}
-
-a {
-	color: white;
-	font-weight: 100;
-	text-decoration: none;
-}
-li a { 
-	display: block;
-}
-
-main {
-	margin: 0 1em;
-}
-
-main article, .loader {
-	background-color: rgba(46,204,113,1);
-	padding: 1em;
-	margin-bottom: 1em;
-}
-
-article header {
-	padding: 1em 0;
-	background-color: transparent;
-	color: black;
-}
-
-article header h1 {
-	font-size: 1.5em
-}
-
-article header h2 {
-	text-align: center;
-}
-
-
-article header span {
-	font-size: 0.5em;
-	font-weight: 100;
+article {
+	margin: 1em 0 0 0;
+	padding: 0em 0.5em 2em 0.5em;
+	background-color: white;
+	border-bottom: 0.4em solid rgba(52, 152, 219,1.0);
 }
 
 article p {
-	margin: 0.6em 0em;
+	text-align: left;
+	max-width: 30em;
+	margin: 0 auto;
 }
 
-article p:last-of-type, article > figure:last-of-type {
-	padding-bottom: 1em;
+button {
+	margin: 0.8em auto;
+	padding: 0.6em;
+	width: 100%;
+	max-width: 20em;
+	background-color: rgba(52, 152, 219,1.0);
+	border: none;
+	color: white;
+	border-bottom: 0.6em solid rgba(41, 128, 185,1.0);
 }
 
+button:active,
+button:hover {
+	margin-top: 1.1em;
+	border-bottom: 0.3em solid rgba(41, 128, 185,1.0);
+}
 
 fieldset {
 	border: none;
+	text-align: center;
 }
 
 legend {
@@ -158,124 +142,97 @@ legend {
 
 input[type="password"] {
 	display: block;
+	text-align: left;
 	width: 100%;
-	margin-bottom: 0.8em;
+	max-width: 20em;
+	margin:0 auto 0.8em auto;
 	padding-left: 0.4em;
-	height: 1.7em;
-	border: none;
-	background-color: rgba(198, 200, 210,1);
 }
 
-form label {
+label {
+	margin: 0 auto;
+	text-align: left;
+	max-width: 20em;
 	display: block;
-	margin: 0.5em 0;
 }
 
-button {
-	margin-top: 0.4em;
-	padding: 0.6em;
-	width: 100%;
-	background-color: rgba(52, 152, 219,1.0);
-	border: none;
-	color: white;
-	border-bottom: 0.6em solid rgba(41, 128, 185,1.0);
+
+h2 {
+	padding: 1em 0 1em 0;
+	font-size: 1.3em;
+	font-weight: 100;
 }
 
-button:active,
-button:hover {
-	margin-top: 0.7em;
-	border-bottom: 0.3em solid rgba(41, 128, 185,1.0);
+
+input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    margin-bottom: 2em;
+}
+input[type="checkbox"] + label::before {
+    content: '\a0';
+    color: white;
+    display: inline-block;
+    vertical-align: 0.2em;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    border-radius: 0.2em;
+    background: rgba(230, 230, 230,1) ;
+    text-indent: 0.25em;
+    line-height: 0.75;
+}
+input[type="checkbox"]:checked + label::before {
+    content: '\2713';
+    background: rgba(52, 152, 219,1.0);
+}
+input[type="checkbox"]:focus + label::before {
+	box-shadow: 0em 0em 0.2em 0.2em rgba(230, 230, 230,1);
 }
 
-article figure img {
-	width: 100%;
-}
-
-figure svg {
-	fill: black;
-	position: relative;
-	margin-left: 50%;
-	top:0;
-}
-
-figcaption {
-	text-align: center;
+input[type="checkbox"]:disabled + label::before {
+    background: gray;
+    box-shadow: none;
+    color: #555;
+    cursor: not-allowed;
 }
 
 footer {
-	width: calc(100% - 2em);
-	margin: 1em;
-	text-align: center;
-	background-color: rgba(39, 174, 96, .5);
-}
-
-footer  * {
-	background-color: transparent;
-}
-
-footer > * {
-	padding: 0.5em 0;
-}
-
-pre {
-	color: white;
+	width: 100%;
+	margin-top: 2em;
+	background-color: rgba(52, 152, 219,0.5);
 }
 
 
 @media (min-width: 30em) {
 
-	body {
-		margin-top: 1em;
-		display: -webkit-flex;
+	body, footer {
 		display: flex;
 		flex-direction: row;
-		-webkit-flex-direction:row;
-		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		    -ms-flex-pack: center;
-		  justify-content: center;	
-	}
-
-	body > header {
-		max-height: 25em;
-		margin: 0;
-		max-width: 12em;
+		justify-content: center;
+		align-items: flex-start;
 	}
 
 	main {
-		width: calc(100vw - 14em);
+		width: 65%;
 		max-width: 30em;
 	}
 
+	body > header {
+		width: calc(35% - 2em);
+		max-width: 15em;
+		margin-right: 2em;
+	}
+
 	footer {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-flex-wrap: wrap;
-		    -ms-flex-wrap: wrap;
-		        flex-wrap: wrap;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		align-items: center;
 	}
 
 	footer > * {
-		width: 33.33333%;
-		height: 100%;
 		min-width: 10em;
-		max-width: 12em;
 	}
-
 }
-
 
 article:target {
   -webkit-animation: highlight 2s ease;
@@ -283,57 +240,94 @@ article:target {
 }
 
 @-webkit-keyframes highlight {
-	0% { background-color: rgba(46,204,113,1); }
-	20% { background-color: white; }
-	100% { background-color: rgba(46,204,113,1) }
+	0% { background-color: white; }
+	20% { background-color: rgba(0,0,0,0.0); }
+	100% { background-color: white}
 }
 
 @keyframes highlight {
-	0% { background-color: rgba(46,204,113,1); }
-	20% { background-color: white; }
-	100% { background-color: rgba(46,204,113,1) }
+	0% { background-color: white; }
+	20% { background-color: rgba(0,0,0,0.0); }
+	100% { background-color: white }
 }
 
 
-img[alt*=effect] {
-	margin: 0;
-	width: 100%;
+
+
+
+
+#pop {
+	position: fixed;
+	text-align: center;
+	padding: 1em 1.5em;
+	opacity: 0;
+	width: 40vw;
+	height: 40vh;
+	top: 0;
+	visibility: hidden;
+	transition:all 0.5s ease;
+	z-index: 0;
+	margin: calc(50vh - 20vh) 0;
+	left: calc(50vw - 20vw);
 }
 
-.filter-effects, #find-friends {
-	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-justify-content: space-around;
-	    -ms-flex-pack: distribute;
-	        justify-content: space-around;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-display: -webkit-box;
-	-webkit-display: -webkit-flex;
-	-webkit-flex-direction: row;
-	-webkit-justify-content: space-around;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+#pop:target {
+	background-color: rgba(200, 200, 200,1.0);
+	visibility: visible;
+	opacity: 1;
+	box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
+	color: white;
+	z-index: 3;
 }
+
+#pop > * {
+	position: relative;
+	top: calc(50% - 3em);
+}
+
+
+.loader {
+	margin: 1em 0 0 0;
+	padding: 2em 0.2em;
+	border-bottom: 0.4em solid rgba(52, 152, 219,1.0);
+	text-align: center;
+	background-color:white;
+}
+
+.loader p {
+	-webkit-animation: blur 3s infinite;
+	-moz-animation: blur 3s infinite;
+	animation: blur 3s infinite;
+}
+
+/*Bron: http://codepen.io/andrewfaulkner/pen/tcvJz*/
+
+@keyframes blur {
+	0%, 100%  { 
+		-webkit-filter: blur(0);
+		-moz-filter: blur(0);
+		filter: blur(0);
+	}
+	50% { 
+		-webkit-filter: blur(0.1em);
+		-moz-filter: blur(0.1em);
+		filter: blur(0.1em);
+	}
+}
+
+
+
 
 figure[class*=effect] {
 	display: inline-block;
+	vertical-align: top;
 	width: 5em;
 	margin: 0;
 	padding: 0.2em;
 }
 
 figcaption {
-	width: max-content;
+	width: fit-content;
 	margin: 0 auto;
 }
 
@@ -373,127 +367,63 @@ figcaption {
 }
 
 
-#pop {
-	position: fixed;
-	text-align: center;
-	padding: 1em 1.5em;
-	opacity: 0;
-	width: 0;
-	height: 0;
-	top: 0;
-	visibility: hidden;
-	transition:all 0.5s ease;
-	z-index: 0;
-	margin: calc(50vh - 40vh) 0;
-	left: calc(50vw - 40vw);
+#photo-albums img {
+	max-width: 100%;
+	position: relative;
 }
 
-#pop:target {
-	background-color: rgba(22, 160, 133,1.0);
-	visibility: visible;
-	opacity: 1;
-	width: 80vw;
-	height: 80vh;
-	box-shadow: 0 0 0 50vmax rgba(0,0,0,.8);
-	color: white;
-	z-index: 3;
+
+#photo-albums img {
+	max-width: 100%;
+	position: relative;
 }
 
-.loader {
-	text-align: center;
-	-webkit-animation: blur 3s infinite;
-	-moz-animation: blur 3s infinite;
-	animation: blur 3s infinite;
-
-}
-/*Bron: http://codepen.io/andrewfaulkner/pen/tcvJz*/
-@-webkit-keyframes blur {
-	0%, 100%  { 
-		-webkit-filter: blur(0);
-		-moz-filter: blur(0);
-		filter: blur(0);
-	}
-	50% { 
-		-webkit-filter: blur(0.2em);
-		-moz-filter: blur(0.2em);
-		filter: blur(0.2em);
-	}
-}
-@keyframes blur {
-	0%, 100%  { 
-		-webkit-filter: blur(0);
-		-moz-filter: blur(0);
-		filter: blur(0);
-	}
-	50% { 
-		-webkit-filter: blur(0.2em);
-		-moz-filter: blur(0.2em);
-		filter: blur(0.2em);
-	}
+#photo-albums figure {
+	position: relative;
 }
 
-li a[href="#"] {
-	cursor: no-drop;
-}
+#photo-albums svg {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	top: calc(50% - 3em);
+	left: calc(50% - 2em);
 
-a:not(:focus), input:not(:focus) {
-	box-shadow: none;
-	transition:all 0.5s ease;
-}
-
-:focus, a:hover {
-	outline: none;
-	box-shadow: 0em 0em 0.2em 0.2em rgba(255,255,255,0.8);
-}
-
-a:focus, a:hover {
-	padding: 0.5em;
+	background-color: rgba(255,255,255,0.6);
+	box-sizing: content-box;
+	border: 1em solid rgba(255,255,255,0);
+	border-radius: 25%;
 }
 
 
 
-input[type="checkbox"] {
-    position: absolute;
-    clip: rect(0,0,0,0);
-}
-input[type="checkbox"] + label::before {
-    content: '\a0';
-    color: white;
-    display: inline-block;
-    vertical-align: .2em;
-    width: 1em;
-    height: 1em;
-    margin-right: .5em;
-    border-radius: .2em;
-    background: rgba(198, 200, 210,1) ;
-    text-indent: .25em;
-    line-height: .75;
-}
-input[type="checkbox"]:checked + label::before {
-    content: '\2713';
-    background: rgba(52, 152, 219,1.0);
-}
-input[type="checkbox"]:focus + label::before {
-	box-shadow: 0em 0em 0.2em 0.2em rgba(255,255,255,0.8);
-}
-
-input[type="checkbox"]:disabled + label::before {
-    background: gray;
-    box-shadow: none;
-    color: #555;
-    cursor: not-allowed;
-}
-
-body {
-	width: 100vw;
-	height: 100vh;
-}
 .bg {
 	width: 100vw;
 	height: 100vh;
 	background-image: url(images/1.png),url(images/2.png), url(images/3.png); 
-	padding:0; margin:0; height: 100%; 
+	background-size: 1%, 3%, 7%;
+	padding:0; 
+	margin:0; 
+	height: 100%; 
 	animation: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
