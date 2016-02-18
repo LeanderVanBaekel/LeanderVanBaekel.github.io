@@ -12,10 +12,7 @@
 			Genre: "N/A",
 			Plot: "Plot"
 		},
-		searchedMovies = [],
-		mc,
-		RTL = ["swipeleft", "RTL 0.3s 1"],
-		LTR = ["swiperight", "LTR 0.3s 1"];
+		searchedMovies = [];
 
 
 	// start the web app
@@ -36,7 +33,8 @@
 			var self = this;
 			routie ({
 				'home': function () {
-					getMovie.getLocalStorage();
+					searchedMovies = localstorage.get();
+					searchedMovies = searchedMovies.reverse()
 					
 					var directives = {
 				    	Poster: {
@@ -57,7 +55,7 @@
 					getMovie.searchEngine();
 				},
 				'searchedMovies' : function () {
-					getMovie.getLocalStorage();
+					searchedMovies = localstorage.get();
 
 					// use underscore
 					//var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
@@ -83,7 +81,7 @@
 
 					mobileGesture.info();
 
-					getMovie.getLocalStorage();
+					searchedMovies = localstorage.get();
 
 					for (var i = 0; i < searchedMovies.length; i++) {
 					 	if (searchedMovies[i].Title == name) {
@@ -107,7 +105,7 @@
 			});
 		},
 		templateRender: function (id, data, directives) {
-			var el = document.getElementById(id);
+			var el = util.getId(id);
 			if (directives) {
 				Transparency.render(el, data, directives);
 			} else {
@@ -139,7 +137,7 @@
 			thisPage = thisPage.split('/')[0];
 
 			if (thisPage) {
-				_pageId = document.querySelector(thisPage);
+				_pageId = util.getSelector(thisPage);
 				_pageId.classList.remove(hidden);
 			}
 			
@@ -155,7 +153,7 @@
 
 			var _pageId;
 			if (oldPage && oldPage !== thisPage) {
-				_pageId = document.querySelector(oldPage);
+				_pageId = util.getSelector(oldPage);
 			}
 
 			if (_pageId) {
@@ -181,18 +179,24 @@
 
 			// https://github.com/Wasknijper/MWD-WebAppFromScratch/blob/gh-pages/week2-opdrachten/static/app.js
 			// with help from Maaike Hek
-			movieRequest.then( // promise
+				loader.toggleOn();
+				movieRequest.then( // promise
+							    
 			    // success handler
-			    function(data, xhr) {
-			    	loader.toggleOn();
-			    	//setTimeout(function(){ // Timout om Spinner te showen!!!
-				    	movieData = data;
-				    	self.enterData();
-				    	self.saveToLocalStorage();
-			    //	}, 1000);
+				function(data, xhr) {
+					if (data.Response !== "False") {
+			    		movieData = data;
+			    		self.enterData();
+			    		localstorage.save(movieData, searchedMovies);
+			    	} else {
+			    		alert("We hebben helaas geen film kunnen vinden.");
+			        	console.error(data, xhr.status);
+			        	loader.toggleOff();
+			    	}
 			    },
 			    // error handler (optional)
 			    function(data, xhr) {
+			    	alert("Onze excuses! Er is iets mis gegaan bij het laden van de pagina. Controleer de internetverbinding en herlaad de pagina.");
 			        console.error(data, xhr.status);
 			        loader.toggleOff();
 			        // TO DO add ERROR USER
@@ -200,8 +204,8 @@
 			);
 		},
 		searchEngine: function () {
-			var _searchForm = document.querySelector('form');
-			var _searchField = document.getElementById('searchField');
+			var _searchForm = util.getSelector('form');
+			var _searchField = util.getId('searchField');
 			var _searchQuery = "";
 			var self = this;
 			_searchForm.onsubmit = function (event) {
@@ -215,7 +219,6 @@
 
 	    	loader.toggleOff();
 
-	    	console.log(movieData);
 
 			var directives = {
 		    	Poster: {
@@ -231,77 +234,9 @@
 		   	};
 
 			routes.templateRender('dataSection', movieData, directives);
-		},
-		saveToLocalStorage : function () {
-
-			this.getLocalStorage();
-			// check if movie is already in the localstorage
-			if (!_.find(searchedMovies, movieData)) {
-				searchedMovies.push(movieData);
-				localStorage.setItem("searchedMovies", JSON.stringify(searchedMovies));
-			}
-		},
-		getLocalStorage : function () {
-
-			if (localStorage.searchedMovies) {
-				searchedMovies = JSON.parse(localStorage.searchedMovies);
-				// console.table(searchedMovies);
-			};
 		}
+
 	}
-
-	var mobileGesture = {
-		_homePage: document.getElementById('home'),
-		_movieFinder: document.getElementById('movieFinder'),
-		_searchedMovies: document.getElementById('searchedMovies'),
-		_info: document.getElementById('info'),
-
-		home: function () {
-
-			this.createMc(this._homePage)
-
-			this.mcAddGesture(RTL, "movieFinder", this._movieFinder);
-			this.mcAddGesture(LTR, "searchedMovies", this._searchedMovies);
-
-		},
-
-		createMc: function (element) {
-			return mc = new Hammer(element);
-		},
-		mcAddGesture: function (direction, hash, element) {
-			var direction = direction,
-				hash = hash,
-				element = element;
-			mc.on(direction[0], function(ev) {
-				//console.log(hash);
-			    window.location.hash = hash;
-			    element.style.animation = direction[1];
-			});
-		},
-
-		movieFinder: function () {
-
-			this.createMc(this._movieFinder)
-
-			this.mcAddGesture(RTL, "searchedMovies", this._searchedMovies);
-			this.mcAddGesture(LTR, "home", this._homePage);
-		},
-		searchedMovies: function () {
-
-			this.createMc(this._searchedMovies)
-
-			this.mcAddGesture(RTL, "home", this._homePage);
-			this.mcAddGesture(LTR, "movieFinder", this._movieFinder);
-		},
-		info: function () {
-
-			this.createMc(this._info)
-
-			this.mcAddGesture(RTL, "searchedMovies", this._searchedMovies);
-			this.mcAddGesture(LTR, "movieFinder", this._movieFinder);
-		}
-	};
-
 
 	launch.init();
 

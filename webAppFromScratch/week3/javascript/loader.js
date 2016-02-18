@@ -1,24 +1,24 @@
 var loader = (function(){
-	var loaderOb = {
+	var loaderObj = {
 
 		loaderElement: function () {
-			return document.getElementById('loadXhr');
+			return util.getId('loadXhr');
 		},
 
 		dataElement: function () {
-			return document.getElementById('dataSection');
+			return util.getId('dataSection');
 		},
 
 		toggleOn: function () {
-			loaderOb.loaderElement().classList.remove('hidden');
-			loaderOb.dataElement().classList.add('hidden');
+			loaderObj.loaderElement().classList.remove('hidden');
+			loaderObj.dataElement().classList.add('hidden');
 		},
 
 		toggleOff: function () {
-			loaderOb.loaderElement().classList.add('hidden');
-			loaderOb.dataElement().classList.remove('hidden');
+			loaderObj.loaderElement().classList.add('hidden');
+			loaderObj.dataElement().classList.remove('hidden');
 		}
 	};
 
-	return {toggleOn: loaderOb.toggleOn, toggleOff: loaderOb.toggleOff};
+	return {toggleOn: loaderObj.toggleOn, toggleOff: loaderObj.toggleOff};
 }());
