@@ -3,7 +3,7 @@ var localstorage = (function () {
 	
 	var localstorageObj = {
 
-		save : function (movieData, searchedMovies) {
+		save : function (movieData) {
 
 			var searchedMovies = localstorageObj.get();
 			// check if movie is already in the localstorage
@@ -17,6 +17,8 @@ var localstorage = (function () {
 		get : function () {
 			if (localStorage.searchedMovies) {
 				return searchedMovies = JSON.parse(localStorage.searchedMovies);
+			} else {
+				return searchedMovies = [];
 			};
 		}
 	};

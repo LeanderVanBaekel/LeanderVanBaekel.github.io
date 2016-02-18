@@ -189,7 +189,8 @@
 					if (data.Response !== "False") {
 			    		movieData = data;
 			    		self.enterData();
-			    		localstorage.save(movieData, searchedMovies);
+			    		console.log(movieData);
+			    		localstorage.save(movieData);
 			    	} else {
 			    		alert("We hebben helaas geen film kunnen vinden.");
 			        	console.error(data, xhr.status);
