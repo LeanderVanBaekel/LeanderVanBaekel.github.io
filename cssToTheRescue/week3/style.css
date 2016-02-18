@@ -183,7 +183,7 @@ button:active {
 	border-bottom: 0.3em solid rgba(41, 128, 185,1.0);
 }
 
-@media (handheld) {
+@media only screen {
 
 	button:hover {
 		margin-top: 0.7em;
