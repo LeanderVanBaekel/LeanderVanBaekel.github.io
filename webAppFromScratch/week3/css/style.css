@@ -41,9 +41,11 @@ section {
 @keyframes RTL {
 	100%  { 
 		transform: translateX(0);
+		width: 0;
 	}
 	0% { 
 		transform: translateX(100vw);
+		width: 100vw;
 	}
 }
 
