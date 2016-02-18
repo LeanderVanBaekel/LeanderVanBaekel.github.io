@@ -16,14 +16,14 @@
 
 
 	// start the web app
-    var app = {
+    var launch = {
     	init: function () {
     		sections.hideAll();
     		routes.routie();
     	}
     };
 
-	app.init();
+	launch.init();
 
 })();
 

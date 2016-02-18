@@ -25,10 +25,13 @@ var getMovie = (function(){
 				    	movieData = data;
 				    	self.enterData();
 				    	self.saveToLocalStorage();
+				    	console.log("measfm");
 			    //	}, 1000);
 			    },
 			    // error handler (optional)
 			    function(data, xhr) {
+			    	alert("Onze excuses! Er is iets mis gegaan bij het laden van de pagina. Controleer de internetverbinding en herlaad de pagina.");
+			        console.log("test");
 			        console.error(data, xhr.status);
 			        loader.toggleOff();
 			        // TO DO add ERROR USER
