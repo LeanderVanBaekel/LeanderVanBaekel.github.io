@@ -12,7 +12,10 @@
 			Genre: "N/A",
 			Plot: "Plot"
 		},
-		searchedMovies = [];
+		searchedMovies = [],
+		mc,
+		RTL = ["swipeleft", "RTL 0.3s 1"],
+		LTR = ["swiperight", "LTR 0.3s 1"];
 
 
 	// start the web app
@@ -33,8 +36,17 @@
 			var self = this;
 			routie ({
 				'home': function () {
-					var data = { welcome: "hallooo!"};
-					self.templateRender('home', data);
+					getMovie.getLocalStorage();
+					
+					var directives = {
+				    	Poster: {
+				    		src: function (params) {
+				    			return this.Poster;
+				   			}
+				   		},
+				   	};
+
+					self.templateRender('posters', searchedMovies, directives)
 		    		mobileGesture.home();
 					sections.enablePage();
 				},
@@ -47,18 +59,38 @@
 				'searchedMovies' : function () {
 					getMovie.getLocalStorage();
 
-					var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
-					var _above = _.where(searchedMovies, {Rated: "PG-13"});
+					// use underscore
+					//var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
+					//var _above = _.where(searchedMovies, {Rated: "PG-13"});
 
-					self.templateRender('searchedMovies', _underscoreMovieData);
-					self.templateRender('above', _above);
+					var directives = {
+				    	Title: {
+				    		href: function (params) {
+				    			return "#info/" + this.Title;
+				   			}
+				   		},
+				   	};
+
+					self.templateRender('movieList', searchedMovies, directives);
+					//self.templateRender('above', _above);
 
 					mobileGesture.searchedMovies();
 
 					sections.enablePage();
 				},
-				'info': function () {
 
+				'info/?:name': function (name) {
+
+					mobileGesture.info();
+
+					getMovie.getLocalStorage();
+
+					for (var i = 0; i < searchedMovies.length; i++) {
+					 	if (searchedMovies[i].Title == name) {
+					 		movieData = searchedMovies[i];
+					 	};
+					};
+					
 					var directives = {
 				    	Poster: {
 				    		src: function (params) {
@@ -104,6 +136,7 @@
 		enablePage: function () {
 			var _pageId;
 			thisPage = window.location.hash;
+			thisPage = thisPage.split('/')[0];
 
 			if (thisPage) {
 				_pageId = document.querySelector(thisPage);
@@ -136,7 +169,7 @@
 
 			var self = this;
 			var urlData = {
-				baseUrl : '//www.omdbapi.com/?t=',
+				baseUrl : 'https://www.omdbapi.com/?t=',
 				searchQuery: searchQuery.split(' ').join('+'), // http://stackoverflow.com/questions/441018/replacing-spaces-with-underscores-in-javascript
 				urlOptions: '&y=&plot=full&r=json',
 				request : function(base, searchQuery, urlOptions){
@@ -152,17 +185,17 @@
 			    // success handler
 			    function(data, xhr) {
 			    	loader.toggleOn();
-			    	setTimeout(function(){ // Timout om Spinner te showen!!!
+			    	//setTimeout(function(){ // Timout om Spinner te showen!!!
 				    	movieData = data;
-				    	// console.log(movieData);
 				    	self.enterData();
 				    	self.saveToLocalStorage();
-			    	}, 1000);
+			    //	}, 1000);
 			    },
 			    // error handler (optional)
 			    function(data, xhr) {
-			      console.error(data, xhr.status);
-			      loader.toggleOff();
+			        console.error(data, xhr.status);
+			        loader.toggleOff();
+			        // TO DO add ERROR USER
 			    }
 			);
 		},
@@ -182,6 +215,8 @@
 
 	    	loader.toggleOff();
 
+	    	console.log(movieData);
+
 			var directives = {
 		    	Poster: {
 		    		src: function (params) {
@@ -189,18 +224,22 @@
 		   			}
 		   		},
 		    	link: {
-		    		src: function (params) {
-		    			return "#info/" + this.imdbID;
+		    		href: function (params) {
+		    			return "#info/" + this.Title;
 		   			}
 		   		}
 		   	};
+
 			routes.templateRender('dataSection', movieData, directives);
 		},
 		saveToLocalStorage : function () {
 
 			this.getLocalStorage();
-			searchedMovies.push(movieData);
-			localStorage.setItem("searchedMovies", JSON.stringify(searchedMovies));
+			// check if movie is already in the localstorage
+			if (!_.find(searchedMovies, movieData)) {
+				searchedMovies.push(movieData);
+				localStorage.setItem("searchedMovies", JSON.stringify(searchedMovies));
+			}
 		},
 		getLocalStorage : function () {
 
@@ -208,11 +247,8 @@
 				searchedMovies = JSON.parse(localStorage.searchedMovies);
 				// console.table(searchedMovies);
 			};
-
 		}
-
 	}
-
 
 	var loader = {
 		toggleOn: function () {
@@ -226,53 +262,54 @@
 	};
 
 	var mobileGesture = {
+		_homePage: document.getElementById('home'),
+		_movieFinder: document.getElementById('movieFinder'),
+		_searchedMovies: document.getElementById('searchedMovies'),
+		_info: document.getElementById('info'),
+
 		home: function () {
 
-			var _homePage = document.getElementById('home');
+			this.createMc(this._homePage)
 
-			// create a simple instance
-			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(_homePage);
+			this.mcAddGesture(RTL, "movieFinder", this._movieFinder);
+			this.mcAddGesture(LTR, "searchedMovies", this._searchedMovies);
 
-			// listen to events...
-			mc.on("swipeleft", function(ev) {
-			    window.location.hash = "movieFinder";
-			});
-			mc.on("swiperight", function(ev) {
-			    window.location.hash = "searchedMovies";
+		},
+
+		createMc: function (element) {
+			return mc = new Hammer(element);
+		},
+		mcAddGesture: function (direction, hash, element) {
+			var direction = direction,
+				hash = hash,
+				element = element;
+			mc.on(direction[0], function(ev) {
+				//console.log(hash);
+			    window.location.hash = hash;
+			    element.style.animation = direction[1];
 			});
 		},
+
 		movieFinder: function () {
 
-			var _movieFinder = document.getElementById('movieFinder');
+			this.createMc(this._movieFinder)
 
-			// create a simple instance
-			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(_movieFinder);
-
-			// listen to events...
-			mc.on("swipeleft", function(ev) {
-			    window.location.hash = "searchedMovies";
-			});
-			mc.on("swiperight", function(ev) {
-			    window.location.hash = "home";
-			});
+			this.mcAddGesture(RTL, "searchedMovies", this._searchedMovies);
+			this.mcAddGesture(LTR, "home", this._homePage);
 		},
 		searchedMovies: function () {
 
-			var _searchedMovies = document.getElementById('searchedMovies');
+			this.createMc(this._searchedMovies)
 
-			// create a simple instance
-			// by default, it only adds horizontal recognizers
-			var mc = new Hammer(_searchedMovies);
+			this.mcAddGesture(RTL, "home", this._homePage);
+			this.mcAddGesture(LTR, "movieFinder", this._movieFinder);
+		},
+		info: function () {
 
-			// listen to events...
-			mc.on("swipeleft", function(ev) {
-			    window.location.hash = "home";
-			});
-			mc.on("swiperight", function(ev) {
-			    window.location.hash = "movieFinder";
-			});
+			this.createMc(this._info)
+
+			this.mcAddGesture(RTL, "searchedMovies", this._searchedMovies);
+			this.mcAddGesture(LTR, "movieFinder", this._movieFinder);
 		}
 	};
 
