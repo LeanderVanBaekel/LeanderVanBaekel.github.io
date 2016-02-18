@@ -58,7 +58,9 @@
 				},
 				'searchedMovies' : function () {
 					searchedMovies = localstorage.get();
-
+					if (searchedMovies) {
+						searchedMovies = searchedMovies.reverse()
+					}
 					// use underscore
 					//var _underscoreMovieData = _.groupBy(searchedMovies, 'Type');
 					//var _above = _.where(searchedMovies, {Rated: "PG-13"});
