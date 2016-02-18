@@ -5,8 +5,8 @@ var mobileGesture = (function () {
 		_movieFinder: util.getId('movieFinder'),
 		_searchedMovies: util.getId('searchedMovies'),
 		_info: util.getId('info'),
-		RTL: ["swipeleft", "RTL 0.3s 1"],
-		LTR: ["swiperight", "LTR 0.3s 1"],
+		RTL: ["swipeleft", "RTL 01.3s 1"],
+		LTR: ["swiperight", "LTR 01.3s 1"],
 		mc: "",
 
 

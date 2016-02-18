@@ -32,30 +32,29 @@ section {
 	min-height: calc(100vh - 3.5em); 
 	margin: 0 auto;
 	text-align: center;
-
 }
-
-/*section:not(:target) {
-}*/
 
 @keyframes RTL {
 	100%  { 
-		transform: translateX(0);
-		width: 0;
+		transform: rotateY(0) ;
+		transform-origin: 100%;
 	}
 	0% { 
-		transform: translateX(100vw);
-		width: 100vw;
+		transform: rotateY(90deg);
+		transform-origin: 100%;
 	}
 }
 
 @keyframes LTR {
 	100%  { 
-		transform: translateX(0);
+		transform: rotateY(0) ;
+		transform-origin: 00%;
 	}
 	0% { 
-		transform: translateX(-100vw);
+		transform: rotateY(90deg);
+		transform-origin: 0%;
 	}
+}
 }
 
 
