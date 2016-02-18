@@ -34,8 +34,10 @@
 			routie ({
 				'home': function () {
 					searchedMovies = localstorage.get();
-					searchedMovies = searchedMovies.reverse()
-					
+					if (searchedMovies) {
+						searchedMovies = searchedMovies.reverse()
+					}
+
 					var directives = {
 				    	Poster: {
 				    		src: function (params) {
