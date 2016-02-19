@@ -58,7 +58,12 @@ var mobileGesture = (function () {
 		}
 	};
 
-	return {home: gestureObj.home, movieFinder: gestureObj.movieFinder, searchedMovies: gestureObj.searchedMovies, info: gestureObj.info};
+	return {
+		home: gestureObj.home, 
+		movieFinder: gestureObj.movieFinder, 
+		searchedMovies: gestureObj.searchedMovies, 
+		info: gestureObj.info
+	};
 
 }());
 

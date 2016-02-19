@@ -6,6 +6,7 @@ var getMovie = (function () {
 			var _searchField = util.getId('searchField');
 			var _searchQuery = "";
 			var self = getMovieObj;
+			
 			_searchForm.onsubmit = function (event) { // listens to the onsubmit function of the form
 				event.preventDefault(); // dont let it do its usual thing bit instead: 
 
@@ -56,24 +57,13 @@ var getMovie = (function () {
 		enterData: function (movieData, routes) {
 
 	    	loader.toggleOff(); // disable loader
-	    	console.table(movieData);
-			var directives = {
-		    	Poster: {
-		    		src: function (params) {
-		    			return this.Poster;
-		   			}
-		   		},
-		    	link: {
-		    		href: function (params) {
-		    			return "#info/" + this.Title;
-		   			}
-		   		}
-		   	};
-			routes.templateRender('dataSection', movieData, directives); // add data to the DOM
+			templates.render('dataSection', movieData, true); // add data to the DOM
 		}
 
 	}
 
-	return {searchEngine: getMovieObj.searchEngine};
+	return {
+		searchEngine: getMovieObj.searchEngine
+	};
 
 }());

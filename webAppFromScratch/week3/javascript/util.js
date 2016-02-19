@@ -9,7 +9,10 @@ var util = (function () {
 		}
 	};
 
-	return {getId: utilObj.getId, getSelector: utilObj.getSelector};
+	return {
+		getId: utilObj.getId, 
+		getSelector: utilObj.getSelector
+	};
 
 }());
 

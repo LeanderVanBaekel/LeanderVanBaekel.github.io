@@ -8,31 +8,14 @@ var routes = (function () {
 			routie ({
 				'home': function () {
 					self.searchedMovies = localstorage.get(); // get movies that are stored in the localstorage
-
-					if (self.searchedMovies) { // checks if they exist
-						self.searchedMovies = _.sortBy(searchedMovies, 'Title'); // use Underscore to sort by alphabetical order
-						self.searchedMovies = _.filter(self.searchedMovies, function(movie){ return movie.Poster !== "N/A" }); // use underscore to filter out objects with no img
-					}
-
-					var directives = { // A Transparancy function to add atributes to al list of data
-				    	Poster: {
-				    		src: function (params) {
-				    			return this.Poster;
-				   			}
-				   		},
-				  		link: {
-				    		href: function (params) {
-				    			return "#info/" + this.Title;
-				   			}
-				   		}
-				   	};
-
-					self.templateRender('posters', self.searchedMovies, directives); // Rendering the data for the page with Transparancy
+					self.searchedMovies = sortData.filterImg(self.searchedMovies);
+					self.searchedMovies = sortData.alphabetical(self.searchedMovies);
+					templates.render('posters', self.searchedMovies, true); // Rendering the data for the page with Transparancy
 		    		mobileGesture.home(); // Adding mobile gestures to the homepage
 					sections.enablePage(); // Showing the section to the user
 				},
 				'movieFinder': function () {
-					self.templateRender('movieFinder', movieData); // Rendering the data for the page with Transparancy
+					templates.render('movieFinder', movieData); // Rendering the data for the page with Transparancy
 					mobileGesture.movieFinder(); // Adding mobile gestures to the page
 					sections.enablePage(); // Showing the page to the user
 					getMovie.searchEngine(routesObj); // invoke the listner for the search form
@@ -43,56 +26,24 @@ var routes = (function () {
 						self.searchedMovies = self.searchedMovies.reverse() // reverse the movies so te will be displayed in chronological order
 					}
 
-					var directives = { // A Transparancy function to add atributes to al list of data
-				    	Title: {
-				    		href: function (params) {
-				    			return "#info/" + this.Title;
-				   			}
-				   		}
-				   	};
-
-					self.templateRender('movieList', self.searchedMovies, directives); // Render the page data with Transparanchy
-					//self.templateRender('above', _above);
-
+					templates.render('movieList', self.searchedMovies, true); // Render the page data with Transparanchy
 					mobileGesture.searchedMovies(); // Adding mobile gestures with Hammer
-
 					sections.enablePage(); // Showing page to the user
 				},
 
 				'info/?:name': function (name) {
-
-					self.searchedMovies = localstorage.get(); // Get data form localstorage
-
-					for (var i = 0; i < self.searchedMovies.length; i++) { // looping through the data to find the movie matching the title
-					 	if (self.searchedMovies[i].Title == name) {
-					 		movieData = self.searchedMovies[i];
-					 	};
-					};
-					
-					var directives = {
-				    	Poster: {
-				    		src: function (params) {
-				    			return this.Poster;
-				   			}
-				   		},
-				   	};
-				   	self.templateRender('info', movieData, directives);
+					movieData = sortData.getSpecificMovie(name);
+				   	templates.render('info', movieData, true);
 					mobileGesture.info();
 					sections.enablePage();
 				}
 			});
-		},
-		templateRender: function (id, data, directives) { // Function to render the Routie data
-			var el = util.getId(id);
-			if (directives) {
-				Transparency.render(el, data, directives);
-			} else {
-				Transparency.render(el, data);
-			}
 		}
 	};
 
-	return {routie: routesObj.routie};
+	return {
+		routie: routesObj.routie
+	};
 
 }());
 

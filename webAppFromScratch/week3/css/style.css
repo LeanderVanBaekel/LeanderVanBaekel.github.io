@@ -153,9 +153,10 @@ img {
 }
 
 #dataSection article {
-	margin: 1em;
+	margin: 1em auto;
 	xmargin-bottom: 1em;
 	max-width: 20em;
+
 }
 
 /*Bron: http://www.w3schools.com/howto/howto_css_loader.asp*/

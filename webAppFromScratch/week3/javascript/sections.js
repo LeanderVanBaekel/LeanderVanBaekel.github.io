@@ -53,7 +53,11 @@ var sections = (function () {
 		}
 	};
 
-	return {hideAll: sectionsObj.hideAll, enablePage: sectionsObj.enablePage, disablePage: sectionsObj.disablePage};
+	return {
+		hideAll: sectionsObj.hideAll, 
+		enablePage: sectionsObj.enablePage, 
+		disablePage: sectionsObj.disablePage
+	};
 
 }());
 

@@ -17,5 +17,8 @@ var loader = (function(){
 		}
 	};
 
-	return {toggleOn: loaderObj.toggleOn, toggleOff: loaderObj.toggleOff};
+	return {
+		toggleOn: loaderObj.toggleOn,
+		toggleOff: loaderObj.toggleOff
+	};
 }());

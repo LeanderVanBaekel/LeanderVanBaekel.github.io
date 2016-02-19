@@ -1,10 +1,10 @@
 var localstorage = (function () {
 
+	// var searchedMovies = [];
 	
 	var localstorageObj = {
 
 		save : function (movieData) {
-
 			var searchedMovies = localstorageObj.get(); // get data from localstorage
 			
 			if (!_.find(searchedMovies, movieData)) { // check if movie is already in the localstorage
@@ -21,9 +21,13 @@ var localstorage = (function () {
 				return searchedMovies = []; // return an empty array
 			};
 		}
+
 	};
 
-	return {save: localstorageObj.save, get: localstorageObj.get};
+	return {
+		save: localstorageObj.save, 
+		get: localstorageObj.get
+	};
 
 }());
 
