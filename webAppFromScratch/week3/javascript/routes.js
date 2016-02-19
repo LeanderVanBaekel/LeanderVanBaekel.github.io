@@ -26,7 +26,7 @@ var routes = (function () {
 				   			}
 				   		}
 				   	};
-
+					//misschien templates in ander bestand zetten?
 					self.templateRender('posters', self.searchedMovies, directives); // Rendering the data for the page with Transparancy
 		    		mobileGesture.home(); // Adding mobile gestures to the homepage
 					sections.enablePage(); // Showing the section to the user
