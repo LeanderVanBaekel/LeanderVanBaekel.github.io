@@ -99,6 +99,7 @@ a {
 nav a {
 	color: rgba(236, 240, 241,1.0);
 	text-decoration: none;
+	font-size: 0.85em;
 }
 
 a:hover {
