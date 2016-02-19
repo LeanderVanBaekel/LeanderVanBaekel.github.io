@@ -1,7 +1,7 @@
 var routes = (function () {
     // routie routes
 	var routesObj = {
-		searchedMovies: [],
+		searchedMovies: [], 
 		
 		routie: function (movieData) {
 			var self = routesObj; // Takes care of the 'this' function when the routes go in to the Routie script
@@ -95,7 +95,10 @@ var routes = (function () {
 		}
 	};
 
-	return {routie: routesObj.routie};
+	return {
+		routie: routesObj.routie
+		
+	};
 
 }());
 
