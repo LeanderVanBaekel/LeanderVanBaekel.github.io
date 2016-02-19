@@ -58,7 +58,14 @@ var mobileGesture = (function () {
 		}
 	};
 
-	return {home: gestureObj.home, movieFinder: gestureObj.movieFinder, searchedMovies: gestureObj.searchedMovies, info: gestureObj.info};
+	return {
+		//Dit was minder goed leesbaar op 1 regel
+		home: gestureObj.home,
+		movieFinder: gestureObj.movieFinder,
+		searchedMovies: gestureObj.searchedMovies,
+		info: gestureObj.info
+		
+	};
 
 }());
 
