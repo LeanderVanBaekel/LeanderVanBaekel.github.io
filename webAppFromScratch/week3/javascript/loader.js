@@ -10,6 +10,7 @@ var loader = (function(){
 		},
 
 		toggleOn: function () {
+			// Try to refer to the main object with this
 			this.loaderElement().classList.remove('hidden');
 			this.dataElement().classList.add('hidden');
 		},
