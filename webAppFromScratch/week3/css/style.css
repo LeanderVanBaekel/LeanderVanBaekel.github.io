@@ -147,7 +147,7 @@ img {
 
 
 .hidden {
-	display: none !important;
+	display: none !important; //je kan !important beter niet gebruiken. Het is lastig om in de toekomst dit element nog te kunnen overschrijven 
 }
 
 #posters {
