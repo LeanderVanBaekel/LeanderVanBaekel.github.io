@@ -42,9 +42,6 @@ var routes = (function () {
 					if (self.searchedMovies) { // check if there is data
 						self.searchedMovies = self.searchedMovies.reverse() // reverse the movies so te will be displayed in chronological order
 					}
-					// use underscore
-					//var _underscoreMovieData = _.groupBy(self.searchedMovies, 'Type');
-					//var _above = _.where(self.searchedMovies, {Rated: "PG-13"});
 
 					var directives = { // A Transparancy function to add atributes to al list of data
 				    	Title: {
