@@ -1,6 +1,7 @@
 var mobileGesture = (function () {
 
 	var gestureObj = {
+		// some settings and values
 		_homePage: util.getId('home'),
 		_movieFinder: util.getId('movieFinder'),
 		_searchedMovies: util.getId('searchedMovies'),
@@ -11,10 +12,11 @@ var mobileGesture = (function () {
 
 
 
-		createMc: function (element) {
+		createMc: function (element) { // creating a new Hammer function
 			return gestureObj.mc = new Hammer(element);
 		},
-		mcAddGesture: function (direction, hash, element) {
+
+		mcAddGesture: function (direction, hash, element) { // function to add gestures to the Hammer function
 			var direction = direction,
 				hash = hash,
 				element = element;
@@ -24,6 +26,7 @@ var mobileGesture = (function () {
 			});
 		},
 		
+		// Make the Hammer functions specific to the pages
 		home: function () {
 
 			gestureObj.createMc(gestureObj._homePage)

@@ -8,8 +8,10 @@ var routes = (function () {
 			routie ({
 				'home': function () {
 					self.searchedMovies = localstorage.get(); // get movies that are stored in the localstorage
+
 					if (self.searchedMovies) { // checks if they exist
-						self.searchedMovies = self.searchedMovies.reverse() // reverse the movies so te will be displayed in chronological order
+						self.searchedMovies = _.sortBy(searchedMovies, 'Title'); // use Underscore to sort by alphabetical order
+						self.searchedMovies = _.filter(self.searchedMovies, function(movie){ return movie.Poster !== "N/A" }); // use underscore to filter out objects with no img
 					}
 
 					var directives = { // A Transparancy function to add atributes to al list of data
@@ -18,6 +20,11 @@ var routes = (function () {
 				    			return this.Poster;
 				   			}
 				   		},
+				  		link: {
+				    		href: function (params) {
+				    			return "#info/" + this.Title;
+				   			}
+				   		}
 				   	};
 
 					self.templateRender('posters', self.searchedMovies, directives); // Rendering the data for the page with Transparancy
@@ -44,7 +51,7 @@ var routes = (function () {
 				    		href: function (params) {
 				    			return "#info/" + this.Title;
 				   			}
-				   		},
+				   		}
 				   	};
 
 					self.templateRender('movieList', self.searchedMovies, directives); // Render the page data with Transparanchy

@@ -9,7 +9,7 @@ var sections = (function () {
 		// function called in the app.innit to hide al pages
 		// this is not done in the html because we want the page to be visible if there is no javascript in the browser
 		hideAll: function () {
-			console.log(hidden);
+
 			var allPages = document.querySelectorAll(".page"); // saving al the pages from the HTML
 			
 			for (var i = 0; i < allPages.length; i++) { // loop through the pages

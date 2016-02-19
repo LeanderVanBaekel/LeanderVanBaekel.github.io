@@ -1,22 +1,19 @@
 var loader = (function(){
+
+	// loading the DOM elements
+	var loaderElement = util.getId('loadXhr'),
+		dataElement = util.getId('dataSection');
+
 	var loaderObj = {
 
-		loaderElement: function () {
-			return util.getId('loadXhr');
+		toggleOn: function () { // show loader hide movie data
+			loaderElement.classList.remove('hidden');
+			dataElement.classList.add('hidden');
 		},
 
-		dataElement: function () {
-			return util.getId('dataSection');
-		},
-
-		toggleOn: function () {
-			loaderObj.loaderElement().classList.remove('hidden');
-			loaderObj.dataElement().classList.add('hidden');
-		},
-
-		toggleOff: function () {
-			loaderObj.loaderElement().classList.add('hidden');
-			loaderObj.dataElement().classList.remove('hidden');
+		toggleOff: function () { // show moviedata hide loader
+			loaderElement.classList.add('hidden');
+			dataElement.classList.remove('hidden');
 		}
 	};
 

@@ -155,11 +155,15 @@ img {
 	width: 100vw;
 }
 
-#posters > img {
+#posters img {
 	height: auto;
 	width: 49vw;
 	margin: 0;
 	padding: 0;
+}
+
+#posters a {
+	display: inline-block;
 }
 
 
