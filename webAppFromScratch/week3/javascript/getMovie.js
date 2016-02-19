@@ -56,7 +56,7 @@ var getMovie = (function () {
 		enterData: function (movieData, routes) {
 
 	    	loader.toggleOff(); // disable loader
-
+	    	console.table(movieData);
 			var directives = {
 		    	Poster: {
 		    		src: function (params) {

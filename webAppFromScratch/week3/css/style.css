@@ -72,12 +72,27 @@ section {
 
 
 h1 {
-	font: 2em;
-	line-height: 3;
+	font-size: 2em;
+	line-height: 2;
+}
+h2 {
+	font-size: 1.2em;
+}
+p {
+	font-weight: 100;
+}
+p span {
+	font-weight: 400;
+}
+
+p[data-bind="Plot"] {
+	text-align: left;
+	max-width: 30em;
+	margin: 0 auto;
 }
 
 a {
-	color: rgba(50,50,50,1.0);
+	color: rgba(236, 240, 241,1.0);
 	text-decoration: none;
 	display: block;
 }
@@ -202,7 +217,9 @@ img {
 
 
 
-
+#info article {
+	margin-bottom: 4em;
+}
 
 
 

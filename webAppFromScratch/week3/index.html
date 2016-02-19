@@ -117,14 +117,19 @@
 			<article>
 					
 				<h1 data-bind="Title">no movie</h1>
+				<p data-Bind="Type"></p>
 				<h2 data-bind="Year">year</h2>
 				<h2 data-bind="Genre"></h2>
-				<p>IMDB Rating: <span data-bind="imdbRating"></span></p>
-				<p>rated: <span data-bind="Rated"></span></p>
-				<p>released: <span data-bind="Released"></span></p>
+				<p>IMDB Rating: <span data-bind="imdbRating"></span> (<span data-bind="imdbVotes"></span> votes)</p>
+				<p>Rated: <span data-bind="Rated"></span></p>
+				<p>Director: <span data-bind="Director"></span></p>
+				<p>Writer: <span data-bind="Writer"></span></p>
+				<p>Country: <span data-bind="Country"></span></p>
+				<p>Language: <span data-bind="Language"></span></p>
+				<p>Released: <span data-bind="Released"></span></p>
 				<p>Runtime: <span data-bind="Runtime"></span></p>
 				<p>Type: <span data-bind="Type"></span></p>
-				<h3>plot:</h3>
+				<h3>Plot:</h3>
 				<p data-bind="Plot"></p>
 			</article>
 	</section>
