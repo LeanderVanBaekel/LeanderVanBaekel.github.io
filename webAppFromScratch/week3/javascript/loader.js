@@ -10,13 +10,14 @@ var loader = (function(){
 		},
 
 		toggleOn: function () {
-			loaderObj.loaderElement().classList.remove('hidden');
-			loaderObj.dataElement().classList.add('hidden');
+			// Try to refer to the main object with this
+			this.loaderElement().classList.remove('hidden');
+			this.dataElement().classList.add('hidden');
 		},
 
 		toggleOff: function () {
-			loaderObj.loaderElement().classList.add('hidden');
-			loaderObj.dataElement().classList.remove('hidden');
+			this.loaderElement().classList.add('hidden');
+			this.dataElement().classList.remove('hidden');
 		}
 	};
 
