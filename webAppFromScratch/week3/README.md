@@ -5,4 +5,4 @@ Minor Everything Web 2016
 
 # Flow chart
 
-(https://github.com/LeanderVanBaekel/LeanderVanBaekel.github.io/blob/master/webAppFromScratch/week3/flow.png)
+![flowchart](https://github.com/LeanderVanBaekel/LeanderVanBaekel.github.io/blob/master/webAppFromScratch/week3/flow.png)
