@@ -21,11 +21,7 @@ var routes = (function () {
 					getMovie.searchEngine(routesObj); // invoke the listner for the search form
 				},
 				'searchedMovies' : function () {
-					self.searchedMovies = localstorage.get(); // Get data form localstorage
-					if (self.searchedMovies) { // check if there is data
-						self.searchedMovies = self.searchedMovies.reverse() // reverse the movies so te will be displayed in chronological order
-					}
-
+					self.searchedMovies = sortData.reverse();
 					templates.render('movieList', self.searchedMovies, true); // Render the page data with Transparanchy
 					mobileGesture.searchedMovies(); // Adding mobile gestures with Hammer
 					sections.enablePage(); // Showing page to the user

@@ -26,13 +26,20 @@ var sortData = (function () {
 			 		return movieData = searchedMovies[i];
 			 	};
 			};
+		},
+		reverse: function () {
+			searchedMovies = localstorage.get(); // Get data form localstorage
+			if (self.searchedMovies) { // check if there is data
+				return self.searchedMovies = self.searchedMovies.reverse(); // reverse the movies so te will be displayed in chronological order
+			}
 		}
 	};
 
 	return {
 		getSpecificMovie: sortDataObj.getSpecificMovie,
 		alphabetical: sortDataObj.alphabetical,
-		filterImg: sortDataObj.filterImg
+		filterImg: sortDataObj.filterImg,
+		reverse: sortDataObj.reverse
 	};
 
 }());
