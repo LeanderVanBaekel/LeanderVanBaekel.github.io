@@ -18,7 +18,7 @@ var routes = (function () {
 					templates.render('movieFinder', movieData); // Rendering the data for the page with Transparancy
 					mobileGesture.movieFinder(); // Adding mobile gestures to the page
 					sections.enablePage(); // Showing the page to the user
-					getMovie.searchEngine(routesObj); // invoke the listner for the search form
+					searchForm.listner(routesObj); // invoke the listner for the search form
 				},
 				'searchedMovies' : function () {
 					self.searchedMovies = sortData.reverse();

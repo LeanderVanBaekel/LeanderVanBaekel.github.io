@@ -1,19 +1,19 @@
 var getMovie = (function () {
 	var getMovieObj = {
 
-		searchEngine: function (routes) {
-			var _searchForm = util.getSelector('form'); // gething some DOM elements
-			var _searchField = util.getId('searchField');
-			var _searchQuery = "";
-			var self = getMovieObj;
+		// searchEngine: function (routes) {
+		// 	var _searchForm = util.getSelector('form'); // gething some DOM elements
+		// 	var _searchField = util.getId('searchField');
+		// 	var _searchQuery = "";
+		// 	var self = getMovieObj;
 			
-			_searchForm.onsubmit = function (event) { // listens to the onsubmit function of the form
-				event.preventDefault(); // dont let it do its usual thing bit instead: 
+		// 	_searchForm.onsubmit = function (event) { // listens to the onsubmit function of the form
+		// 		event.preventDefault(); // dont let it do its usual thing bit instead: 
 
-				_searchQuery = _searchField.value; // get the value from the searchfied
-				self.dataRequest(_searchQuery, routes); // invoke the datarequest function
-			};
-		},
+		// 		_searchQuery = _searchField.value; // get the value from the searchfied
+		// 		self.dataRequest(_searchQuery, routes); // invoke the datarequest function
+		// 	};
+		// },
 
 		dataRequest: function (searchQuery, routes) {
 
@@ -38,7 +38,8 @@ var getMovie = (function () {
 				function(data, xhr) {
 					if (data.Response !== "False") { // if there is movie data
 			    		movieData = data;
-			    		self.enterData(movieData, routes); // enter movie data in the DOM
+						templates.render('dataSection', movieData, true);
+				    	loader.toggleOff(); // disable loader
 			    		localstorage.save(movieData); // save it in localstorage
 			    	} else {
 			    		alert("We hebben helaas geen film kunnen vinden."); // if no movie data give the user feedback
@@ -52,18 +53,11 @@ var getMovie = (function () {
 			        loader.toggleOff();
 			    }
 			);
-		},
-
-		enterData: function (movieData, routes) {
-
-	    	loader.toggleOff(); // disable loader
-			templates.render('dataSection', movieData, true); // add data to the DOM
 		}
-
-	}
+	};
 
 	return {
-		searchEngine: getMovieObj.searchEngine
+		dataRequest: getMovieObj.dataRequest
 	};
 
 }());
