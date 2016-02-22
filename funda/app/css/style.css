@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+}
+
+html {
+	font-family: 'lato', 'helvetica', 'san-serif';
+
+}
+
+body {
+	background: rgba(52, 73, 94,1.0);
+	color: rgba(236, 240, 241,1.0);
+	font-size: 1.2em;
+}
+
+nav {
+	display: block;
+	padding: 1em 0;
+	width: 100vw;
+	background-color: rgba(44, 62, 80,1.0);
+}
+
+svg {
+	height: 0.9em;
+	width: 0.9em;
+	margin-right: 0.2em;
+	fill: white;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0.5em;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 0.5em 0 0;
+}
+
+section ul {
+	display: block;
+}
+
+section {
+	min-width: 100vw;
+	min-height: calc(100vh - 3.5em); 
+	margin: 0 auto;
+	text-align: center;
+}
+
+@keyframes RTL {
+	100%  { 
+		transform: rotateY(0) ;
+		transform-origin: 100%;
+	}
+	0% { 
+		transform: rotateY(90deg);
+		transform-origin: 100%;
+	}
+}
+
+@keyframes LTR {
+	100%  { 
+		transform: rotateY(0) ;
+		transform-origin: 00%;
+	}
+	0% { 
+		transform: rotateY(90deg);
+		transform-origin: 0%;
+	}
+}
+
+
+h1 {
+	font-size: 2em;
+	line-height: 2;
+	width: 100%;
+	text-align: center;
+}
+h2 {
+	font-size: 1.2em;
+}
+p {
+	font-weight: 100;
+}
+p span {
+	font-weight: 400;
+}
+
+p[data-bind="Plot"] {
+	text-align: left;
+	max-width: 30em;
+	margin: 0 auto;
+}
+
+a {
+	color: rgba(236, 240, 241,1.0);
+	text-decoration: none;
+	display: block;
+}
+nav a {
+	color: rgba(236, 240, 241,1.0);
+	text-decoration: none;
+	font-size: 0.85em;
+}
+
+a:hover {
+	color: rgba(189, 195, 199,1.0);
+}
+
+input {
+	font-size: 1em;
+	width: 10em;
+	padding: 0.3em;
+}
+
+button {
+	display: block;
+	margin: 1em auto;
+	padding: 0.6em;
+	width: 10em;
+	font-size: 1em;
+	background-color: rgba(231, 76, 60,1.0);
+	border: none;
+	color: white;
+	border-bottom: 0.6em solid rgba(192, 57, 43,1.0);
+}
+
+button:active,
+button:hover {
+	margin: 1.3em auto 1em auto;
+	border-bottom: 0.3em solid rgba(192, 57, 43,1.0);
+}
+
+
+#dataSection {
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+img {
+	width: 45%;
+	max-width: 20em;
+	height: 45%;
+	margin-bottom: 1em;
+	margin: 0 auto;
+}
+
+#dataSection article {
+	margin: 1em auto;
+	xmargin-bottom: 1em;
+	max-width: 20em;
+
+}
+
+/*Bron: http://www.w3schools.com/howto/howto_css_loader.asp*/
+.loader {
+    border: 0.4em solid #f3f3f3; /* Light grey */
+    border-top: 0.4em solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin: 10vh auto;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.hidden {
+	display: none !important;
+}
+
+#posters {
+	margin: 1em 0;
+	width: 100vw;
+}
+
+#posters img {
+	height: auto;
+	width: 49vw;
+	margin: 0;
+	padding: 0;
+}
+
+#posters a {
+	display: inline-block;
+}
+
+
+
+.movie {
+	text-align: left;
+	-webkit-column-count: 2;
+	padding: 1em;
+	max-width: 30em;
+	margin: 0 auto;
+}
+
+.movie a {
+
+	margin-bottom: 0.5em;
+	color: rgba(236, 240, 241,1.0);
+}
+
+.movie a:hover {
+	font-weight: 900;
+}
+
+
+
+#info article {
+	margin-bottom: 4em;
+}
+
+.object {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+
+
+

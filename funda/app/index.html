@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="nl">
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<title>Funda Zoeken</title>
+	<meta name="description" content="">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script src="javascript/libs/routie.js" type="text/javascript"></script>
+	<script src="javascript/libs/transparency.js" type="text/javascript"></script>
+	<script src="javascript/libs/pegasus.js" type="text/javascript"></script>
+	<script src="javascript/libs/underscore.js" type="text/javascript"></script>
+	<script src="javascript/libs/hammer.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>
+				<a href="#home">
+				<?xml version="1.0" encoding="utf-8"?>
+				<svg 
+					version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+					<polygon points="24.9,24 0,24 12.5,11.9 24.9,0 37.4,12 49.8,24 "/>
+					<polygon points="5,22 5,50 25,50 25,35 34,35 34,50 45,50 45,22 "/>
+				</svg>
+					Home
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="page" id="home">
+		<h1 data-bind="welcome"></h1>
+		<p>Met deze app kun je ...</p><br>
+		<form>
+			<label class="hidden" for="title">Plaats</label>
+			<input type="text" placeholder="Plaats" id="searchField"/>
+			<button type="submit" id="searchGo">Search</button>
+		</form>
+
+		<div id="loadXhr" class="loader hidden"></div>
+
+		<div id="dataSection" class="hidden">
+			<div class="object">
+				<h1 data-bind="Adres"></h1>
+				<img src="" class="img" alt="">
+				<div class="Prijs">
+					<p data-bind="Koopprijs"></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="javascript/modules/util.js" type="text/javascript"></script>
+	<script src="javascript/modules/loader.js" type="text/javascript"></script>
+	<script src="javascript/modules/templates.js" type="text/javascript"></script>
+	<script src="javascript/modules/routes.js" type="text/javascript"></script>
+	<script src="javascript/modules/sections.js" type="text/javascript"></script>
+	<script src="javascript/modules/getResult.js" type="text/javascript"></script>
+	<script src="javascript/modules/searchForm.js" type="text/javascript"></script>
+	<script src="javascript/modules/mobileGesture.js" type="text/javascript"></script>
+	<script src="javascript/launch.js" type="text/javascript"></script>
+</body>
+</html>
+
