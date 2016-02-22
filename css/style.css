@@ -124,9 +124,13 @@ img {
 	max-height: 10vw;
 }
 
+.blog {
+	background-color: rgba(220,220,220,0.9);
+}
 
-
-
+.blog a {
+	text-decoration: underline;
+}
 
 
 
