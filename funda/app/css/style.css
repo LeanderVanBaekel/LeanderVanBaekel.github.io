@@ -8,8 +8,8 @@ html {
 }
 
 body {
-	background: rgba(52, 73, 94,1.0);
-	color: rgba(236, 240, 241,1.0);
+	background: linear-gradient(to bottom, #E7F1F5 0%, #E7F1F5 60%, #fff 90%);
+	color: #55241A;
 	font-size: 1.2em;
 }
 
@@ -17,7 +17,7 @@ nav {
 	display: block;
 	padding: 1em 0;
 	width: 100vw;
-	background-color: rgba(44, 62, 80,1.0);
+	background-color: #F8B000;
 }
 
 svg {
@@ -104,9 +104,6 @@ nav a {
 	font-size: 0.85em;
 }
 
-a:hover {
-	color: rgba(189, 195, 199,1.0);
-}
 
 input {
 	font-size: 1em;
@@ -120,16 +117,16 @@ button {
 	padding: 0.6em;
 	width: 10em;
 	font-size: 1em;
-	background-color: rgba(231, 76, 60,1.0);
+	background-color: #3888C5;
 	border: none;
 	color: white;
-	border-bottom: 0.6em solid rgba(192, 57, 43,1.0);
+	border-bottom: 0.6em solid rgba(50, 116, 187,1.0);
 }
 
 button:active,
 button:hover {
 	margin: 1.3em auto 1em auto;
-	border-bottom: 0.3em solid rgba(192, 57, 43,1.0);
+	border-bottom: 0.3em solid rgba(50, 116, 187,1.0);
 }
 
 
@@ -140,10 +137,20 @@ button:hover {
 	flex-wrap: wrap;
 }
 
+#dataSection > a {
+	color: #55241A;
+	width: 100%;
+}
+
+a:hover {
+	color: #55241A;
+}
+
+
 img {
-	width: 45%;
-	max-width: 20em;
-	height: 45%;
+	xwidth: 45%;
+	max-width: 100%;
+	xheight: 45%;
 	margin-bottom: 1em;
 	margin: 0 auto;
 }

@@ -8,13 +8,17 @@ var templates = (function () {
 			var directivesObj = { // A Transparancy function to add atributes to al list of data
 		    	img: {
 		    		src: function (params) {
-		    			console.log(this);
 		    			return this.FotoLarge;
+		   			}
+		   		},
+		   		objectImg: {
+		   			src: function(params) {
+		   				return this.HoofdFoto;
 		   			}
 		   		},
 		  		link: {
 		    		href: function (params) {
-		    			return "#info/" + this.Title;
+		    			return "#object/" + this.Id;
 		   			}
 		   		},
 		   		Poster: {
@@ -30,7 +34,6 @@ var templates = (function () {
 		   	};
 
 			if (directives) {
-				console.log("ja!");
 				Transparency.render(el, data, directivesObj);
 			} else {
 				Transparency.render(el, data);

@@ -10,6 +10,17 @@ var routes = (function () {
 		    		mobileGesture.home(); // Adding mobile gestures to the homepage
 					sections.enablePage(); // Showing the section to the user
 					searchForm.listner();
+				},
+				'searchWizard': function () {
+					sections.enablePage();
+					searchForm.listnerWizard();
+				},
+				'object/?:objectId': function (objectId) {
+					var objectData = getResult.objectRequest(objectId);
+					templates.render('object', objectData, true); // Rendering the data for the page with Transparancy
+		    		//mobileGesture.home(); // Adding mobile gestures to the homepage
+					sections.enablePage(); // Showing the section to the user
+					//searchForm.listner();
 				}
 			});
 		}
