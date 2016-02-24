@@ -16,11 +16,6 @@ var templates = (function () {
 		    			return "#info/" + this.Title;
 		   			}
 		   		},
-		   		Poster: {
-		    		src: function (params) {
-		    			return this.Poster;
-		   			}
-		   		},
 		    	Title: {
 		    		href: function (params) {
 		    			return "#info/" + this.Title;

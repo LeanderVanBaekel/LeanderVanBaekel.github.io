@@ -33,7 +33,7 @@
 					Home
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="#searchWizard">
 					<?xml version="1.0" encoding="utf-8"?>
 					<svg 
@@ -44,17 +44,65 @@
 					</svg>
 					Zoek Wizard
 				</a>
-			</li>
+			</li> -->
 		</ul>
 	</nav>
 
 	<section class="page" id="home">
 		<h1 data-bind="welcome"></h1>
-		<p>Met deze app kun je ...</p><br>
-		<form class="search">
-			<label class="hidden" for="title">Plaats</label>
-			<input type="text" placeholder="Plaats" id="searchField"/>
-			<button type="submit" id="searchGo">Search</button>
+
+		<form id="searchWizardForm">
+
+			<fieldset class="1">
+				<label class="hidden" for="title">Plaats</label>
+				<input type="text" name="place" placeholder="Plaats"/>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+			
+			<fieldset class="2 hidden">
+				<h1>Hoe duur mag het huis zijn?</h1>
+
+				<label for="title">minmaal: </label><br>
+				€<input type="number" name="priceMin"/><br>
+
+				<label for="title">maximaal: </label><br>
+				€<input type="number" name="priceMax"/>
+				<a href="" class="previous">vorige</a>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+
+			<fieldset class="3 hidden">
+				<h1>Ik ben opzoek naar een:</h1>
+				<input type="radio" name="houseType" value="woonhuis"> Huis<br>
+				<input type="radio" name="houseType" value="appartement"> Appartement<br>
+				<input type="radio" name="houseType" value=""> Geen voorkeur
+				<a href="" class="previous">vorige</a>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+
+			<fieldset class="4 hidden">
+				<h1>Ik ben opzoek naar een:</h1>
+				<input type="radio" name="outdoor" value="balkon"> Balkon<br>
+				<input type="radio" name="outdoor" value="tuin"> Tuin<br>
+				<input type="radio" name="" value=""> Geen voorkeur
+				<a href="" class="previous">vorige</a>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+
+			<fieldset class="5 hidden">
+				<h1>Ik ben opzoek naar:</h1>
+
+				<label for="title">minmaal aantal kamers: </label><br>
+				<input type="number" name="roomsMin"/><br>
+
+				<label for="title">maximaal aantal kamers: </label><br>
+				<input type="number" name="roomsMax"/>
+
+				<a href="" class="previous">vorige</a>
+
+				<button type="submit" id="searchButton">Zoeken</button>
+			</fieldset>
+
 		</form>
 
 		<div id="loadXhr" class="loader hidden"></div>
@@ -74,27 +122,11 @@
 				</div>
 			</a>
 		</div>
-	</section>
 
-	<section class="page" id="searchWizard">
-		<form id="searchWizardForm">
-			<fieldset class="1">
-				<h1>Ik ben opzoek naar een:</h1>
-				<input type="radio" name="houseType" value="house"> Huis<br>
-				<input type="radio" name="houseType" value="appartment"> Appartement<br>
-				<input type="radio" name="houseType" value="undefined"> Geen voorkeur
-			</fieldset>
-			<fieldset class="2">
-				<h1>Ik ben opzoek naar:</h1>
-				<input type="radio" name="rooms" value="1"> 1 kamer<br>
-				<input type="radio" name="rooms" value="2"> 2 kamers<br>
-				<input type="radio" name="rooms" value="3"> 3 kamers
-				<button type="submit" id="searchButton">Zoeken</button>
-			</fieldset>
-		</form>
 	</section>
 
 	<section class="page" id="object">
+		<a href="#home" style="color:blue">< Terug</a>
 		<h1 data-bind="Adres"></h1>
 		<img src="" class="objectImg" alt="">
 		<div class="Prijs">

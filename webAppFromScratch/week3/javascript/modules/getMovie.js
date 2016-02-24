@@ -1,20 +1,6 @@
 var getMovie = (function () {
 	var getMovieObj = {
 
-		// searchEngine: function (routes) {
-		// 	var _searchForm = util.getSelector('form'); // gething some DOM elements
-		// 	var _searchField = util.getId('searchField');
-		// 	var _searchQuery = "";
-		// 	var self = getMovieObj;
-			
-		// 	_searchForm.onsubmit = function (event) { // listens to the onsubmit function of the form
-		// 		event.preventDefault(); // dont let it do its usual thing bit instead: 
-
-		// 		_searchQuery = _searchField.value; // get the value from the searchfied
-		// 		self.dataRequest(_searchQuery, routes); // invoke the datarequest function
-		// 	};
-		// },
-
 		dataRequest: function (searchQuery, routes) {
 
 			var self = getMovieObj;

@@ -7,9 +7,11 @@ var routes = (function () {
 			routie ({
 				'home': function () {
 					templates.render('home', {welcome: "Hallo!"}); // Rendering the data for the page with Transparancy
-		    		mobileGesture.home(); // Adding mobile gestures to the homepage
-					sections.enablePage(); // Showing the section to the user
-					searchForm.listner();
+		   //  		mobileGesture.home(); // Adding mobile gestures to the homepage
+					// sections.enablePage(); // Showing the section to the user
+					// searchForm.listner();
+					sections.enablePage();
+					searchForm.listnerWizard();
 				},
 				'searchWizard': function () {
 					sections.enablePage();
