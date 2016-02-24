@@ -6,7 +6,6 @@
     	init: function () {
     		sections.hideAll();
     		routes.routie();
-			searchForm.listnerWizard();
     	}
     };
 

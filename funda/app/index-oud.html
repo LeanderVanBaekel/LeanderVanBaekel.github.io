@@ -32,67 +32,64 @@
 				</svg>
 					Home
 				</a>
-				<li><a href="#stap1">Plaats<br>Stap 1 ></a></li>
-				<li><a href="#stap2">Prijs<br>Stap 2 ></a></li>
-				<li><a href="#stap3">Soort huis<br>Stap 3 ></a></li>
-				<li><a href="#stap4">Buitenruimte<br>Stap 4 ></a></li>
-				<li><a href="#stap5">Kamers<br>Stap 5 ></a></li>
-				<li><a href="#result">Resultaat</a></li>
 			</li>
+			<!-- <li>
+				<a href="#searchWizard">
+					<?xml version="1.0" encoding="utf-8"?>
+					<svg 
+						version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+						<rect x="34" y="21.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -15.2149 36.79)" width="5.5" height="30.2"/>
+						<path d="M5,5.5C-1.3,11.8-1.3,22,5,28.3s16.5,6.3,22.8,0s6.3-16.5,0-22.8S11.3-0.8,5,5.5z M24.5,25c-4.5,4.5-11.7,4.5-16.2,0
+						c-4.5-4.5-4.5-11.7,0-16.2s11.7-4.5,16.2,0C29,13.3,29,20.6,24.5,25z"/>
+					</svg>
+					Zoek Wizard
+				</a>
+			</li> -->
 		</ul>
 	</nav>
 
-	<section id="home" class="page">
-		<a href="#stap1">Begin</a>
-	</section>
+	<section class="page" id="home">
+		<h1 data-bind="welcome"></h1>
 
-	<section id="stap1" class="page">
-		<fieldset class="1">
-			<label class="hidden" for="title">Plaats</label>
-			<input type="text" name="place" placeholder="Plaats"/>
-			<a href="#stap2" class="next">volgende</a>
-		</fieldset>
-	</section>
-
-	<section id="stap2" class="page">
-		<fieldset class="2">
-			<h1>Hoe duur mag het huis zijn?</h1>
-
-			<label for="title">minimaal: </label><br>
-			€<input type="number" name="priceMin"/><br>
-
-			<label for="title">maximaal: </label><br>
-			€<input type="number" name="priceMax"/>
-			<a href="#stap1" class="previous">vorige</a>
-			<a href="#stap3" class="next">volgende</a>
-		</fieldset>
-	</section>
-
-	<section id="stap3" class="page">
-		<fieldset class="3">
-			<h1>Ik ben opzoek naar een:</h1>
-			<input type="radio" name="houseType" value="woonhuis"> Huis<br>
-			<input type="radio" name="houseType" value="appartement"> Appartement<br>
-			<input type="radio" name="houseType" value=""> Geen voorkeur
-			<a href="#stap2" class="previous">vorige</a>
-			<a href="#stap4" class="next">volgende</a>
-		</fieldset>
-	</section>
-
-	<section id="stap4" class="page">
-		<fieldset class="4">
-			<h1>Ik ben opzoek naar een:</h1>
-			<input type="radio" name="outdoor" value="balkon"> Balkon<br>
-			<input type="radio" name="outdoor" value="tuin"> Tuin<br>
-			<input type="radio" name="" value=""> Geen voorkeur
-			<a href="#stap3" class="previous">vorige</a>
-			<a href="#stap5" class="next">volgende</a>
-		</fieldset>
-	</section>
-
-	<section id="stap5" class="page">
 		<form id="searchWizardForm">
-			<fieldset class="5">
+
+			<fieldset class="1">
+				<label class="hidden" for="title">Plaats</label>
+				<input type="text" name="place" placeholder="Plaats"/>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+			
+			<fieldset class="2 hidden">
+				<h1>Hoe duur mag het huis zijn?</h1>
+
+				<label for="title">minmaal: </label><br>
+				€<input type="number" name="priceMin"/><br>
+
+				<label for="title">maximaal: </label><br>
+				€<input type="number" name="priceMax"/>
+				<a href="" class="previous">vorige</a>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+
+			<fieldset class="3 hidden">
+				<h1>Ik ben opzoek naar een:</h1>
+				<input type="radio" name="houseType" value="woonhuis"> Huis<br>
+				<input type="radio" name="houseType" value="appartement"> Appartement<br>
+				<input type="radio" name="houseType" value=""> Geen voorkeur
+				<a href="" class="previous">vorige</a>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+
+			<fieldset class="4 hidden">
+				<h1>Ik ben opzoek naar een:</h1>
+				<input type="radio" name="outdoor" value="balkon"> Balkon<br>
+				<input type="radio" name="outdoor" value="tuin"> Tuin<br>
+				<input type="radio" name="" value=""> Geen voorkeur
+				<a href="" class="previous">vorige</a>
+				<a href="" class="next">volgende</a>
+			</fieldset>
+
+			<fieldset class="5 hidden">
 				<h1>Ik ben opzoek naar:</h1>
 
 				<label for="title">minmaal aantal kamers: </label><br>
@@ -101,14 +98,13 @@
 				<label for="title">maximaal aantal kamers: </label><br>
 				<input type="number" name="roomsMax"/>
 
-				<a href="#stap4" class="previous">vorige</a>
+				<a href="" class="previous">vorige</a>
 
 				<button type="submit" id="searchButton">Zoeken</button>
 			</fieldset>
-		</form>
-	</section>
 
-	<section class="page" id="result">
+		</form>
+
 		<div id="loadXhr" class="loader hidden"></div>
 
 		<div id="metadata">
@@ -125,7 +121,8 @@
 					</div>
 				</div>
 			</a>
-		</div>		
+		</div>
+
 	</section>
 
 	<section class="page" id="object">

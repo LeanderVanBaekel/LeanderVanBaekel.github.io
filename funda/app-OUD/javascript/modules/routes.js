@@ -11,7 +11,7 @@ var routes = (function () {
 					// sections.enablePage(); // Showing the section to the user
 					// searchForm.listner();
 					sections.enablePage();
-					//searchForm.listnerWizard();
+					searchForm.listnerWizard();
 				},
 				'searchWizard': function () {
 					sections.enablePage();
@@ -23,30 +23,6 @@ var routes = (function () {
 		    		//mobileGesture.home(); // Adding mobile gestures to the homepage
 					sections.enablePage(); // Showing the section to the user
 					//searchForm.listner();
-				},
-				'stap1': function () {
-					sections.enablePage();
-				},
-				'stap2': function () {
-					sections.enablePage();
-				},
-				'stap3': function () {
-					sections.enablePage();
-				},
-				'stap4': function () {
-					sections.enablePage();
-				},
-				'stap5': function () {
-					sections.enablePage();
-				},
-				'result': function () {
-					sections.enablePage();
-					searchForm.answers.url = searchForm.answers.place + "/" + searchForm.answers.priceMin + "-" + searchForm.answers.priceMax + "/" + searchForm.answers.roomsMin + "-" + searchForm.answers.roomsMax + "-kamers" + "/" + searchForm.answers.houseType + "/" + searchForm.answers.outdoor;
-					console.log(searchForm.answers);
-					if (searchForm.answers.oldUrl != searchForm.answers.url) {
-						getResult.searchRequest(searchForm.answers.url);
-					}
-					searchForm.answers.oldUrl = searchForm.answers.url;
 				}
 			});
 		}
