@@ -31,16 +31,9 @@ nav {
     border-bottom: 2px solid #6EC8E5;
 }
 
-nav svg {
-	height: 0.9em;
-	width: 0.9em;
-	margin-right: 0.2em;
-	fill: white;
-}
-
 nav img {
 	height: 2em;
-	margin: 0 0.5em;
+	margin: 0 auto;
 	display: block;
 }
 
