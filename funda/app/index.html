@@ -165,12 +165,18 @@
 	</section>
 
 	<section class="page" id="object">
-		<a href="#home" style="color:blue">< Terug</a>
-		<h1 data-bind="Adres"></h1>
-		<img src="" class="objectImg" alt="">
-		<span class="Prijs">
-			<p data-bind="Koopprijs"></p>
-		</span>
+		<a href="#result">< Terug</a>
+			<div class="object">
+				<h1 data-bind="Adres"></h1>
+				<img src="" class="objectImg" alt="">
+
+				<p>Prijs: </p>
+				<span class="Prijs">
+					<span data-bind="Koopprijs"></span>
+				</span>
+				<p>Woonplaats:</p><span data-bind="Plaats"></span>
+				<p>Adres:</p><span data-bind="Adres"></span>
+			</div>
 	</section>
 
 	<script src="javascript/modules/util.js" type="text/javascript"></script>

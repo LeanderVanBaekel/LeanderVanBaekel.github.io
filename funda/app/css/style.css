@@ -1,12 +1,13 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
+	overflow-x: hidden; 
 }
 
 html {
 	font-family: 'lato', 'helvetica', 'san-serif';
 	background-color: white;
-
+	xbox-shadow: 0 0 0.2em 0.2em rgba(0,0,0,0.1);
 }
 
 body {
@@ -60,10 +61,9 @@ nav li {
 
 section {
 	background: linear-gradient(to bottom, #E7F1F5 0%, #E7F1F5 60%, #fff 90%);
-
 	min-width: 100vw;
-	xmin-height: calc(100vh - 3.5em); 
-	margin: 0.2em auto 0 auto;
+	xmin-height: calc(100vh - 6em);
+	margin: 0em auto 0 auto;
 	text-align: center;
 }
 
@@ -112,7 +112,9 @@ p {
 }
 
 #dataSection p,
-#dataSection span {
+#dataSection span,
+#object p,
+#object span {
 	width: 49%;
 	display: inline-block;
 	text-align: left;
@@ -163,6 +165,22 @@ section img {
     100% { transform: rotate(360deg); }
 }
 
+.page:not(.hidden) * {
+	animation: slideTop 1s ease;
+}
+
+@keyframes slideTop{
+	0% {
+		opacity: 0;
+		transform: translateY(-100vh);
+		position: 
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 
 .hidden {
 	display: none !important;
@@ -170,10 +188,13 @@ section img {
 
 .object {
 	width: 100%;
+	max-width: 30em;
 	display: block;
 	text-align: center;
 	padding: 0.5em 0;
+	margin: 0.5em auto;
 	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0 0 0.2em 0.2em rgba(0,0,0,0.1);
 }
 
 .object h1 { 
@@ -183,10 +204,6 @@ section img {
 form {
 	xmin-height: 100vh;
 }
-
-/*select {
-	font-size: 2em;
-}*/
 
 section a {
 	color: #55241A;
@@ -205,9 +222,6 @@ input[type="text"], input[type="number"], select {
 	font-size: 1em;
 	width: 10em;
 	padding: 0.3em;
-}
-
-input[type="number"] {
 	margin: 0.2em 0 1em 0;
 }
 
@@ -238,6 +252,9 @@ input[type="radio"] {
 	margin: 2em auto 0 auto;
 }
 
+.breadcrumbs {
+	box-shadow: inset 0 0 0.2em 0.2em rgba(0,0,0,0.1);
+}
 
 .breadcrumbs ul {
 	list-style-type: none;
