@@ -4,6 +4,7 @@ var searchForm = (function () {
 
 		 answers : {
 				place: "heel-nederland",
+				distance: "+15",
 				priceMin: "0",
 				priceMax: "1999000000",
 				houseType: "",
@@ -59,6 +60,9 @@ var searchForm = (function () {
 								searchForm.answers.houseType = "heel-nederland";
 							}
 							break;
+						case "distance":
+							searchForm.answers.distance = event.target.value;
+							break;
 						case "priceMin":
 							searchForm.answers.priceMin = event.target.value;
 							break;
@@ -81,38 +85,6 @@ var searchForm = (function () {
 				}
 
     		};
-
-			// form.onchange = function (event) {
-			// 	event.preventDefault();
-			// 	console.log(event.target.value);
-
-			// 	switch (event.target.name) {
-			// 		case "place":
-			// 			answers.place = event.target.value;
-			// 			if (answers.place === "") {
-			// 				answers.houseType = "heel-nederland";
-			// 			}
-			// 			break;
-			// 		case "priceMin":
-			// 			answers.priceMin = event.target.value;
-			// 			break;
-			// 		case "priceMax":
-			// 			answers.priceMax = event.target.value;
-			// 			break;
-			// 		case "houseType":
-			// 			answers.houseType = event.target.value;
-			// 			break;
-			// 		case "outdoor":
-			// 			answers.outdoor = event.target.value;
-			// 			break;
-			// 		case "roomsMin":
-			// 			answers.roomsMin = event.target.value;
-			// 			break;
-			// 		case "roomsMax":
-			// 			answers.roomsMax = event.target.value;
-			// 			break;
-			// 	};
-			// };
 
 			form.onsubmit = function (event) {
 				event.preventDefault();

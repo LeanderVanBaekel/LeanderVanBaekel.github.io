@@ -41,7 +41,7 @@ var routes = (function () {
 				},
 				'result': function () {
 					sections.enablePage();
-					searchForm.answers.url = searchForm.answers.place + "/" + searchForm.answers.priceMin + "-" + searchForm.answers.priceMax + "/" + searchForm.answers.roomsMin + "-" + searchForm.answers.roomsMax + "-kamers" + "/" + searchForm.answers.houseType + "/" + searchForm.answers.outdoor;
+					searchForm.answers.url = searchForm.answers.place + "/" + searchForm.answers.distance + "/" + searchForm.answers.priceMin + "-" + searchForm.answers.priceMax + "/" + searchForm.answers.roomsMin + "-" + searchForm.answers.roomsMax + "-kamers" + "/" + searchForm.answers.houseType + "/" + searchForm.answers.outdoor;
 					console.log(searchForm.answers);
 					if (searchForm.answers.oldUrl != searchForm.answers.url) {
 						getResult.searchRequest(searchForm.answers.url);

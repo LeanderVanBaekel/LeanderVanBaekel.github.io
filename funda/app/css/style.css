@@ -22,8 +22,9 @@ a {
 
 nav {
 	display: block;
-	padding: 1em 0;
+	padding: 0.5em 0;
 	width: 100vw;
+	height: 3em;
 	background-color: #F8B000;
 	color: white;
     border-bottom: 2px solid #6EC8E5;
@@ -34,6 +35,12 @@ nav svg {
 	width: 0.9em;
 	margin-right: 0.2em;
 	fill: white;
+}
+
+nav img {
+	height: 2em;
+	margin: 0 0.5em;
+	display: block;
 }
 
 nav ul {
@@ -56,7 +63,7 @@ section {
 
 	min-width: 100vw;
 	xmin-height: calc(100vh - 3.5em); 
-	margin: 0 auto;
+	margin: 0.2em auto 0 auto;
 	text-align: center;
 }
 
@@ -104,9 +111,13 @@ p {
 	width: 100%;
 }
 
-/*a:hover {
-	color: #55241A;
-}*/
+#dataSection p,
+#dataSection span {
+	width: 49%;
+	display: inline-block;
+	text-align: left;
+}
+
 
 button,
 .button {
@@ -129,10 +140,11 @@ button:hover,
 	border-bottom: 0.3em solid rgba(50, 116, 187,1.0);
 }
 
-img {
+section img {
 	max-width: 100%;
 	margin-bottom: 1em;
-	margin: 0 auto;
+	margin: 0.5em auto;
+	box-shadow: 0 0 0.2em 0.2em rgba(0,0,0,0.1);
 }
 
 /*Bron: http://www.w3schools.com/howto/howto_css_loader.asp*/
@@ -142,7 +154,7 @@ img {
     border-radius: 50%;
     width: 2em;
     height: 2em;
-    margin: 10vh auto;
+    margin: 0 auto;
     animation: spin 2s linear infinite;
 }
 
@@ -160,10 +172,20 @@ img {
 	width: 100%;
 	display: block;
 	text-align: center;
+	padding: 0.5em 0;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.object h1 { 
+	font-size: 1em;
 }
 
 form {
 	xmin-height: 100vh;
+}
+
+select {
+	font-size: 2em;
 }
 
 section a {
@@ -204,28 +226,6 @@ section a[class~="next"]:after {
 }
 
 
-/*button,
-.button {
-	display: block;
-	margin: 1em auto;
-	padding: 0.6em;
-	width: 10em;
-	font-size: 1em;
-	background-color: #3888C5;
-	border: none;
-	color: white;
-	border-bottom: 0.6em solid rgba(218,126,0,1);
-}
-
-button:active,
-button:hover,
-.button:active,
-.button:hover {
-	margin: 1.3em auto 1em auto;
-	border-bottom: 0.3em solid rgba(218,126,0,1);
-}*/
-
-
 fieldset h1 {
 	font-size: 1.5em;
 	line-height: 1.2;
@@ -241,25 +241,34 @@ input[type="radio"] {
 
 .breadcrumbs ul {
 	list-style-type: none;
-	margin: 0 auto;
+	margin: 0 0.3em;
+	width: 100%;
+	-webkit-margin-before: 0;
+	-webkit-padding-start: 0;
 }
 
 .breadcrumbs li {
 	display: inline-block;
+	height: 1.7em;
+	padding: 0.3em 0 0 0;
 	margin: 0.2em 0.5em;
 }
 
 .breadcrumbs a {
 	color: #6EC8E5;
-	font-size: 0.8em;
+	font-size: 1em;
 }
 
 .breadcrumbs a:after {
 	content: " >";
 	margin-left: 0.2em;
+	font-size: 0.8em;
 }
 
-
+#result {
+	padding-top: 1em;
+	min-height: 80vh;
+}
 
 
 

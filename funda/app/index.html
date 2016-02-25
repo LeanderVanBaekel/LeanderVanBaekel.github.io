@@ -21,59 +21,28 @@
 </head>
 <body>
 	<nav>
-		<ul>
-			<li>
-				<a href="#home">
-				<?xml version="1.0" encoding="utf-8"?>
-				<svg 
-					version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-					<polygon points="24.9,24 0,24 12.5,11.9 24.9,0 37.4,12 49.8,24 "/>
-					<polygon points="5,22 5,50 25,50 25,35 34,35 34,50 45,50 45,22 "/>
-				</svg>
-					Home
-				</a>
-				<li>
-					<a href="#stap1">
-						Plaats<!-- <br>Stap 1 > -->
-					</a>
-				</li>
-				<li>
-					<a href="#stap2">Prijs<!-- <br>Stap 2 > --></a>
-				</li>
-				<li>
-					<a href="#stap3">Soort huis<!-- <br>Stap 3 > --></a>
-				</li>
-				<li>
-					<a href="#stap4">Buitenruimte<!-- <br>Stap 4 > --></a>
-				</li>
-				<li>
-					<a href="#stap5">Kamers<!-- <br>Stap 5 > --></a>
-				</li>
-				<li>
-					<a href="#result">Resultaat</a>
-				</li>
-			</li>
-		</ul>
+		<a href="#home">
+			<img src="http://assets.fstatic.nl/801/assets/components/logo/funda-logo.svg" alt="Funda logo">
+
+		</a>
 	</nav>
 	
 	<div class="breadcrumbs">
 		<ul>
 			<li>
-				<a href="#stap1">
-					Plaats<!-- <br>Stap 1 > -->
-				</a>
+				<a href="#stap1">Plaats</a>
 			</li>
 			<li>
-				<a href="#stap2">Prijs<!-- <br>Stap 2 > --></a>
+				<a href="#stap2">Prijs</a>
 			</li>
 			<li>
-				<a href="#stap3">Soort huis<!-- <br>Stap 3 > --></a>
+				<a href="#stap3">Soort huis</a>
 			</li>
 			<li>
-				<a href="#stap4">Buitenruimte<!-- <br>Stap 4 > --></a>
+				<a href="#stap4">Buitenruimte</a>
 			</li>
 			<li>
-				<a href="#stap5">Kamers<!-- <br>Stap 5 > --></a>
+				<a href="#stap5">Kamers</a>
 			</li>
 			<li>
 				<a href="#result">Resultaat</a>
@@ -93,6 +62,15 @@
 			<h1>Waar zou u willen gaan wonen?</h1>
 			<label class="hidden" for="title">Plaats</label>
 			<input type="text" name="place" placeholder="Plaats"/>
+			<label>Een straal van:</label>
+			<select name="km" class="distance" name="distance">
+				<option value="0" selected>+ 0 km</option>
+				<option value="+1">+ 1 km</option>
+				<option value="+2">+ 2 km</option>
+				<option value="+5">+ 5 km</option>
+				<option value="+10">+ 10 km</option>
+				<option value="+15">+ 15 km</option>
+			</select>
 		</fieldset>
 		<a href="#stap2" class="next">volgende</a>
 	</section>
@@ -174,9 +152,13 @@
 				<div class="object">
 					<h1 data-bind="Adres"></h1>
 					<img src="" class="img" alt="">
-					<div class="Prijs">
-						<p data-bind="Koopprijs"></p>
-					</div>
+
+					<p>Prijs: </p>
+					<span class="Prijs">
+						<span data-bind="Koopprijs"></span>
+					</span>
+					<p>Woonplaats:</p><span data-bind="Woonplaats"></span>
+					<p>Adres:</p><span data-bind="Adres"></span>
 				</div>
 			</a>
 		</div>		
@@ -186,9 +168,9 @@
 		<a href="#home" style="color:blue">< Terug</a>
 		<h1 data-bind="Adres"></h1>
 		<img src="" class="objectImg" alt="">
-		<div class="Prijs">
+		<span class="Prijs">
 			<p data-bind="Koopprijs"></p>
-		</div>
+		</span>
 	</section>
 
 	<script src="javascript/modules/util.js" type="text/javascript"></script>
