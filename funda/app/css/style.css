@@ -184,9 +184,9 @@ form {
 	xmin-height: 100vh;
 }
 
-select {
+/*select {
 	font-size: 2em;
-}
+}*/
 
 section a {
 	color: #55241A;
@@ -201,7 +201,7 @@ fieldset > * {
 	cursor: pointer;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"], input[type="number"], select {
 	font-size: 1em;
 	width: 10em;
 	padding: 0.3em;
