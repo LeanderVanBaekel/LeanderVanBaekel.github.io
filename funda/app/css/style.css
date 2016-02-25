@@ -258,7 +258,8 @@ input[type="radio"] {
 
 .breadcrumbs ul {
 	list-style-type: none;
-	margin: 0 0.3em;
+	margin: 0em 0.3em 0.5em 0.3em;
+	padding: 0.7em 0 0.5em 0;
 	width: 100%;
 	-webkit-margin-before: 0;
 	-webkit-padding-start: 0;
@@ -266,8 +267,7 @@ input[type="radio"] {
 
 .breadcrumbs li {
 	display: inline-block;
-	height: 1.7em;
-	padding: 0.3em 0 0 0;
+	padding: 0em 0 0 0;
 	margin: 0.2em 0.5em;
 }
 
