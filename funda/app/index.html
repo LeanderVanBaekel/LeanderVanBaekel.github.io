@@ -12,7 +12,6 @@
 	<script src="javascript/libs/routie.js" type="text/javascript"></script>
 	<script src="javascript/libs/transparency.js" type="text/javascript"></script>
 	<script src="javascript/libs/pegasus.js" type="text/javascript"></script>
-	<script src="javascript/libs/underscore.js" type="text/javascript"></script>
 	<script src="javascript/libs/hammer.js" type="text/javascript"></script>
 
 
@@ -54,6 +53,7 @@
 
 		<h1>Welkom</h1>
 		<p>Met deze zoekmachine kunt u stap voor stap aangeven waar u naar opzoek bent.</p>
+		<p>Elke stap is optioneel en hoeft dus niet per se ingevuld te worden.</p>
 		<a class="button" href="#stap1">Begin ></a>
 	</section>
 
@@ -61,8 +61,8 @@
 		<fieldset class="1">
 			<h1>Waar zou u willen gaan wonen?</h1>
 			<label class="hidden" for="title">Plaats</label>
-			<input type="text" name="place" placeholder="Plaats"/><br>
-			<label>Een straal van:</label><br>
+			<input type="text" name="place" placeholder="Plaats"/>
+			<label>Een straal van:</label>
 			<select name="km" class="distance" name="distance">
 				<option value="0" selected>+ 0 km</option>
 				<option value="+1">+ 1 km</option>
@@ -71,6 +71,9 @@
 				<option value="+10">+ 10 km</option>
 				<option value="+15">+ 15 km</option>
 			</select>
+			
+			<input type="radio" name="houseType" value="" id="radio3">
+			<label for="radio3">Geen voorkeur</label>
 		</fieldset>
 		<a href="#stap2" class="next">volgende</a>
 	</section>
@@ -79,11 +82,14 @@
 		<fieldset class="2">
 			<h1>Hoe duur mag het huis zijn?</h1>
 
-			<label for="title">minimaal: </label><br>
-			€<input type="number" name="priceMin"/><br>
+			<label for="title">minimaal: </label>
+			€<input type="number" name="priceMin"/>
 
-			<label for="title">maximaal: </label><br>
+			<label for="title">maximaal: </label>
 			€<input type="number" name="priceMax"/>
+
+			<input type="radio" name="houseType" value="" id="radio3">
+			<label for="radio3">Geen voorkeur</label>
 		</fieldset>
 		<a href="#stap1" class="previous">vorige</a>
 		<a href="#stap3" class="next">volgende</a>
@@ -95,10 +101,10 @@
 
 			<input type="radio" name="houseType" value="woonhuis" id="radio1">
 			<label for="radio1">Huis</label>
-			<br>
+			
 			<input type="radio" name="houseType" value="appartement" id="radio2">
 			<label for="radio2">Appartement</label>
-			<br>
+			
 			<input type="radio" name="houseType" value="" id="radio3">
 			<label for="radio3">Geen voorkeur</label>
 		</fieldset>
@@ -125,17 +131,20 @@
 			<fieldset class="5">
 				<h1>Ik ben opzoek naar:</h1>
 
-				<label for="title">minimaal aantal kamers: </label><br>
-				<input type="number" name="roomsMin"/><br>
+				<label for="title">minimaal aantal kamers: </label>
+				<input type="number" name="roomsMin"/>
 
-				<label for="title">maximaal aantal kamers: </label><br>
+				<label for="title">maximaal aantal kamers: </label>
 				<input type="number" name="roomsMax"/>
+
+				<input type="radio" name="houseType" value="" id="radio3">
+				<label for="radio3">Geen voorkeur</label>
 
 			</fieldset>
 
 			<a href="#stap4" class="previous">vorige</a>
 
-			<button type="submit" id="searchButton">Zoeken</button>
+			<a href="#result" class="button" type="submit" id="searchButton">Zoeken</a>
 		</form>
 
 	</section>
@@ -182,11 +191,11 @@
 	<script src="javascript/modules/util.js" type="text/javascript"></script>
 	<script src="javascript/modules/loader.js" type="text/javascript"></script>
 	<script src="javascript/modules/templates.js" type="text/javascript"></script>
+	<script src="javascript/modules/mobileGesture.js" type="text/javascript"></script>
 	<script src="javascript/modules/routes.js" type="text/javascript"></script>
 	<script src="javascript/modules/sections.js" type="text/javascript"></script>
 	<script src="javascript/modules/getResult.js" type="text/javascript"></script>
 	<script src="javascript/modules/searchForm.js" type="text/javascript"></script>
-	<script src="javascript/modules/mobileGesture.js" type="text/javascript"></script>
 	<script src="javascript/launch.js" type="text/javascript"></script>
 </body>
 </html>

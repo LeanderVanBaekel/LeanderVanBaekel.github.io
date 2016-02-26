@@ -48,7 +48,8 @@ var getResult = (function () {
 	var getResultObj = {
 
 		searchRequest: function (searchQuery) {
-			dataRequestObj.dataRequest('http://funda.kyrandia.nl/feeds/Aanbod.svc/json/e2d60e885b8742d4b0648300e3703bd7/?type=koop&zo=/', searchQuery, '/&page=1&pagesize=25', function () {
+			var requestUrl = "http://funda.kyrandia.nl/feeds/Aanbod.svc/json/e2d60e885b8742d4b0648300e3703bd7/?type=koop&zo=/";
+			dataRequestObj.dataRequest(requestUrl, searchQuery, '/&page=1&pagesize=25', function () {
 				templates.render('metadata', requestData.Metadata); // Rendering the data for the page with Transparancy
 				for (var i = 0; i < requestData.Objects.length; i++) {
 					requestData.Objects[i].Prijs.Koopprijs = util.addPrice(requestData.Objects[i].Prijs.Koopprijs);
@@ -57,8 +58,8 @@ var getResult = (function () {
 			});
 		},
 		objectRequest: function (searchQuery) {
-			dataRequestObj.dataRequest('http://funda.kyrandia.nl/feeds/Aanbod.svc/json/detail/e2d60e885b8742d4b0648300e3703bd7/koop/', searchQuery, null, function () {
-				console.log(requestData);
+			var requestUrl = "http://funda.kyrandia.nl/feeds/Aanbod.svc/json/detail/e2d60e885b8742d4b0648300e3703bd7/koop/";
+			dataRequestObj.dataRequest(requestUrl, searchQuery, null, function () {
 				requestData.Prijs.Koopprijs = util.addPrice(requestData.Prijs.Koopprijs);
 				templates.render('object', requestData, true);
 			});
@@ -71,3 +72,13 @@ var getResult = (function () {
 	};
 
 }());
+
+
+
+
+
+
+
+
+
+

@@ -1,51 +1,22 @@
 var searchForm = (function () {
 	var searchFormObj = {
 
-
 		 answers : {
-				place: "heel-nederland",
-				distance: "+15",
-				priceMin: "0",
-				priceMax: "1999000000",
-				houseType: "",
-				outdoor: "",
-				roomsMin: "0",
-				roomsMax: "999",
-				url: "",
-				oldUrl: ""
-			},
-
-		listner: function () {
-			var _searchForm = util.getSelector('.search'), // gething some DOM elements
-				searchButton = util.getId('searchButton'),
-				_searchField = util.getId('searchField'),
-				_searchQuery = "";
-			
-			searchButton.onsubmit = function (event) { // listens to the onsubmit function of the form
-				event.preventDefault(); // dont let it do its usual thing bit instead: 
-
-				_searchQuery = _searchField.value; // get the value from the searchfied
-				getResult.searchRequest(_searchQuery); // invoke the datarequest function
-			};
+			place: "heel-nederland",
+			distance: "+15",
+			priceMin: "0",
+			priceMax: "1999000000",
+			houseType: "",
+			outdoor: "",
+			roomsMin: "0",
+			roomsMax: "999",
+			url: "",
+			oldUrl: ""
 		},
+
 		listnerWizard: function () {
-			var form = util.getId("searchWizardForm")
-				searchButton = util.getId('searchButton');
-
-			var answers = {
-				place: "heel-nederland",
-				priceMin: "0",
-				priceMax: "1999000000",
-				houseType: "",
-				outdoor: "",
-				roomsMin: "0",
-				roomsMax: "999",
-				url: ""
-			};
-
-			var currentFieldset = 0;
+			var form = util.getId("searchWizardForm");
 			var fieldsets = document.querySelectorAll('fieldset');
-			var nextButtons = document.querySelectorAll('.next');
 
 			for (var i = 0; i < fieldsets.length; i++) {
 
@@ -83,13 +54,7 @@ var searchForm = (function () {
 							break;
 					};
 				}
-
     		};
-
-			form.onsubmit = function (event) {
-				event.preventDefault();
-				window.location.hash = "result";
-			};
 		}
 	};
 
