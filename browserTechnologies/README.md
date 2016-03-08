@@ -17,7 +17,7 @@ Mijn web-gebruik begint vaak bij google. Ondanks dat het logo niet laad. zijn de
 Wat mij opviel was dat er voor geen een website die ik heb bezocht er een fallback was ingebouwd voor deze plugins. (Dit kan ook te maken hebben gehad met de manier waarop de plugin in google chrome de afbeeldingen blokeerd. In Firefox kreeg ik soms wel een 'alt-text' te zien maar meestal niet.)
 
 Alt tekst in Firefox
-![Alt tekst in Firefox](screenshots/FFalt.png | width=100)
+![Alt tekst in Firefox](screenshots/FFalt.png =250x)
 Alt tekst in Google Chrome
 ![Alt tekst in Google Chrome](screenshots/GCalt.png)
 
