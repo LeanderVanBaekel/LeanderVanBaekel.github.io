@@ -18,6 +18,7 @@ Wat mij opviel was dat er voor geen een website die ik heb bezocht er een fallba
 
 Alt tekst in Firefox
 ![Alt tekst in Firefox](screenshots/FFalt.png = 250x250)
+<img src="screenshots/FFalt.png" width="200">
 Alt tekst in Google Chrome
 ![Alt tekst in Google Chrome](screenshots/GCalt.png)
 
