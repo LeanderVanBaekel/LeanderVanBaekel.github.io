@@ -35,6 +35,22 @@ Tab navigatie werkt goed op de website. Alleen moet je nu op elke pagina als eer
 Deze onderdelen heb ik allemaal niet in de applicatie verwerkt, dus dit heeft geen invloed.
 
 
+## Verbeteringen
+
+### Javascript
+Om de hele applicatie zonder javascript te kunnen draaien zou de XHR request en het inladen van de data op de server moeten gebeuren. Dit zou bijvoorbeeld kunnen met PHP.
+
+### Tab navigatie
+Om niet elke keer door de navigatie/breadcrums heen te moeten lopen kan de navigatie in de HTML naar beneden geplaatst worden en met css alsnog bovenin gepresenteerd blijven.
+
+
+
+
+
+
+
+
+
 
 
 
