@@ -1,5 +1,6 @@
 # Onderzoek voor Browser Technologies week 1
 
+_______________
 ## Afbeeldingen
 
 Ik ben begonnen met de vraag: Hoe preformen sites die ik gebruik als er geen afbeeldingen ingeladen worden?
@@ -18,6 +19,7 @@ Wat mij opviel was dat er voor geen een website die ik heb bezocht er een fallba
 
 Alt tekst in Firefox
 <img alt="Alt tekst in Firefox" src="screenshots/FFalt.png" width="400">
+
 Alt tekst in Google Chrome
 <img alt="Alt tekst in Google Chrome" src="screenshots/GCalt.png" width="400">
 
@@ -25,7 +27,7 @@ Alt tekst in Google Chrome
 ### Lezen
 
 
-
+_____________________
 ## Breedband internet
 
 Traag internet bestaat niet! Toch? 

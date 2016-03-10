@@ -1,0 +1,289 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden; 
+}
+
+html {
+	font-family: 'lato', 'helvetica', 'san-serif';
+	background-color: white;
+}
+
+body {
+	color: #55241A;
+	font-size: 1.2em;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+nav {
+	display: block;
+	padding: 0.5em 0;
+	width: 100vw;
+	height: 3em;
+	background-color: #F8B000;
+	color: white;
+    border-bottom: 2px solid #6EC8E5;
+}
+
+nav img {
+	height: 2em;
+	margin: 0 auto;
+	display: block;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0.5em;
+	height: 100%;
+	display: inline-block;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 0.5em 0 0;
+	border-left: 1px solid #DB9B24;
+	height: 100%;
+	display: inline-block;
+}
+
+section {
+	background: linear-gradient(to bottom, #E7F1F5 0%, #E7F1F5 60%, #fff 90%);
+	min-width: 100vw;
+	xmin-height: calc(100vh - 6em);
+	margin: 0em auto 0 auto;
+	text-align: center;
+}
+
+@keyframes RTL {
+	100%  { 
+		transform: rotateY(0) ;
+		transform-origin: 100%;
+	}
+	0% { 
+		transform: rotateY(90deg);
+		transform-origin: 100%;
+	}
+}
+
+@keyframes LTR {
+	100%  { 
+		transform: rotateY(0) ;
+		transform-origin: 00%;
+	}
+	0% { 
+		transform: rotateY(90deg);
+		transform-origin: 0%;
+	}
+}
+
+
+h1 {
+	font-size: 2em;
+	line-height: 2;
+	width: 100%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+p {
+	font-weight: 200;
+}
+
+
+#dataSection > a {
+	color: #55241A;
+	width: 100%;
+}
+
+#dataSection p,
+#dataSection span,
+#object p,
+#object span {
+	width: 49%;
+	display: inline-block;
+	text-align: left;
+}
+
+
+button,
+.button {
+	display: block;
+	margin: 1em auto;
+	padding: 0.6em;
+	width: 10em;
+	font-size: 1em;
+	background-color: #3888C5;
+	border: none;
+	color: white;
+	border-bottom: 0.6em solid rgba(50, 116, 187,1.0);
+}
+
+button:active,
+button:hover,
+.button:active,
+.button:hover {
+	margin: 1.3em auto 1em auto;
+	border-bottom: 0.3em solid rgba(50, 116, 187,1.0);
+}
+
+section img {
+	max-width: 100%;
+	margin-bottom: 1em;
+	margin: 0.5em auto;
+	box-shadow: 0 0 0.2em 0.2em rgba(0,0,0,0.1);
+}
+
+/*Bron: http://www.w3schools.com/howto/howto_css_loader.asp*/
+.loader {
+    border: 0.4em solid #f3f3f3; /* Light grey */
+    border-top: 0.4em solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    margin: 0 auto;
+    animation: spin 2s linear infinite ! important;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.page:not(.hidden) * {
+	animation: slideTop 1s ease;
+}
+
+@keyframes slideTop{
+	0% {
+		opacity: 0;
+		transform: translateY(-100vh);
+		position: 
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+.hidden {
+	display: none !important;
+}
+
+.object {
+	width: 100%;
+	max-width: 30em;
+	display: block;
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 0.5em auto;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0 0 0.2em 0.2em rgba(0,0,0,0.1);
+}
+
+.object h1 { 
+	font-size: 1em;
+}
+
+form {
+	xmin-height: 100vh;
+}
+
+section a {
+	color: #55241A;
+}
+
+fieldset {
+	xmin-height: 100vh;
+	border: none;
+}
+
+fieldset > * {
+	cursor: pointer;
+}
+
+input[type="text"], input[type="number"], select {
+	font-size: 1em;
+	width: 10em;
+	padding: 0.3em;
+	margin: 0.2em auto 1em auto;
+	display: block;
+}
+
+input[type="radio"] {
+	display: block;
+	margin: 2em auto 0 auto;
+}
+
+section a {
+	display: inline-block;
+	width: 33%;
+	margin-top: 1em;
+}
+
+section a[class~="previous"]:before {
+	content: "< ";
+
+}
+section a[class~="next"]:after {
+	content: " >";
+}
+
+
+fieldset h1 {
+	font-size: 1.5em;
+	line-height: 1.2;
+	margin: 0.5em 0;
+}
+
+
+
+.breadcrumbs {
+	box-shadow: inset 0 0 0.2em 0.2em rgba(0,0,0,0.1);
+}
+
+.breadcrumbs ul {
+	list-style-type: none;
+	margin: 0em 0.3em 0.5em 0.3em;
+	padding: 0.7em 0 0.5em 0;
+	width: 100%;
+	-webkit-margin-before: 0;
+	-webkit-padding-start: 0;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	padding: 0em 0 0 0;
+	margin: 0.2em 0.5em;
+}
+
+.breadcrumbs a {
+	color: #6EC8E5;
+	font-size: 1em;
+}
+
+.breadcrumbs a:after {
+	content: " >";
+	margin-left: 0.2em;
+	font-size: 0.8em;
+}
+
+#result {
+	padding-top: 1em;
+	min-height: 80vh;
+}
+
+
+
+
+
+
+
