@@ -5,7 +5,7 @@
 ### Javascript uit
 Tijdens het testen van mijn app ben ik als eerst aangelopen tegen het feit dat de zoekfunctie alleen doormiddel van JS te gebruiken is. Ook verbergt hij de pagina's niet die niet weergegeven horen te worden.
 
-![Zonder Javascript](/screenshots/no-script.png)
+![Zonder Javascript](screenshots/no-script.png)
 
 
 ### Afbeeldingen uit
@@ -15,7 +15,7 @@ Als er geen images worden ingeladen is de web app ook zeker niet stuk. Het enigs
 ### CSS uit
 Op het moment dat ik de CSS uit heb gezet bleek het verbergen van de pagina's ook niet meer te werken. Dit komt omdat dat gebeurd met een class die wordt gestyled in de css file. De web app gaat hier niet op stuk, hij blijft wel werken.
 
-![no css](/screenshots/no-css.png)
+![no css](screenshots/no-css.png)
 
 
 ### Kleur
@@ -24,7 +24,7 @@ In zwart/wit is de website nogsteeds duidelijk. Met de kleurenblindheids filters
 ### Breedband internet
 De web app doet het erg goed op traag internet (laadtijd 130ms op 50kb/s). de reslultaten ophalen gaat veel langzamer. Hier zit wel een spinner, die aangeeft dat er iets geladen wordt. Vervolgens laat hij ook eerst de HTML in en daarna pas de plaatjes.
 
-![slow speed](/screenshots/slow.png)
+![slow speed](screenshots/slow.png)
 
 
 ### Tab navigatie
