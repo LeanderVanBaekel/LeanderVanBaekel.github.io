@@ -8,6 +8,7 @@ img {
 
 header {
 	width: 100%;
+	height:expression(this.scrollHeight<101?"100px":"auto"); 
 	height: 50vh;
 	max-height: 56vw;
 	overflow: hidden;
