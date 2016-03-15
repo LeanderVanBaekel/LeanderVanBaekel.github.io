@@ -29,7 +29,7 @@ voor HDMI
 De viewport
 
 
-Feacher detection
+Feature detection
 Oppassen want werkt niet altijd.
 
 Geen toekomst voor Big screen browsers
