@@ -6,10 +6,10 @@ img {
 	width: 100%;
 }
 
-header {
+.header {
 	width: 100%;
 	height: 300px; 
-	xheight: 50vh;
+	height: 50vh;
 	max-height: 56vw;
 	overflow: hidden;
 }
