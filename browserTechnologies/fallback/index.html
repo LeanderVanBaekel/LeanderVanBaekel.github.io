@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<script src="javascript/script.js" type="text/javascript" async></script>
-	<script src="javascript/picturefill.js" type="text/javascript" async></script>
+
+	<!-- <script src="javascript/picturefill.js" type="text/javascript" async></script> -->
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -22,32 +23,50 @@
 </head>
 <body>
 
-	<div class="header" id="srcset">
-		<img 
-			alt="header image"
-			src="images/header500.jpg" 
-			sizes="(width: 200px)" 
-			srcset="images/header500.jpg 500w,
-	                images/header1000.jpg 1000w, 
-	                images/header.jpg 1800w">
-	</header>
-
 	<article>
+		
 		<h1>Browser technologies opdracht 2.1</h1>
+		
 		<section>
 			<h2>HTML features</h2>
 			<ul>
 				<li><a href="#srcset">SRCSet</a></li>
-				<li></li>
+				<li>Hidden Atribute</li>
 			</ul>
 
+			<div class="header" id="srcset">
+				<img 
+					alt="header image"
+					src="images/header1000.jpg" 
+					sizes="(width: 200px)" 
+					srcset="images/header500.jpg 500w,
+			                images/header1000.jpg 1000w, 
+			                images/header.jpg 1800w">
+			</div>
+			<p>image wordt bepaald door srcset, fallback is de standaard src die de img tag heeft.</p>
+
+			<p>een element niet weergeven met het html5 attribute 'hidden':</p>
+
+			<div hidden>
+				You can't see me!
+			</div>
+
+			<p>De fallback is:</p>
+			<pre>
+*[hidden] { 
+	display: none;
+}
+			</pre>
 		</section>
+
 		<section>
 			<h2>CSS features</h2>
 			<ul>
 				<li>viewport with & height</li>
 				<li></li>
 			</ul>
+
+			
 
 		</section>
 		<section>
