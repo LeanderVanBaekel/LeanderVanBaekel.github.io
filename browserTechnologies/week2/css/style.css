@@ -12,6 +12,8 @@ html {
 body {
 	color: #55241A;
 	font-size: 1.2em;
+	background: linear-gradient(to bottom, #E7F1F5 0%, #E7F1F5 60%, #fff 90%);
+
 }
 
 a {
@@ -52,7 +54,6 @@ nav li {
 }
 
 section {
-	background: linear-gradient(to bottom, #E7F1F5 0%, #E7F1F5 60%, #fff 90%);
 	min-width: 100vw;
 	min-height: 80vh;
 	margin: 0em auto 0 auto;
