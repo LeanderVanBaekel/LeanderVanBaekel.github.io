@@ -58,6 +58,7 @@ section {
 	min-height: 80vh;
 	margin: 0em auto 0 auto;
 	text-align: center;
+	border-top: 0.3em solid rgba(50, 116, 187,1.0);
 }
 
 @keyframes RTL {
