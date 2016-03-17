@@ -9,17 +9,14 @@ var sections = (function () {
 		// function called in the app.innit to hide al pages
 		// this is not done in the html because we want the page to be visible if there is no javascript in the browser
 		hideAll: function () {
-			if (document.querySelectorAll) {
-				var allPages = document.querySelectorAll(".page"); // saving al the pages from the HTML
-				
-				for (var i = 0; i < allPages.length; i++) { // loop through the pages
-					console.log(i);
-					allPages[i].classList.add(hidden);
-				};
+			var allPages = document.querySelectorAll(".page"); // saving al the pages from the HTML
+			
+			for (var i = 0; i < allPages.length; i++) { // loop through the pages
+				allPages[i].classList.add(hidden);
+			};
 
-				if (!window.location.hash) { // if the user did not enter a hash, he wil go to home
-					window.location.hash = '#home';
-				}
+			if (!window.location.hash) { // if the user did not enter a hash, he wil go to home
+				window.location.hash = '#home';
 			}
 		},
 
