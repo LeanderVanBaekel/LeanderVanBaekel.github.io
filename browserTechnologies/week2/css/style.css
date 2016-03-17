@@ -54,7 +54,7 @@ nav li {
 section {
 	background: linear-gradient(to bottom, #E7F1F5 0%, #E7F1F5 60%, #fff 90%);
 	min-width: 100vw;
-	xmin-height: calc(100vh - 6em);
+	min-height: 80vh;
 	margin: 0em auto 0 auto;
 	text-align: center;
 }
