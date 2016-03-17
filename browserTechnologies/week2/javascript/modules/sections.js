@@ -13,6 +13,7 @@ var sections = (function () {
 				var allPages = document.querySelectorAll(".page"); // saving al the pages from the HTML
 				
 				for (var i = 0; i < allPages.length; i++) { // loop through the pages
+					console.log(i);
 					allPages[i].classList.add(hidden);
 				};
 
