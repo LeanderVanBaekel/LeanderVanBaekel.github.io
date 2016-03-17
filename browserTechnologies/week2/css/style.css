@@ -57,7 +57,7 @@ section {
 	width: 100vw;
 	/*min-height: 80vh;*/
 	margin: 2vh auto 2vh auto;
-	padding: 8vh auto 8vh auto;
+	padding: 8vh 2em 8vh 2em;
 	text-align: center;
     border-top: 2px solid #6EC8E5;
     max-width: 30em;
