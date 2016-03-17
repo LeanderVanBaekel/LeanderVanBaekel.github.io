@@ -55,8 +55,8 @@ nav li {
 
 section {
 	width: 100vw;
-	min-height: 80vh;
-	margin: 0em auto 0 auto;
+	/*min-height: 80vh;*/
+	margin: 10vh auto 10vh auto;
 	text-align: center;
     border-top: 2px solid #6EC8E5;
     max-width: 30em;
