@@ -1,52 +1,12 @@
-#Progressive enhancement - Funda SPA
+# Core function - Funda SPA
 
-## Huidige status:
+## een beschrijving van de feature
+De web app is bedoeld om de filter functie van Funda op te delen in meerdere stappen zodat het ook voor de minder ervaren gebruikers duidelijk is wat er allemaal gezocht kan worden.
 
-### Javascript uit
-Tijdens het testen van mijn app ben ik als eerst aangelopen tegen het feit dat de zoekfunctie alleen doormiddel van JS te gebruiken is. Ook verbergt hij de pagina's niet die niet weergegeven horen te worden.
-
-![Zonder Javascript](screenshots/no-script.png)
+## welke browser de feature wel of niet ondersteunen
 
 
-### Afbeeldingen uit
-Als er geen images worden ingeladen is de web app ook zeker niet stuk. Het enigste wat er mist is het logo en de afbeeldingen van de huizen.
-
-
-### CSS uit
-Op het moment dat ik de CSS uit heb gezet bleek het verbergen van de pagina's ook niet meer te werken. Dit komt omdat dat gebeurd met een class die wordt gestyled in de css file. De web app gaat hier niet op stuk, hij blijft wel werken.
-
-![no css](screenshots/no-css.png)
-
-
-### Kleur
-In zwart/wit is de website nogsteeds duidelijk. Met de kleurenblindheids filters blijft het contrast ook nog goed op de hele app.
-
-### Breedband internet
-De web app doet het erg goed op traag internet (laadtijd 130ms op 50kb/s). de reslultaten ophalen gaat veel langzamer. Hier zit wel een spinner, die aangeeft dat er iets geladen wordt. Vervolgens laat hij ook eerst de HTML in en daarna pas de plaatjes.
-
-![slow speed](screenshots/slow.png)
-
-
-### Tab navigatie
-Tab navigatie werkt goed op de website. Alleen moet je nu op elke pagina als eerst door de navigatie/breadcrums heen tabben om bij de content te komen.
-
-
-### Custom Fonts, Cookies, Local storage, CDN
-Deze onderdelen heb ik allemaal niet in de applicatie verwerkt, dus dit heeft geen invloed.
-
-
-## Verbeteringen
-
-### Javascript
-Om de hele applicatie zonder javascript te kunnen draaien zou de XHR request en het inladen van de data op de server moeten gebeuren. Dit zou bijvoorbeeld kunnen met PHP.
-
-### Tab navigatie
-Om niet elke keer door de navigatie/breadcrums heen te moeten lopen kan de navigatie in de HTML naar beneden geplaatst worden en met css alsnog bovenin gepresenteerd blijven.
-
-
-
-
-
+een beschrijving hoe de fallback werkt
 
 
 
