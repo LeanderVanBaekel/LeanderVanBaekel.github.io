@@ -1,5 +1,7 @@
 # Core function - Funda SPA
 
+[link naar de app](http://leandervanbaekel.github.io/browserTechnologies/week2/)
+
 ## een beschrijving van de feature
 De web app is bedoeld om de filter functie van Funda op te delen in meerdere stappen zodat het ook voor de minder ervaren gebruikers duidelijk is wat er allemaal gezocht kan worden.
 
