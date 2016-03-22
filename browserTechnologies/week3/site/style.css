@@ -9,6 +9,10 @@ body {
 	overflow: hidden;
 }
 
+header, nav, article, section {
+	display: block;
+}
+
 header {
 	text-align: center;
 	height: 6rem;
