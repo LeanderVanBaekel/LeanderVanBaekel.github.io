@@ -1,36 +1,11 @@
 // source: http://www.html5rocks.com/en/tutorials/dnd/basics/
 // source: http://html5demos.com/drag
+console.log(window);
+if('draggable' in document.createElement('span') && window.screen.width >= 672) {
+  // alert("Drag support detected");
 
-// function handleDragStart(e) {
-//   this.style.opacity = '0.4';  // this / e.target is the source node.
-// }
+  document.querySelector('.drop-zone').classList.remove('hidden')
 
-// function handleDragOver(e) {
-//   if (e.preventDefault) {
-//     e.preventDefault(); // Necessary. Allows us to drop.
-//   }
-
-//   e.dataTransfer.dropEffect = 'move';  // See the section on the DataTransfer object.
-
-//   return false;
-// }
-
-// function handleDragEnter(e) {
-//   // this / e.target is the current hover target.
-//   this.classList.add('over');
-// }
-
-// function handleDragLeave(e) {
-//   this.classList.remove('over');  // this / e.target is previous target element.
-// }
-
-// var cols = document.querySelectorAll('.product');
-// [].forEach.call(cols, function(col) {
-//   col.addEventListener('dragstart', handleDragStart, false);
-//   col.addEventListener('dragenter', handleDragEnter, false);
-//   col.addEventListener('dragover', handleDragOver, false);
-//   col.addEventListener('dragleave', handleDragLeave, false);
-// });
 	function addEvent(to, type, fn){
 	    if(document.addEventListener){
 	        to.addEventListener(type, fn, false);
@@ -40,11 +15,6 @@
 	        to['on'+type] = fn;
 	    }  
 	};
-
-  var eat = ['yum!', 'gulp', 'burp!', 'nom'];
-  var yum = document.createElement('p');
-  var msie = /*@cc_on!@*/0;
-  yum.style.opacity = 1;
 
   var element = '';
 
@@ -91,3 +61,4 @@
     list.appendChild(element);
     return false;
   });
+}
