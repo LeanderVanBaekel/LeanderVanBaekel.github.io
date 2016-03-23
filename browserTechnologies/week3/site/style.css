@@ -125,8 +125,6 @@ article[draggable] img {
 	}
 
 	#products, #list {
-		xheight: calc(100vh - 6rem);
-		xpadding-top: 6rem;
 		width: 48vw;
 		margin: 0 0.2vw;
 		display: inline-block;
