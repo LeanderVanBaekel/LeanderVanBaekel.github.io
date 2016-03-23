@@ -1,7 +1,9 @@
 // source: http://www.html5rocks.com/en/tutorials/dnd/basics/
 // source: http://html5demos.com/drag
+// source: http://stackoverflow.com/questions/2856262/detecting-html5-drag-and-drop-support-in-javascript
+
 console.log(window);
-if('draggable' in document.createElement('span') && window.screen.width >= 672) {
+if('draggable' in document.createElement('span') && window.innerWidth >= 672) {
   // alert("Drag support detected");
 
   document.querySelector('.drop-zone').classList.remove('hidden')
@@ -42,23 +44,26 @@ if('draggable' in document.createElement('span') && window.screen.width >= 672) 
     return false;
   });
 
-  // to get IE to work
-  // addEvent(dropZone, 'dragenter', function (e) {
-  //   this.className += 'over';
-  //   return false;
-  // });
-
-  // addEvent(dropZone, 'dragleave', function () {
-  //   this.className += '';
-  // });
-
   addEvent(dropZone, 'drop', function (e) {
     if (e.stopPropagation) e.stopPropagation(); // stops the browser from redirecting...why???
 
     var list = document.getElementById('list');
-    console.log(element);
 
     list.appendChild(element);
+
+    var button = element.querySelector('button');
+    button.innerHTML = 'Afstrepen';
+    button.classList.add('strike');// HIERRR
+
     return false;
   });
 }
+
+
+
+
+
+
+
+
+
