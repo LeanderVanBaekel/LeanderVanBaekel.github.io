@@ -1,0 +1,19 @@
+body {
+	overflow: auto;
+}
+
+header h1 {
+	margin-top: 0.8em;
+}
+
+nav {
+	display: none;
+}
+
+#products, #list {
+	xheight: calc(100vh - 6rem);
+	xpadding-top: 6rem;
+	width: 48vw;
+	margin: 0 0.2vw;
+	display: inline-block;
+}
