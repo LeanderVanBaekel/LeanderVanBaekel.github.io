@@ -2,24 +2,11 @@
 // source: http://html5demos.com/drag
 // source: http://stackoverflow.com/questions/2856262/detecting-html5-drag-and-drop-support-in-javascript
 
-
-var createButton = function(button, aria, content, cclass) {
-  if (button) {
-    button.setAttribute("aria-label", aria);
-    button.innerHTML = content;
-    button.classList.add(cclass);
-  } else {
-    var button = document.createElement('button');
-    button.setAttribute("aria-label", aria);
-    button.innerHTML = content;
-    button.classList.add(cclass);
-  }
-  return button;
-};
-
+/******************
+** Drag and Drop **
+*******************/
 
 if('draggable' in document.createElement('span') && window.innerWidth >= 672) {
-  // alert("Drag support detected");
 
   document.querySelector('.drop-zone-field').classList.remove('hidden')
 
@@ -76,104 +63,74 @@ if('draggable' in document.createElement('span') && window.innerWidth >= 672) {
   });
 }
 
-// var buttonHandler = function () {
 
-//   var buttons = document.querySelectorAll('button');
-//   for (var i = 0; i < buttons.length; i++) {
-//     console.log(buttons[i]);
-//     var thisButton = buttons[i];
-//     thisButton.addEventListener('click', function(event) {
-//       console.log(event.target);
-//       if (event.target.classList.contains('strike')) {
-//         var product = event.target.parentNode;
-//         console.log(product);
-//         product.querySelector('h3').classList.add('strike-through');
-//         //var oldButton = product.querySelector('button');
-//         //parent.removeChild(oldButton);
-//         //var newButton = createButton(null, 'weghalen', 'x', 'remove')
-//         //parent.appendChild(newButton);
 
-//         var button = product.querySelector('button');
-//         button.classList.remove('strike');
-//         button = createButton(button, 'weghalen', 'x', 'remove');
-//         product.querySelector('h3').classList.remove('strike-through');
+/******************
+**    Buttons    **
+*******************/
 
-//       } else if (event.target.classList.contains('remove')) {
-//         var product = event.target.parentNode;
-//         var button = product.querySelector('button');
-//         button.classList.remove('remove');
-//         button = createButton(button, 'toevoegen aan lijst', '+', 'add');
-//         product.querySelector('h3').classList.remove('strike-through');
-//         var productContainer = document.getElementById('products').querySelector('.product-container');
-//         productContainer.appendChild(product);
-//       } else if (event.target.classList.contains('add')) {
-//         var product = event.target.parentNode;
-//         var button = product.querySelector('button');
-//         button = createButton(button, 'afstrepen', '-', 'strike');
-//         var productContainer = document.getElementById('list').querySelector('.product-container');
-//         productContainer.appendChild(product);
-//       }
-//       // buttonHandler();
-//     });
-//   }
-// };
 
+var createButton = function(button, aria, content, cclass) {
+  if (button) {
+    button.setAttribute("aria-label", aria);
+    button.innerHTML = content;
+    button.classList.add(cclass);
+  } else {
+    var button = document.createElement('button');
+    button.setAttribute("aria-label", aria);
+    button.innerHTML = content;
+    button.classList.add(cclass);
+  }
+  return button;
+};
 
 var buttonHandler = function () {
 
   var buttons = document.querySelectorAll('button');
+  
   for (var i = 0; i < buttons.length; i++) {
+
     var thisButton = buttons[i];
     thisButton.addEventListener('click', function(event) {
-      var classes = event.target.classList
-      console.log(classes[0]);
+      
+      var classes = event.target.classList;
+
       switch (classes[0]) {
 
         case 'strike':
           var product = event.target.parentNode;
-          console.log(product);
-          product.querySelector('h3').classList.add('strike-through');
-          //var oldButton = product.querySelector('button');
-          //parent.removeChild(oldButton);
-          //var newButton = createButton(null, 'weghalen', 'x', 'remove')
-          //parent.appendChild(newButton);
-
           var button = product.querySelector('button');
+
+          product.querySelector('h3').classList.add('strike-through');          
           button.classList.remove('strike');
           button = createButton(button, 'weghalen', 'x', 'remove');
-          //product.querySelector('h3').classList.remove('add');
-          return false;
           break;
+
         case 'remove':
           var product = event.target.parentNode;
           var button = product.querySelector('button');
+          var productContainer = document.getElementById('products').querySelector('.product-container');
+          
           button.classList.remove('remove');
           button = createButton(button, 'toevoegen aan lijst', '+', 'add');
           product.querySelector('h3').classList.remove('strike-through');
-          var productContainer = document.getElementById('products').querySelector('.product-container');
           productContainer.appendChild(product);
           break;
+
         case 'add':
           var product = event.target.parentNode;
           var button = product.querySelector('button');
+          var productContainer = document.getElementById('list').querySelector('.product-container');
+
           button.classList.remove('add');
           button = createButton(button, 'afstrepen', '-', 'strike');
-          var productContainer = document.getElementById('list').querySelector('.product-container');
           productContainer.appendChild(product);
           break;
+
       }
-      console.log(event.target.classList);
     });
   }
 };
-
-
-
-
-
-
-
-
 
 buttonHandler();
 
