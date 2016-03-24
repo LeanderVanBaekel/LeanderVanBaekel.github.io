@@ -1,12 +1,12 @@
-body {
+.body {
 	overflow: auto;
 }
 
-header h1 {
+.header h1 {
 	margin-top: 0.8em;
 }
 
-nav {
+.nav {
 	display: none;
 }
 
