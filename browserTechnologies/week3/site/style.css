@@ -86,29 +86,63 @@ article[draggable] img {
 	overflow: scroll;
 }
 
-.product {
+/*.product {
 	background-color: rgba(189, 195, 199,0.4);
-	height: 5em;
+	xheight: 15em;
 	margin-top: 0.5em;
 }
 
 .product img {
-	float: left;
-	height: 100%;
+	xfloat: left;
+	display: block;
+	width: 100%;
+	height: 10em;
 	opacity: 0.5;
 }
 
 .product div {
-	float: left;
+	xfloat: left;
+	display: inline-block;
 	text-align: left;
 }
 
 .product button {
-	float: right;
-	height: 100%;
+	xfloat: right;
+	xheight: 100%;
+	display: inline-block;
 	width: 10em;
 	border: none;
+	background-color: rgba(255,255,255,1);
+}*/
+
+
+.product {
+  margin: 0.5em 0;
+	background-color: rgba(189, 195, 199,0.4);
+  height: 10rem;
 }
+
+.product img {
+  width: 100%;
+  height: 8rem;
+}
+
+.product h3 {
+  float: left;
+  font-size: 1em;
+  margin-top: 0em;
+}
+
+.product button {
+  float: right;
+  border: none;
+  margin-top: -0.10em;
+  font-weight: 600;
+  font-size: 1.2em;
+  width: 2em;
+  background-color: rgba(0,0,0,0);
+}
+
 
 @media (min-width: 42em) {
 
@@ -131,9 +165,18 @@ article[draggable] img {
 	}
 }
 
+.drop-zone-field {
+	border: 0.1rem dotted gray;
+	height: 9.9rem;
+}
 
+.drop-zone-field p {
+	padding-top: 4em;
+}
 
-
+.strike-through {
+	text-decoration: line-through;
+}
 
 
 
