@@ -134,12 +134,11 @@ var buttonHandler = function () {
 
 // buttonHandler();
 
-var test = document.querySelector('body').classList; 
-console.log(test);
+var classListTest = document.querySelector('body').classList; 
 
-if (test) {
+if (classListTest) {
   buttonHandler();
 } else {
-  console.log("neeee");
+  console.log("classlist wordt niet ondersteund");
 }
 
