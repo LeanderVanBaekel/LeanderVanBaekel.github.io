@@ -132,8 +132,14 @@ var buttonHandler = function () {
   }
 };
 
-buttonHandler();
+// buttonHandler();
 
+var test = document.querySelector('body').classList; 
+console.log(test);
 
-
+if (test) {
+  buttonHandler();
+} else {
+  console.log("neeee");
+}
 
