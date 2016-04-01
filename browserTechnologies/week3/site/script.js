@@ -25,7 +25,7 @@ if('draggable' in document.createElement('span') && window.innerWidth >= 672) {
   var products = document.querySelectorAll('.product'), el = null;
   for (var i = 0; i < products.length; i++) {
     el = products[i];
-  
+
     el.setAttribute('draggable', 'true');
   
     addEvent(el, 'dragstart', function (e) {
@@ -92,7 +92,7 @@ var buttonHandler = function () {
 
     var thisButton = buttons[i];
     thisButton.addEventListener('click', function(event) {
-      
+      event.preventDefault;
       var classes = event.target.classList;
 
       switch (classes[0]) {

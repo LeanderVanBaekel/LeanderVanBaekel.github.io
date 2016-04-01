@@ -1,5 +1,5 @@
 #lifely
-Peter Peerman (.nl)
+Peter Peerdeman (.nl)
 
 ##Debug & optimise
 
