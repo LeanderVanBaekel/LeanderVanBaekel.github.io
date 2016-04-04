@@ -22,7 +22,7 @@ In IE8 bijvoorbeeld voerd het hele script niet uit:
 ![ie8 screenshot](img/ie8.png)
 
 ### semantiek
-De semantiek op de website klopt op veel plekken niet. Dit maakt het voor veel screenreaders lastig om de structuur van de pagina te bepalen.
+De semantiek op de website klopt op veel plekken niet. Dit maakt het voor veel screenreaders lastig om de structuur van de pagina te bepalen.  
 <img src="img/headings.png" width="200px">
 <img src="img/headings2.png" width="200px">  
 Volgens de [w3c regels](https://www.w3.org/TR/html5/dom.html#flow-content-1) moeten sections altijd met een heading beginnen. Op deze manier kunnen screenreaders beter door de content heen gaan.
