@@ -28,6 +28,45 @@ Ik wil met mijn applicatie de gebruiker laten weten of het weer goed is om te wi
 
 ### MVP
 
-- het weer op een plek laten zien
-- duidelijk UI, met een blik zichtbaar
+- het weer van een plek laten zien
+- duidelijk UI, met één blik zichtbaar
 - wind, windrichting, temp
+- live update elke 5 min(?)
+
+### Als het kan
+
+- data terug zien
+- voorspelling
+- eigen instellingen (beginner/gevorderd/expert)
+- Notificatie bij verandering (bedacht door maaike)
+- Locatie veranderen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,22 +1,24 @@
 import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
+
+var makkumData = {
+	"temp_c":10.7,
+	"wind_dir":"SSW",
+	"wind_degrees":200,
+	"wind_mph":21.0,
+	"wind_gust_mph":0,
+	"wind_kph":33.8,
+	"wind_gust_kph":0,
+	"wind_string":"From the SSW at 21.0 MPH",
+	"temperature_string":"51.3 F (10.7 C)"
+};
+
+Template.info.helpers({
+	data: makkumData
 });
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
+Meteor.call('getWeather', function(err,res){ 
+	console.log(res);
 });
