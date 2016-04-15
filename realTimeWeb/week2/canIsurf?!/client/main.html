@@ -1,0 +1,24 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+
+  {{today}}
+
+  <p>{{data.date}}</p>
+  <p>{{data.location}}</p>
+  <p>{{data.temp_c}}</p>
+  <p>{{data.wind_dir}}</p>
+  <p>{{data.degrees}}</p>
+  <p>{{data.kph}}</p>
+  <p>{{data.icon}}</p>
+  <img src={{data.icon_url}} alt="">
+</template>
+

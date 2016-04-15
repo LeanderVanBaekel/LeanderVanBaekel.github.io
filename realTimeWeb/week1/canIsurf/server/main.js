@@ -4,13 +4,11 @@ Meteor.startup(() => {
 	// code to run on server at startup
 });
 
-makkumWeather = new Mongo.Collection('makkumWeather');
-
-console.log(makkumWeather);
-
 Meteor.methods({
   // The method expects a valid IPv4 address
   'getWeather': function () {
+  	var test = makkumWeather.find({});
+  	console.log(test);
     console.log('Method.getWeather for');
     // Construct the API URL
     var apiUrl = 'http://api.wunderground.com/api/fba2114278678c9a/conditions/q/53.051,5.388.json';
@@ -27,7 +25,7 @@ Meteor.methods({
 		"wind_string": response.wind_string,
 		"temperature_string": response.temperature_string
 	});
-	console.log(makkumWeather.find({}));
+	//console.log(makkumWeather.find({}));
     return response;
   }
 });

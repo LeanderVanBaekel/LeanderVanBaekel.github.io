@@ -20,5 +20,6 @@ Template.info.helpers({
 });
 
 Meteor.call('getWeather', function(err,res){ 
-	console.log(res);
+	// console.log(res);
 });
+
