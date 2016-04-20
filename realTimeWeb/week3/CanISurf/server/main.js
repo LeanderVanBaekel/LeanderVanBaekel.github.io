@@ -75,7 +75,7 @@ Meteor.setInterval(function(){
 		});
 
 	});
-}, 10000);
+}, 60000);
 
 
 Meteor.publish('Weather', function(city) {

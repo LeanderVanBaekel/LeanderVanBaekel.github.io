@@ -3,7 +3,8 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-var city = "Stavoren";
+// var city = "Stavoren";
+var city = new ReactiveVar("Stavoren");
 
 // var cityDep = new Tracker.Dependency;
 
@@ -20,14 +21,14 @@ subscribeToCity = function(newCity) {
   Meteor.call('getWeather', newCity);
 
   window.addEventListener("beforeunload", function (e) {
-  	Meteor.call('removeCity', city);
+  	Meteor.call('removeCity', newCity);
   });
 
 };
 
 Template.hello.onCreated(function helloOnCreated() {
 
-  subscribeToCity(city);
+  subscribeToCity(city.get());
 
 });
 
@@ -36,8 +37,8 @@ Meteor.setInterval
 Template.hello.helpers({
   weather() {
   	// cityDep.changed();
-  	var weather = Weather.findOne({});
-  	console.log(weather);
+  	var weather = Weather.findOne({city:city.get()});
+  	// console.log(weather);
 
   	if (weather.wind_kph > 20) {
   		weather.surfable = true;
@@ -52,30 +53,27 @@ Template.hello.helpers({
 Template.hello.events( {
 
 	'click .stavoren': function (event) {
-		oldCity = city;
-		Meteor.call('removeCity', city);
-		city = "Stavoren";
-		console.log(city);
-		subscribeToCity(city);
-		// Session.set('page','hello');
+		oldCity = city.get();
+		Meteor.call('removeCity', city.get());
+		city.set("Stavoren");
+		console.log(city.get());
+		subscribeToCity(city.get());
 	},
 
 	'click .ijmuiden': function (event) {
-		oldCity = city;
-		Meteor.call('removeCity', city);
-		city = "Ijmuiden";
-		console.log(city);
-		subscribeToCity(city);
-		// Session.set('page','hello');
+		oldCity = city.get();
+		Meteor.call('removeCity', city.get());
+		city.set( "Ijmuiden");
+		console.log(city.get());
+		subscribeToCity(city.get());
 	},
 
 	'click .schaar': function (event) {
-		oldCity = city;
-		Meteor.call('removeCity', city);
-		city = "Schaar";
-		console.log(city);
-		subscribeToCity(city);
-		// Session.set('page','hello');
+		oldCity = city.get();
+		Meteor.call('removeCity', city.get());
+		city.set("Schaar");
+		console.log(city.get());
+		subscribeToCity(city.get());
 	}
 
 });
