@@ -1,24 +1,42 @@
 <head>
-  <title>simple</title>
+	<title>can I surf</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+	{{> canI}}
+
+	{{> expertWeather}}
 </body>
 
-<template name="hello">
+<template name="canI">
+	<main>
+		{{#if data.surf}}
+			<p>It is: {{data.weather.temp_c}} &#176;c and {{data.weather.weather}}.</p>
 
-  {{today}}
+			<p>The wind is blowing at: {{data.weather.wind_kph}} kph from the {{data.weather.wind_dir}}.</p>
 
-  <p>{{data.date}}</p>
-  <p>{{data.location}}</p>
-  <p>{{data.temp_c}}</p>
-  <p>{{data.wind_dir}}</p>
-  <p>{{data.degrees}}</p>
-  <p>{{data.kph}}</p>
-  <p>{{data.icon}}</p>
-  <img src={{data.icon_url}} alt="">
+			<h1>You can surf!</h1>
+		{{else}}
+			<h1>You can't surf!</h1>
+		{{/if}}
+		last update on {{data.weather.date}}
+	</main>
+</template>
+
+<template name="expertWeather">
+	<section class="weather-section">
+<!-- 		{{today}}
+
+		<p>{{data.date}}</p>
+		<p>{{data.location}}</p>
+		<p>{{data.temp_c}}</p>
+		<p>{{data.wind_dir}}</p>
+		<p>{{data.wind_degrees}}</p>
+		<p>{{data.wind_kph}}</p>
+		<p>{{data.icon}}</p>
+		<img src={{data.icon_url}} alt=""> -->
+	</section>
 </template>
 

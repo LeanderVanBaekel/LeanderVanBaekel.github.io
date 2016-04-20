@@ -3,29 +3,68 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
+
 //var today = returnTodaysDate();
 
 var data = new ReactiveVar(["foo"]);
-Meteor.call('getWeather', function(err,res){
-	if (err) {
-		console.log(err);
-	};
-	data.set(res);
+
+callGetLatestWeather = function() {
+	Meteor.call('getLatestWeather', function(err,res){
+		if (err) {
+			console.log(err);
+		};
+		// console.log(res);
+		data.set(res);
+	});
+};
+
+
+// callGetLatestWeather();
+// Meteor.setInterval(function(){callGetLatestWeather()}, 10000);
+
+Template.canI.onRendered(function() {
+	Meteor.subscribe('weatherMakkum');
 });
 
-// var getData = function () {
-// 	//return weatherMakkum.find({date: returnTodaysDate()}).fetch();
-// 	Meteor.call('getWeather', function(err,res, data){
-// 		return res;
-// 	});
-// }
+// Template.expertWeather.helpers({
+//   today() {
+//   	return returnTodaysDate();
+//   },
+//   data() {
+//   	return data.get();
+//   }
+// });
 
-Template.hello.helpers({
-  today() {
-  	return returnTodaysDate();
-  },
+
+Template.canI.helpers({
   data() {
-  	return data.get();
+	var surf = false;
+	//console.log(weatherMakkum.findOne().wind_kph);
+	// var tempData = weatherMakkumLast
+	console.log("test");
+	console.log(weatherMakkum.findOne({}, {sort: {date:-1}}));
+	if (tempData.wind_kph >= 25) {
+		surf = true;
+	}
+
+  	return {surf: surf, weather: tempData};
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
