@@ -26,7 +26,7 @@ subscribeToCity = function(newCity) {
 
 };
 
-Template.hello.onCreated(function helloOnCreated() {
+Template.canI.onCreated(function canIOnCreated() {
 
   subscribeToCity(city.get());
 
@@ -34,7 +34,7 @@ Template.hello.onCreated(function helloOnCreated() {
 
 Meteor.setInterval
 
-Template.hello.helpers({
+Template.canI.helpers({
   weather() {
   	// cityDep.changed();
   	var weather = Weather.findOne({city:city.get()});
@@ -50,7 +50,7 @@ Template.hello.helpers({
   },
 });
 
-Template.hello.events( {
+Template.canI.events( {
 
 	'click .stavoren': function (event) {
 		oldCity = city.get();
@@ -78,7 +78,7 @@ Template.hello.events( {
 
 });
 
-Template.hello.onDestroyed(function helloOnDestroyed() {
+Template.canI.onDestroyed(function canIOnDestroyed() {
 	window.removeEventListener('beforeunload');
 });
 
