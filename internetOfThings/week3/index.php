@@ -1,17 +1,17 @@
 <?php  
-$light = $_GET['light'];
-if($light == "on") {  
-  $file = fopen("lampje.txt", "w") or die("can't open file");
+$pir = $_GET['pir'];
+if($pir == "on") {  
+  $file = fopen("pir.txt", "w") or die("can't open file");
   fwrite($file, 'on');
   fclose($file);
 } 
-else if ($light == "off") {  
-  $file = fopen("lampje.txt", "w") or die("can't open file");
+else if ($pir == "off") {  
+  $file = fopen("pir.txt", "w") or die("can't open file");
   fwrite($file, 'off');
   fclose($file);
 }
-else if ($light == "auto") {  
-  $file = fopen("lampje.txt", "w") or die("can't open file");
+else if ($pir == "auto") {  
+  $file = fopen("pir.txt", "w") or die("can't open file");
   fwrite($file, 'auto');
   fclose($file);
 }
@@ -88,9 +88,10 @@ else if ($light == "auto") {
         ?>
     <h1>Cat away!</h1>
     <div class="buttons">
-        <a href="?light=off" class="aOff"><button id="off-leander" class="off">click off leander</button></a>
-        <a href="?light=on" class="aOn"><button id="on-leander" class="on">click on leander</button></a>
-        <a href="?light=auto" class="aOn"><button id="auto-leander" class="on">click auto leander</button></a>
+        <a href="?pir=off" class="aOff"><button id="off-leander" class="off">Pump off</button></a>
+        <a href="?pir=auto" class="aAuto"><button id="auto-leander" class="auto">Pump auto</button></a>
+        <a href="?pir=on" class="aOn"><button id="on-leander" class="on">Pump on</button></a>
+        
     </div>
 
 <!--     <div class="turn">
@@ -103,7 +104,7 @@ else if ($light == "auto") {
 
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
-    <script src="xhr.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -10,20 +10,19 @@
 #include <WiFiServer.h>
 #include <WiFiUdp.h>
 
-#include <ArduinoJson.h>
-
 #include <ESP8266HTTPClient.h>
-//char ssid[] = "iPhone van Leander van Baekel";
- char ssid[] = "beneden10";
-char pass[] = "31051993";
+
+char ssid[] = "xxx";
+char pass[] = "xxx";
 WiFiClient  client;
 
 char* host = "www.caffeine-works.nl";
-String path = "/iot2/test.json";
+String path = "/iot2/pir.txt";
 const int httpPort = 80;
 
 int pirPin = D0;
 int relPin = D1;
+int pirLed = D5;
 int redLed = D2;
 int yellowLed = D3;
 int greenLed = D4;
@@ -50,6 +49,7 @@ void setup() {
   
   pinMode(relPin, OUTPUT);
   pinMode(pirPin, INPUT);
+  pinMode(pirLed, OUTPUT);
   pinMode(redLed, OUTPUT);
   pinMode(yellowLed, OUTPUT);
   pinMode(greenLed, OUTPUT);
@@ -57,20 +57,20 @@ void setup() {
  
 void loop() {
 
-  val = digitalRead(pirPin); //read state of the PIR
+  pirVal = digitalRead(pirPin); //read state of the PIR
+  if (pirVal == LOW ) {
+    digitalWrite(pirLed, LOW);
+  } else {
+    digitalWrite(pirLed, HIGH);
+  }
 
   HTTPClient http;
 
-  http.begin("http://caffeine-works.nl/iot2/lampje.txt"); 
+  http.begin("http://caffeine-works.nl/iot2/pir.txt"); 
   int httpCode = http.GET();        
   String payload = http.getString();
 
   Serial.println("Server: " + payload);
-
-//  StaticJsonBuffer<200> jsonBuffer;
-//  JsonObject& root = jsonBuffer.parseObject(payload);
-
-//  String test1 = root["test1"];
 
   String siteMode = payload;
   
@@ -108,8 +108,7 @@ void loop() {
   }
 
 
- // POST
- // Define data
+ // Post Event
  String data;
  String pir;
  pir = String(digitalRead(D0));
@@ -135,6 +134,6 @@ void loop() {
  }
 
   
-  delay(6000);
+  delay(1000);
 }
 

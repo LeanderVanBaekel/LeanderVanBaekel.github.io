@@ -30,14 +30,15 @@ $.getJSON( "test.json", function(data) {
             columns: [
                 dates,
                 values
-            ]
+            ],
+            type: 'bar',
         },
         axis : {
             x : {
                 type : 'timeseries',
                 tick: {
-                    rotate: 75,
-                    format: '%Y-%m-%d %H:%M:%S'
+                    rotate: 90,
+                    format: '%Y-%m-%d %H:%M'
                   //format: '%Y' // format string is also available for timeseries data
                 }
             }
