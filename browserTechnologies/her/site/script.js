@@ -142,18 +142,18 @@ var buttonHandler = function () {
 
 // buttonHandler();
 
-var classListTest = false;
+var querySelectorTest = false;
 var addeventTest = false;
 
 if(typeof(document.querySelectorAll) != 'undefined'){
-  classListTest = true;
+  querySelectorTest = true;
  }
 
 if (document.addEventListener) {
   addeventTest = true;
 }
 
-if (classListTest && addeventTest) {
+if (querySelectorTest && addeventTest) {
   buttonHandler();
 } else {
   console.log("classlist wordt niet ondersteund, dus de buttons worden serverside afgehandeld");
