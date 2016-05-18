@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="nl">
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    
+    <script>
+        document.createElement('header');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('nav');
+    </script>
+
+	<title>Boodschapjes</title>
+
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="style2.css">	
+
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+	<header class='header'>
+		<h1>Boodschapjes</h1>
+	</header>
+	<form id="form" action="">
+		<article id="list" class="article drop-zone">
+			<h2>Mijn lijst</h2>
+			<section class="section product-container">
+				<article class="product hidden drop-zone-field">
+					<p>Sleep hier het product heen.</p>
+				</article>
+				<article class="article product">
+					<img src="images/boter.jpg" alt="product image">
+					<h3>Boter</h3>
+					<button class="strike" aria-label="Afstrepen">-</button>
+				</article>
+				<article class="article product">
+					<img src="images/brood.jpg" alt="product image">
+					<h3 class="strike-through">Brood</h3>
+					<button class="remove" aria-label="Verwijderen">x</button>
+				</article>
+
+			</section>
+		</article>
+
+		<article class="article" id="products">
+			<h2>Producten</h2>
+	        <section class="section product-container">
+		        <article class="article product">
+		          <img src="images/eieren.jpg" alt="product image">
+		            <h3>Eieren</h3>
+		          <button class="add" aria-label="Toevoegen">+</button>
+		        </article>
+		        <article class="article product">
+		          <img src="images/ham.jpg" alt="product image">
+		            <h3>Ham</h3>
+		          <button class="add" aria-label="Toevoegen">+</button>
+		        </article>
+		         <article class="article product">
+		          <img src="images/kaas.jpg" alt="product image">
+		            <h3>Kaas</h3>
+		          <button class="add" aria-label="Toevoegen">+</button>
+		        </article>
+	        </section>
+		</article>
+	</form>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
