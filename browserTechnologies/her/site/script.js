@@ -8,7 +8,12 @@
 
 if('draggable' in document.createElement('span') && window.innerWidth >= 672) {
 
-  document.querySelector('.drop-zone-field').classList.remove('hidden')
+  var form = document.getElementById('form');
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+  });
+
+  document.querySelector('.drop-zone-field').classList.remove('hidden');
 
 	function addEvent(to, type, fn){
 	    if(document.addEventListener){
@@ -91,8 +96,11 @@ var buttonHandler = function () {
   for (var i = 0; i < buttons.length; i++) {
 
     var thisButton = buttons[i];
+    thisButton.addEventListener('submit', function(event) {
+      event.preventDefault();
+    });
     thisButton.addEventListener('click', function(event) {
-      event.preventDefault;
+      event.preventDefault();
       var classes = event.target.classList;
 
       switch (classes[0]) {
