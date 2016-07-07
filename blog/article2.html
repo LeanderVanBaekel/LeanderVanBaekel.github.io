@@ -29,7 +29,39 @@
 
 	<article>
 		<section class="blog">
-			
+			<h1>Het belang van progressive enhancement</h1>
+
+			<p>Als programmeur of web developer heb je er vast wel eens van gehoord. progressive enhancement. In dit artikel wil ik in gaan op wat dit precies inhoud, hoe je het kunt toepassen en waarom je dit zou doen.</p>
+
+			<h2>Wat is progressive enhancement?</h2>
+
+			<img src="http://allstarcharts.com/wp-content/uploads/2013/04/4-3-13-escalator-up-elevator-down.png">
+
+			<p>Het meest gebruikte metafoor voor PE is de roltrap. Als een roltrap doet wat hij moet doen hoef je als gebruiker niets te doen om boven te komen. Stel dat er iets mis gaat met de roltrap waardoor hij het niet meer doet, dan is het nogsteeds mogelijk om boven te komen! In tegenstelling tot bijvoorbeeld een lift. Als daar iets fout mee gaat, kun je helemaal niets meer. Web development werkt precies het zelfde, als je basis bruikbaar is kun je daarna gaan zorgen dat het makkelijker wordt voor de gebruiker.</p>
+
+			<p>Heel veel developers beginnen tegenwoordig al met het bouwen van een lift. Door het gebruiken van populaire frameworks zoals Meteor, Angular en React. Deze frameworks hebben vaak al voor de simpelste websites/pagina's op de client-side javascript nodig. Dit betekend dat er al kans is dat een deel van de gebruikers de website niet of niet goed kunnen zien.</p>
+
+			<h2>Hoe gebruik ik progressive enhancement</h2>
+
+			<p>Om PE toe te passen moet je goed nadenken over wat de website precies moet doen.</p>
+			<img src="http://alistapart.com/d/understandingprogressiveenhancement/m-m.jpg">
+			<p>Ben je een blog aan het maken? Dan is de belangrijkste informatie die de gebruiker moet kunnen zien de artikelen. Het eerste wat je dan doet is de HTML semantisch opmaken zodat de content ook zonder CSS of javascript goed te lezen is. Als je gebruikt maakt van een database waar de content in staat is het van belang dat dit op de server in de HTML geladen wordt.</p>
+
+			<p>Als de HTML helemaal staat kun je er vrijwel zeker van zijn dat dit in alle browsers en op elk device werkt en ook nog responsive is! (mits je geen HTML5 elementen hebt gebruikt). hierna kun je CSS toevoegen let op dat je geen technieken gebruikt die niet door alle browsers of divices wordt ondersteund zonder te checken of de website hier onleesbaar van wordt. Dit kun je doen door naar een fysiek <a href="https://opendevicelab.com/">divice lab</a> te gaan of <a href="https://www.virtualbox.org/wiki/Downloads">emulators te installeren</a>.</p>
+
+			<p>Nu kun je aan de javascript enhancement beginnen, de gebruikerservaring echt compleet maken. Je kunt zelfs nog een one page webapp maken nu door met XHR requests de overige data in te laden en de links in de html aan te passen in je script.</p>
+
+			<h2>Andere voordelen</h2>
+
+			<p>Een voordeel van PE werken is dat je een stuk minder over de usability van je website hoeft na te denken. Omdat je bent begonnen met het opbouwen van de HTML zullen bijvoorbeeld screenreader hier erg blij mee zijn.</p>
+
+			<p>Een ander groot voordeel zit hem in SEO. ondanks dat Google wel bezig is met scraping van websites die afhankelijk zijn van javascript duurt het wel langer voor dat je op de goede plek wordt gezet. Elke keer dat je de content update duurt het dus een aantal dagen voordat dit in google zichtbaar is.</p>
+
+			<h2>Uitzonderingen</h2>
+
+			<p>Er zijn wat mij betreft wel een aantal uitzondering waarbij je er van uit kan gaan dat javascript wel aanwezig is. Als je een site/web applicatie maakt voor een hele specifieke doelgroep of use case waarvan je zeker weet dat de gebruikers javascript ondersteunen zou je dit kunnen gebruiken natuurlijk. Als een applicatie bijvoorbeeld alleen binnen een bedrijf intern gebruikt moet worden of iets dergelijks.</p>
+
+
 
 		</section>
 	</article>
