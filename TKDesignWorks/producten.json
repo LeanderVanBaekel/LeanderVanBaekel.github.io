@@ -1,0 +1,46 @@
+var producten = [
+	{
+		"id":"1",
+		"name":"Macbook Air 13' standaard",
+		"version": "1",
+		"macbooktype": "Macbook air 13'",
+		"height":"120",
+		"mainimage":"Air13v1_120 voor zonder mac.JPG",
+		"images": [
+			"Air13v1_120 achter zonder mac.JPG",
+			"Air13v1_120 achter.JPG",
+			"Air13v1_120 closeup 1.JPG",
+			"Air13v1_120 closeup 2.JPG",
+			"Air13v1_120 voor zonder mac.JPG",
+			"Air13v1_120 voor.JPG"
+		]
+	},
+	{
+		"id":"2",
+		"name":"Macbook Pro 13' standaard",
+		"version": "1",
+		"macbooktype": "Macbook pro 13'",
+		"height":"90",
+		"mainimage":"Pro13v1_90 voor zonder mac.JPG",
+		"images": [
+			"Pro13v1_90 achter zonder mac.JPG",
+			"Pro13v1_90 achter.JPG",
+			"Pro13v1_90 voor zonder mac.JPG",
+			"Pro13v1_90 voor.JPG"
+		]
+	},
+	{
+		"id":"3",
+		"name":"Macbook Pro 13' standaard",
+		"version": "1",
+		"macbooktype": "Macbook pro 13'",
+		"height":"110",
+		"mainimage":"Pro13v1_110D voor zonder mac.JPG",
+		"images": [
+			"Pro13v1_110D achter zonder mac.JPG",
+			"Pro13v1_110D achter.JPG",
+			"Pro13v1_110D voor zonder mac.JPG",
+			"Pro13v1_110D voor.JPG"
+		]
+	}
+];
