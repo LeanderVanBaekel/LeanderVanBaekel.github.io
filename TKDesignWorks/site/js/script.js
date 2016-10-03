@@ -37,23 +37,25 @@ $(function() {
     });
 });
 
-var headlines = ["3D ontwerpen", "Metaal bewerken", "3D animatie", "Krachten simulatie", "Tekeningpakketten", "airflow simulatie"];
+var headlines = ["Metaal bewerken", "3D animatie", "Krachten simulatie", "Tekeningpakketten", "airflow simulatie", "3D ontwerpen"];
 var headlinesCount = 0;
 var designerText = document.querySelector('.designer-text');
 
 
-setInterval(function() {
-  // designerText.innerHTML = "";
-  window.setTimeout(function(){
-    designerText.classList.remove('fade');
+if (designerText) {
+  setInterval(function() {
+    // designerText.innerHTML = "";
+    window.setTimeout(function(){
+      designerText.classList.remove('fade');
 
-    designerText.innerHTML = headlines[headlinesCount];
-    headlinesCount ++;
-    if (headlinesCount == headlines.length) {
-      headlinesCount = 0;
-    }
-  }, 500);
+      designerText.innerHTML = headlines[headlinesCount];
+      headlinesCount ++;
+      if (headlinesCount == headlines.length) {
+        headlinesCount = 0;
+      }
+    }, 500);
 
-  designerText.classList.add('fade');
+    designerText.classList.add('fade');
 
-}, 5 * 1000);
+  }, 5 * 1000);
+};
