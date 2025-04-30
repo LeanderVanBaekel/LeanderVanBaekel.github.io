@@ -1,0 +1,26 @@
+name: Update Strava data
+on:
+  schedule:
+    - cron: '0 * * * *'        # elk uur (pas aan naar wens)
+  workflow_dispatch:           # handmatig startbaar
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install node-fetch@2
+      - run: node scripts/update-strava.js
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+      - name: Commit output
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add data/may2025.json
+          git commit -m "chore: auto-update Strava data" || echo "No changes"
+          git push
