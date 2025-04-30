@@ -21,6 +21,7 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          git add data/may2025.json
+          git add data/raw-activities.json
+          git add data/data/monthly.json
           git commit -m "chore: auto-update Strava data" || echo "No changes"
           git push
