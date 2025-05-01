@@ -108,9 +108,7 @@
         const leanderMayPercent = Math.round(leanderMayKm / 100 * 100);
         // set progress bar to leanderMayPercent
         progressBarLeander.dataset.percent = leanderMayPercent;
-      });
 
-      document.addEventListener('DOMContentLoaded', () => {
         // Selecteer alle .progress-pie-chart-elementen
         document.querySelectorAll('.progress-pie-chart').forEach(ppc => {
           // Haal het percentage uit het data-attribuut (data-percent="…")
