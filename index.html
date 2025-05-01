@@ -1,151 +1,105 @@
 <!doctype html><html lang="nl"><head>
-    <meta charset="utf-8"><title>May Miles 2025</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>body{font-family:system-ui;padding:2rem;max-width:800px;margin:auto}</style>
-
-    <style>
-      .progress-pie-chart {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: #E5E5E5;
-        position: relative;
-      }
-      .progress-pie-chart.gt-50 {
-        background-color: #81CE97;
-      }
-
-      .ppc-progress {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        left: calc(50% - 100px);
-        top: calc(50% - 100px);
-        width: 200px;
-        height: 200px;
-        clip: rect(0, 200px, 200px, 100px);
-      }
-      .ppc-progress .ppc-progress-fill {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        left: calc(50% - 100px);
-        top: calc(50% - 100px);
-        width: 200px;
-        height: 200px;
-        clip: rect(0, 100px, 200px, 0);
-        background: #81CE97;
-        transform: rotate(60deg);
-      }
-      .gt-50 .ppc-progress {
-        clip: rect(0, 100px, 200px, 0);
-      }
-      .gt-50 .ppc-progress .ppc-progress-fill {
-        clip: rect(0, 200px, 200px, 100px);
-        background: #E5E5E5;
-      }
-
-      .ppc-percents {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        left: calc(50% - 173.9130434783px/2);
-        top: calc(50% - 173.9130434783px/2);
-        width: 173.9130434783px;
-        height: 173.9130434783px;
-        background: #fff;
-        text-align: center;
-        display: table;
-      }
-      .ppc-percents span {
-        display: block;
-        font-size: 2.6em;
-        font-weight: bold;
-        color: #81CE97;
-      }
-
-      .pcc-percents-wrapper {
-        display: table-cell;
-        vertical-align: middle;
-      }
-
-      body {
-        font-family: Arial;
-        background: #f7f7f7;
-      }
-
-      .progress-pie-chart {
-        margin: 50px auto 0;
-      }
-    </style>
-    
-    </head><body>
-      
-    <h1>Mei-kilometers 2025</h1>
-    
-    <div id="progress-bar-leander" class="progress-pie-chart" data-percent="43">
-      <div class="ppc-progress">
-        <div class="ppc-progress-fill"></div>
-      </div>
-      <div class="ppc-percents">
-        <div class="pcc-percents-wrapper">
-          <span>%</span>
-        </div>
-      </div>
-    </div>
-    
-    <script>
-    const progressBarLeander = document.getElementById('progress-bar-leander');
+  <meta charset="utf-8">
+  <title>Mei-kilometers 2025</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body{font-family:system-ui;padding:2rem;max-width:800px;margin:auto;background:#f7f7f7}
+    h1{margin-top:0}
   
-    fetch('data/LEANDER/monthly_walk_hike.json')
-      .then(r=>r.json())
-      .then(rows=>{
-        // get item from array where month": "2025-05"
-        const leanderMay = rows.find(r=>r.month === '2025-05');
-        const leanderMayKm = leanderMay ? leanderMay.km : 0;
-
-        // get percentage of leanderMayKm from 100
-        const leanderMayPercent = Math.round(leanderMayKm / 100 * 100);
-        // set progress bar to leanderMayPercent
-        progressBarLeander.dataset.percent = leanderMayPercent;
-
-        // Selecteer alle .progress-pie-chart-elementen
-        document.querySelectorAll('.progress-pie-chart').forEach(ppc => {
-          // Haal het percentage uit het data-attribuut (data-percent="…")
-          const percent = parseInt(ppc.dataset.percent, 10);
-          const deg     = 360 * percent / 100;
-
-          // > 50 %?  Voeg de klasse gt-50 toe (voor CSS-styling)
-          if (percent > 50) {
-            ppc.classList.add('gt-50');
-          }
-
-          // Draai het vul-element tot de juiste hoek
-          ppc.querySelector('.ppc-progress-fill').style.transform = `rotate(${deg}deg)`;
-
-          // Toon het percentage-getal in de HTML
-          ppc.querySelector('.ppc-percents span').textContent = `${percent}%`;
-        });
-      });
-
-    </script>
-    
-    <canvas id="chart"></canvas>
-    <script>
-    fetch('data/may2025.json')
-      .then(r=>r.json())
-      .then(rows=>{
-        const labels = rows.map(r=>r.date);
-        const data   = rows.map(r=>r.km);
-        new Chart(document.getElementById('chart'),{
-          type:'line',
-          data:{labels,
-            datasets:[
-              {label:'Cumulatieve km', data, tension:0.3},
-              {label:'Doel 100 km', data:Array(labels.length).fill(100),
-               borderDash:[4,4], pointRadius:0}
-            ]}
-        });
-      });
-    </script>
-    </body></html>
+    /* --- cirkeldiagram (ongewijzigde CSS) ------------------------ */
+    .progress-pie-chart{width:200px;height:200px;border-radius:50%;background:#e5e5e5;position:relative;margin:50px auto 0}
+    .progress-pie-chart.gt-50{background:#81ce97}
+    .ppc-progress{position:absolute;border-radius:50%;left:0;top:0;width:100%;height:100%;clip:rect(0,200px,200px,100px)}
+    .ppc-progress-fill{position:absolute;border-radius:50%;left:0;top:0;width:100%;height:100%;clip:rect(0,100px,200px,0);background:#81ce97}
+    .gt-50 .ppc-progress{clip:rect(0,100px,200px,0)}
+    .gt-50 .ppc-progress-fill{clip:rect(0,200px,200px,100px);background:#e5e5e5}
+    .ppc-percents{position:absolute;border-radius:50%;left:13px;top:13px;width:174px;height:174px;background:#fff;text-align:center;display:table}
+    .ppc-percents span{display:block;font-size:2.6em;font-weight:700;color:#81ce97}
+    .pcc-percents-wrapper{display:table-cell;vertical-align:middle}
+  </style>
+  </head><body>
+  
+  <h1>Mei-kilometers 2025</h1>
+  <div id="people"></div>
+  <canvas id="chart"></canvas>
+  
+  <script type="module">
+  /* ────────────────────────────────────────────────────────── */
+  /* CONFIG                                                    */
+  const GOAL_KM = 100;              // doel per maand
+  const people  = [
+    { id:'LEANDER', label:'Leander' },
+    { id:'STRAVA',  label:'Jenna'   }      // pas label aan
+  ];
+  
+  /* ────────────────────────────────────────────────────────── */
+  /* HTML-SKELETTEN AANMAKEN                                   */
+  const peopleRoot = document.getElementById('people');
+  
+  people.forEach(p => {
+    peopleRoot.insertAdjacentHTML('beforeend', `
+      <section id="person-${p.id}">
+        <div id="progress-bar-${p.id}" class="progress-pie-chart" data-percent="0">
+          <div class="ppc-progress"><div class="ppc-progress-fill"></div></div>
+          <div class="ppc-percents"><div class="pcc-percents-wrapper"><span>%</span></div></div>
+        </div>
+        <p>${p.label} heeft in mei 2025 <strong id="${p.id}-km">0</strong> km gewandeld of gehiked.</p>
+      </section>`);
+  });
+  
+  /* ────────────────────────────────────────────────────────── */
+  /* HULPFUNCTIE: pie chart bijwerken                          */
+  function updatePie(ppc, percent){
+    ppc.dataset.percent = percent;
+    ppc.classList.toggle('gt-50', percent > 50);
+    ppc.querySelector('.ppc-progress-fill')
+        .style.transform = `rotate(${360*percent/100}deg)`;
+    ppc.querySelector('.ppc-percents span').textContent = `${percent}%`;
+  }
+  
+  /* ────────────────────────────────────────────────────────── */
+  /* 1️⃣ MAANDELIJKE TOTAAL + PIE CHART PER PERSOON            */
+  people.forEach(async p => {
+    try{
+      const rows = await fetch(`data/${p.id}/monthly_walk_hike.json`).then(r=>r.json());
+      const may  = rows.find(r=>r.month === '2025-05') || {km:0};
+      document.getElementById(`${p.id}-km`).textContent = may.km;
+      updatePie(document.getElementById(`progress-bar-${p.id}`),
+                Math.round(may.km / GOAL_KM * 100));
+    }catch(err){ console.error(`Fout bij ${p.id}`, err); }
+  });
+  
+  /* ────────────────────────────────────────────────────────── */
+  /* 2️⃣ CUMULATIEVE DAGDATA → GEZAMENLIJKE LIJNGRAFIEK        */
+  Promise.all(
+    people.map(p =>
+      fetch(`data/${p.id}/may2025.json`).then(r=>r.json())
+          .then(rows => ({ label: p.label, data: rows.map(r=>r.km) }))
+    )
+  ).then(datasetsRaw => {
+    /* — labels (datums) — we gaan ervan uit dat elke persoon
+         dezelfde datums heeft; anders eerst normaliseren. */
+    const labels = Array.from({length: datasetsRaw[0].data.length},
+                              (_,i)=>`${i+1} mei`);
+    /* — datasets klaarzetten voor Chart.js — */
+    const datasets = datasetsRaw.map(ds => ({
+        label: ds.label,
+        data : ds.data,
+        tension: .3,
+        fill: false
+    }));
+    /* — stippellijn voor het doel — */
+    datasets.push({
+      label:`Doel ${GOAL_KM} km`,
+      data:Array(labels.length).fill(GOAL_KM),
+      borderDash:[4,4],
+      pointRadius:0
+    });
+  
+    new Chart(document.getElementById('chart'), {
+      type:'line',
+      data:{ labels, datasets }
+    });
+  });
+  </script>
+  </body></html>
