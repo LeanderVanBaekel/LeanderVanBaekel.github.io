@@ -3,7 +3,34 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>body{font-family:system-ui;padding:2rem;max-width:800px;margin:auto}</style>
     </head><body>
+      
     <h1>Mei-kilometers 2025</h1>
+    
+    <progress id="progress-bar-leander" value="0" max="100">0%</progress>
+    <script>
+    const progressBarLeander = document.getElementById('progress-bar-leander');
+  
+    fetch('data/LEANDER/monthly_walk_hike.json')
+      .then(r=>r.json())
+      .then(rows=>{
+        // get item from array where month": "2025-05"
+        const leanderMay = rows.find(r=>r.month === '2025-05');
+        const leanderMayKm = leanderMay ? leanderMay.km : 0;
+        progressBarLeander.value = leanderMayKm;
+        progressBarLeander.innerText = leanderMayKm + ' km';
+        progressBarLeander.style.width = leanderMayKm + '%';
+        // set color based on value
+        if (leanderMayKm < 50) {
+          progressBarLeander.style.backgroundColor = 'red';
+        } else if (leanderMayKm < 75) {
+          progressBarLeander.style.backgroundColor = 'orange';
+        } else {
+          progressBarLeander.style.backgroundColor = 'green';
+        }
+      });
+
+    </script>
+    
     <canvas id="chart"></canvas>
     <script>
     fetch('data/may2025.json')
