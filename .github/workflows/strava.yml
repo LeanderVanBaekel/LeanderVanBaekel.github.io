@@ -18,9 +18,9 @@ jobs:
       LEANDER_REFRESH_TOKEN:  ${{ secrets.LEANDER_REFRESH_TOKEN }}
 
       # ---- USER 2 ----
-      STRAVA_CLIENT_ID:     ${{ secrets.STRAVA_CLIENT_ID }}
-      STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
-      STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+      JENNA_CLIENT_ID:     ${{ secrets.JENNA_CLIENT_ID }}
+      JENNA_CLIENT_SECRET: ${{ secrets.JENNA_CLIENT_SECRET }}
+      JENNA_REFRESH_TOKEN: ${{ secrets.JENNA_REFRESH_TOKEN }}
 
       # ▸ voeg hier meer users toe als je ze in USERS zet
 
