@@ -2896,5 +2896,12 @@
     "type": "Ride",
     "km": 5.43,
     "name": "Ochtendrit"
+  },
+  {
+    "id": 14339659390,
+    "date": "2025-05-01",
+    "type": "Ride",
+    "km": 4.81,
+    "name": "Ochtendrit"
   }
 ]
