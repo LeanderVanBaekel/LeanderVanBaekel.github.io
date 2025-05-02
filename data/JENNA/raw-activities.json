@@ -3414,5 +3414,12 @@
     "type": "Ride",
     "km": 11.94,
     "name": "Middagrit"
+  },
+  {
+    "id": 14352674428,
+    "date": "2025-05-02",
+    "type": "Walk",
+    "km": 1.25,
+    "name": "Middagwandeling"
   }
 ]
