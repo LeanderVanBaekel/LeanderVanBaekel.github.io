@@ -8,8 +8,8 @@ const CORE_ASSETS = [
   '.',                        // index.html
   'manifest.webmanifest',
   'sw.js',
-  'icons/icon-192.png',
-  'icons/icon-512.png',
+  'favicon/web-app-manifest-192x192.png',
+  'favicon/web-app-manifest-512x512.png',
   'https://cdn.jsdelivr.net/npm/chart.js'  // external but cacheable
 ];
 
