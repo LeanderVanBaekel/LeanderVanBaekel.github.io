@@ -1,0 +1,12 @@
+{
+    "name":          "Mei-kilometers 2025",
+    "short_name":    "May Miles",
+    "start_url":     ".",
+    "display":       "standalone",
+    "theme_color":   "#81ce97",
+    "background_color": "#f7f7f7",
+    "icons": [
+      { "src": "favicon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+      { "src": "favicon/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    ]
+  }

@@ -4,6 +4,21 @@
 <meta charset="utf-8" />
 <title>Mei-kilometers 2025</title>
 
+  <!-- +++ PWA START +++ -->
+  <meta name="viewport"      content="width=device-width,initial-scale=1">
+  <meta name="theme-color"   content="#81ce97">
+  <link rel="manifest"       href="manifest.webmanifest">
+  <link rel="icon"           href="favicon/icon-192.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(r=>console.log('[PWA] SW registered', r.scope))
+        .catch(console.error);
+    }
+  </script>
+  <!-- +++ PWA END +++ -->
+
+
 <!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
