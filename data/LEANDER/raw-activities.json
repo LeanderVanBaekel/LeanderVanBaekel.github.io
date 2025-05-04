@@ -2938,5 +2938,12 @@
     "type": "Ride",
     "km": 5.29,
     "name": "Ochtendrit"
+  },
+  {
+    "id": 14375881962,
+    "date": "2025-05-04",
+    "type": "Hike",
+    "km": 9.37,
+    "name": "Afternoon Hike"
   }
 ]
