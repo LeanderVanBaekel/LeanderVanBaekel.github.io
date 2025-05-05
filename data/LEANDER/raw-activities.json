@@ -2945,5 +2945,12 @@
     "type": "Hike",
     "km": 9.37,
     "name": "Afternoon Hike"
+  },
+  {
+    "id": 14385903409,
+    "date": "2025-05-05",
+    "type": "Walk",
+    "km": 1.63,
+    "name": "Afternoon Walk"
   }
 ]

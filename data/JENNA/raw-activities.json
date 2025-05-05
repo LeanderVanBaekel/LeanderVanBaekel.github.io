@@ -3435,5 +3435,12 @@
     "type": "Hike",
     "km": 9.29,
     "name": "Namiddaghike"
+  },
+  {
+    "id": 14385907767,
+    "date": "2025-05-05",
+    "type": "Walk",
+    "km": 0.93,
+    "name": "Namiddagwandeling"
   }
 ]
