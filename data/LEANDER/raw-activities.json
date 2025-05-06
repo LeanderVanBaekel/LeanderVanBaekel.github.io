@@ -2952,5 +2952,12 @@
     "type": "Walk",
     "km": 1.63,
     "name": "Afternoon Walk"
+  },
+  {
+    "id": 14395395221,
+    "date": "2025-05-06",
+    "type": "Ride",
+    "km": 5.04,
+    "name": "Middagrit"
   }
 ]
