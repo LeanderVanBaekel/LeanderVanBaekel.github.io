@@ -2940,6 +2940,13 @@
     "name": "Ochtendrit"
   },
   {
+    "id": 14401980318,
+    "date": "2025-05-03",
+    "type": "Ride",
+    "km": 3.41,
+    "name": "1"
+  },
+  {
     "id": 14375881962,
     "date": "2025-05-04",
     "type": "Hike",
@@ -2973,5 +2980,12 @@
     "type": "Ride",
     "km": 5.04,
     "name": "Middagrit"
+  },
+  {
+    "id": 14401980152,
+    "date": "2025-05-06",
+    "type": "Ride",
+    "km": 4.46,
+    "name": "Ochtendrit"
   }
 ]
