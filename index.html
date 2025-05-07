@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8" />
-<title>Mei-kilometers 2025</title>
+<title>Mei‑kilometers 2025</title>
 
   <!-- +++ PWA START +++ -->
   <meta name="viewport"      content="width=device-width,initial-scale=1">
@@ -18,18 +18,13 @@
   </script>
   <!-- +++ PWA END +++ -->
 
-
 <!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
-/* ----------------------------------------------------------- */
-/* Basislayout                                                 */
 body{font-family:system-ui;margin:0 auto;max-width:800px;padding:2rem;background:#f7f7f7}
 h1{margin-top:0}
 
-/* ----------------------------------------------------------- */
-/*  Cirkeldiagram “progress-pie”                               */
 .progress-pie-chart{width:200px;height:200px;border-radius:50%;background:#e5e5e5;position:relative;margin:50px auto 0}
 .progress-pie-chart.gt-50{background:#81ce97}
 
@@ -42,119 +37,98 @@ h1{margin-top:0}
 .ppc-percents{position:absolute;left:13px;top:13px;width:174px;height:174px;border-radius:50%;background:#fff;text-align:center;display:table}
 .ppc-percents span{display:block;font:700 2.6em/174px system-ui;color:#81ce97}
 
-/* ----------------------------------------------------------- */
-/*  Uitklapbare activiteitenlijst                              */
 details.activities{margin:1rem 0}
 details.activities summary{cursor:pointer;font-weight:600}
 .activities ul{margin:.5rem 0 0 1.5rem;padding-left:0}
 .activities li{line-height:1.4;list-style:disc}
 time{font-variant-numeric:tabular-nums}
-
-/* ----------------------------------------------------------- */
 </style>
 </head>
 <body>
 
-<h1>Mei-kilometers 2025</h1>
+<h1>Mei‑kilometers 2025</h1>
 
-<!-- Dynamisch gevuld -->
 <div id="people"></div>
 
-<canvas id="chart"></canvas>
+<canvas id="chart" height="300"></canvas>
 
 <script type="module">
-/* ───────────────────────────────────────────────────────────── */
-/*  CONFIG                                                      */
-const GOAL_KM = 100;   // maanddoel (km)
-const people  = [
+/* ─────────────────────────────────────────── CONFIG ─────── */
+const GOAL_KM      = 100;
+const ALLOWED_TYPES= new Set(["Walk","Hike","Trail Run","Run"]);
+const NUM_DAYS     = 31;             // mei
+const YEAR_MONTH   = '2025-05';
+const people = [
   { id:'LEANDER', label:'Leander' },
-  { id:'JENNA',  label:'Jenna'   }
+  { id:'JENNA',   label:'Jenna'   }
 ];
 
-/* ───────────────────────────────────────────────────────────── */
-/*  DOM-skelet per persoon                                      */
+/* ─────────────────────── DOM‑skelet per persoon */
 const root = document.getElementById('people');
-
 people.forEach(p=>{
   root.insertAdjacentHTML('beforeend',`
     <section id="person-${p.id}">
-      <div id="progress-bar-${p.id}" class="progress-pie-chart" data-percent="0">
+      <div id="progress-${p.id}" class="progress-pie-chart" data-percent="0">
         <div class="ppc-progress"><div class="ppc-progress-fill"></div></div>
         <div class="ppc-percents"><span>%</span></div>
       </div>
-
-      <p>${p.label} heeft in mei 2025 <strong id="${p.id}-km">0</strong> km afgelegd.</p>
-
+      <p>${p.label} heeft in mei 2025 <strong id="${p.id}-km">0</strong> km afgelegd.</p>
       <details id="acts-${p.id}" class="activities">
         <summary>Bekijk gebruikte activiteiten</summary>
         <ul></ul>
       </details>
-    </section>
-  `);
+    </section>`);
 });
 
-/* ───────────────────────────────────────────────────────────── */
-/*  Hulpfuncties                                               */
-function updatePie(el, percent){
-  el.dataset.percent = percent;
-  el.classList.toggle('gt-50', percent>50);
-  el.querySelector('.ppc-progress-fill')
-    .style.transform=`rotate(${360*percent/100}deg)`;
-  el.querySelector('.ppc-percents span').textContent=`${percent}%`;
+/* ────────────────────────────── helpers */
+function updatePie(wrapper, percent){
+  wrapper.dataset.percent = percent;
+  wrapper.classList.toggle('gt-50', percent>50);
+  wrapper.querySelector('.ppc-progress-fill').style.transform=`rotate(${percent*3.6}deg)`;
+  wrapper.querySelector('.ppc-percents span').textContent=`${percent}%`;
 }
 
-function fillActivitiesList(personId, rows){
-  const mayActs = rows
-    .filter(a=>a.date.startsWith('2025-05'))
-    .sort((a,b)=>a.date.localeCompare(b.date));
-
-  const ul = document.querySelector(`#acts-${personId} ul`);
-  ul.innerHTML = mayActs.map(a=>`
-      <li><time datetime="${a.date}">${a.date}</time> – ${a.type}
-          – ${a.km.toFixed(2)} km – ${a.name}</li>`
-  ).join('');
+function fillActivitiesList(id, acts){
+  const ul = document.querySelector(`#acts-${id} ul`);
+  const listHtml = acts
+    .filter(a=>a.date.startsWith(YEAR_MONTH) && ALLOWED_TYPES.has(a.type))
+    .sort((a,b)=>a.date.localeCompare(b.date))
+    .map(a=>`<li><time datetime="${a.date}">${a.date}</time> – ${a.type} – ${a.km.toFixed(2)} km – ${a.name}</li>`)
+    .join('');
+  ul.innerHTML=listHtml;
 }
 
-/* ───────────────────────────────────────────────────────────── */
-/*  Data ophalen + UI vullen                                    */
-const datasetsPromises = people.map(async ({id,label})=>{
-  /* alle datafiles tegelijk halen */
-  const [monthly, mayLine, rawActs] = await Promise.all([
-    fetch(`data/${id}/monthly_walk_hike.json`).then(r=>r.json()),
-    fetch(`data/${id}/may2025.json`).then(r=>r.json()),
-    fetch(`data/${id}/raw-activities.json`).then(r=>r.json())
-  ]);
+function dailyCumulative(acts){
+  const perDay = Array(NUM_DAYS).fill(0);
+  acts.forEach(a=>{
+    if (!a.date.startsWith(YEAR_MONTH) || !ALLOWED_TYPES.has(a.type)) return;
+    const day = Number(a.date.slice(8,10));
+    perDay[day-1] += a.km;
+  });
+  let sum=0;
+  return perDay.map(km=>sum+=km);
+}
 
-  /* 1. totaal + cirkeldiagram */
-  const may = monthly.find(r=>r.month==='2025-05') || {km:0};
-  document.getElementById(`${id}-km`).textContent = may.km;
-  updatePie(document.getElementById(`progress-bar-${id}`),
-            Math.round(may.km/GOAL_KM*100));
+/* ────────────────────────────── Data & UI */
+const datasetPromises = people.map(async ({id,label})=>{
+  const raw = await fetch(`data/${id}/raw-activities.json`).then(r=>r.json());
 
-  /* 2. activiteitenlijst */
-  fillActivitiesList(id, rawActs);
+  // totaal mei
+  const totalMay = raw
+    .filter(a=>a.date.startsWith(YEAR_MONTH) && ALLOWED_TYPES.has(a.type))
+    .reduce((s,a)=>s+a.km,0);
+  document.getElementById(`${id}-km`).textContent = totalMay.toFixed(1);
+  updatePie(document.getElementById(`progress-${id}`), Math.round(totalMay/GOAL_KM*100));
 
-  /* 3. dataset voor Chart.js teruggeven */
-  return { label, data: mayLine.map(r=>r.km), tension:.3 };
+  fillActivitiesList(id, raw);
+
+  return { label, data: dailyCumulative(raw), tension:.3 };
 });
 
-/* ───────────────────────────────────────────────────────────── */
-/*  Lijngrafiek tonen zodra alle datasets klaar zijn            */
-Promise.all(datasetsPromises).then(datasets=>{
-  const labels = Array.from({length: datasets[0].data.length},
-                            (_,i)=>`${i+1} mei`);
-  /* stippellijn (doel) */
-  datasets.push({
-    label:`Doel ${GOAL_KM} km`,
-    data:Array(labels.length).fill(GOAL_KM),
-    borderDash:[4,4],
-    pointRadius:0
-  });
-
-  new Chart(document.getElementById('chart'),{
-    type:'line',
-    data:{labels, datasets}
-  });
+Promise.all(datasetPromises).then(datasets=>{
+  const labels = Array.from({length:NUM_DAYS},(_,i)=>`${i+1} mei`);
+  datasets.push({ label:`Doel ${GOAL_KM} km`, data:Array(NUM_DAYS).fill(GOAL_KM), borderDash:[4,4], pointRadius:0 });
+  new Chart(document.getElementById('chart'),{ type:'line', data:{labels,datasets} });
 });
 </script>
 </body>

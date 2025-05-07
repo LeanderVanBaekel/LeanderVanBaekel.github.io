@@ -28,7 +28,7 @@ const fs    = require("fs");
 const path  = require("path");
 
 // ‑‑‑ Config ‑‑‑
-const WALK_HIKE_SET = new Set(["Walk", "Hike", "Trail Run"]); // voor maandtotalen
+const WALK_HIKE_SET = new Set(["Walk", "Hike", "Trail Run", "Run"]); // voor maandtotalen
 const PER_PAGE      = 200; // Strava max.
 
 // ‑‑‑ Helpers ‑‑‑
