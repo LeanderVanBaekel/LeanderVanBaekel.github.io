@@ -3451,6 +3451,13 @@
     "name": "Avondwandeling"
   },
   {
+    "id": 14428512849,
+    "date": "2025-05-09",
+    "type": "Walk",
+    "km": 3.2,
+    "name": "Nachtwandeling"
+  },
+  {
     "id": 14425823908,
     "date": "2025-05-09",
     "type": "Walk",
