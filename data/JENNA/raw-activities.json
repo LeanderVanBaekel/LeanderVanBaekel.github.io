@@ -3477,5 +3477,12 @@
     "type": "Walk",
     "km": 1.8,
     "name": "Middagwandeling"
+  },
+  {
+    "id": 14444062907,
+    "date": "2025-05-11",
+    "type": "Walk",
+    "km": 4.74,
+    "name": "Middagwandeling"
   }
 ]
