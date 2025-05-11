@@ -3052,6 +3052,13 @@
     "name": "Lunch Walk"
   },
   {
+    "id": 14450224641,
+    "date": "2025-05-11",
+    "type": "Walk",
+    "km": 2.18,
+    "name": "Evening Walk"
+  },
+  {
     "id": 14447022996,
     "date": "2025-05-11",
     "type": "Surfing",

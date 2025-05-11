@@ -3479,6 +3479,13 @@
     "name": "Middagwandeling"
   },
   {
+    "id": 14450255888,
+    "date": "2025-05-11",
+    "type": "Walk",
+    "km": 2.31,
+    "name": "Nachtwandeling"
+  },
+  {
     "id": 14447104298,
     "date": "2025-05-11",
     "type": "Surfing",
