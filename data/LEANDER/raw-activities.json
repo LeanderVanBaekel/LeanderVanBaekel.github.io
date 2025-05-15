@@ -3038,6 +3038,20 @@
     "name": "Evening Walk"
   },
   {
+    "id": 14485306195,
+    "date": "2025-05-09",
+    "type": "Ride",
+    "km": 7.52,
+    "name": "Avondrit"
+  },
+  {
+    "id": 14485306332,
+    "date": "2025-05-09",
+    "type": "Ride",
+    "km": 5.23,
+    "name": "Ochtendrit"
+  },
+  {
     "id": 14439384155,
     "date": "2025-05-10",
     "type": "Walk",
@@ -3106,5 +3120,12 @@
     "type": "Walk",
     "km": 0.7,
     "name": "Morning Walk"
+  },
+  {
+    "id": 14485306938,
+    "date": "2025-05-15",
+    "type": "Ride",
+    "km": 7.26,
+    "name": "Ochtendrit"
   }
 ]
