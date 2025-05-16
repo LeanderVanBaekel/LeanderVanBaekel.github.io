@@ -3134,5 +3134,19 @@
     "type": "Ride",
     "km": 7.26,
     "name": "Ochtendrit"
+  },
+  {
+    "id": 14495429624,
+    "date": "2025-05-16",
+    "type": "Ride",
+    "km": 7.51,
+    "name": "Ochtendrit"
+  },
+  {
+    "id": 14495472727,
+    "date": "2025-05-16",
+    "type": "Walk",
+    "km": 0.78,
+    "name": "Morning Walk"
   }
 ]
