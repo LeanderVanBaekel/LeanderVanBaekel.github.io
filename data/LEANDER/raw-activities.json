@@ -3162,5 +3162,12 @@
     "type": "Walk",
     "km": 0.78,
     "name": "Morning Walk"
+  },
+  {
+    "id": 14509499886,
+    "date": "2025-05-17",
+    "type": "Walk",
+    "km": 5.65,
+    "name": "Afternoon Walk"
   }
 ]
