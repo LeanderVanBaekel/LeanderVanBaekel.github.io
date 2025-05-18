@@ -3169,5 +3169,12 @@
     "type": "Walk",
     "km": 5.65,
     "name": "Afternoon Walk"
+  },
+  {
+    "id": 14519268932,
+    "date": "2025-05-18",
+    "type": "Walk",
+    "km": 0.89,
+    "name": "Namiddagwandeling"
   }
 ]
