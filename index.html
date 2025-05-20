@@ -18,7 +18,6 @@
   </script>
   <!-- +++ PWA END +++ -->
 
-<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
@@ -47,23 +46,34 @@ time{font-variant-numeric:tabular-nums}
 <body>
 
 <h1>Mei‑kilometers 2025</h1>
+<p id="targetToday" style="font-weight:500"></p>
 
 <div id="people"></div>
 
 <canvas id="chart" height="300"></canvas>
 
 <script type="module">
-/* ─────────────────────────────────────────── CONFIG ─────── */
+/* ───────────────────────── CONFIG ───────────────────────── */
 const GOAL_KM      = 100;
 const ALLOWED_TYPES= new Set(["Walk","Hike","Trail Run","Run"]);
-const NUM_DAYS     = 31;             // mei
+const NUM_DAYS     = 31;            // mei
 const YEAR_MONTH   = '2025-05';
 const people = [
   { id:'LEANDER', label:'Leander' },
   { id:'JENNA',   label:'Jenna'   }
 ];
 
-/* ─────────────────────── DOM‑skelet per persoon */
+/* ───────────── helpers: datum & doel van vandaag ────────── */
+const today      = new Date();
+const inMay2025  = today.getFullYear()===2025 && today.getMonth()===4;
+const dayNr      = inMay2025 ? today.getDate() : NUM_DAYS; // 1‑31
+const expectedKm = (GOAL_KM/NUM_DAYS)*dayNr;
+const expectedPc = Math.round(expectedKm/GOAL_KM*100);
+document.getElementById('targetToday').textContent =
+  `Op dag ${dayNr} (vandaag) zou een egaal schema op ${expectedKm.toFixed(1)} km `+
+  `(${expectedPc}% van het doel) zitten.`;
+
+/* ───────────── DOM‑skelet per persoon ─────────── */
 const root = document.getElementById('people');
 people.forEach(p=>{
   root.insertAdjacentHTML('beforeend',`
@@ -80,7 +90,6 @@ people.forEach(p=>{
     </section>`);
 });
 
-/* ────────────────────────────── helpers */
 function updatePie(wrapper, percent){
   wrapper.dataset.percent = percent;
   wrapper.classList.toggle('gt-50', percent>50);
@@ -90,44 +99,43 @@ function updatePie(wrapper, percent){
 
 function fillActivitiesList(id, acts){
   const ul = document.querySelector(`#acts-${id} ul`);
-  const listHtml = acts
+  ul.innerHTML = acts
     .filter(a=>a.date.startsWith(YEAR_MONTH) && ALLOWED_TYPES.has(a.type))
     .sort((a,b)=>a.date.localeCompare(b.date))
-    .map(a=>`<li><time datetime="${a.date}">${a.date}</time> – ${a.type} – ${a.km.toFixed(2)} km – ${a.name}</li>`)
+    .map(a=>`<li><time datetime="${a.date}">${a.date}</time> – ${a.type} – ${a.km.toFixed(2)} km – ${a.name}</li>`)
     .join('');
-  ul.innerHTML=listHtml;
 }
 
 function dailyCumulative(acts){
   const perDay = Array(NUM_DAYS).fill(0);
   acts.forEach(a=>{
     if (!a.date.startsWith(YEAR_MONTH) || !ALLOWED_TYPES.has(a.type)) return;
-    const day = Number(a.date.slice(8,10));
-    perDay[day-1] += a.km;
+    const d = +a.date.slice(8,10);
+    perDay[d-1] += a.km;
   });
-  let sum=0;
-  return perDay.map(km=>sum+=km);
+  let sum=0; return perDay.map(k=>sum+=k);
 }
 
-/* ────────────────────────────── Data & UI */
+/* ───────────── Data & UI ───────────── */
 const datasetPromises = people.map(async ({id,label})=>{
-  const raw = await fetch(`data/${id}/raw-activities.json`).then(r=>r.json());
+  const acts = await fetch(`data/${id}/raw-activities.json`).then(r=>r.json());
 
-  // totaal mei
-  const totalMay = raw
-    .filter(a=>a.date.startsWith(YEAR_MONTH) && ALLOWED_TYPES.has(a.type))
-    .reduce((s,a)=>s+a.km,0);
+  const totalMay = acts.filter(a=>a.date.startsWith(YEAR_MONTH) && ALLOWED_TYPES.has(a.type))
+                       .reduce((s,a)=>s+a.km,0);
   document.getElementById(`${id}-km`).textContent = totalMay.toFixed(1);
   updatePie(document.getElementById(`progress-${id}`), Math.round(totalMay/GOAL_KM*100));
+  fillActivitiesList(id, acts);
 
-  fillActivitiesList(id, raw);
-
-  return { label, data: dailyCumulative(raw), tension:.3 };
+  return { label, data: dailyCumulative(acts), tension:.3 };
 });
 
 Promise.all(datasetPromises).then(datasets=>{
   const labels = Array.from({length:NUM_DAYS},(_,i)=>`${i+1} mei`);
+  // doel‑lijn 100 km
   datasets.push({ label:`Doel ${GOAL_KM} km`, data:Array(NUM_DAYS).fill(GOAL_KM), borderDash:[4,4], pointRadius:0 });
+  // ideale evenredige opbouw
+  datasets.push({ label:'Ideale opbouw', data:Array.from({length:NUM_DAYS},(_,i)=>((i+1)*GOAL_KM/NUM_DAYS)), borderDash:[2,2], pointRadius:0 });
+
   new Chart(document.getElementById('chart'),{ type:'line', data:{labels,datasets} });
 });
 </script>
