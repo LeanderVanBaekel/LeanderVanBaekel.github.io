@@ -3213,6 +3213,13 @@
     "name": "Afternoon Hike"
   },
   {
+    "id": 14540725759,
+    "date": "2025-05-20",
+    "type": "Ride",
+    "km": 5.14,
+    "name": "Avondrit"
+  },
+  {
     "id": 14536230649,
     "date": "2025-05-20",
     "type": "Ride",
