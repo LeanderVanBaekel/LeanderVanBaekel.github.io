@@ -2751,11 +2751,32 @@
     "name": "Ochtendrit"
   },
   {
+    "id": 14536229364,
+    "date": "2025-04-12",
+    "type": "Ride",
+    "km": 2.26,
+    "name": "Middagrit"
+  },
+  {
+    "id": 14536230955,
+    "date": "2025-04-14",
+    "type": "Ride",
+    "km": 2.58,
+    "name": "Ochtendrit"
+  },
+  {
     "id": 14185900095,
     "date": "2025-04-15",
     "type": "Ride",
     "km": 5.02,
     "name": "Avondrit"
+  },
+  {
+    "id": 14536229284,
+    "date": "2025-04-15",
+    "type": "Ride",
+    "km": 5.5,
+    "name": "Ochtendrit"
   },
   {
     "id": 14194927584,
@@ -3129,6 +3150,13 @@
     "name": "Evening Walk"
   },
   {
+    "id": 14536230207,
+    "date": "2025-05-15",
+    "type": "Ride",
+    "km": 17.46,
+    "name": "Avondrit"
+  },
+  {
     "id": 14485306938,
     "date": "2025-05-15",
     "type": "Ride",
@@ -3183,5 +3211,12 @@
     "type": "Hike",
     "km": 7.44,
     "name": "Afternoon Hike"
+  },
+  {
+    "id": 14536230649,
+    "date": "2025-05-20",
+    "type": "Ride",
+    "km": 4.35,
+    "name": "Ochtendrit"
   }
 ]
