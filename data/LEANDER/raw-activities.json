@@ -3262,6 +3262,13 @@
     "name": "Ochtendrit"
   },
   {
+    "id": 14561460299,
+    "date": "2025-05-22",
+    "type": "Ride",
+    "km": 5.42,
+    "name": "Avondrit"
+  },
+  {
     "id": 14561311288,
     "date": "2025-05-22",
     "type": "Ride",
