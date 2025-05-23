@@ -3276,6 +3276,13 @@
     "name": "Ochtendrit"
   },
   {
+    "id": 14572783441,
+    "date": "2025-05-23",
+    "type": "Walk",
+    "km": 2.63,
+    "name": "Evening Walk"
+  },
+  {
     "id": 14571127444,
     "date": "2025-05-23",
     "type": "Ride",
