@@ -3631,5 +3631,12 @@
     "type": "Walk",
     "km": 2.54,
     "name": "Namiddagwandeling"
+  },
+  {
+    "id": 14580721898,
+    "date": "2025-05-24",
+    "type": "Walk",
+    "km": 3.63,
+    "name": "Namiddagwandeling"
   }
 ]
