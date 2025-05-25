@@ -3297,10 +3297,24 @@
     "name": "Ochtendrit"
   },
   {
+    "id": 14589520211,
+    "date": "2025-05-25",
+    "type": "Ride",
+    "km": 4.86,
+    "name": "Middagrit"
+  },
+  {
     "id": 14589179046,
     "date": "2025-05-25",
     "type": "RockClimbing",
     "km": 0,
     "name": "Lunch Rock Climb"
+  },
+  {
+    "id": 14589520738,
+    "date": "2025-05-25",
+    "type": "Ride",
+    "km": 4.85,
+    "name": "Ochtendrit"
   }
 ]
