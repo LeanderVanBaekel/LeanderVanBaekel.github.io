@@ -3295,5 +3295,12 @@
     "type": "Ride",
     "km": 5.49,
     "name": "Ochtendrit"
+  },
+  {
+    "id": 14589179046,
+    "date": "2025-05-25",
+    "type": "RockClimbing",
+    "km": 0,
+    "name": "Lunch Rock Climb"
   }
 ]
