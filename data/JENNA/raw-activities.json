@@ -3638,5 +3638,12 @@
     "type": "Walk",
     "km": 3.63,
     "name": "Namiddagwandeling"
+  },
+  {
+    "id": 14590241278,
+    "date": "2025-05-25",
+    "type": "RockClimbing",
+    "km": 0,
+    "name": "Middagsessie boulderen"
   }
 ]
