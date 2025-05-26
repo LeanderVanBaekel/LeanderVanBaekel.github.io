@@ -3297,6 +3297,13 @@
     "name": "Ochtendrit"
   },
   {
+    "id": 14600751989,
+    "date": "2025-05-25",
+    "type": "Ride",
+    "km": 5.35,
+    "name": "Middagrit"
+  },
+  {
     "id": 14589520211,
     "date": "2025-05-25",
     "type": "Ride",
