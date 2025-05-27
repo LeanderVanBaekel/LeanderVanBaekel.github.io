@@ -3330,5 +3330,12 @@
     "type": "Ride",
     "km": 7.64,
     "name": "Avondrit"
+  },
+  {
+    "id": 14607017246,
+    "date": "2025-05-27",
+    "type": "Walk",
+    "km": 0.9,
+    "name": "Lopen naar auto"
   }
 ]
