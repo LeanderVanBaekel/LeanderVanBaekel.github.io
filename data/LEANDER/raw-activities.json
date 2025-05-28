@@ -3358,5 +3358,12 @@
     "type": "Walk",
     "km": 0.9,
     "name": "Lopen naar auto"
+  },
+  {
+    "id": 14617420317,
+    "date": "2025-05-28",
+    "type": "Ride",
+    "km": 7.57,
+    "name": "Ochtendrit"
   }
 ]
