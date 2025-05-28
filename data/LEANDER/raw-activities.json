@@ -3360,6 +3360,13 @@
     "name": "Lopen naar auto"
   },
   {
+    "id": 14621903680,
+    "date": "2025-05-28",
+    "type": "Ride",
+    "km": 7.56,
+    "name": "Avondrit"
+  },
+  {
     "id": 14617420317,
     "date": "2025-05-28",
     "type": "Ride",
