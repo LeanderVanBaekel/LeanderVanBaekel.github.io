@@ -3360,6 +3360,20 @@
     "name": "Lopen naar auto"
   },
   {
+    "id": 14624388476,
+    "date": "2025-05-28",
+    "type": "Walk",
+    "km": 4.5,
+    "name": "Surfloop"
+  },
+  {
+    "id": 14624369280,
+    "date": "2025-05-28",
+    "type": "Surfing",
+    "km": 4.22,
+    "name": "Evening Surfing"
+  },
+  {
     "id": 14621903680,
     "date": "2025-05-28",
     "type": "Ride",
