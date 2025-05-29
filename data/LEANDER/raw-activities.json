@@ -3386,5 +3386,12 @@
     "type": "Ride",
     "km": 7.57,
     "name": "Ochtendrit"
+  },
+  {
+    "id": 14629556839,
+    "date": "2025-05-29",
+    "type": "Hike",
+    "km": 0.36,
+    "name": "Lunch Hike"
   }
 ]
