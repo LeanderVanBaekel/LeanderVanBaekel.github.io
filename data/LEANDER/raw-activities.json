@@ -3409,6 +3409,20 @@
     "name": "Lunch Hike"
   },
   {
+    "id": 14644716566,
+    "date": "2025-05-30",
+    "type": "Surfing",
+    "km": 2.9,
+    "name": "Evening Surfing"
+  },
+  {
+    "id": 14644733696,
+    "date": "2025-05-30",
+    "type": "Walk",
+    "km": 5,
+    "name": "Surf loop"
+  },
+  {
     "id": 14642960502,
     "date": "2025-05-30",
     "type": "Walk",
