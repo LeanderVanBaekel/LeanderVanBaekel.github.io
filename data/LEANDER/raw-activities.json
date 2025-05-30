@@ -3407,5 +3407,12 @@
     "type": "Hike",
     "km": 0.36,
     "name": "Lunch Hike"
+  },
+  {
+    "id": 14641302275,
+    "date": "2025-05-30",
+    "type": "Windsurf",
+    "km": 6.22,
+    "name": "Lunch Windsurf"
   }
 ]
