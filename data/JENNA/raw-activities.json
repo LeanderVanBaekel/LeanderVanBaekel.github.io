@@ -3694,5 +3694,12 @@
     "type": "Surfing",
     "km": 3.49,
     "name": "Avondsessie surfen"
+  },
+  {
+    "id": 14660800138,
+    "date": "2025-06-01",
+    "type": "Walk",
+    "km": 0.67,
+    "name": "Middagwandeling"
   }
 ]
