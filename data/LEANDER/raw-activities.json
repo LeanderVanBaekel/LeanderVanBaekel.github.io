@@ -3442,5 +3442,12 @@
     "type": "Surfing",
     "km": 3.49,
     "name": "Evening Surfing"
+  },
+  {
+    "id": 14672248282,
+    "date": "2025-06-02",
+    "type": "Ride",
+    "km": 8.56,
+    "name": "Middagrit"
   }
 ]
