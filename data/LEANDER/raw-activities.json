@@ -3444,6 +3444,13 @@
     "name": "Evening Surfing"
   },
   {
+    "id": 14674131084,
+    "date": "2025-06-02",
+    "type": "Workout",
+    "km": 0,
+    "name": "Afternoon HIIT"
+  },
+  {
     "id": 14672248282,
     "date": "2025-06-02",
     "type": "Ride",
