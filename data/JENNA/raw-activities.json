@@ -3710,6 +3710,13 @@
     "name": "Middagwandeling"
   },
   {
+    "id": 14684106816,
+    "date": "2025-06-02",
+    "type": "WeightTraining",
+    "km": 0,
+    "name": "Namiddagsessie krachttraining"
+  },
+  {
     "id": 14683514221,
     "date": "2025-06-03",
     "type": "Ride",
