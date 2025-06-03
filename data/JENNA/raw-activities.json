@@ -3710,6 +3710,13 @@
     "name": "Middagwandeling"
   },
   {
+    "id": 14683514221,
+    "date": "2025-06-03",
+    "type": "Ride",
+    "km": 2.66,
+    "name": "Namiddagrit"
+  },
+  {
     "id": 14680218778,
     "date": "2025-06-03",
     "type": "Ride",
