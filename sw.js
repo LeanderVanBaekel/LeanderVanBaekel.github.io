@@ -1,11 +1,12 @@
 /* ------------------------------------------------------------------
-   Simple PWA service worker – v1
+   Simple PWA service worker – v2
    • precache core files on install
    • network-first for JSON (stale-while-revalidate fallback)
 ------------------------------------------------------------------ */
-const VERSION   = 'v1';
+const VERSION   = 'v2';
 const CORE_ASSETS = [
   '.',                        // index.html
+  'may/index.html',
   'manifest.webmanifest',
   'sw.js',
   'favicon/web-app-manifest-192x192.png',
