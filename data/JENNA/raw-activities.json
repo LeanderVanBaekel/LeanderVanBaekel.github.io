@@ -3708,5 +3708,12 @@
     "type": "Walk",
     "km": 0.67,
     "name": "Middagwandeling"
+  },
+  {
+    "id": 14680218778,
+    "date": "2025-06-03",
+    "type": "Ride",
+    "km": 2.91,
+    "name": "Ochtendrit"
   }
 ]
