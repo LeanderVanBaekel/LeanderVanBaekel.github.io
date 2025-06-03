@@ -3458,6 +3458,13 @@
     "name": "Middagrit"
   },
   {
+    "id": 14683996902,
+    "date": "2025-06-03",
+    "type": "Ride",
+    "km": 5.61,
+    "name": "Avondrit"
+  },
+  {
     "id": 14679769374,
     "date": "2025-06-03",
     "type": "Ride",
