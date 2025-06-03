@@ -2,16 +2,16 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8" />
-<title>Juni‑minuten 2025</title>
+<title>Mei‑kilometers 2025</title>
 
   <!-- +++ PWA START +++ -->
   <meta name="viewport"      content="width=device-width,initial-scale=1">
   <meta name="theme-color"   content="#81ce97">
-  <link rel="manifest"       href="manifest.webmanifest">
-  <link rel="icon"           href="favicon/web-app-manifest-192x192.png">
+  <link rel="manifest"       href="../manifest.webmanifest">
+  <link rel="icon"           href="../favicon/web-app-manifest-192x192.png">
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
+      navigator.serviceWorker.register('../sw.js')
         .then(r=>console.log('[PWA] SW registered', r.scope))
         .catch(console.error);
     }
@@ -45,7 +45,7 @@ time{font-variant-numeric:tabular-nums}
 </head>
 <body>
 
-<h1>Juni‑minuten 2025</h1>
+<h1>Mei‑kilometers 2025</h1>
 <p id="targetToday" style="font-weight:500"></p>
 
 <div id="people"></div>
@@ -54,9 +54,10 @@ time{font-variant-numeric:tabular-nums}
 
 <script type="module">
 /* ───────────────────────── CONFIG ───────────────────────── */
-const GOAL_MIN     = 60 * 30;       // 60 min per dag, juni heeft 30 dagen
-const NUM_DAYS     = 30;            // juni
-const YEAR_MONTH   = '2025-06';
+const GOAL_KM      = 100;
+const ALLOWED_TYPES= new Set(["Walk","Hike","Trail Run","Run"]);
+const NUM_DAYS     = 31;            // mei
+const YEAR_MONTH   = '2025-05';
 const people = [
   { id:'LEANDER', label:'Leander' },
   { id:'JENNA',   label:'Jenna'   }
@@ -64,12 +65,12 @@ const people = [
 
 /* ───────────── helpers: datum & doel van vandaag ────────── */
 const today      = new Date();
-const inJun2025 = today.getFullYear()===2025 && today.getMonth()===5;
-const dayNr     = inJun2025 ? today.getDate() : NUM_DAYS; // 1‑30
-const expectedMin = (GOAL_MIN/NUM_DAYS)*dayNr;
-const expectedPc  = Math.round(expectedMin/GOAL_MIN*100);
+const inMay2025  = today.getFullYear()===2025 && today.getMonth()===4;
+const dayNr      = inMay2025 ? today.getDate() : NUM_DAYS; // 1‑31
+const expectedKm = (GOAL_KM/NUM_DAYS)*dayNr;
+const expectedPc = Math.round(expectedKm/GOAL_KM*100);
 document.getElementById('targetToday').textContent =
-  `Op dag ${dayNr} (vandaag) zou een egaal schema op ${expectedMin.toFixed(0)} min `+
+  `Op dag ${dayNr} (vandaag) zou een egaal schema op ${expectedKm.toFixed(1)} km `+
   `(${expectedPc}% van het doel) zitten.`;
 
 /* ───────────── DOM‑skelet per persoon ─────────── */
@@ -81,7 +82,7 @@ people.forEach(p=>{
         <div class="ppc-progress"><div class="ppc-progress-fill"></div></div>
         <div class="ppc-percents"><span>%</span></div>
       </div>
-      <p>${p.label} heeft in juni 2025 <strong id="${p.id}-min">0</strong> min bewogen.</p>
+      <p>${p.label} heeft in mei 2025 <strong id="${p.id}-km">0</strong> km afgelegd.</p>
       <details id="acts-${p.id}" class="activities">
         <summary>Bekijk gebruikte activiteiten</summary>
         <ul></ul>
@@ -99,45 +100,41 @@ function updatePie(wrapper, percent){
 function fillActivitiesList(id, acts){
   const ul = document.querySelector(`#acts-${id} ul`);
   ul.innerHTML = acts
-    .filter(a=>a.date.startsWith(YEAR_MONTH))
+    .filter(a=>a.date.startsWith(YEAR_MONTH) && ALLOWED_TYPES.has(a.type))
     .sort((a,b)=>a.date.localeCompare(b.date))
-    .map(a=>{
-      const min = a.minutes ?? a.km*10;
-      return `<li><time datetime="${a.date}">${a.date}</time> – ${a.type} – ${min.toFixed(0)} min – ${a.name}</li>`;
-    })
+    .map(a=>`<li><time datetime="${a.date}">${a.date}</time> – ${a.type} – ${a.km.toFixed(2)} km – ${a.name}</li>`)
     .join('');
 }
 
 function dailyCumulative(acts){
   const perDay = Array(NUM_DAYS).fill(0);
   acts.forEach(a=>{
-    if (!a.date.startsWith(YEAR_MONTH)) return;
+    if (!a.date.startsWith(YEAR_MONTH) || !ALLOWED_TYPES.has(a.type)) return;
     const d = +a.date.slice(8,10);
-    const min = a.minutes ?? a.km*10;
-    perDay[d-1] += min;
+    perDay[d-1] += a.km;
   });
-  let sum=0; return perDay.map(m=>sum+=m);
+  let sum=0; return perDay.map(k=>sum+=k);
 }
 
 /* ───────────── Data & UI ───────────── */
 const datasetPromises = people.map(async ({id,label})=>{
-  const acts = await fetch(`data/${id}/raw-activities.json`).then(r=>r.json());
+  const acts = await fetch(`../data/${id}/raw-activities.json`).then(r=>r.json());
 
-  const totalMin = acts.filter(a=>a.date.startsWith(YEAR_MONTH))
-                       .reduce((s,a)=>s+(a.minutes ?? a.km*10),0);
-  document.getElementById(`${id}-min`).textContent = totalMin.toFixed(0);
-  updatePie(document.getElementById(`progress-${id}`), Math.round(totalMin/GOAL_MIN*100));
+  const totalMay = acts.filter(a=>a.date.startsWith(YEAR_MONTH) && ALLOWED_TYPES.has(a.type))
+                       .reduce((s,a)=>s+a.km,0);
+  document.getElementById(`${id}-km`).textContent = totalMay.toFixed(1);
+  updatePie(document.getElementById(`progress-${id}`), Math.round(totalMay/GOAL_KM*100));
   fillActivitiesList(id, acts);
 
   return { label, data: dailyCumulative(acts), tension:.3 };
 });
 
 Promise.all(datasetPromises).then(datasets=>{
-  const labels = Array.from({length:NUM_DAYS},(_,i)=>`${i+1} juni`);
-  // doel‑lijn 60 min per dag
-  datasets.push({ label:`Doel ${GOAL_MIN} min`, data:Array(NUM_DAYS).fill(GOAL_MIN), borderDash:[4,4], pointRadius:0 });
+  const labels = Array.from({length:NUM_DAYS},(_,i)=>`${i+1} mei`);
+  // doel‑lijn 100 km
+  datasets.push({ label:`Doel ${GOAL_KM} km`, data:Array(NUM_DAYS).fill(GOAL_KM), borderDash:[4,4], pointRadius:0 });
   // ideale evenredige opbouw
-  datasets.push({ label:'Ideale opbouw', data:Array.from({length:NUM_DAYS},(_,i)=>((i+1)*GOAL_MIN/NUM_DAYS)), borderDash:[2,2], pointRadius:0 });
+  datasets.push({ label:'Ideale opbouw', data:Array.from({length:NUM_DAYS},(_,i)=>((i+1)*GOAL_KM/NUM_DAYS)), borderDash:[2,2], pointRadius:0 });
 
   new Chart(document.getElementById('chart'),{ type:'line', data:{labels,datasets} });
 });
