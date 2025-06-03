@@ -3456,5 +3456,12 @@
     "type": "Ride",
     "km": 8.56,
     "name": "Middagrit"
+  },
+  {
+    "id": 14679769374,
+    "date": "2025-06-03",
+    "type": "Ride",
+    "km": 5.42,
+    "name": "Ochtendrit"
   }
 ]
