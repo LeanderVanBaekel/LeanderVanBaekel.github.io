@@ -3470,5 +3470,12 @@
     "type": "Ride",
     "km": 5.42,
     "name": "Ochtendrit"
+  },
+  {
+    "id": 14692419501,
+    "date": "2025-06-04",
+    "type": "Workout",
+    "km": 0,
+    "name": "Lunch Table Tennis"
   }
 ]
