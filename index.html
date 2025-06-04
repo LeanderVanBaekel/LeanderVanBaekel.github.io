@@ -128,7 +128,7 @@ function fillActivitiesList(id, acts){
     .filter(a=>a.date.startsWith(YEAR_MONTH))
     .sort((a,b)=>a.date.localeCompare(b.date))
     .map(a=>{
-      const min = a.minutes ?? a.km*10;
+      const min = a.minutes ?? (a.moving_time ? a.moving_time/60 : (a.elapsed_time ? a.elapsed_time/60 : 0));
       return `<li><time datetime="${a.date}">${a.date}</time> – ${a.type} – ${min.toFixed(0)} min – ${a.name}</li>`;
     })
     .join('');
@@ -139,7 +139,7 @@ function dailyCumulative(acts){
   acts.forEach(a=>{
     if (!a.date.startsWith(YEAR_MONTH)) return;
     const d = +a.date.slice(8,10);
-    const min = a.minutes ?? a.km*10;
+    const min = a.minutes ?? (a.moving_time ? a.moving_time/60 : (a.elapsed_time ? a.elapsed_time/60 : 0));
     perDay[d-1] += min;
   });
   let sum=0; return perDay.map(m=>sum+=m);
@@ -150,7 +150,7 @@ const datasetPromises = people.map(async ({id,label})=>{
   const acts = await fetch(`data/${id}/raw-activities.json`).then(r=>r.json());
 
   const totalMin = acts.filter(a=>a.date.startsWith(YEAR_MONTH))
-                       .reduce((s,a)=>s+(a.minutes ?? a.km*10),0);
+                       .reduce((s,a)=>s+(a.minutes ?? (a.moving_time ? a.moving_time/60 : (a.elapsed_time ? a.elapsed_time/60 : 0))),0);
   document.getElementById(`${id}-min`).textContent = totalMin.toFixed(0);
   updatePie(document.getElementById(`progress-${id}`), Math.round(totalMin/GOAL_MIN*100));
   fillActivitiesList(id, acts);

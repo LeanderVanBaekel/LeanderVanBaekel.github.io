@@ -6,7 +6,7 @@
  * ▸ Bewaart per atleet   ▸  data/<user>/raw-activities.json
  *                        ▸  data/<user>/monthly_walk_hike.json
  *
- *   – raw‑activiteiten:  id, date, type, km, name
+ *   – raw‑activiteiten:  alle fields van de Strava API + date, km, minutes
  *   – maandtotalen:      month(YYYY‑MM) + km (alleen Walk/Hike‑types)
  *
  * Omgevingsvariabelen (repo ▸ Settings ▸ Secrets ▸ Actions)
@@ -74,11 +74,10 @@ async function fetchAllActivities(token) {
 function buildRaw(acts) {
   return acts
     .map((a) => ({
-      id:   a.id,
-      date: a.start_date_local.slice(0, 10), // YYYY‑MM‑DD
-      type: a.type,
-      km:   +(a.distance / 1000).toFixed(2),
-      name: a.name,
+      ...a,
+      date:    a.start_date_local.slice(0, 10), // YYYY‑MM‑DD
+      km:      +(a.distance / 1000).toFixed(2),
+      minutes: Math.round(a.moving_time / 60),
     }))
     .sort((a, b) => a.date.localeCompare(b.date));
 }
