@@ -34605,5 +34605,69 @@
     "date": "2025-06-07",
     "km": 3.41,
     "minutes": 16
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Namiddaghike",
+    "distance": 3395.1,
+    "moving_time": 2379,
+    "elapsed_time": 2950,
+    "total_elevation_gain": 0,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 14735230142,
+    "start_date": "2025-06-08T13:56:10Z",
+    "start_date_local": "2025-06-08T15:56:10Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14735230142",
+      "summary_polyline": "y~n_Ia{n[RaALsAFODSEe@D[C_@DKGi@Ai@R}@V]LE\\i@GoA?]BQHQJK\\APF?C@BZa@NERQTGLU~@y@`AsAZ]JEBKLG`@k@?GIUMm@QiAo@{CBi@La@JS?KJC?EB?E?@B?INOJO\\w@?IO_@WwAMYAO?B@AAC@@GC@FF?ECEY?DCMS]MOk@cAKYGGCk@Go@Qg@AQOu@e@m@Kc@MQES_@k@J}@EaAFILGd@i@TOT[JEJOZUl@u@LIZ]LMXKJO@OBIPMZ_@r@k@j@o@v@o@j@m@?IUw@Qe@c@{@DQ^Qr@{@LU@UCMEM]Y@CZo@PUFOFKLG@KFALKh@{@B?NUXc@HGL?VWDK?SJUPKn@oAVWD{BAkBCa@Bc@CcD@c@K_@EEGA[g@KYEGCMBMDCDKBk@Pu@^e@ABBBAC@@JKD@HC\\J^`@Hm@CaAKo@@EPMNSp@YNUPc@LQROPJLVAF\\jAR\\HXNXFIDQHGP]`@eA`@o@h@m@JSFA^YRKPSXMT[",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g18993182",
+    "start_latlng": [
+      52.510021,
+      4.667671
+    ],
+    "end_latlng": [
+      52.501412,
+      4.696572
+    ],
+    "average_speed": 1.427,
+    "max_speed": 8.8,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 3.6,
+    "elev_low": -0.5,
+    "upload_id": 15724782692,
+    "upload_id_str": "15724782692",
+    "external_id": "9BD3C403-085E-4B7B-AF23-B3435F8B92E4-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-08",
+    "km": 3.4,
+    "minutes": 40
   }
 ]
