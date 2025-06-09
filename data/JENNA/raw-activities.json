@@ -34733,5 +34733,73 @@
     "date": "2025-06-08",
     "km": 3.4,
     "minutes": 40
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Middagrit",
+    "distance": 2856.9,
+    "moving_time": 827,
+    "elapsed_time": 1550,
+    "total_elevation_gain": 0,
+    "type": "Ride",
+    "sport_type": "Ride",
+    "workout_type": 0,
+    "id": 14742791673,
+    "start_date": "2025-06-09T10:27:49Z",
+    "start_date_local": "2025-06-09T12:27:49Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 1,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14742791673",
+      "summary_polyline": "opn_Im{n[v@qAd@iALSNg@LEBDLDBFJH\\h@VHLJF@RXj@f@t@h@xA|@b@\\\\~@`@`B`@x@b@t@Rz@BTKh@?f@DJFRNFF@DAJGPUFq@b@]`AwAlB}B~@kATU\\i@h@m@JET]d@a@hAaBh@c@\\m@r@}@h@}@NKTG?MLM\\o@Ru@X{@JK@GRST_@HWZc@XYp@cBnAaCbAeC`AkBDQVa@Z{@rEeJb@eAdAiB`AoBFINEFID[G[EIOEGGISk@eAAQV]\\o@La@FE`@}@^q@`@aAhDeH",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.510056,
+      4.667646
+    ],
+    "end_latlng": [
+      52.494873,
+      4.686282
+    ],
+    "average_speed": 3.455,
+    "max_speed": 9.58,
+    "average_watts": 55.1,
+    "device_watts": false,
+    "kilojoules": 45.6,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 3.2,
+    "elev_low": 0.8,
+    "upload_id": 15733019042,
+    "upload_id_str": "15733019042",
+    "external_id": "FA6F4E76-50F2-4E0E-9EBE-702FDA92F10E-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 1,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-09",
+    "km": 2.86,
+    "minutes": 14
   }
 ]
