@@ -34983,5 +34983,69 @@
     "date": "2025-06-09",
     "km": 0,
     "minutes": 70
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Namiddaghike",
+    "distance": 4411.1,
+    "moving_time": 3205,
+    "elapsed_time": 3812,
+    "total_elevation_gain": 2.1,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 14756005693,
+    "start_date": "2025-06-10T14:42:20Z",
+    "start_date_local": "2025-06-10T16:42:20Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14756005693",
+      "summary_polyline": "{bo_I}ln[k@jBIb@IREVUl@c@nBa@lAk@tAWx@Sf@GXMVMh@Mh@?J_AjC?CKAACGCIAMBYMQSUi@EEMm@OWOGKIA@OI_@UY[MGC?CG]QKMMCGIOIMQc@Q?CMEMMWKSWYGWUg@UAJAMSUg@YQMm@YUQQGe@c@o@]CGIAGGY_@]QGCKMWGOIUUgAu@EIGAi@]e@Sm@e@}@i@SQc@SWUKAMRIVSrASx@g@nCkClLKj@E`@i@hCIPGAOH?EJAHE`@aBbAcFvBwJRsAj@wBV_BPe@FCDIDDGAACB_@|AcH?_@T_@HEF??@RLFHLFd@^d@f@NHHLVNXZTLLPl@^BLB?j@\\h@h@`@VA@B@DG@g@KIY_@c@WQSGKUiAAOS{@EcA@uAAIUWQk@Qu@Eo@GQAOy@eBQSYgAAMFYP]NODADFDRn@zARXJFV^\\XPd@Pj@NpBJRDA?LLR?r@BVNf@EL@Dl@d@d@b@JLPLB?HABEF_@FMNIn@o@HGFBP\\JL^nBX~@Lp@^n@^~@p@nAJJPEHHPVTl@B?Pf@TZDAd@i@PM\\a@|DuFRZPSBABFF@TUdApAJTFBP^h@r@TLZ^HDPPHD",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.510048,
+      4.667653
+    ],
+    "end_latlng": [
+      52.510073,
+      4.667736
+    ],
+    "average_speed": 1.376,
+    "max_speed": 2.36,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 3.3,
+    "elev_low": 0.7,
+    "upload_id": 15747253288,
+    "upload_id_str": "15747253288",
+    "external_id": "AC92775C-AAA0-495C-88BC-27AD8ED44657-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-10",
+    "km": 4.41,
+    "minutes": 53
   }
 ]
