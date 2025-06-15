@@ -35822,5 +35822,69 @@
     "date": "2025-06-14",
     "km": 0,
     "minutes": 30
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Middagwandeling",
+    "distance": 1006.8,
+    "moving_time": 731,
+    "elapsed_time": 937,
+    "total_elevation_gain": 3.9,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 14804931401,
+    "start_date": "2025-06-15T09:42:53Z",
+    "start_date_local": "2025-06-15T11:42:53Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14804931401",
+      "summary_polyline": "ykl_Iyk_[BUCM@UDQ@]HYAMNsATw@j@s@VUVc@FQ@M@qABw@Ce@F_EBQFKDAHQ",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496573,
+      4.585988
+    ],
+    "end_latlng": [
+      52.495061,
+      4.596592
+    ],
+    "average_speed": 1.377,
+    "max_speed": 2.2,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 10,
+    "elev_low": 5.8,
+    "upload_id": 15800176567,
+    "upload_id_str": "15800176567",
+    "external_id": "CF29101F-59CF-4789-ABED-ABEF125EDC88-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-15",
+    "km": 1.01,
+    "minutes": 12
   }
 ]

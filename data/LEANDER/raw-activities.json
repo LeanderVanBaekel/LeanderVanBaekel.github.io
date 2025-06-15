@@ -35559,5 +35559,71 @@
     "date": "2025-06-14",
     "km": 0,
     "minutes": 30
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Lunch Walk",
+    "distance": 1006.1,
+    "moving_time": 786,
+    "elapsed_time": 960,
+    "total_elevation_gain": 3.9,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 14804932269,
+    "start_date": "2025-06-15T09:42:32Z",
+    "start_date_local": "2025-06-15T11:42:32Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14804932269",
+      "summary_polyline": "wel_Iov~ZFBI`@QKYE_@SYGUKKAa@MMIQEaBu@CK@e@Js@VcAj@eBVkA?o@DMB_@CEDqA@G?MF]@}ANsBb@mAdA}APg@?uBF{BAmBDi@BG`@m@FOPs@f@wAD[L]RIJKPEXCFGLCN@BGPcABk@F]@c@T_@Jm@EAAEBC",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496442,
+      4.586161
+    ],
+    "end_latlng": [
+      52.495046,
+      4.59662
+    ],
+    "average_speed": 1.28,
+    "max_speed": 2.113,
+    "has_heartrate": true,
+    "average_heartrate": 105.9,
+    "max_heartrate": 118,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 10,
+    "elev_low": 5.8,
+    "upload_id": 15800177452,
+    "upload_id_str": "15800177452",
+    "external_id": "5D18D3A2-0D36-489E-BF3F-3B5BFDDA7AC8-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-15",
+    "km": 1.01,
+    "minutes": 13
   }
 ]
