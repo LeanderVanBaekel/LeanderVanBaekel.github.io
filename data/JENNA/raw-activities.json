@@ -36060,5 +36060,69 @@
     "date": "2025-06-15",
     "km": 1.01,
     "minutes": 12
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Ochtendwandeling",
+    "distance": 385.1,
+    "moving_time": 325,
+    "elapsed_time": 347,
+    "total_elevation_gain": 12.9,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 14814109145,
+    "start_date": "2025-06-16T07:10:40Z",
+    "start_date_local": "2025-06-16T09:10:40Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14814109145",
+      "summary_polyline": "y_l_I{r~ZNDFIBW?c@DUJaB",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496314,
+      4.585934
+    ],
+    "end_latlng": [
+      52.494625,
+      4.588973
+    ],
+    "average_speed": 1.185,
+    "max_speed": 2.167,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 18.9,
+    "elev_low": 5.8,
+    "upload_id": 15810153364,
+    "upload_id_str": "15810153364",
+    "external_id": "531962C6-AD49-4CF9-8C0F-608CF2A91086-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-16",
+    "km": 0.39,
+    "minutes": 5
   }
 ]
