@@ -33374,7 +33374,7 @@
       "id": 19868410,
       "resource_state": 1
     },
-    "name": "Namiddagwandeling",
+    "name": "Rode route waz",
     "distance": 9451.5,
     "moving_time": 7585,
     "elapsed_time": 14413,
@@ -36252,5 +36252,69 @@
     "date": "2025-06-16",
     "km": 0.39,
     "minutes": 5
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Rondje WAZ - deels groene route",
+    "distance": 5032.3,
+    "moving_time": 3792,
+    "elapsed_time": 4464,
+    "total_elevation_gain": 29.1,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 14828877139,
+    "start_date": "2025-06-17T12:35:57Z",
+    "start_date_local": "2025-06-17T14:35:57Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14828877139",
+      "summary_polyline": "_ll_Iqj_[Ce@FWDw@BK?OXkCJUNk@V]TORUL[BQDyABg@Ac@BiCF}AaAu@WWOWI{@QaAMeAAe@G_@GOIGy@]O@UH[ZEL?ZC@S[CCC@?GECB?AB@AK`A?r@Hh@Px@B^?^EHC@SCY@WCE@YAcAHSDQKEDGAA@m@AMDKHMf@Gf@AlABb@Ep@I^GJM@QEMKC?SMM?IBa@FWGs@k@u@aA]Sc@NCDULQAYPO@GDQ@KJIBOJ[Ja@CIDY@c@HKN[Na@NO@_@MSOYCI@OEI?EAEB_@Ee@W_@w@C]K_@Ee@AiBJgALk@Ai@Ig@Cs@J_B@a@LUL[ReALc@Jw@FSVc@V[Nc@Fi@JYb@[HAJDHJLHDH|@~@VRb@Rl@IDCXIN@`AKd@`@^H\\TVFVLd@VLNHDL@VMXe@VOD@DCXDP?f@CTFP?RDHANKLUFU?KDSDOJK@IBGD]FODo@JS@iBBMDKJm@Cc@OeA?M?B@E@HBABOB?LQH@JJF@HH^Nd@v@Jv@D@JLPDPHPX\\^LTd@f@r@ZLBNCL?DA@KKuAMc@Km@A]Oq@@GNGLHHHVb@f@n@PHNPLJD?LNx@f@^\\h@XdAt@JVFXFJ\\Tv@FPDXLV?FFPCL@JFT@t@PN@JCFDB?JNAHEC@LE@FWCQCHBX?AA??ACFDHIZDRIG?ZSrAIdBGXEj@AlB@t@An@Ip@?LJ^LT?HI^Lb@BXEZI\\?TCV?|@Iv@OrDPb@lApB\\bA@LE^DfBAFIJ]JYTSVYr@K^MRIDc@n@KHeAjA_AnAQb@@FUxB@POnBKf@@ZGRCd@EFE@a@U",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496687,
+      4.585781
+    ],
+    "end_latlng": [
+      52.496445,
+      4.586246
+    ],
+    "average_speed": 1.327,
+    "max_speed": 4.825,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 18.9,
+    "elev_low": 5.1,
+    "upload_id": 15826075791,
+    "upload_id_str": "15826075791",
+    "external_id": "15D78BE4-A8CA-4D0F-A0DD-D93F569A9483-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-17",
+    "km": 5.03,
+    "minutes": 63
   }
 ]
