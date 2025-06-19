@@ -36499,5 +36499,69 @@
     "date": "2025-06-18",
     "km": 0.38,
     "minutes": 6
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Nachtwandeling",
+    "distance": 6985.5,
+    "moving_time": 6045,
+    "elapsed_time": 12459,
+    "total_elevation_gain": 22.5,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 14853446192,
+    "start_date": "2025-06-19T16:13:57Z",
+    "start_date_local": "2025-06-19T18:13:57Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14853446192",
+      "summary_polyline": "mcl_Iul~ZVXp@n@h@VNLZb@FT^r@l@|@p@t@bCdBVLb@JfBp@zA^R@l@N^Jr@\\p@VRL`@NdB`An@p@`@XTTVLPHd@\\b@RHTJ^@TDD@LJR?`@LZ@JNNXf@JNVJLLf@ZnB~APFXVn@ZXVx@b@ZTf@Tb@XZN^XdAh@|DhD^TPDbBjAp@\\TRH@b@^`Ap@\\XTLlAbAbAp@XJZVrBjA`Br@d@\\v@b@|@b@\\VVLx@n@^RRRhA|@fAh@DDb@TXVLDd@Z|BbAVF~BnAhA`@pAt@\\\\\\XbA~@fDpCb@Vh@d@`@d@f@\\~ArAPJj@VPDTBHD^Dh@AFDDAHBDAj@@RCDCb@CLB^At@C`@?b@HfAYd@UH?v@_@X[dAs@RY@GDABEBDJ@BQD?ABBGF?FIHBHM@@@A?@GH@@CFJ?Ca@KEC@Ax@ARCFYX]HWBCDWD_A\\C?WJO@g@VK?QNa@HICEBQ@IFw@JO@y@OWKM?u@QYKoCeB_CoBk@]_@ScA}@i@_@OO]S]]UGU?WDYEe@O[Oc@_@kBeAcAi@[Us@Wi@[qAi@yCiBo@WKDI?[KQMw@}@g@_@gBcA[[YSaBy@a@Mo@Ys@]uBiAMKcAo@{@q@cAcAQMKAgB}AqAy@YIY]oAu@MC{@u@UWYGa@YEI_@]q@g@MEUWc@w@qB{@g@a@YMm@c@k@QYKm@_@YSC?WWe@WcAiAAIJeAMU[_@[Wy@m@OIQCOIuCyBc@a@{Ay@[KA?WOq@WSKgA_@CG[KeCs@KGm@QaA_@kAs@OMMWUIa@Y}@g@YU@@GDC?aA_Ac@]QUQc@UcA_@y@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496491,
+      4.586037
+    ],
+    "end_latlng": [
+      52.496435,
+      4.586151
+    ],
+    "average_speed": 1.156,
+    "max_speed": 2.02,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 8.1,
+    "elev_low": 0,
+    "upload_id": 15852560186,
+    "upload_id_str": "15852560186",
+    "external_id": "F40FB967-1F98-41A2-BA20-67C7923FD882-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-19",
+    "km": 6.99,
+    "minutes": 101
   }
 ]
