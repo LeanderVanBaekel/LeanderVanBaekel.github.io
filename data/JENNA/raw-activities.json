@@ -36563,5 +36563,69 @@
     "date": "2025-06-19",
     "km": 6.99,
     "minutes": 101
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Namiddagwandeling",
+    "distance": 2294.5,
+    "moving_time": 1999,
+    "elapsed_time": 2489,
+    "total_elevation_gain": 4.6,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 14859563790,
+    "start_date": "2025-06-20T12:00:00Z",
+    "start_date_local": "2025-06-20T14:00:00Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14859563790",
+      "summary_polyline": "_lw_I_gl[D@FCT@d@DVPDTIzA?j@Gh@@VEJARCr@CT@RCBBj@EzAB\\CjA@f@Ir@UTa@He@X_@JKJMBMJWFONODYLMBGLMHMNO^EBQZKZOXe@|AMRSj@EB?BIJ[l@UTUNCHe@TUPYLAB[Pa@JW`@WX_@h@CAGKKG[GGBg@FYNG@M_@IMi@Wk@aAO]GUIgCM_@OWDa@JSBOBYCI@i@Lg@YiAMaAUs@m@kCLQJENCP@LC^Cl@QLBJ?HGD?ROHCLKd@DFFRDT@\\FD?|@d@H@f@b@DBDIH?`@cABSRe@Pw@?WBeAASBWCk@@MKo@Co@Dc@Em@BSBCF@b@LN@NCDG",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.555497,
+      4.6562
+    ],
+    "end_latlng": [
+      52.555434,
+      4.655968
+    ],
+    "average_speed": 1.148,
+    "max_speed": 2.1,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 7,
+    "elev_low": 2.4,
+    "upload_id": 15859254111,
+    "upload_id_str": "15859254111",
+    "external_id": "505CF8F2-A544-4045-B10D-3D03ECE44ED7-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-20",
+    "km": 2.29,
+    "minutes": 33
   }
 ]
