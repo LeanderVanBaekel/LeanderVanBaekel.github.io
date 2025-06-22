@@ -36686,5 +36686,71 @@
     "date": "2025-06-21",
     "km": 0,
     "minutes": 60
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Night Walk",
+    "distance": 1939.2,
+    "moving_time": 1620,
+    "elapsed_time": 1777,
+    "total_elevation_gain": 7.4,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 14884728426,
+    "start_date": "2025-06-22T19:31:24Z",
+    "start_date_local": "2025-06-22T21:31:24Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14884728426",
+      "summary_polyline": "afl_Iwu~ZB_@NLEG?G@BCF@HGG?@DKABB?CDAA@BCf@?x@@tAJdATPLDDFNJl@XPPF@\\ZLDn@r@D@BFBn@FX?N\\TLXXV@FFFx@n@VBNFJ?XLRVRJBLBEB@RXJGH?NHl@L`@^VJFFF?LHF@\\NVDT@DDFANBTLbA^GJVGF@BHJBFDF?LJB?BDBAHDDFF?LHLN@CLJD@f@`@?E@AHF@DTLn@h@PFf@r@B@?AH?BMQGGIWOg@_@}@{@cAm@e@Qs@[kA[WM}A]GEDCE?HECDG?B?AAYCIESCG@[Me@GSWa@W[MiAu@Y[IQEEKAMFCB?FCBo@k@MEg@c@WKG?Y[U[KCOQg@[KOMBKOCD?D?Ga@[CIUYKg@?KBIG[BQAa@Eg@B[CO@a@KcAK]?MAE?FCICADM@@AC?@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496497,
+      4.586048
+    ],
+    "end_latlng": [
+      52.496438,
+      4.586203
+    ],
+    "average_speed": 1.197,
+    "max_speed": 4.24,
+    "has_heartrate": true,
+    "average_heartrate": 92.4,
+    "max_heartrate": 122,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 8.1,
+    "elev_low": 3,
+    "upload_id": 15886601901,
+    "upload_id_str": "15886601901",
+    "external_id": "11C61170-68CD-4388-B4A3-59A0359F8081-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-22",
+    "km": 1.94,
+    "minutes": 27
   }
 ]
