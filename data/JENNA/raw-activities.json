@@ -37066,5 +37066,73 @@
     "date": "2025-06-24",
     "km": 5.58,
     "minutes": 33
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Ochtendrit",
+    "distance": 6295.1,
+    "moving_time": 1590,
+    "elapsed_time": 1708,
+    "total_elevation_gain": 4.6,
+    "type": "Ride",
+    "sport_type": "Ride",
+    "workout_type": 0,
+    "id": 14908364445,
+    "start_date": "2025-06-25T06:04:44Z",
+    "start_date_local": "2025-06-25T08:04:44Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14908364445",
+      "summary_polyline": "kco_Iekn[Sh@u@rCQ\\Sv@kAzCW`AERuApDCTa@~A_@hAMN]r@UVITOJIRGF]r@[\\ITuBbDUXO^QVQ\\[`@Yp@m@~@MZUVWd@QRGDQCEDCNCl@m@zAYf@GBO\\_@`@q@dAg@lAOR_@x@GHS`@EROVQl@AJMb@Id@YbAYt@_AdB[r@Y`@cA`BcCjEaA|BQ`AaCjA_An@iClAIAUHi@DGDi@@q@FIAO@_CKc@Iw@S[GQ?gDsAeAg@}@[cBaA{@a@E?GIQGMK]EQM_@KWS]KYOQE[WsC{AgAe@UQSEQIGAEEMEOMe@Ug@OQOe@Us@g@MKSIo@c@s@[E@ICGKWSm@k@k@a@mAcAs@c@GGWO]Yo@a@E?MMEDEAmA}@o@[gAaAqCiBuAiAOGWQGAs@e@[Me@_@i@g@a@[_@QSCg@SIIIAMI_@I[QSEu@e@KWS[GCS@OHO?c@KiAg@G@o@UOAQIc@GYOG?QMy@]{@QQIcA]SC[KG@OGG?GEi@QqAk@k@Om@WYEYOQAaAYi@Uq@O@ZEbAKtAY`C[xCOl@cCjBMBkAj@KJOBq@^EDu@Z_Bv@O@ECCIGeGIYMGGAmA\\m@Vq@PKFSBSN_ARi@TsA\\s@\\c@Z[JcAn@WFk@Xo@b@QHc@SkAKU?ECeAEUEUAW?]D_@@}@JW?EBIAm@@a@KWKE@INKh@m@xBIHG@GEU@OE",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.510121,
+      4.667608
+    ],
+    "end_latlng": [
+      52.555406,
+      4.65605
+    ],
+    "average_speed": 3.959,
+    "max_speed": 6.9,
+    "average_watts": 42.9,
+    "device_watts": false,
+    "kilojoules": 68.1,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 4.7,
+    "elev_low": 1.1,
+    "upload_id": 15912237703,
+    "upload_id_str": "15912237703",
+    "external_id": "9F2D6968-2E50-4B1D-B170-69B26CE410CF-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-25",
+    "km": 6.3,
+    "minutes": 27
   }
 ]
