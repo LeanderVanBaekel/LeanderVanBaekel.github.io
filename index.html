@@ -19,6 +19,7 @@
   <!-- +++ PWA END +++ -->
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
 <style>
 body{font-family:system-ui;margin:0 auto;max-width:800px;padding:2rem;background:#f7f7f7}
@@ -145,6 +146,18 @@ function dailyCumulative(acts){
   let sum=0; return perDay.map(m=>sum+=m);
 }
 
+const goalsMet = {};
+function checkGoals(){
+  if (people.every(p=>goalsMet[p.id])){
+    if(typeof confetti==='function'){
+      confetti({particleCount:100,spread:70});
+      setTimeout(()=>confetti({particleCount:150,spread:90}),250);
+    }else{
+      alert('Gefeliciteerd! Alle doelen behaald!');
+    }
+  }
+}
+
 /* ───────────── Data & UI ───────────── */
 const datasetPromises = people.map(async ({id,label})=>{
   const acts = await fetch(`data/${id}/raw-activities.json`).then(r=>r.json());
@@ -154,6 +167,9 @@ const datasetPromises = people.map(async ({id,label})=>{
   document.getElementById(`${id}-min`).textContent = totalMin.toFixed(0);
   updatePie(document.getElementById(`progress-${id}`), Math.round(totalMin/GOAL_MIN*100));
   fillActivitiesList(id, acts);
+
+  goalsMet[id] = totalMin >= GOAL_MIN;
+  checkGoals();
 
   return { label, data: dailyCumulative(acts), tension:.3 };
 });
