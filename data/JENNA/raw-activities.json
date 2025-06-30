@@ -37625,7 +37625,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 2,
+    "kudos_count": 3,
     "comment_count": 0,
     "athlete_count": 2,
     "photo_count": 0,
@@ -37666,5 +37666,69 @@
     "date": "2025-06-29",
     "km": 6.56,
     "minutes": 155
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Dalfazer Wasserfall",
+    "distance": 3783.3,
+    "moving_time": 4187,
+    "elapsed_time": 7161,
+    "total_elevation_gain": 269.7,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 14961812005,
+    "start_date": "2025-06-30T10:16:53Z",
+    "start_date_local": "2025-06-30T12:16:53Z",
+    "timezone": "(GMT+01:00) Europe/Vienna",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14961812005",
+      "summary_polyline": "spo`H}wrfAABOFEH_Bl@OJQXMDINWTEFIFOFEHi@b@c@t@CJ[`@YZSJEDG@GFCFs@XOLKDABC?aAp@SFKNC?EE_@?UGK??@OESSIBGIUCMII?EKOQQEMSAI?@SUAUGGAQECAKCAEI?IGSBI@AG]FSA]FWGIGCQQ?UMWQi@?BCCEWQe@U{@[m@Mc@KSIGGOCM?OGIGOAMA??KGQAe@BA@D@?CFCZ@?BG?UKMAQAADGBSEBCAEBIECGMMUc@CCC?@EI?K]IEIFCA?FAMEECOGGCB?EEBGAG\\GFGI?FKEIFCA?BWNC?Mb@IROPAFGGGDCABA?CCFCC@JCCBCEBCAG@EAAHEFS?ABG?ABC?@?K@IHCCG?@DA?@?GFM?CG?@AA?HGAAD@LDCB@DCADD@?C?B?KCEADBLA@F?CA@A?DC@BBBA?@?ADDDA?BA@B?KAE?ABK??AE?CDAC?H?GCBBACCBB?I@J@AC?EI@B?E?F?CE@AGCC@BAAABAA@B?C?@E@?@CA?GGFG@CAA@EADF@GQCAABABOG@@BC?CBPZAABAA@CCBa@CECDFHAN?e@@T@GPWAPFHWFCB@BABC?B@BEA@DD@MCHE?BE?@@KABCCGL?PC@@J?B@?BFIL[LCI?GJCCCAB@??JDJJB@A@DBCHDD?@BL@p@UXEDENET@TL\\HJJJDTALEXYLGJIPENB\\EJMPKFADEPCHGB[B@@CBH@TEj@KNCBC?M^o@h@_@r@Mh@UPo@LADDH?NC@BJDFFALDL@DKl@Xb@`@J?HETIL?P@f@P^BJFJ?~@Z\\PJHLDHA@BTGJ@J?DGHBTZBRDBNr@HP@\\ADGBCFWHUPKXMr@]lAAROh@BH@AAAPFL?@AB@LE@HJT`@PZ@THTGHKNAVIL?NGNO\\QRCt@i@PYPGNMb@MFKJCDGLCXKHM\\YBI@O\\]HWNODARSJQVKBGFIPEJK~@eATOZKRMPEBID?RO",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": "g18993182",
+    "start_latlng": [
+      47.432773,
+      11.734254
+    ],
+    "end_latlng": [
+      47.432797,
+      11.734221
+    ],
+    "average_speed": 0.904,
+    "max_speed": 4.02,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 1191.2,
+    "elev_low": 930.8,
+    "upload_id": 15970801871,
+    "upload_id_str": "15970801871",
+    "external_id": "CF7DFE65-CA85-42C2-A662-71FC334D998F-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-06-30",
+    "km": 3.78,
+    "minutes": 70
   }
 ]
