@@ -37698,5 +37698,69 @@
     "date": "2025-06-30",
     "km": 4.04,
     "minutes": 68
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Rofan 1",
+    "distance": 11648.8,
+    "moving_time": 15317,
+    "elapsed_time": 29258,
+    "total_elevation_gain": 863.2,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 14984408113,
+    "start_date": "2025-07-02T06:34:17Z",
+    "start_date_local": "2025-07-02T08:34:17Z",
+    "timezone": "(GMT+01:00) Europe/Vienna",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a14984408113",
+      "summary_polyline": "_nm`HsfvfAOl@EUk@@c@]{@R^gBg@{Ba@Xu@k@gBJcBY[q@gA_AcAiC]]YyAqAeC{@cDo@u@Y?@fD^zBq@`Dc@vJyBtCqAd@g@x@GtCUfDLf@C_@KHkB|BYrAJFSx@i@z@?Zj@b@aAXL|@a@|AEtBHB[lBu@`BDnAiDlFsAz@uDjMwB|BGp@VrBI|A_AbFo@fBDXU@u@pAY?Y`A}A~@I^aCrByAXyCw@uAp@gBoAa@f@]GmCyAYu@u@Ey@aACe@g@?Oa@UZKXKUe@Nk@`BuAJcARd@~@u@GFF_@a@WJOIVBODCK`@LUGAPTEFQ`@f@jC[e@a@{@IpBe@GcCGYSb@I}Ae@tASwAQl@IWU`@]yAGdAUk@Gt@Mm@Qj@K_@]a@MBGm@K@CaAc@d@Ee@SJg@w@qAOm@e@s@DRg@u@URa@e@UPW]Mm@kA}@]a@Lw@^Dy@a@VFk@c@HJm@e@DLcAe@RPy@u@RHo@k@HCWRWUAH[a@CJUkAPWdBQWKh@e@Fa@~@OCJHUBXC@QQJHI_@VH{AWf@c@JLSBwAy@n@?w@X{@g@L\\y@o@BTw@a@NJ_@i@AMe@e@Uq@gAKJOi@{@Mm@zBVQa@r@Cp@b@eBQ`@UGVF?c@P?IUb@wAPE`@l@tAc@Dg@lAgAZHd@GAMjCL\\Mf@mAxEt@r@c@T@bA~AnC~Bp@fA\\aAt@}@xAmA?H\\a@v@Xz@]@\\r@~@z@QT_ANRHSFTNME]XLS?DTVAA]TFFc@\\XdBWBOx@GXn@dBp@z@M|@h@lAkB\\oBJHt@_A^sC@eAO}AQODo@SqAJBEu@ZeB@{Ce@mAHk@\\L\\{Ad@EVw@jBiAfBs@`@eACw@XI`@kC@P`AQL_@z@u@~A|@^kAhAy@|AI`A`@VU~B\\t@m@Br@Jp@RYj@ER]NfApCeDLCPrA\\q@HRTIrE{EnABXm@r@U|@gCnC_CHs@c@aBP_AKeCLSRt@l@l@Ht@jBpEZ`Bl@~@ARb@hALKHUEPMNJEIEVx@fBnBfCLV~@hAr@dAc@Tb@_@xBb@Ef@f@LOSr@WI?Ym@kA^p@`@`Ar@cAZLDe@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      47.42384,
+      11.751622
+    ],
+    "end_latlng": [
+      47.423925,
+      11.751601
+    ],
+    "average_speed": 0.761,
+    "max_speed": 6.46,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 1689.1,
+    "elev_low": 972.5,
+    "upload_id": 15995596375,
+    "upload_id_str": "15995596375",
+    "external_id": "9F5E8ED8-5ABA-4365-B4BD-E914171D3898-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-07-02",
+    "km": 11.65,
+    "minutes": 255
   }
 ]
