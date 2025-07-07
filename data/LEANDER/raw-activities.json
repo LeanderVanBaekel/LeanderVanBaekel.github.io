@@ -37762,5 +37762,71 @@
     "date": "2025-07-02",
     "km": 11.65,
     "minutes": 255
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Evening Surfing",
+    "distance": 2872.9,
+    "moving_time": 4077,
+    "elapsed_time": 5804,
+    "total_elevation_gain": 0,
+    "type": "Surfing",
+    "sport_type": "Surfing",
+    "id": 15038124961,
+    "start_date": "2025-07-07T17:12:36Z",
+    "start_date_local": "2025-07-07T19:12:36Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15038124961",
+      "summary_polyline": "wel_Imv~ZRAW?@BAJMb@[jBUv@Gt@GLCIBAQ~@GlAG`@HPI^@~@BYHC@CB??AEDCB?CQLEAGGA[R}@@BE?EBE?WJQRQLGHECFC?IBGBMAAB@AFF]BPCLFCBJDMCGCD?p@@A@K?DNY@HEVBH@C?JBCJPB?DADIXBHt@AAB??GEMECRLLSDCBKCVE@OM]ICE?BAA?EEIAAA?IME?B@AB]F]IH@@BBEB@NYAPE?ENBM@c@@GBAALCFKFCJEB@A@B@AA]@GHEAJAIK`@BACCPq@CZIPONIA@GCEMD?A?H?]BMANAGGN?FDA?DF@Jc@BA@BALBC@BDMMHI??BBq@AAKBUL?PDWFO?MIXCZF[@BBEGTAA?K@I?FMNMDBGACCFFFFWC@GNBBAD@IGBCGBOD@BBHODAJIDJCx@AIDUK`@?OH_@GN?PBGGABIGHA??EABAABk@K@EF@FCLNJJN@EDAHX?EALD?HKBO@D?[AJPg@OhAABCE?a@BQ?DMNAPBEB@G??@AC?FEHBBANF[HBCKBACNB@?GECAGE@@ICL@ACABEDA`@[MXKNGB@ABK@A@H@AAZ?IFSBC?DPc@JKB@ADIHGTARKFGc@DAFG@M@@BA?HDHB^KOC?IEIDSIIB@??AEBAACDDMFGDACDMFMCCE@IBODE?BACIFGNABBA@GDCDB@F@?ADDGQf@@AAKBKCEA@@CBD?QBBFKAHDRBG?q@Ij@@L@?GHAHE@BK?B@C?F?MHYGAMFECACVy@@@KLMFONAJ?DF@DHB@BKBJADB?@@BA?@@ODCGR@EDHFQHGBDAFAAED@OEH?LBC@FBG@@EFJUNOCLAT@GFEGNPOM^`@k@DA@IVc@Rc@J_@FK?ELQD[CO?GPUDSR_@VaAFIPEPW@MY[D_@@B",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496441,
+      4.586156
+    ],
+    "end_latlng": [
+      52.496424,
+      4.58617
+    ],
+    "average_speed": 0.705,
+    "max_speed": 4.14,
+    "has_heartrate": true,
+    "average_heartrate": 151.5,
+    "max_heartrate": 169,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 7.4,
+    "elev_low": 4.8,
+    "upload_id": 16054946343,
+    "upload_id_str": "16054946343",
+    "external_id": "9F79C048-61A1-4F34-8F54-5BA95E98296B-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-07-07",
+    "km": 2.87,
+    "minutes": 68
   }
 ]
