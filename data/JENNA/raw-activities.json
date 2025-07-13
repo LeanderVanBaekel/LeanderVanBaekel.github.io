@@ -37794,5 +37794,72 @@
     "date": "2025-07-02",
     "km": 11.89,
     "minutes": 277
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Ochtendloop",
+    "distance": 1247.1,
+    "moving_time": 668,
+    "elapsed_time": 668,
+    "total_elevation_gain": 0,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "id": 15097740936,
+    "start_date": "2025-07-13T08:34:06Z",
+    "start_date_local": "2025-07-13T10:34:06Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15097740936",
+      "summary_polyline": "gbo_I{mn[e@UG?UDKA_@O[m@qA}A]w@Ye@KKE?KF]d@c@Tu@xA[Ze@dAoAhBEJC\\DZl@bCHp@Vh@Hb@V`ARrAXz@z@hBDJJFFADGb@gAH]Re@LHRh@RX",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.509957,
+      4.667281
+    ],
+    "end_latlng": [
+      52.511461,
+      4.666343
+    ],
+    "average_speed": 1.867,
+    "max_speed": 3.98,
+    "has_heartrate": true,
+    "average_heartrate": 140.9,
+    "max_heartrate": 166,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 3.1,
+    "elev_low": 2.2,
+    "upload_id": 16120282175,
+    "upload_id_str": "16120282175",
+    "external_id": "C7060F35-E70A-47B5-B686-FB0E0C8A76F6.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-07-13",
+    "km": 1.25,
+    "minutes": 11
   }
 ]
