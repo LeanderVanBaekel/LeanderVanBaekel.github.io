@@ -38319,15 +38319,15 @@
       "resource_state": 1
     },
     "name": "Afternoon Surfing",
-    "distance": 15782.7,
-    "moving_time": 7229,
-    "elapsed_time": 17895,
-    "total_elevation_gain": 43.4,
+    "distance": 3438.8,
+    "moving_time": 3565,
+    "elapsed_time": 5075,
+    "total_elevation_gain": 0,
     "type": "Surfing",
     "sport_type": "Surfing",
     "id": 15104650565,
-    "start_date": "2025-07-13T15:13:25Z",
-    "start_date_local": "2025-07-13T17:13:25Z",
+    "start_date": "2025-07-13T15:20:58Z",
+    "start_date_local": "2025-07-13T17:20:58Z",
     "timezone": "(GMT+01:00) Europe/Amsterdam",
     "utc_offset": 7200,
     "location_city": null,
@@ -38340,33 +38340,33 @@
     "photo_count": 0,
     "map": {
       "id": "a15104650565",
-      "summary_polyline": "uel_Iew~ZFBMx@BLm@z@aA~Ba@~BYXKl@VqAHKc@tAMHEATq@Ub@@KZe@[n@P{@WhAN]z@}@cApAZw@[p@TU[TVa@d@Qu@|@Zy@]b@b@m@]\\K`@@Ut@_BS`@i@^?`@l@w@i@l@Ri@Qf@RYERn@kAgAjA@Jd@g@FKa@RNm@Ov@DJj@q@GX[V?Nn@_ACVg@p@dAqAm@fAGEIPL_@KZn@w@c@z@DqB@ZYfA^gAHIDPM`@Yl@\\w@[n@\\gATKs@pA\\y@J?g@d@@NJSHq@WhAt@kAQl@s@IJX\\FF[Zc@?Pc@z@Lq@ZSEf@Wh@Nk@f@_@m@dAH[f@e@?VUd@GHVq@Yb@@N\\gBZHa@F[vAXi@a@f@l@o@g@b@HgAClAKDLo@DKDLWz@?[FQ?TLy@Ir@Vc@Gl@DQBJ@SMPBM|@aBJu@GkBJ}@Gu@Du@FC@RDKGME\\HTm@rDGl@DRWt@LPDGGg@PiDh@wCCBENHSEp@@W@BGANDMA@KGDFDCVFKGEJIEVBi@?b@]ZF_@N@ANAC?SDOB@H|@QI?_@ID@MBLDKYGVHMBJCANFQCPECALAKDiANRGAD\\G\\?QGJHiAEd@DTCq@En@Lo@EFCV?^FTvD~API\\aDLoEXw@z@oA{@|@`BkBUeAIs@FRhAgA^`AZJbAaCnBo@tA?tFbAn@oAp@wBr@_FBcAQ_@aBiBcBcAMYl@eGl@_ERwEwBoYSs@i@{@uAwAYy@Ei@XiAnEiLn@_DzEef@xHii@v@cNb@mL@wBOy@CyBBkHbAaPReBVm@Be@Ya@k@RsAQsU{FeGsBoO}Cg@Ya@s@cAYsBwAmAuAgAgBy@eC]gBYiBUgDnCii@[{IBg@NYDaAc@iAk@iCqGw^cA{DyCiJa@oDIcBFs@Ge@UUg@l@gCxAaLpBi@Qe@r@_@RcItCkCn@k@{@QeBK{CxAaMp@wGH_CMwBsDmMuGcWs@wCE_AOQs@rAyCzCe@R@RNAfEcE^BbBlFfEfQVPnDeE~DyDHDKp@QRg@Xk@KaG~FWAmFeSo@yCAq@MWUDSn@c@f@uCnCO?b@AJk@lAwAg@y@NNCQI?@HKSRFT\\?FIFAKT?KBHZCQfBtAwCuAOA\\?g@A^Ed@V?KJ?K?",
+      "summary_polyline": "yel_I{t~ZINIHWb@Y|@g@`AGV@DA?@?GX?JKZG^GFE@EHEDKb@?CBC@@EF?FJ}@P_@B?EH]jAA@C?CFC?@KGH?ML]FEGDCPIJ@KVc@BACDCJS\\P{@B?GVSp@N]JK^WNYKHMPSb@MJAFEAPi@HMKXE@EFCNDKNKECQXC?DKPUJIXGKLG?EFCJEBKPAACFNk@JM]b@AFHSZa@MHORAPEH@EA?CB?F@UFO@DCBFQf@}@?IS`@MJMBAAKPARBDAF\\i@NMOJYb@?MLYDC?BCPIFCH?C?BHQHGERDOh@{@C@QRk@v@A??CC@@JDG?D@AJWJKD?KJGNA@FUTSGAKROJPw@GRGb@@FBBHMJGHWFEB@EHADB?CHOPKDCJBBn@_ACVGB?DACAD[d@?I@FbAoAIBINYr@AEE?IPL_@B@MZJYX]FAOVIXABCCCB?A?F@GC[FmA@Z[`A@DB?F]NYDUFCDD?JGZMNA@HKYl@BAAKFQPY@@UZETBWTe@BKLKF?AHQ^EBOZIFL]N[HE@DSZSJ?CALB??BJUA@BYJ[CBWhAHWR]NUF?Ql@s@I@NHHJFJEDDACHWR]FE?PQ\\GBCLEH?@D_@FQPQHA@HG\\MREPCBAKP_@f@_@AHS^GHKF?DCBH[b@e@B??VUd@GHVq@GRIHGD@NDKV{AZHQACDKBIf@MP?DCH@@?C@BCJNc@HEI@?FGLMHBAEFFS`@_@@A@DIPSJ?@IBHgAC|@@?ANAA@@ACIH@QJ]DKBB@HCPE@ELGXBC?QAAAB?GFQ@HAJ@SJe@DAOp@?B@A@FDYHOB?@BCD?Z@AGHDQBJC??CDOMPL_@V]BKPUDO@IDMAAABF_@Ei@AaA@SHg@Gw@BY",
       "resource_state": 2
     },
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "followers_only",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
-      52.496437,
-      4.58627
+      52.496453,
+      4.585908
     ],
     "end_latlng": [
-      52.510077,
-      4.667642
+      52.496497,
+      4.586124
     ],
-    "average_speed": 2.183,
-    "max_speed": 23.38,
+    "average_speed": 0.965,
+    "max_speed": 4.7,
     "has_heartrate": true,
-    "average_heartrate": 104.4,
+    "average_heartrate": 127.2,
     "max_heartrate": 155,
     "heartrate_opt_out": false,
     "display_hide_heartrate_option": true,
-    "elev_high": 18,
-    "elev_low": -7.9,
+    "elev_high": 7.1,
+    "elev_low": 4.4,
     "upload_id": 16127764089,
     "upload_id_str": "16127764089",
     "external_id": "89808555-D0B6-4EE1-828C-41AF35A10053-activity.fit",
@@ -38375,7 +38375,7 @@
     "total_photo_count": 0,
     "has_kudoed": false,
     "date": "2025-07-13",
-    "km": 15.78,
-    "minutes": 120
+    "km": 3.44,
+    "minutes": 59
   }
 ]
