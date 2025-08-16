@@ -41904,5 +41904,72 @@
     "date": "2025-08-15",
     "km": 5.92,
     "minutes": 13
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Lunch Surfing",
+    "distance": 2836.3,
+    "moving_time": 3243,
+    "elapsed_time": 4473,
+    "total_elevation_gain": 0,
+    "type": "Surfing",
+    "sport_type": "Surfing",
+    "id": 15476616942,
+    "start_date": "2025-08-16T09:25:16Z",
+    "start_date_local": "2025-08-16T11:25:16Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15476616942",
+      "summary_polyline": "wel_Imv~Z@KCf@ERA^ETE\\WfASh@G@AE@JMJ_@HIH?LMXANO`@Gf@@`ABKPUFAJIBBFFL]LMMVGj@K\\@SRWJg@DIFAITMT[ZBGF??L@BBADOLKDOO\\Md@INC@@CACAD?H?E@?@DRGCFAABACAABAADQAEDQHILCLDBLAXGVORWKBQHEJWVSXI?@I@ABECELc@RELMHK?H?MTFKIILWFARO@@No@V]K^?PDORUCx@If@A@?GFO@QQLSVCV@PIT@AAJ@BH@BCAIFIKGEMCAB?@OIa@@?@E@@@A@HABE@GC@?BAF@@CD?LUb@SAEMJEEI@?NIH@AMXABAAA@DEI^ACGCAMKAF?FH@AP_@h@w@LKABE?ECUAMFMXOVANBBNWFCBBAHOBBDAFOFB]@AHDDNFCL_@@DOLK\\OTMJI??G@EGE?IGKBEHA?IDAPc@^k@DMDA?ED[A]BMAMCG?KK]?S@@?ACM@LCFKBIJIKE@KEQOQEO@_@OIAUPIl@?POb@AH?NCF?lADTCN?TSj@GFFQFG@DB?DKTWCKEA?EHG?U?AB?DID@@A\\iBB?DFFc@B?@?C\\EPAn@S|@@@BEB?CDAAMZQPDG?DZQD?DF@`@BJ@A@BF@DCJFBCP?JEb@u@f@k@EMQ?USK?AF@JEFQbAH?DJFI?@BAFY\\g@JWAHUTQdAMLOHE?GFBA@@@ZJCNB@EGGJKFWBA?BHOPORY@FCBD?BEBw@ESFKC]GEM]?BG?KKAKDo@IMDILOD]Vw@NwB@FCE?IDS",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496449,
+      4.586156
+    ],
+    "end_latlng": [
+      52.496444,
+      4.586252
+    ],
+    "average_speed": 0.875,
+    "max_speed": 5.18,
+    "has_heartrate": true,
+    "average_heartrate": 137.4,
+    "max_heartrate": 167,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 7,
+    "elev_low": 4.2,
+    "upload_id": 16527972104,
+    "upload_id_str": "16527972104",
+    "external_id": "30B100D3-76C8-4AAA-AB2D-8307682878B0-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 45,
+    "date": "2025-08-16",
+    "km": 2.84,
+    "minutes": 54
   }
 ]
