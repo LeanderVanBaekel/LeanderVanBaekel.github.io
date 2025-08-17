@@ -41971,5 +41971,72 @@
     "date": "2025-08-16",
     "km": 2.84,
     "minutes": 54
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Afternoon Surfing",
+    "distance": 4064.4,
+    "moving_time": 4413,
+    "elapsed_time": 5271,
+    "total_elevation_gain": 6.8,
+    "type": "Surfing",
+    "sport_type": "Surfing",
+    "id": 15492514746,
+    "start_date": "2025-08-17T15:33:59Z",
+    "start_date_local": "2025-08-17T17:33:59Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15492514746",
+      "summary_polyline": "{gl_Isi~Z@A?DK`@Il@CAADAVK`@Wh@Iv@Qf@?HMh@Bl@CP@KDDAN@ADLBABDBTAD?G@?ABFEJ]XYB?@@Mh@OZSNAAI@BCTG@CJAZWHOLc@DC@v@Mh@@BDC@JC@AUBEF@FIJEBGPVBRF??C@@CAKL?@Lg@LKFR@GAFO?EDE?GKI?IOd@[Zc@DMGf@GF[d@IBEH@BB?GNCBCEDUX]JUGPGb@EJOFGLIMCa@@?@KDAXi@?LDHb@s@?VADYVKPKd@DA?@HI?BAEFGEHBA?BB?@Ub@sAACGAGFUHSl@?P@HLO^w@Pi@?EGVYj@C@CFCB@CGAGIG@IHOZKJMb@@@DG@B@AAF@CB@FIH?NOFQF]?e@@CD@@FGf@Of@MNG@KAIGFWB[NF?PKVQL@DDMZWB??F@@AMECMP@B?GHID?DCHe@B@?N@AC?AMEAi@j@Fm@FYBAE@I?o@f@A@D@AB@A?BH?GLB@AVGLJODC@BEKAA?BAAJARID@N@@KAB?VIHMZKHCAG[?IL]BEFE@BBEDBHIZQHMCFEAIKUO?CY?CBQ@CB@EECEJKLEBCCA@BAABIHB?ABPUJEY`A@BFDA?AEIGC?KDNDBEJBLUF?HIDBTo@?B?AC@CFKJUEm@LAJED?@DDACPA?EHBDGJCLMBDLSBBHIMXN_@QjADFABFEAFW`@FBFCB@LTDDVUD?DEDSFBLCFEbAaBMCMKQCKGi@\\GTOTCNBD?b@BR@p@Eb@?`@E^FARc@BADINCJQD?JYTMA?IXW\\UCEG?M@EFAHc@F@?@FkA@J@AEYDFFABQBA@BEOGGKEIGQAEDWDAJE?CE?IK`@PO@IALAEOKKP@MTu@FMFCESG@CFEACBGEK@MNAPGAINh@}B?JM\\IZA?AOGTIPP}@@DMDETLg@CCJOBWCI@KBS_@v@K^@FBE@@AD@BAJ?UAJ?LGT?HC??GIEKDUBFG?CDCd@_ADA[hAJM@IKENmAJm@DIBE@B@\\ItA@ZCNBDDGDABEAC?B@AAOFI@BER?BJi@DGFB@ENcAFK?@JIBGCE?EJIDM@i@A]IDUD@KDARLJNGS@IEYAcAEQ?e@Ei@HgCBCDU?]Jw@CCBO?NBAC@CC@D@GHE?QCDCC?B?GAH?B@C?D",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.496788,
+      4.584109
+    ],
+    "end_latlng": [
+      52.496437,
+      4.586225
+    ],
+    "average_speed": 0.921,
+    "max_speed": 5.78,
+    "has_heartrate": true,
+    "average_heartrate": 139.8,
+    "max_heartrate": 161,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 7.4,
+    "elev_low": 1.4,
+    "upload_id": 16545010670,
+    "upload_id_str": "16545010670",
+    "external_id": "985033E5-E8B4-4C4A-AB5D-7085AB9783AB-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 68,
+    "date": "2025-08-17",
+    "km": 4.06,
+    "minutes": 74
   }
 ]
