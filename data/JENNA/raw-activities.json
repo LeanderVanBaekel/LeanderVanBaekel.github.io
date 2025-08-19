@@ -38707,5 +38707,69 @@
     "date": "2025-08-18",
     "km": 5.25,
     "minutes": 91
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Nieuwe bergschoenen inlopen",
+    "distance": 2517.7,
+    "moving_time": 2013,
+    "elapsed_time": 3303,
+    "total_elevation_gain": 12.1,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 15509121210,
+    "start_date": "2025-08-19T06:55:36Z",
+    "start_date_local": "2025-08-19T08:55:36Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15509121210",
+      "summary_polyline": "y`l_Ias~Zl@VDABIDcANuARaE?BFYPq@h@}@LIb@m@h@k@BOJEA@?CFCZa@PIb@yARYRS\\KHGJAFC@EEaABg@Ca@Qm@O]gAoBCACKO]AU@u@LqA?SDWALBs@DY?{@BG?BDg@G]Iw@BKAi@@O@iBBGBg@CI?y@ACBc@AKB}@VoCBk@PqA@i@AGC@@CABAKCPBKABDA@BAGBR?CEB?KBB@DEMFH@ABJCXEBCEB?E@CBAA?DBK@F?G@@EM?LDIGHGMCDCA?CBBDMJK?GC@B@KJD?@AFBBD?C@BFKBABB?KEAG@CJ@EIBJE@HEY@??JCI[OE?OCMIIAm@GGBENG|@AdAG^C~@CHDEDB?@A?ACDDE@ACDBCFCEKh@@RG`A@XCNC~ACRBZA`@KnB@AGn@QPI?MEMKg@O]AWB_Af@YVSZu@~AOb@I^EDM@IDKPEXHb@Kn@[vASXGDa@d@_@v@Ox@@JGf@?XGtA",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g25397328",
+    "start_latlng": [
+      52.496449,
+      4.586148
+    ],
+    "end_latlng": [
+      52.496432,
+      4.58616
+    ],
+    "average_speed": 1.251,
+    "max_speed": 3.4,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 18,
+    "elev_low": 5.6,
+    "upload_id": 16562770010,
+    "upload_id_str": "16562770010",
+    "external_id": "C135E8FA-4A9D-4D36-9B15-B158ED995E1F-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-08-19",
+    "km": 2.52,
+    "minutes": 34
   }
 ]
