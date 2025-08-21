@@ -42527,9 +42527,9 @@
       "resource_state": 1
     },
     "name": "Evening Surfing",
-    "distance": 2716.8,
-    "moving_time": 3326,
-    "elapsed_time": 4885,
+    "distance": 2594.6,
+    "moving_time": 3164,
+    "elapsed_time": 3722,
     "total_elevation_gain": 0,
     "type": "Surfing",
     "sport_type": "Surfing",
@@ -42548,14 +42548,14 @@
     "photo_count": 0,
     "map": {
       "id": "a15538933543",
-      "summary_polyline": "yel_Imv~Z}@z@GJ{@t@OVOBo@VUV?E@D?E[d@CTEPOTKZ?JEPGLB`@ALAHAA@ADBLCF@?KCJGJBA@IMPA?@EBE?@FMJEE\\FC@H@C@BDOA?@DDIHC?ACG@h@F?@CMHCEKAM{@KTGBAEDGAGL[C@?BCCIRAGFUN]@NG^Mj@@?LWFUG]@OOZEBALET?H?AB@?CJ?BCEF@FCBCGCDBE?DMNHSCOEB?DDA?CRYROEVC\\CFAABQALGLXq@@@ANVi@LICPQb@C@A^GDB@PGBHA@CACL\\k@Gj@GN?MA@@KL[FGZSGYWOMFKGQ?KGC@@b@Lt@DAHMh@m@EXE@GEC?GHCVA?ADAV@EOQDK@QCIE?KIIXIGQDR_@HIB?@CAGEBIKC@E?IXO\\ADBAADA?JW\\WNECK@IMKSBABAJOh@GDDEELDEDO\\i@D?CIK?EFIBIJIV@BCBCRD?BCEFBE@HFKAAGN?EBA?@@GAS?FDDCDDCFPFIHGBFFA@HF@BDFIFABDPb@BRBDDC?EVCJDNRJAJCN@FHNVFDNDDC?IFMFEF?Jd@?Z@?HMTIBD@Z?NGX@BJGHBb@[CNMb@T[OZCI@ERWD?EAMKG@EDAH?C?NID?SNWAEUVIA@KRW?CIIADGDOd@IFBSRO?C@KCOA@?GG^MP@?ADAEADH@R_@IMQd@@GBBCIBMDACLIJ@BD?f@c@DOCq@@YEyAGs@?o@IYCaBBY?u@Dw@DGEE@@CNBBC?BQDIDAAE?FE\\BWAOCBAA@AE\\",
+      "summary_polyline": "yel_Imv~Z}@z@GJ{@t@OVOBo@VUV?E@D?E[d@CTEPOTKZ?JEPGLB`@ALAHAA@ADBLCF@?KCJGJBA@IMPA?@EBE?@FMJEE\\FC@H@C@BDOA?@DDIHC?ACG@j@DC@@@CMHCEKAM{@KTGBAEDGAGL[C@?BCCIRAGFUL]BNO~@EJ@?LWFUG]@OOZEBALET?H?AB@?CJ?BCEF@FCBCGCDBE?DMNHSCOEB?DDA?CRYROEVC\\CFAABQALGLXq@@@ANVi@LICPQb@C@A^GDB@PGBHA@CACL\\k@Gj@GN?MA@@KL[FGZSGYWOMFKGQ?KGC@@b@Lt@DAHMh@m@EXE@GEC?GHCVA?ADAV@EOQDK@QCIE?KIIXIGQDR_@HIB?@CAGEBIKC@E?IXO\\ADBAAFAAJW\\WNECK@IMKSBABAJOh@GDDEELDEDO\\i@D?CIK?EFIBIJIV@BCBCRD?BCEFBE@HFKAAGN?EBA?@@GAS?FDDCDDCFPFIHGBFFA@HF@BDFIFABDPb@BRBDDC?EVCJDNRJAJCN@FHNVFDNDDC?IFMFEF?Jd@?Z@?HMTIBD@Z?NGX@BJGHBb@[CNMb@T[OZCIFOLMD?EAMKG@EDAH?C?NID?SNWAEUVIA@KRW?CIIADGDOd@IFBSRO?C@KCOA@?GG^MP@?ADAEADH@R_@IMQd@@GBBCIBMDACLIJ@BD?f@c@DOCq@@YEyAGs@?o@IYCaBBY@g@",
       "resource_state": 2
     },
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "followers_only",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -42563,13 +42563,13 @@
       4.586159
     ],
     "end_latlng": [
-      52.496477,
-      4.586142
+      52.496489,
+      4.585793
     ],
-    "average_speed": 0.817,
+    "average_speed": 0.82,
     "max_speed": 5.75,
     "has_heartrate": true,
-    "average_heartrate": 150.9,
+    "average_heartrate": 152.1,
     "max_heartrate": 165,
     "heartrate_opt_out": false,
     "display_hide_heartrate_option": true,
@@ -42582,10 +42582,10 @@
     "pr_count": 0,
     "total_photo_count": 0,
     "has_kudoed": false,
-    "suffer_score": 84,
+    "suffer_score": 85,
     "date": "2025-08-21",
-    "km": 2.72,
-    "minutes": 55
+    "km": 2.59,
+    "minutes": 53
   },
   {
     "resource_state": 2,
