@@ -38903,5 +38903,69 @@
     "date": "2025-08-24",
     "km": 13.9,
     "minutes": 69
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Middaghike",
+    "distance": 4256.1,
+    "moving_time": 3184,
+    "elapsed_time": 3184,
+    "total_elevation_gain": 4.8,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 15578663788,
+    "start_date": "2025-08-25T09:20:39Z",
+    "start_date_local": "2025-08-25T11:20:39Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15578663788",
+      "summary_polyline": "ibq_Iwkj[~@pBVT\\n@f@f@Zd@Ll@JPHXLTRlAFn@@`@Fh@f@~BRj@XvAHZLdARdAL|@H^LVDrAFf@?j@CnABh@DL?THV\\TN`@Jp@B^FRDX@v@At@IrAAb@Wv@e@n@MH[d@ERARHj@EVU\\CBABKHk@BGl@Bb@DN?HS\\C@Y?_@WSIMASj@a@\\GLECOu@Uk@CQU[C?Q]_@a@ScAD{@ACCYSi@CAA@AGGKGCEMKw@Y_@EBG?I^MTE`@GT?FQj@GHAHOXQx@IFC?IIAQOs@M{@IYGSKKWe@EYOm@IM_@aAMAOJI@QGQAYQWCOOi@DQJg@?u@a@]]YMG@WKYUU?SMGAID@?ABGOC?BEBB@J@tABt@DLFn@B`@?z@DLBT?f@KHG?EBO^IHGJMNU\\]ZILITmAdAQVCFSJKJ_@JIDCAEJKBGCOQe@{AISOQIWGEMa@QQKQIGAGSOUq@CYAoAEc@?i@Ow@?WLe@AINy@?UBSXk@HIBIBAHK@EHa@AWF[?CNk@@UAGDSB_@Ew@EGASWaAE[Oe@MOe@wAIESe@Ww@KQEYAWBOTO^g@Ha@Xu@RU\\Mn@u@ZaABs@Jy@@Q\\i@Pg@Re@f@c@VEJKJYhAyARm@BQ^}@@KJYPaALg@DILANJFZV^HPPt@Xx@LRL\\Zb@JXJLHPRNJPBHFH@FPVN^DF@?`@x@@@PBNKDDJ?VFFBFNZf@R@^c@^kAJSB?L@h@d@BBLDVPDDLBFCDIXiCLm@J[HOX_A",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g25397328",
+    "start_latlng": [
+      52.521698,
+      4.64757
+    ],
+    "end_latlng": [
+      52.521799,
+      4.647782
+    ],
+    "average_speed": 1.337,
+    "max_speed": 3.08,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 9.8,
+    "elev_low": 4.9,
+    "upload_id": 16638790235,
+    "upload_id_str": "16638790235",
+    "external_id": "7E59517F-B5BB-4AC8-83CD-20A1A054D65A-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-08-25",
+    "km": 4.26,
+    "minutes": 53
   }
 ]
