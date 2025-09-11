@@ -39089,5 +39089,69 @@
     "date": "2025-08-31",
     "km": 4.72,
     "minutes": 62
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "I FORTI DEL MONTE BRIONE",
+    "distance": 8311.7,
+    "moving_time": 9457,
+    "elapsed_time": 13566,
+    "total_elevation_gain": 356.1,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 15774986453,
+    "start_date": "2025-09-11T08:05:59Z",
+    "start_date_local": "2025-09-11T10:05:59Z",
+    "timezone": "(GMT+01:00) Europe/Rome",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15774986453",
+      "summary_polyline": "{d_wGg`jaAQaAUGa@X_@l@s@fCWhA`@pACRSDDGXTJVEODPGYDLEAAKBFSSMg@CFDLKf@Q[OFKLDJo@zBI~@@fA\\vCZfFLpAP~@?~@HdAVx@Jz@BxBX~ACl@JrCLr@TvDJ`@LtAEjASbAYn@Kz@On@q@fA[RGVDF?OKMAUEAB?GGNm@EYEJDOCALEH[\\IFDCa@JEDw@HUAoACEKDHg@HGFW@MIO@_@MW?DBGEDHGEA@WOSKA]sAEk@Wo@EYS@KQDIE?LAuAl@BDpAy@AEGDEHGCAYCEDWTOAODQCa@LMIOM{@A_@Oo@DG@YERBAGHIKB]Mi@@IMSG]BEEBDBAMMKc@eAMoAGGG[@UGA?IS_@Ec@HCBLCK@UGQAWYo@Cc@Ka@GGKy@GOAWM]Mo@H_@AGk@_AM{@{AgB[m@WG?IYc@GCU]c@}@MQQa@My@FO?YHKEWQWOIG[_@g@Su@e@k@Qq@Uk@SYCS@CEKs@k@Uk@SMIQKC_@w@IGIV?HFQGAFDAJ@MCF?GHE@SCQGHE?q@c@E@e@u@a@QWWUEAIHGEEDFCCGNWMQBa@YM@]U]Ec@O?G_@IQJGGGNE@i@]XPZ^zAt@XTXFj@ZTBr@l@^JVZ{@Os@I}@Ek@DAH]Cu@AcATwAEaA]g@CcA_@s@CiA_@SMc@By@_@qAUk@My@[wASSMGKeAi@q@E{Af@s@Ac@Xm@Du@j@}AYe@FSEg@iAIJAL@HFBGCY_@GZHd@?XDFCN@d@DDAJDF@RAFWDQMQ]g@S[_@WTKb@KHCfBL`@PLBR@d@RDEJAv@NNKTQEWc@YgAGs@M[US[DINIGMd@U|AONS@GNCj@LFfAk@b@NJNF?JUSHH@KPMJO?EHAREBDH?REVHFIHBRGd@BRINDLBz@HDALJTFl@CRFLGVBRGXCh@FBEP?JHBCD@NFFDNCBDJERRX?PFFATFH@VGd@d@l@?JP\\IPDR?TLFHE@ELIHWFKPAPXTH@LNR~@`@hB|AVHTT^JVb@EHK@AFLTfAt@LTRAGHAb@NbD^]`AgBNGBH]nB?z@DF^Fn@j@TFrAxAP\\d@f@h@f@TB@b@HL`C|C`AdARLCFJA^Vr@~@^p@f@v@pA`BFPrArAH?ADBFf@RlAWZUt@cApD|C^Bz@d@j@N^XrAd@rBhA",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": "g25397328",
+    "start_latlng": [
+      45.873973,
+      10.867668
+    ],
+    "end_latlng": [
+      45.878838,
+      10.857444
+    ],
+    "average_speed": 0.879,
+    "max_speed": 4.367,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 352.9,
+    "elev_low": 66.6,
+    "upload_id": 16850092033,
+    "upload_id_str": "16850092033",
+    "external_id": "924AC47D-BC98-40E9-AD4E-ADEE16E68435-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "date": "2025-09-11",
+    "km": 8.31,
+    "minutes": 158
   }
 ]
