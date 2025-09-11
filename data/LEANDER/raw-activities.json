@@ -44435,5 +44435,72 @@
     "date": "2025-09-08",
     "km": 3.05,
     "minutes": 39
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Morning Hike",
+    "distance": 9869.4,
+    "moving_time": 9810,
+    "elapsed_time": 13567,
+    "total_elevation_gain": 352,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 15774213390,
+    "start_date": "2025-09-11T08:06:06Z",
+    "start_date_local": "2025-09-11T10:06:06Z",
+    "timezone": "(GMT+01:00) Europe/Rome",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15774213390",
+      "summary_polyline": "}w~vGariaA@VCUg@t@Yj@GACNIIcAV[m@Cg@_@sAu@sBk@y@sA}D[yA?e@MMULw@vAiAjEf@rA?NMZB@HnALNFIEKXXV_BmAKCe@@LS\\]m@Sb@D@@Hs@vCEpAJdBR|BH\\RbEPhA?ZFJC^HdA\\pAJ~ALd@JbENrAMdAZ~ADhBPfAXrAIfAq@rBOpAM`@Yf@k@^]_@DRDKMINi@D?OSHYJDBUHIFHNE@KLR@OKMVYIELcABk@Ks@?WRk@I[BWEYQS?_@QMe@eB@MIIQq@e@MC]\\B?MWPKG?i@\\UIYBg@L_@Ai@[q@Is@@[B?@RQ?CUBEMcAQQ?Wk@iA_@mBEs@e@aAHMLBEOFQs@eB@SIO]{BYcAFo@m@gAMu@aBoBUe@a@a@s@uAa@c@Q_@WmALMAWHCE_@e@e@}@{B_@YC_@[g@_@_AA[m@a@@IQM@I[QSa@MIWo@IEAPMTN[AS@`@CABi@B@_A[Ya@O]i@OGQUG@MIKAPUOQF[UYAYYaBa@u@Lg@MX@h@VlAbAHC\\\\t@XADz@PZf@f@JPd@mAa@aBGSLmBA{AV[MCHSDi@MQSMDBGOG_AMo@[qAAMOSAMUI@QY[TD@a@UW@BCOI_AK[QWKcCa@SICMSDBMKI}@[q@?mA`@_A?[Xg@?CLO@]XU?OQSBm@Sq@RUWKg@SOFn@COW[IJD\\GdAXxAEJ_@?o@aAUS[KKDQf@DNQHBPK`@@d@X`BXf@I^Vf@?V[F]w@Ie@M[Mw@@KWg@WOc@PM`@SnBGN[?MJC^Dj@b@GPUf@Wh@PHXc@GSHFVAZGJDb@EAAHFDMhA@RJd@?^NZCJNr@CLDNIj@B^OL?V|@|EEj@H@ANFGLTRl@ERBr@XIZe@VGNFVh@^\\HEPV\\F|AtAp@Xx@p@@LGFMEEPfBnARTKBAJNbEH?|@eBd@q@JCSv@M|@Cb@Hb@LN\\C~@~@J?J^d@V?Hl@f@JVH@x@|@NAFL@f@vBdCL^j@l@DNVDHLR?h@j@jApBzCbEf@\\DLt@Vr@Md@U~@mAv@x@`BhAT\\`@DfEjBdIhEl@n@h@PP`@JAHPPC~@gA|BaB?IEDBIHAGEFB@I_@Y?S?v@?KBP",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      45.874079,
+      10.867696
+    ],
+    "end_latlng": [
+      45.878769,
+      10.857579
+    ],
+    "average_speed": 1.006,
+    "max_speed": 3.114,
+    "has_heartrate": true,
+    "average_heartrate": 98.6,
+    "max_heartrate": 141,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 352.8,
+    "elev_low": 63.1,
+    "upload_id": 16849276963,
+    "upload_id_str": "16849276963",
+    "external_id": "ED94B202-D964-45D2-A8AC-603F2FED3C20-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 24,
+    "date": "2025-09-11",
+    "km": 9.87,
+    "minutes": 164
   }
 ]
