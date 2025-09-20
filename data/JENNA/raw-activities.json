@@ -39177,5 +39177,69 @@
     "date": "2025-09-14",
     "km": 8.2,
     "minutes": 150
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Lago di Carezza",
+    "distance": 2898.7,
+    "moving_time": 2575,
+    "elapsed_time": 5099,
+    "total_elevation_gain": 70.9,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 15877443417,
+    "start_date": "2025-09-20T13:34:09Z",
+    "start_date_local": "2025-09-20T15:34:09Z",
+    "timezone": "(GMT+01:00) Europe/Rome",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15877443417",
+      "summary_polyline": "ebhzG_ateAQLSTGDOZ@FF?FC@ED?DEBFF?BEB@BE?BFGD?BJDBDADBFAB@@A@FBDH?t@RF?DDh@RH?DC@?ABC?@?B??Cf@ALNJBLn@FN\\\\F\\NPB?HI`@EDCV?RE?CB@CEFARO@EFCRQJQ@IJ?`@Pv@m@ABDAB@HVBAA@AEABB@E?ABDGDMCT@RCL`@lB@LJVBC?B?GC?@F^z@H^BD@GC@BAA@@@?AADAG@HDFFBDVD@?EEHFJF@XZLNRh@DBXbA@TG^ATDDJBXGTK\\Gb@QFKXSf@s@FY?m@Fk@Gc@c@w@CIB[CCBa@Ho@AQCMQYA@AH?ACDIDQ@AB?CA@AEFEF@HED@LQ?KC?GSMo@Aa@Gg@KW_@@?BFFBCDJCC?@@SBCEDCCF@DMEJAA?FE?ADBHC@?@FC@@?IADAAAQK?FFGADB?D@AB?AIC??DAG@JWFMEQOOEWZAFA@?ITa@Hk@H_@HKBSKQOM_@KK[MQQ?SVGAa@^AFGFGPUVMHCEWFKJKz@CDKdA@HFBRINFG@@LC@@C?B@?ICBA?DBCCFBEA@@OGKWJQ\\?EYCSJ?C]REPGAAMEGMLELDKDH@??CS\\EB@HGFIRIBEJE@SFe@FQAKKKQM_@KKQ[Ic@CCOGQMYDQAOKMGsA_@QC[@s@IIF[j@_@b@QNOFG?FYXo@RYRKHc@LQb@_@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      46.412085,
+      11.578917
+    ],
+    "end_latlng": [
+      46.412052,
+      11.578801
+    ],
+    "average_speed": 1.126,
+    "max_speed": 7,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 1606.1,
+    "elev_low": 1547,
+    "upload_id": 16956454126,
+    "upload_id_str": "16956454126",
+    "external_id": "B724351C-C6EA-4A25-B7EE-56E21293657D-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 1,
+    "has_kudoed": false,
+    "date": "2025-09-20",
+    "km": 2.9,
+    "minutes": 43
   }
 ]
