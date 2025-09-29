@@ -39625,5 +39625,69 @@
     "date": "2025-09-28",
     "km": 9.32,
     "minutes": 145
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Avondwandeling",
+    "distance": 4226.9,
+    "moving_time": 4365,
+    "elapsed_time": 9254,
+    "total_elevation_gain": 194.7,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 15976918574,
+    "start_date": "2025-09-29T13:42:59Z",
+    "start_date_local": "2025-09-29T15:42:59Z",
+    "timezone": "(GMT+01:00) Europe/Rome",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a15976918574",
+      "summary_polyline": "adjzGyemfAgBGKIUq@KEm@Kc@a@Q@MX?TIJ@JERFxAEx@Sl@MPKFs@WM@@JFBC?@BDCOOSBK`@GJQ@EGKBGGQ@@DIBKVe@\\KZE@EH@EE@D?GIJL@AAAD@Y?QLQ@IFSBYCSHU^a@BOPQb@ODUTU\\[HWPCH@DKb@@LCLQNa@C@?QDQTWPIPI?B?C@@HGH?KCA@BGL?CBDANGD@JDEAHCLIF@FIRSZCJAAOVMQGVGHCEGDQXCPDABEAA@F@CYX?EBDCHBFC?AC?DBBCF@CG@BDCADC@H@HEABFALDJCD@AAJB?CDB@ECCID@?EAFC?B@ABCAAGHBGDDB?BCEC@DBA?BDAAABBBACAJAA@FC@BBA@DCGACPG?GJAJDEIJAL@n@Cb@BRAFC?Hl@@LCCAHF@?EJBTXd@VHNF?@BEBRBX\\VRBD?^FP?HZV@n@DLFHB@?ETJLAPMFAJLVDNXEJURc@r@E@KM?QHBKJ?BCA@?@FB@CI@EHFEEAF?KZWH@FEZk@QUCMEAK@CFKC]LSAKQGs@IOOCKUCY?[MM_@MS[qA{@KQ@IAABA?DC??EGDDGCG@[CK?WHq@AGC@@WAADKEC?EDG@WADNSBMF?@IFOJCITCK?SAJBA@IE@?KF?GFD??IGGMNDE?GDEHHMAJOAKDOAIFAGGIDCEFAGIJE?GHEAEBOL?NQ@K@PBOLI@CEC?LDCABBBBADGAKJM@MA@FI@TBIDACE@JBECAD@FIAEFa@ACAH?K?HHMCFAUBC?TBECNBa@APHQ@c@RA@HDKCE@BCBB@GU@C\\YDGAIPOVD?Eb@A@EFCDQCGBUDGBUFOl@W@DB?ABT_@XOAEFIF@FGDc@LGT?^c@VK^FPKHJJMT@@INEH@?CB??FIABCC@DDCABH@KFQHi@LMRCLW?GJEx@NHAJYNOJ?LLZLXQHM@MJYBsBAGBc@Nc@DGBMNYXDHLA@HLVCJFPVLj@HJEMBJDCp@Hj@IJFDECDHGIHB@EABA?DE?@GHCC?@DFC?CB@AA@EDC?DFERB@KFDHG@FBAO?MG]?KDCP@BKCK@DAAJGK@F@I@DE?H@GF@CC?DACB?KCBB?CICFH@?DC?DB@GE?DCACAFCAFBDEDA@DCDBAE?DDDKh@Q@GDEDHLGHWDAFYGk@EEE]Ag@BQBGHi@CGJm@L_@PCBKFC@BFEDLF@BJHD",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      46.421182,
+      11.707537
+    ],
+    "end_latlng": [
+      46.421269,
+      11.707333
+    ],
+    "average_speed": 0.968,
+    "max_speed": 3.947,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 1472.2,
+    "elev_low": 1340.7,
+    "upload_id": 17058385670,
+    "upload_id_str": "17058385670",
+    "external_id": "D80E0CAA-5E1E-4A6D-93E3-BE8574F14544-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-09-29",
+    "km": 4.23,
+    "minutes": 73
   }
 ]
