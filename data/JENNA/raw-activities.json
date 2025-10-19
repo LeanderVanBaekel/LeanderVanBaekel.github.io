@@ -39881,5 +39881,69 @@
     "date": "2025-10-13",
     "km": 4.19,
     "minutes": 57
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Namiddagwandeling",
+    "distance": 5454.3,
+    "moving_time": 4537,
+    "elapsed_time": 5231,
+    "total_elevation_gain": 37.6,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "id": 16192204460,
+    "start_date": "2025-10-19T13:03:02Z",
+    "start_date_local": "2025-10-19T15:03:02Z",
+    "timezone": "(GMT+01:00) Europe/Berlin",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 2,
+    "photo_count": 0,
+    "map": {
+      "id": "a16192204460",
+      "summary_polyline": "{s}wHg~jd@Jo@By@Lc@Fg@DK?WRQJ_@_@WGKEQ]_CS_ASuAm@yCMcAYiBS}@]cCIaA?]Ji@Bw@ESAWBKAABC@IGQNUAHDCBBEG@QEBECSg@SuAg@sCGu@]oBQk@Mm@UgB{@uDIk@GWC[@BEJIDCFBBBPHSBKCm@Kc@MaAMe@MeAWqASy@IyAKq@W}@CWMYIc@IU]eD[mBSs@Q{@?BCq@Kc@I}@FRCO[kAO}@IaA@QDMv@m@n@_@DGbAk@\\Yv@YZSJEZU`@QBE\\Q^[z@m@PEJID?\\a@BBLGDEp@]@HPUNG\\[RKd@c@XILID?XU\\KH?JBFPD?BDBAHQILI?IE?I@KX]JGHMPELKHPC?AUAAA?@BPQ@KDBDC@R@CAFTSHMLGLQDD@ADO?FJMZU\\YNIF?ZSTGNM\\O^WJBDOFK|@i@\\Mt@m@TGFKLKh@SzAeALMv@a@HKLGJMHAZUb@Ob@[RACN@BB?KED@PPTh@p@rAFNDVRPFVRf@^l@HZTd@BJFJHRNZZt@PZDNHRHZf@hAFP`@t@t@hBPZH@HKB?DCGE?IEXHDFEEEBBG?@?EDBRBFATDhBAfAIhCAbBKxB@LCl@@NCZ?p@E|@E^GT[h@w@n@YLKAOJKDQNWLq@f@c@PiAz@QD[NCDI?_Af@GFOJMBQLAEBCEAo@p@]Ve@Va@V[X]PWTmAj@]TGJWLABMDwAx@ONc@RUVUNONOJKLSHm@Za@Xi@XQPGMCJA??K@CH@AHKJu@f@E?GEK@KFQVUt@CVMp@Gp@UhAEh@DOB?C@ABAACDWlAm@zEUhAMdAU`AMZe@r@CJNSGB?BD?e@r@K^C@@H@?@ACTBp@KpA?l@Hr@N`ADf@`@jBBXLr@@JGN@K@JFBHRf@jDj@dCHp@RbAB\\DXNZCT@XGHDJO`@Ib@GP_@RU|AI?YUEC?BIACC@C?BAA",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      51.275022,
+      6.123408
+    ],
+    "end_latlng": [
+      51.275445,
+      6.123495
+    ],
+    "average_speed": 1.202,
+    "max_speed": 2.36,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 63.3,
+    "elev_low": 33.6,
+    "upload_id": 17276154890,
+    "upload_id_str": "17276154890",
+    "external_id": "ED823BA4-E76A-49A8-96C5-77A4D0A4DEF3-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-10-19",
+    "km": 5.45,
+    "minutes": 76
   }
 ]

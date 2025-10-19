@@ -46303,5 +46303,69 @@
     "date": "2025-10-16",
     "km": 5.45,
     "minutes": 13
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Namiddaghike",
+    "distance": 5400.4,
+    "moving_time": 4285,
+    "elapsed_time": 5411,
+    "total_elevation_gain": 38.2,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "id": 16192225764,
+    "start_date": "2025-10-19T13:01:46Z",
+    "start_date_local": "2025-10-19T15:01:46Z",
+    "timezone": "(GMT+01:00) Europe/Berlin",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 2,
+    "photo_count": 0,
+    "map": {
+      "id": "a16192225764",
+      "summary_polyline": "gt}wHm}jd@C@AA@CBH@OB?Ha@?QFY?O@YJSLs@FMCI@IBIJAPe@M]MMICEy@M]K}@U}@Gs@a@uBCg@UcAEe@UkAGOIo@KYGw@IWIaAGWJcCAm@E[DCGWBBDe@C@IMEe@Kg@Ma@Cg@Y{AEi@C?U{AEM?MGW?GGCAEASCG@IGQIs@e@{BCa@Mi@Ku@EME_@CGIc@ECADMDAAAFBE@@?CADLE@QCK@MGMSeBGU?QMc@?MEYMc@AOEI?OESAWCIC_@EKEg@GQA[]mAUoAGQEc@KYKaAMm@?MOq@Ky@GUECA_@TQA@B@CCCS[UK[CKBKDEB?@BCGM@Ka@AYMk@MeAMY@IE_@@WDIFEJMJEFGD?TO\\[FCJG@AD?VQHCDGJC^[PADIDAHIRGFGj@WHGLCz@o@B?d@]`@Sv@k@FCDGt@c@HCDA@DFCDKTKJKXMHIZSFAPO`@Mb@_@VMNFHJB@@AJFAB@AAIA?@CAFKGCE@KDMHCHILW@OB?ABB?BDBAFBHE@DCABIE@FILKHBF?@C?@GECHC?JKFCF@^SFMAEFCCA?BRCRILKJC@KHIREVQVIFBBGVYTKLKB?ROL@BIBA@IDEj@a@TGFKZUXKXWPE@CTMVKB@DABINEr@i@RG^]RIJIFAHG@KLMHCR?JOz@g@LMFADBBEADLLFJBJt@`BBPPRDJJPF^JXT^BNDD^~@LTt@hBNXZz@l@rA^dAXj@BL^h@LZJHF@HAHMCG@@A?DA?B@EENC^@L?VCFBz@Cb@@l@Eb@Ad@C`@?x@E`A?XCb@AxACHDx@KvB?\\M^SXq@l@MDBF?C_@LS@WRYJ[XI?GDAE?BKJMDIHSHYVq@\\QNw@d@ML@JMB[Pe@LORSJYVGAMHSJ?DOH}@f@E?YVIDEFQFg@\\a@NQLKNUNMDSPOHMLa@NOHGHIEc@TIH_@VONWNEFOJaAh@ONSJSRKB@FI@GHSDMFYBYJ_@f@E\\YfAi@lD@RBHIF]rAEr@eAtGW`Am@tAF??@@E@@G@MREDMXI`ABT?b@ANITAV?j@DTHfAFZ@XNh@LfAL`@Jn@DTG@ABLPRfADFNvARpAFRHf@L`@N~@Hd@?THb@P\\ERFTA\\MXOr@I?ILKDKf@Iv@i@_@C@AEC?EBNDBCAH?C",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      51.275081,
+      6.123279
+    ],
+    "end_latlng": [
+      51.275357,
+      6.123499
+    ],
+    "average_speed": 1.26,
+    "max_speed": 3,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 63.3,
+    "elev_low": 33.6,
+    "upload_id": 17276176623,
+    "upload_id_str": "17276176623",
+    "external_id": "F1B6553F-AD03-4F5D-9ADF-E81FA661D067-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-10-19",
+    "km": 5.4,
+    "minutes": 71
   }
 ]
