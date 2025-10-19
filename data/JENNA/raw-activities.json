@@ -39888,7 +39888,7 @@
       "id": 19868410,
       "resource_state": 1
     },
-    "name": "Namiddagwandeling",
+    "name": "Über die Grenze",
     "distance": 5454.3,
     "moving_time": 4537,
     "elapsed_time": 5231,
@@ -39906,7 +39906,7 @@
     "achievement_count": 0,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 3,
     "photo_count": 0,
     "map": {
       "id": "a16192204460",
@@ -39916,8 +39916,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "followers_only",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
