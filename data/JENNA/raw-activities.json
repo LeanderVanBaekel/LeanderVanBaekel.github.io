@@ -41197,5 +41197,70 @@
     "date": "2025-11-18",
     "km": 8.87,
     "minutes": 55
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Ochtendwandeling",
+    "distance": 2896.7,
+    "moving_time": 2591,
+    "elapsed_time": 3284,
+    "total_elevation_gain": 19.4,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "device_name": "Strava App",
+    "id": 16540455017,
+    "start_date": "2025-11-23T08:04:32Z",
+    "start_date_local": "2025-11-23T09:04:32Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 3600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16540455017",
+      "summary_polyline": "wrq_Iwyf[EF@FB@@GK@?C?B?EG@EEMFM?WWGOKMECA?KLQnAc@b@OXSNe@f@OHKRWt@[vBAR@p@KpAEx@AvA@NCf@EL[Hy@d@ADURODOCACYQu@_AOKAG]e@OEE@@AMg@c@i@Uu@EEAM]{Au@wACE@AYu@OSGE@@MCMBCAM@UMa@KMBg@Ca@GSFO?]IERCGEA_@?O@?@AADHO?EBK?MDECE@WL?NAGMKOF_@BIFUB@ACAEI?g@Ge@BiBAwAFwBE{A?gACUQoD@]?DEk@@KKaA@GE_@?e@SyACm@EMK{@Cc@Km@BEIOA]CGAm@CI@EGWKmB?OA?BGVMN@@BPKZEh@GRBNAAAP?LE\\SJSXS@GPOl@}@\\YTKFA?BDCJ??AB?@C@?@FRBz@EVa@b@e@@?JKFKLMHAHEB?JGNENAF?HFPFR@FHD@DJNJFL\\`AZh@Ph@JNH^Vd@d@zAXl@BPHLZ~@P\\@VJPRn@NZBJFF?FLPf@|ALT\\x@Lh@Pb@@NJTJb@Vr@^|@V^`@~@X|@?RGF@@DGJ?Vt@BT?j@An@E`@?`@Nj@V`@FBJCPQ@GC]BMDCJV@EC?AC@AABBGDb@HV@CCC@AAHBVDHFKA??@D@@CCD?E?B?CEF@CBDACB??B",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.524126,
+      4.62764
+    ],
+    "end_latlng": [
+      52.523955,
+      4.627464
+    ],
+    "average_speed": 1.118,
+    "max_speed": 2.14,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 16.6,
+    "elev_low": 5.6,
+    "upload_id": 17627680707,
+    "upload_id_str": "17627680707",
+    "external_id": "011AD3B7-CA61-41C1-896A-7EF36983D285-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-11-23",
+    "km": 2.9,
+    "minutes": 43
   }
 ]
