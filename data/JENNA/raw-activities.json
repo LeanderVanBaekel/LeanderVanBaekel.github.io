@@ -41389,5 +41389,70 @@
     "date": "2025-12-01",
     "km": 11.27,
     "minutes": 89
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Namiddagwandeling",
+    "distance": 5419.5,
+    "moving_time": 4805,
+    "elapsed_time": 5213,
+    "total_elevation_gain": 10.3,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "device_name": "Strava App",
+    "id": 16665407966,
+    "start_date": "2025-12-06T10:58:12Z",
+    "start_date_local": "2025-12-06T11:58:12Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 3600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a16665407966",
+      "summary_polyline": "_bo_Iymn[CAIHS^_@zAG`@M\\G`@CDMd@IRATK\\EHEPg@vAQ\\Sp@m@vAWx@Ov@MZCVQ`@Qj@CPIRSFMGE?CBAGQ@QG]m@CKS]CQ?KBEDBAA@@?CGC@?CE?G@EBD?CGBC?AGCBMCQ?MIWCBMAEICGB@AIGACGAGI@E?ISA?CEBOMGAGIMCIMKEIIGACIB?E??CICEMM@GISGACBICCG@CAAEA@E`@BTMfA?l@LVHZV^Ht@Jb@@?FLDj@DDBJ@DDCB?LF@FNR@?LTV`AHPJBLGHOBQXa@RITWNAJIHAJQ\\w@@QEUCCMQI[GECI?MC[?KGBGEUASOE?C@ECEAEEBE?M?JCKE?_@[CCO?QQE?IIIACGMEGKOEEKICOY@GLSAMBICCC??D@BAf@MNSQa@Mc@c@YKWUQGYYG?EKMGKMICOMQGEIMGQMa@SSMEGC?GGWMUOK?IQQEIKi@[IC_@YKC[U[Wg@YKKAGDE?DOKMA]Qe@_@i@[a@]o@]]WKW@c@C??B@KRo@\\}AV_BTkAPk@AQCIYKYYg@Y_A}@MKMEe@_@ICOQeB{AGJKr@[nAq@nDq@hCGl@Yx@WdAKd@IXSjAKVO|@]rAGf@Ux@O~@EnA@DG^K`BCnABLZf@IY?@DG@TTp@HJF@JZXPXXPFRRd@\\b@b@DBV\\BL@CCKFB@DATEKLAFG@Qd@oB?MF_@X_AFe@|@wD@YHQPu@ADC@J]j@uCT{@ToAFU?EGBFIHe@FCBIVsABED@BHB?DDKQEBF?IA?INe@Z_BFOD]J_@Hg@Pq@Hi@JSLQL@JHx@r@TLHJ@FG\\@JBUDIDAFBd@\\f@f@NJH@AHLH?LDBY]YMSSm@c@IKKGG?GN?ZCLDP@??a@F]FKFAd@TLJXZ|@n@HJh@^?Bp@h@\\RBDD?FF?FBI?ODIJARHLLB@v@l@FA\\UHUPQ\\i@LUEOER@CPCNMLEB@RCJH^x@L`@t@tABCBQDCZk@b@c@PIPQNSDAVURYRQFKHCHKNEPJPGf@c@^c@H@ZRFRFD@DJJPXF^MVAHH`@B?PQHDD?PSD?PRXr@LJJRJLFLd@l@p@n@@HCDN@HHPFFRb@X",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.51019,
+      4.667317
+    ],
+    "end_latlng": [
+      52.510075,
+      4.667548
+    ],
+    "average_speed": 1.128,
+    "max_speed": 2.46,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 9.5,
+    "elev_low": 0.8,
+    "upload_id": 17754643578,
+    "upload_id_str": "17754643578",
+    "external_id": "92F3424F-1E6D-4981-8FD4-E7FFE5C3263B-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2025-12-06",
+    "km": 5.42,
+    "minutes": 80
   }
 ]
