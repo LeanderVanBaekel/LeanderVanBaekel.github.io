@@ -41847,7 +41847,7 @@
       "id": 19868410,
       "resource_state": 1
     },
-    "name": "Namiddagwandeling",
+    "name": "Middag wandeling met Lisa en Sten",
     "distance": 4315,
     "moving_time": 3984,
     "elapsed_time": 4456,
@@ -41876,8 +41876,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "followers_only",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
