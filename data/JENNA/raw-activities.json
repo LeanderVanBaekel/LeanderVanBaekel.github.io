@@ -42289,5 +42289,70 @@
     "date": "2026-01-19",
     "km": 1.7,
     "minutes": 14
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Ochtendwandeling",
+    "distance": 8303,
+    "moving_time": 6181,
+    "elapsed_time": 7699,
+    "total_elevation_gain": 35.9,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "device_name": "Strava App",
+    "id": 17114151769,
+    "start_date": "2026-01-20T09:34:15Z",
+    "start_date_local": "2026-01-20T10:34:15Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 3600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a17114151769",
+      "summary_polyline": "}cq_Iyvj[ARFHD\\CNG~CC`@ED?BBKFDRd@l@bAh@nAx@jAt@v@Tf@^pA`@pBJxA\\tABTVz@d@tBhA`HHlBAvBB^DB?RDZJRZZHPP|@LtAVj@RNfA~AVV@HVRZj@h@p@bAfBXbAZZn@^jA`Ah@l@R^Th@JnAAd@UxA?f@`@pAVtATF`Ay@dA[N?DDDj@JVDd@Vt@A^Jr@A\\Dn@?j@h@dBPVNf@n@~@`@z@HHR@b@Ir@PVX@~ABZAb@B`@Lj@p@rAHx@Jh@Dr@GZKJu@\\m@PYRCZPdAA`@]`AiAvA[f@g@`AGj@@~AIlALnAh@rBLLNDX^t@~B`@n@t@PzDXt@RnAANV@ZKlAKpBMjA@FCd@ELBXHTFh@?h@Jj@P\\DVOYO}@KuAKGIHQl@QlBU|A?VMvA?ZKf@Cp@ELFZCDEQID@E@?Ib@Ud@MNYJK?[Kg@e@YGaAb@WKW]Se@K}@IKWGEI@a@La@Da@Ey@Ks@Wo@Su@EKu@?UMs@y@OMOUK[JqAE{CLgBAoAGm@K{BQ_@c@c@?MSs@a@i@w@{A}AeBuAq@_A{AIGe@?OJ}@XcAh@c@?iA_@Y_@_@}@}@yCWg@{@Q{@[c@YmA_@q@_@[]{@m@e@YWE[BeCnAKHW`@g@`@g@F[LMNIZSPa@EIIa@u@G[ISKOU@GHKZ?rAMp@ERQX_@~AKLKCQYWkAU[GAk@y@mAm@_BCMTIbACzBCf@CPuBpAS?u@q@{@iAc@c@Sk@o@k@GSGk@Su@k@{Aa@w@Wu@MIg@Bs@K_CAIIISYgFAgBEB\\oDCmAOmB?eAJgA^eBLmACII?DE@D@I?g@AKC?FBBEEDFOAHEHR[KRG?B@?BEBHGIDBGALCEQmEDc@L{CLkAPo@Fe@Rg@~@aBf@e@f@U\\KXCRJh@b@`@x@U}@@A^k@NE\\@JKHODk@F_@NsARs@R}BJaBLe@LDhAbDTf@NHRMNQh@cAT[FOLq@P_Bn@uDTeBJgAF[dAeCTaAJcA\\oAXi@TMn@q@Rc@?OUgAQyACQ@MNWLGBDf@Fb@l@PFh@q@d@mANMTHhAdAHDHEL[\\_CRy@Ti@Z}A?UEBBi@CgB",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.521758,
+      4.647655
+    ],
+    "end_latlng": [
+      52.521769,
+      4.646945
+    ],
+    "average_speed": 1.343,
+    "max_speed": 2.66,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 18.4,
+    "elev_low": 4.9,
+    "upload_id": 18208973174,
+    "upload_id_str": "18208973174",
+    "external_id": "80449A88-E58B-497F-ADAF-CE2C43BBBE3A-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 2,
+    "has_kudoed": false,
+    "date": "2026-01-20",
+    "km": 8.3,
+    "minutes": 103
   }
 ]
