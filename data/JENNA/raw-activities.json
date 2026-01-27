@@ -42676,5 +42676,70 @@
     "date": "2026-01-26",
     "km": 9.23,
     "minutes": 126
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Avondrit schaatsen",
+    "distance": 10806.8,
+    "moving_time": 5187,
+    "elapsed_time": 6344,
+    "total_elevation_gain": 0,
+    "type": "IceSkate",
+    "sport_type": "IceSkate",
+    "device_name": "Strava App",
+    "id": 17197833627,
+    "start_date": "2026-01-27T18:26:44Z",
+    "start_date_local": "2026-01-27T19:26:44Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 3600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 3,
+    "photo_count": 0,
+    "map": {
+      "id": "a17197833627",
+      "summary_polyline": "yzf`Iwsw[HvBh@]\\nAMe@i@]LPYS@s@Rp@BaAV?\\a@V`@@r@UlAwAqCtAvCRi@Ce@PJPgA{@s@cAO[^Ax@DsABf@@lABw@@h@OiALNCd@IM]rAr@EaD?GRR\\JhBJ?Ua@LES_AXbAUfAOcA_@@Gn@zABhCqBj@qAC[U]YBmAlAyA?q@\\WxAtB\\tC_AXe@RuAOg@[OmAl@oCT?x@PtAV\\EHv@VUqAKz@w@O[NjDk@`BuA\\eBw@Y_A~@gDjA[z@JTz@TxB_@pAyAh@uAa@i@i@EgBpAoAJEf@nA}@qAfA|@m@{@l@t@e@u@d@p@a@q@`@?zAh@eBi@nAKm@UO]t@FZx@\\jB_@lBiBh@uBy@c@cAlAoCh@c@l@Ml@F`@`@TfADbBe@Rc@b@U\\y@JwA[[UB}@nA_CXLh@GZ`@Sa@RW~@HJi@_@UZ`Ad@~AO~BqBTc@LmAs@[aAvAUJ_CE@|@S^Tx@Hn@Oc@FE[ALB?c@q@BH\\\\VvAE~AcBfAo@^cBw@]WP}@~A_AKmAZg@|@@d@Zb@`A?fAk@Rc@dA_@z@wBkAc@e@N}@jAwAD?xA\\|@ATSw@OG[BQf@r@j@z@WnAsA~Ak@XaBy@m@m@\\u@fAoBR]~@@n@h@h@`@E`BmAtA]Ti@JyAiAc@YTi@lAoBJKv@JOKNVvBi@]SLfA^x@q@f@}@pB_@d@qBIWcAY_@T?dB_@_ALTUDf@TY]h@`CHKKb@O?L@ERECI[Lm@K[GXuCQUPU|@~@lA|CyAv@u@Nc@Jk@C}@gAOw@dBgARgAfAQv@|@^pDwAp@uALeAGYs@Ic@|@e@FN\\_D~AWr@p@l@fD{A~@cARgAEg@iAg@o@X{@bA}Ah@YlBPj@b@Zx@Q~C}Bd@{AI{@aBCc@~@_@ZsBPObCl@x@f@InD}Bn@eCI]mBIo@hA_AN}@p@S|ADVn@p@\\EdEeD\\_BM_@_AGwAvAyBp@Uz@H|@ZXx@CdAqArB{@\\qBCW}AAeAfAcBl@e@v@GbAh@v@`@AN]~CwAf@_ANyAi@e@y@Hy@hBNDP]BV\\HMAHl@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.632933,
+      4.713722
+    ],
+    "end_latlng": [
+      52.632839,
+      4.712991
+    ],
+    "average_speed": 2.083,
+    "max_speed": 12.018,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 1.4,
+    "elev_low": -0.5,
+    "upload_id": 18293323793,
+    "upload_id_str": "18293323793",
+    "external_id": "89BBD965-7E55-4306-9467-874FA41D3A78-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-01-27",
+    "km": 10.81,
+    "minutes": 86
   }
 ]
