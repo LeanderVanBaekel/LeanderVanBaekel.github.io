@@ -43262,5 +43262,70 @@
     "date": "2026-02-17",
     "km": 6.69,
     "minutes": 53
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Namiddagwandeling",
+    "distance": 3970.2,
+    "moving_time": 3550,
+    "elapsed_time": 7666,
+    "total_elevation_gain": 5.5,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "device_name": "Strava App",
+    "id": 17508827744,
+    "start_date": "2026-02-24T16:11:57Z",
+    "start_date_local": "2026-02-24T17:11:57Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 3600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a17508827744",
+      "summary_polyline": "ohp_I_eo[Q\\D?@BDG?CGOEY?YA?Ck@Ii@[{@q@u@Wa@GEQUQa@YcAOBILSJUBOHa@ATA?BF@PPHPJ`@Rd@f@x@Rb@Vz@NfADBLx@LZPNBDApAA?D\\AHBNF|@R`AHZNRd@f@f@`@JL@FE`@EHC?AGGAsAmAE?IEW[a@WOMGCOKEAEISSi@c@SKCIIEY[QKKMOIQQG?GJC^O`@@FAG@DBCCUAWKWa@[c@a@YS_@]oA_Au@w@GAy@q@GEIBCF_@lB?JEPKPCPSt@Y`BaA~DG\\e@lBa@rB]rAIf@Qv@Qp@?BQfAe@bHPf@NHCB?BLXFTVXDRz@n@RRLFxArANTCBDAHFHPZ^JVTPJ?NWJEJODC@QH_@A@@QFMRcADYDGAUJU?W\\oA?IDW@IDABUAMHQJe@BQLo@Fm@FMDCf@`@Z\\LHDAHQTkAJaAF_@DIDYR[FEDARH`@XLBHDZZt@b@XLZVJFJLJBVLLALLT@FJZJLPVJHFP\\LJD@PATFr@d@PKVDNJDJBBPM\\HFKH?FGDDD?A@LDRZVLDFHBDFVDBFHFDB@Cj@f@RJHJHBXd@N?JB@DJDHHH@FHCIFN@CAA@BAA@ADBF@d@ZFJBXHRLh@\\d@F@LEPFH?EBBDBCH_@`@qAB]P[XkAj@aBA@FWNa@?@BCPa@p@oBTm@Lk@|@eDZ}ARQNELH",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.517362,
+      4.670405
+    ],
+    "end_latlng": [
+      52.510038,
+      4.667648
+    ],
+    "average_speed": 1.118,
+    "max_speed": 6.12,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 4.4,
+    "elev_low": 1,
+    "upload_id": 18606243493,
+    "upload_id_str": "18606243493",
+    "external_id": "10E176AA-0391-4C80-B765-A3B128EF4EF4-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-02-24",
+    "km": 3.97,
+    "minutes": 59
   }
 ]
