@@ -43710,7 +43710,7 @@
       "id": 19868410,
       "resource_state": 1
     },
-    "name": "Ochtendsessie snowboarden",
+    "name": "Snowboarden dag 1",
     "distance": 34989.9,
     "moving_time": 9340,
     "elapsed_time": 17805,
@@ -43739,8 +43739,8 @@
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "followers_only",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
@@ -43763,7 +43763,7 @@
     "external_id": "98F6E635-E9DE-4054-936E-396EEDCF3D10-activity.fit",
     "from_accepted_tag": false,
     "pr_count": 6,
-    "total_photo_count": 0,
+    "total_photo_count": 4,
     "has_kudoed": false,
     "date": "2026-03-08",
     "km": 34.99,
