@@ -43703,5 +43703,70 @@
     "date": "2026-03-02",
     "km": 7.39,
     "minutes": 44
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Ochtendsessie snowboarden",
+    "distance": 34989.9,
+    "moving_time": 9340,
+    "elapsed_time": 17805,
+    "total_elevation_gain": 3724.6,
+    "type": "Snowboard",
+    "sport_type": "Snowboard",
+    "device_name": "Strava App",
+    "id": 17648739593,
+    "start_date": "2026-03-08T08:45:04Z",
+    "start_date_local": "2026-03-08T09:45:04Z",
+    "timezone": "(GMT+01:00) Europe/Vienna",
+    "utc_offset": 3600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 9,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a17648739593",
+      "summary_polyline": "ibh_HmrdiAYrAT@e@x@`CpGRhBhBvDb`@bjAX_@Og@^}Be@UcAeB@o@k@}BY_AY]@q@sGuMa@QaB{Ea@iDJyFa@cD]]TwBSkCcAyE{@}C]SCk@y@IE}@_@IAe@}CsEw@\\mCw@o@|@pg@nzA`@Bs@}@kEl@{@kAqGyAgFaD}APaIpCmD_AgIKsB_AgEdCaBO]y@FWt~@~R?`A[IMxAKdHIlBm@tFJxAo@f@Et@{A`CCl@y@x@KdAuA~AuCfCgAd@Ml@gF~Do@p@Yx@sMzGqBtAYdCeCnHaAR_BtBiBr@oAjBcF`EkDnFk@tBmAjCqDjDq@xB{BfC]Ta@a@HVk@^iGbBymApe@?a@AZjzAe}BaPjjEvUixBkRbiDbTypCpVgiAsD_NatBtkBLX]{@sAz@oBtFqCvDuCjAgDHqDu@eBaCKh@oA`AWk@YJS{@cB_A}AEa@z@dHpeBA|@bEzA~Fg@nCzAx@j@`ApAxLxCdBxCf@d@O^^r@Gx@b@f@C`AbAtE^n@t@xGt@lA`@rCd@p@\\lMpAvHnC`BpC~BlDtD|HpO`@nDBfGCxBxDnP~A|DrAnEfC~CfBz@~A`Cr@VCzA`@Vv@`CTnBt@bBHjBr@vC|@tAM`CXpC^pBG~DB~DNr@]r@Jt@Y`@@t@a@Vo@vCDlA`@~@p@C@ws@u@ER`@SvB\\lBdAv@qo@mtBW?i@jBy@jGuCxE{DHwLwEgRqe@uSmj@nA}AhAJbAiADo@|B_Fk@yDnBwHbBwYrByKg@XTNHs@ZRWHX_Dy@qHJwAd@w@Oc@`@_@Ey@jAy@|@kDj@}Ah@q@t@mIWsATqBxA}CnAkInBeDDgDh@kAfAg@t@iDL{Bw@YOm@iCgB]sApBaC~AsDn@mGP}ErDoDjDBzGpLhAp@TrAvAfBlEfKpFtHvCt@rCi@`Az@`Fd@`DxAdBzCd@C`AkAL_BXE`BkDrDwDBiB~j@uo@e@SBVs@NGfCkABo@~@cAXg@xAwBbAi@zAwB`CmFzFiH|KsBdEiC`CEiAXRpBeDjf@uj@]Qw@f@k@jB[Bg@j@Wr@yA[ViAthAaiAuC?eC_C_AmBo@Q}BiHa@sCTyHe@]E_Bg@i@OmA_CaD_@kCiB_D_BsGSmFRy@g@eEGiFy@sFsBuH_A_AYqA_AMoBwCcBLuBk@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      47.232532,
+      12.152876
+    ],
+    "end_latlng": [
+      47.232583,
+      12.152455
+    ],
+    "average_speed": 3.746,
+    "max_speed": 9.72,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 2304.8,
+    "elev_low": 1370.5,
+    "upload_id": 18746962600,
+    "upload_id_str": "18746962600",
+    "external_id": "98F6E635-E9DE-4054-936E-396EEDCF3D10-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 6,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-03-08",
+    "km": 34.99,
+    "minutes": 156
   }
 ]
