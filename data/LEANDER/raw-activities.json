@@ -58964,5 +58964,72 @@
     "date": "2026-03-19",
     "km": 5.2,
     "minutes": 11
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Morning Ice Skate",
+    "distance": 12457.4,
+    "moving_time": 4218,
+    "elapsed_time": 4613,
+    "total_elevation_gain": 0,
+    "type": "IceSkate",
+    "sport_type": "IceSkate",
+    "device_name": "Apple Watch Series 4",
+    "id": 17812139645,
+    "start_date": "2026-03-22T08:19:19Z",
+    "start_date_local": "2026-03-22T09:19:19Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 3600,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 1,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a17812139645",
+      "summary_polyline": "e}f`Iuow[u@u@`@IeAhAApAf@n@|@E`Ba@CUc@SxAAXkAJ?C_@e@M_C|AcAuAIFb@_@aAj@Wr@xAvAYQs@h@`@f@t@QLwCf@k@~Ba@T\\{AmBd@Bw@RW\\m@~AuBRMvAdAx@lAc@LI~@kAx@UHgBc@{@s@ZWj@aAx@aBDGh@Rv@jAhAh@Or@s@MBjBeANyAYm@[@a@Hu@fAIBmASd@pAr@}@PdBzAc@r@{AUeAyCtA}@Pt@s@X{@hAQn@p@{Ad@kBpAYjAB`@\\gB`AkAb@oATYV~@[b@mCz@OpAPPFf@Ee@LWf@[h@HtAo@f@o@U}@UGaB~CaA^W[g@B]l@tAKp@oBDo@jAi@g@Km@x@m@xCTt@Rs@SO_@rApB_CtAk@KgCu@b@aApA[i@B]mAh@Yd@B`EfBOTeCtB]P[Jo@Uw@cBLw@pBG[ODe@hDVaAh@Rx@WnBoAFo@Mm@o@s@_@LcA|AEg@oBz@WdA^~A`BgAj@DzBwA@u@E_@e@]m@H}ChCMm@O?T^x@eBrBMA_@}AzAg@tAmAy@Mr@RbBh@PVYr@e@rAoEXn@El@mCn@@C{@Ga@ZzAp@Dd@LaD`ACp@pAv@kAGo@M[aAEyC`BYjBf@Nh@GSYZu@f@Yh@}@JbCZKn@k@SgCGECXL@]?gAiAg@dBeBxA?x@hB`Aq@M@e@nAoAMnA|@OhAy@Ho@Ow@]Wk@JCv@cAGkAd@]`AVtAdAcCv@B~@yAb@KJXDg@QWm@LeArAeA?aAl@C\\fB_Cn@kBf@cAH~AS@_@t@}@JAT]t@k@v@NbARPjAmEl@q@LaBOtAc@RNhAiAhCYDE`@JLNk@pA_A~ANRgA?kAK]WMYT[zAW^uAJPx@Et@nA_BhByD]XI^gAcA~@vBMn@_BLoBbAjAvAn@y@GXMS|AiFLmBIUDzAoAjEq@yAkAr@A~@fB~@~AoAp@GLWD}AMu@YSQHKl@Cc@gBx@m@~AGGDVf@lAr@GxAa@pAmDEU_B{@o@PaAh@NSk@dDg@X?b@vAoAfCNRgAEg@aAkA]VK`@i@fJEgCpAs@PmAWo@]rA_BTd@pAjCwAXSPsBWe@g@OgAnA}@?ZfCPg@DTKPRFaB{BP\\",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.633315,
+      4.713075
+    ],
+    "end_latlng": [
+      52.633571,
+      4.713182
+    ],
+    "average_speed": 2.953,
+    "max_speed": 14.217,
+    "has_heartrate": true,
+    "average_heartrate": 117.2,
+    "max_heartrate": 140,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 1.2,
+    "elev_low": 0.2,
+    "upload_id": 18911394068,
+    "upload_id_str": "18911394068",
+    "external_id": "ACE689C7-3411-4892-A336-04923BEFC115-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 1,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-03-22",
+    "km": 12.46,
+    "minutes": 70
   }
 ]
