@@ -64022,50 +64022,50 @@
       "resource_state": 1
     },
     "name": "Middagsessie surfen",
-    "distance": 2455.6,
-    "moving_time": 2992,
-    "elapsed_time": 5020,
+    "distance": 2376.1,
+    "moving_time": 2873,
+    "elapsed_time": 4294,
     "total_elevation_gain": 0,
     "type": "Surfing",
     "sport_type": "Surfing",
     "device_name": "Apple Watch Series 4",
     "id": 18502585850,
-    "start_date": "2026-05-14T09:56:55Z",
-    "start_date_local": "2026-05-14T11:56:55Z",
+    "start_date": "2026-05-14T09:59:22Z",
+    "start_date_local": "2026-05-14T11:59:22Z",
     "timezone": "(GMT+01:00) Europe/Amsterdam",
     "utc_offset": 7200,
     "location_city": null,
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
+    "kudos_count": 2,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a18502585850",
-      "summary_polyline": "}el_Iwu~ZKn@?VGd@QVKZKNIXGFCNKBMLQXSNU|@KLMl@KVG^@FC^GR?LMd@UTUr@?A?D?KDICPC?FUFOJKBB?BE@EHEAAHIN?CI@BIKFNg@HILEE?EHMLOd@E?EGDKF?FFB?R]HIFCOd@GDE@?ADI@P@C?DHCb@SJCU\\G@?DGH?B?GJW@@CAEHAD@CFEAE?FEBEJAJ@@TYj@g@TY?GMAGBCACNK\\C?AVENDIA@?COR@B?EDBAFEBACA@FuALu@@NGHENG~@OXSKD]FWVg@@HCVI`@O`@AMHe@N]LQ@HATUj@IF@CCHJe@TCCDIBD@GJG@BCCLAM@@CV?ABAFGBFHS\\e@BKEPMZQPOHCAABAC^y@JOON[r@BCYOEK@OJUE`@AC?Z@SC?ACC?KVETFO?G@@CA@@CMED@EAAA@?OJWJS@?CNQ`@E@GAABC@@M?HCBA?CI?UBE?JDSN]Ef@DICCAFEBCAMLEAAQPg@LSIZIHS`@MHGS@H?SNc@?NAJ@MAi@BRCDA^VNCKCCIFGAABACBJBMBD@URe@AL@B?\\ALGF?a@HQBDFMLGLFJYFANETCLOLEBMZOh@m@d@UAB?EEBMGE@CA?EEG@a@NG@EBy@@?AGF?@CNGAIJIXk@Z}ADi@Ng@?ICAELIHDl@BC@D@YIW@A@UF]HB?D",
+      "summary_polyline": "gfl_Ikt~ZAZGd@QVKZKNIXGFCNKBMLQXSNU|@KLMl@KVG^@FC^GR?LMd@UTUr@?A?D?KDICPC?FUFOJKBB?BE@EHEAAHIN?CI@BIKFNg@HILEE?EHMLOd@I?AGDKF?FFB?R]HIFCOd@GDE@?ADI@P@C?DHCb@SJCU\\G@?DGH?B?GJW@@CAEHAD@CFEAE?FEBEJAJ@@TYp@m@NS?GMAGBCACNK\\C?AVENDIA@?COR@B?EDBAFCBCCA@FuALu@@NGHENG~@OXSKD]FWVg@@HCVI`@O`@AMHe@N]LQ@HATUj@IF@CCHJe@TCCDIBD@GJG@BCCLAM@@CV?ABAFGBFHS\\e@BKEPMZQPOHCAABAC^y@JOON[r@BCYOEK@OJUE`@AC?Z@SC?ACC?KVETFO?G@@CA@@CMED@EAAA@?OJWJS@?CNQ`@E@GAABC@@M?HCBA?CI?UBE?JDSN]Ef@DICCGJCAMLC?CI?IPg@LSALIPGDS`@MHGS@H?SNc@?NAJ@MAi@BRCDA^VNCKCCIFGAABACBJBMBD@URe@AL@B?\\ALGF?a@HQBDFMLGLFJYFANETCLOLEBMZOh@m@d@UAB?EEBMGE@CA?EEG@a@NG@EBy@@?AGF?@CNGAIJIXk@Z}ADi@Ng@?ICAELIH?F@?@\\",
       "resource_state": 2
     },
     "trainer": false,
     "commute": false,
     "manual": false,
-    "private": true,
-    "visibility": "only_me",
+    "private": false,
+    "visibility": "followers_only",
     "flagged": false,
     "gear_id": null,
     "start_latlng": [
-      52.496479,
-      4.586049
+      52.496526,
+      4.585828
     ],
     "end_latlng": [
-      52.496401,
-      4.5863
+      52.49651,
+      4.585878
     ],
-    "average_speed": 0.821,
+    "average_speed": 0.827,
     "max_speed": 4.92,
     "has_heartrate": true,
-    "average_heartrate": 122.2,
+    "average_heartrate": 122.8,
     "max_heartrate": 149,
     "heartrate_opt_out": false,
     "display_hide_heartrate_option": true,
@@ -64079,7 +64079,7 @@
     "total_photo_count": 0,
     "has_kudoed": false,
     "date": "2026-05-14",
-    "km": 2.46,
-    "minutes": 50
+    "km": 2.38,
+    "minutes": 48
   }
 ]
