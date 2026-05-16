@@ -45498,5 +45498,70 @@
     "date": "2026-05-14",
     "km": 2.46,
     "minutes": 50
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Wandelen met backpack",
+    "distance": 4814,
+    "moving_time": 3657,
+    "elapsed_time": 3834,
+    "total_elevation_gain": 11.5,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "device_name": "Strava App",
+    "id": 18528464458,
+    "start_date": "2026-05-16T11:03:08Z",
+    "start_date_local": "2026-05-16T13:03:08Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a18528464458",
+      "summary_polyline": "kel_I}u~ZKK?LAGBF@TCFDNEpA@XVbANXPNRLHHrCzAbAd@hA`@nAj@pB~APLF@VTjAn@rAn@r@b@b@\\v@Zb@Tl@f@pAt@|BdBtC`B~AhAdB|@hClBRHBDD@n@Vn@b@^Jv@\\LLTJdC|AlAx@bBbB|ArAl@n@vAfA`@b@xAnA\\N@Fx@f@TT|@j@bAjAtBlBTHHFz@^@FJ@hAt@b@RtAbAd@Xf@`@VNRPf@f@fAr@|@r@JBLJD?ZLv@p@RJD??BZd@VJHHYQU[YYg@YY[WMe@SIIOG{@m@IKYOe@c@u@g@]YyBuAa@Oc@Ye@QSQa@Sg@a@q@c@s@i@OCKE[Sw@c@[KqAw@s@YcAu@y@s@c@UCAa@DIEEBEIG?q@a@c@_@y@cAc@e@USOEKKGIAGy@y@_BgBg@QGGi@]m@q@]QgA{@a@a@}@m@m@k@qAq@mAy@q@k@k@[II_B{@QKOOWKiAq@SAMFSBUE]Qu@i@o@s@o@m@g@m@gA}@KKm@a@cAk@OEo@a@A@MK{As@a@W[KKGg@UoC{AOCgAe@i@Oc@k@]wAUkBAe@Bu@CKF[C@?CAF?ABBA@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g25397328",
+    "start_latlng": [
+      52.496381,
+      4.586075
+    ],
+    "end_latlng": [
+      52.496453,
+      4.586086
+    ],
+    "average_speed": 1.316,
+    "max_speed": 2.187,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 8.8,
+    "elev_low": 1.9,
+    "upload_id": 19634194505,
+    "upload_id_str": "19634194505",
+    "external_id": "6AE9200B-18D7-4E40-A9D9-9511E50DD45F-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-05-16",
+    "km": 4.81,
+    "minutes": 61
   }
 ]
