@@ -45888,5 +45888,70 @@
     "date": "2026-05-23",
     "km": 3.44,
     "minutes": 86
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Middaghike",
+    "distance": 3339.1,
+    "moving_time": 4978,
+    "elapsed_time": 7508,
+    "total_elevation_gain": 294.8,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "device_name": "Strava App",
+    "id": 18633862479,
+    "start_date": "2026-05-24T09:33:52Z",
+    "start_date_local": "2026-05-24T11:33:52Z",
+    "timezone": "(GMT+01:00) Europe/Oslo",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 2,
+    "photo_count": 0,
+    "map": {
+      "id": "a18633862479",
+      "summary_polyline": "}~~}Kg|joAPMHNGC@b@@OA\\N|CKZOGQ\\Y?OTEX@PI~@IX?p@UPOBEd@EAAH[l@Kd@CZGJIt@Bn@Gh@MXBj@CFDZI`AAlBOdAIJKl@BZIVDrAAj@OZGb@@x@@HHDBf@Ap@A?@MADFt@Gj@@`@FR@VCTCB@`AOZDTGh@BVAHIHAj@DR?VD@?PDC@JLXDhAAPBFEDEIEr@IHD`@@NIZCD?GDHGC?PCNPpAND@FBRKTNAJ\\H?HPF@BJGd@IR@JC?A^GPCb@GVAAIZCn@GRGf@DF?XH`@?PCB@FI`@C@BZHFAVB@@JQVId@LvBCt@EH@NHEEc@BOHQHFNK\\NDKDA@LZ\\DMXEj@@BLFK@DJ@FPFKF?@MJF@KPCRLHRl@HHRLFHNJ?@HXC@JHKRPDQFJCC?IADDB@JP@R\\JGDTFJBABJHMH`@JFNTJ^LQBFF?CCBM@L?OAH?K@H@UFGLFLl@V@@FJC@XD@BPNBBJJANZH@Zl@HD@x@Pd@@V@@F`@L\\Bh@HBJ`@@IDBFTFH@RIIFCLZF^DFJx@HTAVB?D\\FF@F?KCJ@@@A@VALB\\CD?d@CA?b@BAAZ@ID?IHERFJAC@n@AE?B@GCF?GBBCBAu@BW?eADc@E{@AKEBIg@CEBSIOI}@Mc@GEG_@E?Ma@EDQc@C]Ww@Ck@S_@Ci@Ui@YSCQKEAIYIGOMECG?KWKEQEAAOQUIb@C@CMEPC@Oa@MIMYI_@GJC??OG?cA{@KHQQGFYEUECSQCEMKMUD?EQGEM[CG@CTG?AKGHAOAHGBQCMFCNASUBKWSNOGCLIAKYOM@CMDCIIAEKGCOLEWID@WGmAHm@HMEc@@@BKGQAB?IC@BCC?FK@WHEEM@UG_@M_@HO@SLy@AWJU?KDC?OFA@e@BE@WBEASFEFUB?@UKCMS@DGBEKC@AIQE?GBe@CKC@CGC?EG?UGYE?AY?UDEAKJC@YDAGm@JWBc@DD@KCaAEm@IA?GCDAEAJ@QAFCCEmA@c@HOBOCODiAJ[Aw@Fa@?GIKAa@?k@HSAq@GS?a@E[EECc@HeADSFC@K?w@CO@]EMHIBKCWDc@JW@?PqA@eBHkAGQAk@DWLUFq@EUHe@?UHM@UHMFc@Zm@Dk@FF\\E@cAHYH{@AYDURWVDDQHILFH[AKCBBAAE",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g25397328",
+    "start_latlng": [
+      67.993593,
+      13.168203
+    ],
+    "end_latlng": [
+      67.99345,
+      13.16725
+    ],
+    "average_speed": 0.671,
+    "max_speed": 2.12,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 192,
+    "elev_low": 8.8,
+    "upload_id": 19741200115,
+    "upload_id_str": "19741200115",
+    "external_id": "80E7DBAC-7315-4292-8BA4-25403317F49B-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-05-24",
+    "km": 3.34,
+    "minutes": 83
   }
 ]
