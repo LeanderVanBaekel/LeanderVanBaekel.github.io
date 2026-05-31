@@ -46213,5 +46213,70 @@
     "date": "2026-05-26",
     "km": 5.15,
     "minutes": 90
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Avondwandeling",
+    "distance": 2746,
+    "moving_time": 2284,
+    "elapsed_time": 4089,
+    "total_elevation_gain": 15.6,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "device_name": "Strava App",
+    "id": 18733527505,
+    "start_date": "2026-05-31T17:35:13Z",
+    "start_date_local": "2026-05-31T19:35:13Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a18733527505",
+      "summary_polyline": "wvq}Hyn__@Cu@IS@[CSBA@DHE`@i@DYNMNCV_@JIr@cALRFFJRLNNZNJDNZ`@FNVZL^JPDBP^@RB@AGBARb@FDP\\DBL`@HHFNDB\\h@DNLPDPPXB@CEVd@@NRl@@TUXIFQROHi@f@qAx@APBHAC?DZxAb@xAFHb@nBh@fBNdABb@FNHFADEEF?EDB\\DR@C@TLf@V`Bd@bBTl@XjAXp@~@jDx@dC`@xAPb@FZVl@ABSDQIcCyB}@e@SIK?OIo@KEEI@IFEII@KCUQUIO@AHC?@J@MCABA?CA@??@?@CEA?@?C?DCCKCGEIAQGSEOKc@CYMOCYMKKKOCFAAHBFE?@@AEAGBBBBA?BAE@C@BCCB@C@ACABBCAB@A?B@C@DA??A?C@BAC@C?DAE?BC@?H?GA?@B@EC@?A@@?C@BA?FIC@@?@DC@@A@BAG@@EACBBA?DB?@F?OAB?CC@DHAEADBAGIBJOB]\\ULiAv@KDa@^KBDCCHYLeAv@i@XWXa@ROCMQCIBUAICqAGi@Be@EW@SEK?YE]GKAUFICDCg@@GASEc@@ME[B[E_@BMCSEy@?s@Gg@KkB?[IcA?WE_@IqACQ?c@Ga@A]Gg@?IG[K}AKu@CgAKiA@i@CQ?]Mq@?e@FQLKXQZWd@U@DEBTWj@e@h@a@@?@@",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.197083,
+      5.245418
+    ],
+    "end_latlng": [
+      52.197625,
+      5.244943
+    ],
+    "average_speed": 1.202,
+    "max_speed": 2.26,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 26.7,
+    "elev_low": 11.1,
+    "upload_id": 19842776002,
+    "upload_id_str": "19842776002",
+    "external_id": "5AE9A1DF-369F-46ED-AD64-98A7817155EB-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-05-31",
+    "km": 2.75,
+    "minutes": 38
   }
 ]
