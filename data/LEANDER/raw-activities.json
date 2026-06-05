@@ -64210,5 +64210,72 @@
     "date": "2026-06-02",
     "km": 0,
     "minutes": 44
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Avondsessie surfen",
+    "distance": 3792.8,
+    "moving_time": 4638,
+    "elapsed_time": 4954,
+    "total_elevation_gain": 0,
+    "type": "Surfing",
+    "sport_type": "Surfing",
+    "device_name": "Apple Watch Series 4",
+    "id": 18801663115,
+    "start_date": "2026-06-05T16:53:51Z",
+    "start_date_local": "2026-06-05T18:53:51Z",
+    "timezone": "(GMT+01:00) Europe/Amsterdam",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a18801663115",
+      "summary_polyline": "qhl_Iuh~ZCP@BKb@[n@?ZMJ@_@N_ASRAJGRGF?JCQIM@HAACLEBCOGKBw@BSAFG@IJKXEKAUFC@H?P@?Kb@@H?MCM?u@?ECA?v@BJABAEARA@?CCRUd@GY@BDANQ?u@BSEAKPEVOd@CCAOBEAGA@BDLB?EA?CEAOFg@AGCD?EPaACHGrAGB?UFYFIEr@ENC@X_B@SEXU`@K`@@ACA@GI`@@@Fg@DQKX@AACGHI^QXETCq@BcADP@\\@HA?AHEk@AAA@@FCGH]H?DBBDB??DF@BF?CBAEGDGC??GDB?AADKAEGCM@i@L_@HEHINCFH?NFL@VDC@FJ@FLBVANB@@A@NCR@B@z@?GCBACAD?ECBA]JaANm@?rAEn@CAAEAHEW@iAIRCb@@LAGGNAAFD?ODg@DMD??DEZATAAEHEV@CC@ACHi@DQAAA@Ex@?EGLCKCe@IG?E@PG^@CACICEB@DBM?KJGBd@@IJRWl@E?CEAm@Ls@AGABAC?IJQHB@NIFEJCC@MJSJKA@CCKRAzBAMELMPEP@c@L??AFNJDGIB?EQG@CC@ABFEM@KN]H?JFCG@OH_@Pc@D?DDN\\?\\CH?\\?MK^DQ@AABBIJGBHAf@@O@B@G@@AKBEHB@C?DAYFSTi@BCBBADBb@Cn@@A@RAG?BG@@H?IEBCKI?B_@`@oALSBNBBBdADQBH?C@@Cf@?MRg@CD?f@@\\@@AP@C?@?Ea@XCw@BLIL?EBC@@ENF[l@wANk@?BDAADBh@GLMLG@AGE?GKEc@HHH?MM?HBBG}@DDADIGABEM?DICABUc@GCK@@BE@QXIP?NGHC^?EKRGB?AAJELC@CI^qAEAQt@Qd@ERDIE?@MFG?@IJ?EEDBC?HC?EACKAWFiB?H@AC?AJ?VIT?P@DBAAV@@BJAJBBAH@FFO?BADGBIJAG@@?A?RM`@AI?U?XE?IPEBWb@FQAKDWCMA@?GCIGIE?AWEE@G?@D@ZVGM?KD@FK@_@JCRFRP@JMKCGJPCBBD@D@??uBANGJ?FBPAf@DB?HRkAHq@b@yA@?@@@EH]BA?CHGLYJGJQFA@LDETGXOHAHDFc@HoABYBA",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      52.49689,
+      4.583952
+    ],
+    "end_latlng": [
+      52.496468,
+      4.586082
+    ],
+    "average_speed": 0.818,
+    "max_speed": 7.3,
+    "has_heartrate": true,
+    "average_heartrate": 145,
+    "max_heartrate": 167,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 6.3,
+    "elev_low": 4,
+    "upload_id": 19912147147,
+    "upload_id_str": "19912147147",
+    "external_id": "BDD93338-DAA8-4618-8107-ECB78B7AB04E-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-06-05",
+    "km": 3.79,
+    "minutes": 77
   }
 ]
