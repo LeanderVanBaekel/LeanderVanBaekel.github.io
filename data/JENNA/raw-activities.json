@@ -46408,5 +46408,70 @@
     "date": "2026-06-09",
     "km": 18.11,
     "minutes": 228
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Avondwandeling door Eibelstadt",
+    "distance": 5727.4,
+    "moving_time": 4519,
+    "elapsed_time": 5931,
+    "total_elevation_gain": 22.9,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "device_name": "Strava App",
+    "id": 18908220479,
+    "start_date": "2026-06-13T17:49:31Z",
+    "start_date_local": "2026-06-13T19:49:31Z",
+    "timezone": "(GMT+01:00) Europe/Berlin",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a18908220479",
+      "summary_polyline": "_gpnH_z}{@BPL@RQNA@CrFwAPApAg@l@OtAg@t@k@C@D?@Ef@UDOBBd@UbAy@^g@XObAiAv@cATQt@kA`@cARUr@oAp@sANa@jAkCDWEy@BI|@q@JM@IBBFANQNIFORUf@[l@i@`@W^IHIBGGDEI@??GE@F?IKGW?MCBAMEMOOSES]uBgCS]MKg@q@u@uAHAb@w@Vi@@QAEMEMKGKGCGUQ[a@a@GO?MBCEBKSELAABYEMEA?DBODK?GHo@V_@N_@PUFQNODMLQDB?IN_@?ELO?GIABB?GDL@EF?HRNJJZDBDPE@NNL\\ZFhAmANWNMFK?KJEZa@HEADBINMD?DKPQLYFA\\j@DBX\\@HCBDICH@PODFYB?F@FNJHBZDFH^JN@HFTb@p@?IDLDDLTAT]|@QCWUe@o@IGM]QSACy@gAMIIO@GD@CHHEC?R\\BCJPJHNZx@~@JFLZf@t@@DWb@AFORCRKNAN_@l@e@i@Yg@k@o@CIc@SSWUOMUAKGEIQ@MHWC^E\\B?KHECQTID@AA?@CACDB@ICMCEOe@Kg@BM^i@VUFONKPYVINYLIB@AA@BBGJRGKA@CCDD?GCEHDBFC@CEDBCEAHCGCH@GBFCIL@GBCE@B@KFQLEX]V]Xo@j@l@Tb@VXJXh@r@HFLPHBECAF?h@Ef@@LAH@A@BIPEh@Oh@GH?PEFL^B?FIRQVGDLHDTn@NRHPRN?HPR\\o@F]FMf@Cr@YBIVAFMB?BPEMDWAUBKPJH@Il@@@EIIFEAGFSBWPiA\\JCBNCM@ACBBCC??BAGEF@@U@Id@M^Ep@[l@g@V_@|@U`@APEDHDMEGDO^[^[f@AFUN{@xAaApAc@t@Kb@Ob@m@Nk@b@QF[Tm@d@u@v@e@^Il@Yn@CVe@~@m@`Ba@p@g@jAc@l@E@AM@@KVACUb@Sj@e@z@yCnDUTG@a@d@c@\\s@d@G@QPqBlAiA\\i@VcBh@ACm@T}D`Aa@TGDAFL~@Hd@MCEBEN@@@G@FCACFF?AD?CCAGI@LEA@BSBYZaAPUJuCXPEf@CHJZQb@M\\Wn@Sn@]d@QL?Vh@n@WBOCIC@H?ABDIAE?JEAF?CBG^D@Ai@@DABBBE@DAA@@@E?@E@BCFB?@G",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      49.731841,
+      9.988326
+    ],
+    "end_latlng": [
+      49.731282,
+      9.987668
+    ],
+    "average_speed": 1.267,
+    "max_speed": 18.56,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 185.2,
+    "elev_low": 173.1,
+    "upload_id": 20020535287,
+    "upload_id_str": "20020535287",
+    "external_id": "2AF652CC-86E9-4C31-A5D2-0939188720AF-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 4,
+    "has_kudoed": false,
+    "date": "2026-06-13",
+    "km": 5.73,
+    "minutes": 75
   }
 ]
