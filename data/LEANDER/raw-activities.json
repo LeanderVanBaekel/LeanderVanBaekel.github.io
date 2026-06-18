@@ -64473,5 +64473,72 @@
     "date": "2026-06-16",
     "km": 3.96,
     "minutes": 74
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 22324533,
+      "resource_state": 1
+    },
+    "name": "Ochtendhike",
+    "distance": 9352.2,
+    "moving_time": 10378,
+    "elapsed_time": 14476,
+    "total_elevation_gain": 439,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "device_name": "Apple Watch Series 4",
+    "id": 18969242223,
+    "start_date": "2026-06-18T06:16:15Z",
+    "start_date_local": "2026-06-18T08:16:15Z",
+    "timezone": "(GMT+01:00) Europe/Ljubljana",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a18969242223",
+      "summary_polyline": "{zjyG{bnsAg@ZEUWFFZLAH]V@CPLGEQTNR?Nj@bA|@d@n@b@]vAR|@@`Bp@dAQhAR~BIj@P\\Et@c@l@WTu@LyALOr@Uj@DRERT\\Nl@MZHFE^VLVLCN\\VAZNPTHDDABn@V^f@G\\Tr@@PFDHb@CRD~@ZLKPXJEBNPA@G`@RFCVRHC\\NfBZ\\LVTl@?\\Pv@F`@X^ARJX?FHLCBf@OX?TVm@D]FQfA\\Tg@TIb@`@^t@t@|@Bb@j@DbCv@\\Bx@Oh@y@f@MNUDU|@Mf@FRIZa@H?Zg@x@BlAOn@PdAb@fBVf@CPHLAFNESPMH[Xe@`@e@JI\\OFKRLr@MHFBOHGn@DVPXMNLLd@X\\Ah@P^f@Dr@Xb@Es@CAFr@`B@^HPbARr@b@Tn@`@\\N|@\\E^RJRAj@Hj@Vx@LFDV\\`@H`@CPMBS^e@b@i@TuAxC[dAS|AYr@C`A[bAHl@GJAPQHGTJ|@GXAXPd@BX_@d@[Ci@_@cA?OT@GC?]XI`@RXVLJZd@p@\\VAFa@ACFX|@Hn@LRJZBh@E^@\\XNZ@`@|@^X^Fb@GhAH^Rb@h@|A^b@j@xAAl@^Ld@IhAOt@ORSj@HfAKzC[cBIG@OEUQWa@cACa@KKMNCIKMQNCGIDQV?NKNDDGHKHc@NDHKd@]b@?^MF@BOBBDOT?PMDe@XKGEJE?GO]`@QIMT@RIE{@LEFLLCNBUIAKMg@IEGWJYGkAi@[D]WGFSKOHMSGQMCKL_@LWIMFuA]CIa@Cs@[ID_@K[Dt@Da@IWDeAa@eACu@k@e@DCm@Ic@SYc@Ie@BWJ[Gk@m@Sy@g@c@c@oAOQDS?iAQ{@Ug@w@}@Qm@q@q@OICD?qEUeAm@eAiCcBm@Gw@Y}@i@U[oAk@k@?SPyAJe@QIBIKCFa@AqDu@ODu@uASUu@WiBoAu@[QCe@[c@g@sAq@e@m@KC}@mBKC@Gy@e@E_@IKcDqCSc@CSMGI_@[e@UOCILa@Aa@BSIWQcASMGOTuADw@_@uCU[]OY[UCi@P?Ha@FOPG?ENmAbAmAPyA{BaAoAWw@y@iASc@WAP\\c@S?]SWYMMUa@EPUD[A{BJ]VCEE",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "followers_only",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      46.263661,
+      13.839987
+    ],
+    "end_latlng": [
+      46.263514,
+      13.840882
+    ],
+    "average_speed": 0.901,
+    "max_speed": 3.01,
+    "has_heartrate": true,
+    "average_heartrate": 111,
+    "max_heartrate": 142,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 1723.7,
+    "elev_low": 1405.1,
+    "upload_id": 20082452723,
+    "upload_id_str": "20082452723",
+    "external_id": "C3E81C52-A510-480E-833B-4A25174357B9-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-06-18",
+    "km": 9.35,
+    "minutes": 173
   }
 ]

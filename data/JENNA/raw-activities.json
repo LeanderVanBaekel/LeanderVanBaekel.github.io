@@ -46664,5 +46664,72 @@
     "date": "2026-06-16",
     "km": 3.69,
     "minutes": 105
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Ochtendhike",
+    "distance": 10224.6,
+    "moving_time": 13124,
+    "elapsed_time": 15532,
+    "total_elevation_gain": 485.2,
+    "type": "Hike",
+    "sport_type": "Hike",
+    "device_name": "Fitbit Charge 5",
+    "id": 18969548246,
+    "start_date": "2026-06-18T06:16:07Z",
+    "start_date_local": "2026-06-18T08:16:07Z",
+    "timezone": "(GMT+01:00) Europe/Ljubljana",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 2,
+    "photo_count": 0,
+    "map": {
+      "id": "a18969548246",
+      "summary_polyline": "qzjyGsdnsA?j@IRe@LEOKAAG?ZELL?P[LD?HNECGPHNALf@|@v@n@v@X[n@Cz@Zp@?j@Np@\\z@QtAZb@@jAItAJ|Ao@V[Ry@HmARW`BEvBRlAd@`@ZAFl@d@l@^L?`@`@?F`@VX?l@Lb@?pA\\LITXJEDLPCr@NJHf@NZ@CNDCEGBI~Af@f@^jBTj@NLLl@Bf@LPCE@?JDTQd@ARACHULQD_@HQF@@RPFVKTBTa@ZEj@v@Pb@NJd@x@@Nf@AjC|@bAEROHWNOp@YXe@v@Mr@@p@a@Ze@L?BEj@B|@Ux@TfBp@dAJx@?VV|AaCZk@JAPJh@KLDNSX?p@Rb@OF\\JXVVA^Jj@n@Fr@X`@Cq@@n@~ABZDNXNl@HVV^NRj@^^Nx@TAP@VTBDCTRjARn@PPDTZ^BRAZ]f@_@`@e@TORmAfCY`AWzAY|@GdAUx@B`A]p@B|@Cd@Vz@AR]XIBqAa@QDYEQRAI?NAECFDKEABCBHC?DCACC@DFAK_@ZENCTT\\VPd@|@TRIv@L\\Jv@Pd@B|AFPf@Lj@z@d@Zt@@rAF|@x@zAd@h@j@vA@XF\\XDTIjAOx@c@`ADxAIlCEGAi@KKMu@]gAWe@CBEg@GMOCADOO_@JOX@DMJ@JMN_@NGl@a@n@K`@SPG^IJEA@Dg@VIEKJMK]VWAEV_@FCFa@BAJ@?w@WIDi@EkAe@oAWWFM]KIo@VUABIWHg@I}Bw@q@G]BGAF??CAB[CKMUKcAC_Ak@i@?AKC@Aq@Se@k@GgA@OEMOOCOWEYs@aA_@gAOQAqB?H?CWaAc@u@[WSo@_AgAAw@E?Bo@CeAKkA{@uAgBoAe@UyAa@iBoAq@Y]?sCRqHqAYU@i@QY}F}CiCkBoAkAE[g@aAi@[a@w@qA_As@s@q@{@m@sA[YAUJ]By@MSIu@]]PeBB}@WoCAHIOWMKSOKq@OSPeAh@iAbAeA\\UAYk@c@a@}@sAa@u@e@mAW_@ALCOSUc@SQ[q@_A]NCGRu@C]Dq@C}@FRJAGRC?h@h@|XvSkTmS[c@kCwAc@XD@ZWDBSLIr@B~ALf@b@|@Xf@NFYt@AJCEBCG@D?AJAE",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": "g25397328",
+    "start_latlng": [
+      46.263618,
+      13.840263
+    ],
+    "end_latlng": [
+      46.263335,
+      13.839017
+    ],
+    "average_speed": 0.779,
+    "max_speed": 6.197,
+    "has_heartrate": true,
+    "average_heartrate": 123.6,
+    "max_heartrate": 162,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 1723.7,
+    "elev_low": 1405.1,
+    "upload_id": 20082763997,
+    "upload_id_str": "20082763997",
+    "external_id": "fitbit_7248168176329269208.tcx",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-06-18",
+    "km": 10.22,
+    "minutes": 219
   }
 ]
