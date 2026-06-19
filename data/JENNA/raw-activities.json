@@ -46731,5 +46731,72 @@
     "date": "2026-06-18",
     "km": 8.76,
     "minutes": 209
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 19868410,
+      "resource_state": 1
+    },
+    "name": "Namiddagwandeling",
+    "distance": 6744.1,
+    "moving_time": 6381,
+    "elapsed_time": 7151,
+    "total_elevation_gain": 161.5,
+    "type": "Walk",
+    "sport_type": "Walk",
+    "device_name": "Fitbit Charge 5",
+    "id": 18987030512,
+    "start_date": "2026-06-19T12:18:57Z",
+    "start_date_local": "2026-06-19T14:18:57Z",
+    "timezone": "(GMT+01:00) Europe/Ljubljana",
+    "utc_offset": 7200,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 0,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a18987030512",
+      "summary_polyline": "sanyGyrmsAKNAVS?FF@HS^g@WEQUVO@GKg@Tg@QYf@Q?OKBHII[d@k@HYb@Y?CKMDEJ@LQVQBYIOTC\\MJWBGJKx@INGD]IIFGRCh@_@NSXRr@R`@BA@b@HFAJb@BBRLV@JMTBCp@h@FNNCLRBN\\DNh@R^FC?KHDL\\JBVx@^EFX\\`@CFB??EOQDDESAHKFYKG@RG@EB@CCAMH@@Oc@SJf@QADWEH?EO?MU_@OCEJ?MGHGICC_@GMS@GIAOME@MI@Ye@EAAQYg@E?EMGq@YSADQDa@YSFIp@@b@CLi@NGZUZy@n@o@A?V[Om@Dq@Y}A^EUMMAYOKc@AC[LMGETBEIIPMDGTK??DC@D@@YIJ@JIID@ENm@@HMT?MFPAI@YgAFRJIFT\\H_@Kf@bAf@j@D@Da@KiAFOCIFOK]D?EID?DLEADaAIq@IING?ITQXg@ICGUMCHQCs@HEEYJ_@?_AHSTSBSQi@@YFEAYOIAEXc@Lq@Pe@DSI[Ry@Fq@J_@@OGy@JS@SGeADYI]Nu@C}@B_@Ia@Ek@NoAASKGD}@Ca@I[c@m@Be@EQYSG[GA?DAMSYu@@MIFGCKJ_@@_@Km@@aAQq@BM?s@So@Ec@Je@AUJGKk@DQGEJIAKLG?GKCLAUm@@[LMOIGWDIEk@LW?WKaCBWIMBOGUBe@CEHIBMYu@?u@IQE_@?q@F[A]HM?IN`AOIC]JmAOuABe@ESBMIiADq@Eg@@OJYKo@Bw@FSLMBK[}A?YFc@Oo@GcBCUWYEq@@s@CGDIKkA@QUc@Eg@@o@Qq@IaBQa@@KFICUFsAd@_B@SIODZNZp@t@FID_AI]h@p@d@nATHJPF@FKCCEnAEHARMVSdB?`ABAIDWh@QNQjASRMj@DPKv@BNIHE^IN@TGh@HNGd@Dp@U^?d@H\\A^BRO~@@XGZEr@KFQ`@?d@Ff@Ad@FHGPCAF^EZ@T@HH@NtASnAFNANJl@?l@EXDHBb@?XEH?PF~@Al@HNPnAD~@PdA?n@F`@Ar@JvA\\hBFp@DFAJX`@VdAV^Rp@HBAd@HJZl@L^BZJP@^JHZdAHv@HNDt@G`@?h@KdABVGJBLG`@ECA]Qg@FI?FIFDMAHKENA@H?GID?EMH?FCCNBL?\\nB",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": true,
+    "visibility": "only_me",
+    "flagged": false,
+    "gear_id": null,
+    "start_latlng": [
+      46.280108,
+      13.83741
+    ],
+    "end_latlng": [
+      46.285037,
+      13.84046
+    ],
+    "average_speed": 1.057,
+    "max_speed": 6.72,
+    "has_heartrate": true,
+    "average_heartrate": 99.1,
+    "max_heartrate": 127,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 645.7,
+    "elev_low": 520.8,
+    "upload_id": 20100483976,
+    "upload_id_str": "20100483976",
+    "external_id": "fitbit_1655882330274552648.tcx",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "date": "2026-06-19",
+    "km": 6.74,
+    "minutes": 106
   }
 ]
